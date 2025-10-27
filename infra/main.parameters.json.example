@@ -4,7 +4,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "environmentName": {
-      "value": "plan-search"
+      "value": "multi-agent-doc-research"
     },
     "backendContainerImage": {
       "value": "<yours>.azurecr.io/plan-search-be:0.0.1-SNAPSHOT"

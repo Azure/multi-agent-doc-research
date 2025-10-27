@@ -3,7 +3,7 @@ This AI-powered chatbot performs custom deep research on uploaded documents usin
 
 Built with FastAPI, Azure OpenAI, and Chainlit, the system showcases advanced techniques for enhancing LLM-based applications—such as agentic patterns, modular architecture, multi-agent orchestration, and evaluation support.
 
-At its core, the multi-agent deep research engine combines Microsoft Agent Framework and Semantic Kernel to generate high-quality analytical reports. By employing group chat coordination and a magnetic multi-agent pattern, it achieves deeper reasoning and consistent, well-structured outputs.
+At its core, the multi-agent deep research engine combines Semantic Kernel and the Microsoft Agent Framework to generate high-quality analytical reports. By employing group chat coordination and a magnetic multi-agent pattern, it achieves deeper reasoning and consistent, well-structured outputs.
 
 ![multi-agent-doc-research-architecture-Page-2.jpg](/images/multi-agent-doc-research-architecture-Page-2.jpg)
 

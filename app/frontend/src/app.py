@@ -324,7 +324,7 @@ async def poll_upload_status_loop(
             status_data = await check_upload_status_once(upload_id)
             if not status_data:
                 msg.content = (
-                    f"⚠️ 업로드 ID {upload_id[:8]} 상태 조회 실패. 재시도 중..."
+                    f"⚠️ Upload ID {upload_id[:8]} status check..."
                 )
                 await msg.update()
                 await asyncio.sleep(interval)

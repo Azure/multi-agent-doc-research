@@ -1,9 +1,11 @@
 # Planning & Search Chatbot Using Agentic Patterns
 
 ## Overview
+For a walkthrough, check out the video overview here: xxx.mp4
+
 ![Architecture Diagram](images/multi-agent-doc-research-architecture-Page-2.png)
 
-his AI-powered chatbot performs custom deep research on uploaded documents using a semantic chunking strategy for precise and meaningful vectorization. Through multi-agent collaboration, it delivers accurate, context-aware answers to user queries.
+This AI-powered chatbot performs custom deep research on uploaded documents using a semantic chunking strategy for precise and meaningful vectorization. Through multi-agent collaboration, it delivers accurate, context-aware answers to user queries.
 
 Built with FastAPI, Azure OpenAI, and Chainlit, the system showcases advanced techniques for enhancing LLM-based applications—such as agentic patterns, modular architecture, multi-agent orchestration, and evaluation support.
 

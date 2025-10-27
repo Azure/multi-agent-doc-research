@@ -46,14 +46,14 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Load environment variables
-SK_API_URL = os.getenv("SK_API_URL", "http://localhost:8000/plan_search")
-# Derive upload endpoint from SK_API_URL
+API_URL = os.getenv("API_URL", "http://localhost:8000/doc_research")
+# Derive upload endpoint from API_URL
 UPLOAD_API_URL = os.getenv(
-    "UPLOAD_API_URL", SK_API_URL.rsplit("/", 1)[0] + "/upload_documents"
+    "UPLOAD_API_URL", API_URL.rsplit("/", 1)[0] + "/upload_documents"
 )
 # Status check endpoint
 UPLOAD_STATUS_URL = os.getenv(
-    "UPLOAD_STATUS_URL", SK_API_URL.rsplit("/", 1)[0] + "/upload_status"
+    "UPLOAD_STATUS_URL", API_URL.rsplit("/", 1)[0] + "/upload_status"
 )
 
 active_uploads = {}  # { upload_id: { files: [...], message: cl.Message, task: asyncio.Task } }
@@ -851,7 +851,7 @@ async def stream_chat_with_api(message: str, settings: ChatSettings) -> None:
 
             # ✅ POST request with streaming
             async with aiohttp_session.post(
-                SK_API_URL,
+                API_URL,
                 json=payload,
                 headers={
                     "Content-Type": "application/json",

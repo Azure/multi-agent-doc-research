@@ -33,7 +33,7 @@ if [ -f .env ]; then
     source .env
 else
     echo "⚠️  .env file not found. Using default values."
-    export API_URL="http://localhost:8000/plan_search"
+    export API_URL="http://localhost:8000/doc_research"
 fi
 
 echo "API_URL: $API_URL"
@@ -59,7 +59,7 @@ if [ -f .env ]; then
 fi
 
 # Set default values if not provided
-export API_URL=${API_URL:-"http://localhost:8000/plan_search"}
+export API_URL=${API_URL:-"http://localhost:8000/doc_research"}
 
 echo "API_URL: $API_URL"
 

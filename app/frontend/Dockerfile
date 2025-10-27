@@ -10,7 +10,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-COPY . .
+# 프로젝트 루트의 필수 파일들 복사
+COPY pyproject.toml README.md ./
+# frontend 코드 복사
+COPY app/frontend/ .
 
 RUN pip install --no-cache-dir uv
 
@@ -46,8 +49,8 @@ export CHAINLIT_SOCKET_IO_UPGRADE="true"\n\
 export CHAINLIT_SOCKET_IO_REMEMBER_TRANSPORT="false"\n\
 \n\
 # Chainlit 애플리케이션 실행\n\
-echo "Executing: chainlit run src/app_chainlit.py --port 7860 --host 0.0.0.0"\n\
-exec chainlit run src/app_chainlit.py --port 7860 --host 0.0.0.0 --headless' > /entrypoint.sh \
+echo "Executing: chainlit run src/app.py --port 7860 --host 0.0.0.0"\n\
+exec chainlit run src/app.py --port 7860 --host 0.0.0.0 --headless' > /entrypoint.sh \
     && chmod +x /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]

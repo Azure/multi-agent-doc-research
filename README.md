@@ -3,7 +3,7 @@ This AI-powered chatbot performs custom deep research on uploaded documents usin
 
 Built with FastAPI, Azure OpenAI, and Chainlit, the system showcases advanced techniques for enhancing LLM-based applications—such as agentic patterns, modular architecture, multi-agent orchestration, and evaluation support.
 
-At its core, the multi-agent deep research engine combines Semantic Kernel and the Microsoft Agent Framework to generate high-quality analytical reports. By employing group chat coordination and a magnetic multi-agent pattern, it achieves deeper reasoning and consistent, well-structured outputs.
+At its core, the multi-agent deep research engine combines Microsoft Agent Framework and Semantic Kernel to generate high-quality analytical reports. By employing group chat coordination and a magnetic multi-agent pattern, it achieves deeper reasoning and consistent, well-structured outputs.
 
 ![multi-agent-doc-research-architecture-Page-2.jpg](/images/multi-agent-doc-research-architecture-Page-2.jpg)
 
@@ -40,7 +40,7 @@ At its core, the multi-agent deep research engine combines Semantic Kernel and t
 
 ## 🤖 Multi-Agent Collaboration Patterns
 
-This project implements sophisticated multi-agent collaboration patterns using Microsoft Agent Framework, enabling intelligent coordination between specialized AI agents for complex research tasks.
+This project implements sophisticated multi-agent collaboration patterns such as Group Chat, Magentic patterns using Microsoft Agent Framework, enabling intelligent coordination between specialized AI agents for complex research tasks.
 
 ### Available Patterns
 
@@ -193,49 +193,48 @@ source .venv/bin/activate
    ```
    Then edit the `.env` file and add your Azure OpenAI credentials:
    ```
-   AZURE_OPENAI_API_KEY=your-api-key-here
-   AZURE_OPENAI_ENDPOINT=https://your-resource-name.openai.azure.com/
-   AZURE_OPENAI_API_VERSION=2023-12-01-preview
-   AZURE_OPENAI_DEPLOYMENT_NAME=your-deployment-name
-   AZURE_OPENAI_QUERY_DEPLOYMENT_NAME=your-query-deployment-name
-   
-   # Bing Search API Configuration
-   BING_API_KEY=
-   BING_CUSTOM_CONFIG_ID=
-   # When you use the Bing Custom Search API, you need to set the custom configuration ID.
-   
-   # Planner Settings
-   PLANNER_MAX_PLANS=3
+    # Azure OpenAI Configuration
+    AZURE_OPENAI_API_KEY=your-api-key-here
+    AZURE_OPENAI_ENDPOINT=https://your-resource-name.openai.azure.com/
+    AZURE_OPENAI_API_VERSION=2023-05-15
+    AZURE_OPENAI_DEPLOYMENT_NAME=your-deployment-name
+    AZURE_OPENAI_QUERY_DEPLOYMENT_NAME=your-query-deployment-name
+    AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME=your-embedding-deployment-name
 
-   # Bing Grounding
-   # https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/ai/azure-ai-agents/samples/agents_streaming/sample_agents_stream_iteration_with_bing_grounding.py
-   BING_GROUNDING_PROJECT_ENDPOINT=https://<your-ai-services-account-name>.services.ai.azure.com/api/projects/<your-project-name>
-   BING_GROUNDING_AGENT_MODEL_DEPLOYMENT_NAME=gpt-4o
-   BING_GROUNDING_CONNECTION_ID=/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/Microsoft.CognitiveServices/accounts/{ai-foundry-account-name}/projects/{project-name}/connections/{connection-name}
-   BING_GROUNDING_MAX_RESULTS=5
+    # Redis Configuration
+    REDIS_USE=False
+    REDIS_HOST=localhost
+    REDIS_PORT=6379
+    REDIS_PASSWORD=redis_secure_password
+    REDIS_DB=0
+    REDIS_CACHE_EXPIRED_SECOND=604800
 
-   # YouTube Data API Configuration
-   YOUTUBE_API_KEY=your-youtube-api-key-here
+    # Application Settings
+    LOG_LEVEL=INFO
+    MAX_TOKENS=2000
+    DEFAULT_TEMPERATURE=0.7
+
+    # When you use the Bing Custom Search API, you need to set the custom configuration ID.
+
+    # Planner Settings
+    PLANNER_MAX_PLANS=3
+
+    # AI Search
+    AZURE_AI_SEARCH_ENDPOINT=https://your-search-service.search.windows.net
+    AZURE_AI_SEARCH_API_KEY=your-search-service-api-key
+    AZURE_AI_SEARCH_INDEX_NAME=doc_inquiry_index
+    AZURE_AI_SEARCH_SEARCH_TYPE=semantic  # Options: "semantic", "simple", "hybrid"
+
+    # Document Intelligence
+    AZURE_DOCUMENT_INTELLIGENCE_ENDPOINT=https://your-cognitive-services-account.cognitiveservices.azure.com/
+    AZURE_DOCUMENT_INTELLIGENCE_API_KEY=your-document-intelligence-api-key
+
+    # Chunking Method
+    # Use "semantic" for semantic chunking, "page" for page-based chunking
+    PROCESSING_METHOD=semantic  
+
 
    ```
-
-#### Getting BING_GROUNDING_CONNECTION_ID
-
-   To get the `BING_GROUNDING_CONNECTION_ID`, follow these steps:
-   1. Go to the Azure portal.
-   2. Navigate to your Bing Resources.
-   3. Add Grounding with Bing Search configuring resource group, name and pricing tier.
-   4. Navigate to your AI Foundry a Project > management center > Connected resources.
-   5. Add  a new connection and select the Grounding with Bing Search resource you created.
-   6. Click "Create" to create the connection.
-   7. Once created, go to the connection details.
-   8. Copy the connection ID from the URL or the details page.
-   ```
-   The connection ID will look like this:
-   /subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/Microsoft.CognitiveServices/accounts/{ai-foundry-account-name}/projects/{project-name}/connections/{connection-name}
-   ```
-
-![grounding with Bing](../../images/grounding-bing-conn-id.png)
 
    
 

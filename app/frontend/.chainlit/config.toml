@@ -15,7 +15,6 @@ cache = false
 # Authorized origins
 allow_origins = [
     "*",
-    "https://plan-search-frontend.purplesmoke-42e1888a.eastus.azurecontainerapps.io",
     "https://*.azurecontainerapps.io"
 ]
 

@@ -2,7 +2,7 @@
 param location string = resourceGroup().location
 
 @description('Specifies the environment name prefix used for generating uniqueness for resources.')
-param environmentName string = 'plan-search'
+param environmentName string = 'doc-research'
 
 @description('Specifies the container image for the backend application.')
 param backendContainerImage string
@@ -178,10 +178,6 @@ resource frontendApp 'Microsoft.App/containerApps@2025-02-02-preview' = {
         {
           name: 'chainlit-auth-secret'
           value: string(backendEnvVars.CHAINLIT_AUTH_SECRET)
-        }
-        {
-          name: 'youtube-api-key'
-          value: string(backendEnvVars.YOUTUBE_API_KEY)
         }
       ]      
     }

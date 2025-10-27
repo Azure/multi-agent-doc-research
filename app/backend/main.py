@@ -359,11 +359,11 @@ async def list_upload_status():
     }
 
 
-@app.get("/plan_search")
-async def plan_search_info():
-    """Get information about the plan_search endpoint"""
+@app.get("/doc_research")
+async def doc_research_info():
+    """Get information about the doc_research endpoint"""
     return {
-        "endpoint": "/plan_search",
+        "endpoint": "/doc_research",
         "method": "POST",
         "description": "Doc Researchendpoint for processing chat requests",
         "required_fields": ["messages"],
@@ -381,8 +381,8 @@ async def plan_search_info():
     }
 
 
-@app.post("/plan_search", response_model=ChatResponse)
-async def plan_search_endpoint(
+@app.post("/doc_research", response_model=ChatResponse)
+async def doc_research_endpoint(
     request: PlanSearchRequest,
 ):
     """
@@ -397,17 +397,17 @@ async def plan_search_endpoint(
             logger.info(
                 f"📊 Using Agent Framework (AFW) orchestrator for: {multi_agent_type}"
             )
-            plan_search_executor = get_orchestrator_afw()
+            doc_research_executor = get_orchestrator_afw()
         else:
             logger.info(
                 f"📊 Using Semantic Kernel (SK) orchestrator for: {multi_agent_type}"
             )
-            plan_search_executor = get_orchestrator_sk()
+            doc_research_executor = get_orchestrator_sk()
 
         if request.stream:
             # ✅ SSE 스트리밍 응답 최적화
             return StreamingResponse(
-                plan_search_executor.generate_response(
+                doc_research_executor.generate_response(
                     request.messages,
                     request.max_tokens,
                     request.temperature,
@@ -434,7 +434,7 @@ async def plan_search_endpoint(
             )
 
         # Non-streaming response
-        response_generator = plan_search_executor.generate_response(
+        response_generator = doc_research_executor.generate_response(
             request.messages,
             request.max_tokens,
             request.temperature,

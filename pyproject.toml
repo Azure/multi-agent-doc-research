@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "doc-inquiry-chatbot"
+name = "multi-agent-doc-research"
 version = "0.1.0"
 description = "AI chatbot for Microsoft product inquiries using Azure OpenAI"
 readme = "README.md"

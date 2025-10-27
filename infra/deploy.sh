@@ -2,9 +2,9 @@
 #!/bin/bash
 
 # Set variables
-RESOURCE_GROUP="general_inquiry-rg"
+RESOURCE_GROUP="doc-research-rg"
 LOCATION="eastus"
-DEPLOYMENT_NAME="plan-search-deployment1-$(date +%Y%m%d%H%M%S)"
+DEPLOYMENT_NAME="doc-research-deployment-$(date +%Y%m%d%H%M%S)"
 
 # Create resource group if it doesn't exist
 az group create --name $RESOURCE_GROUP --location $LOCATION

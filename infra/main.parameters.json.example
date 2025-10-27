@@ -7,10 +7,10 @@
       "value": "multi-agent-doc-research"
     },
     "backendContainerImage": {
-      "value": "<yours>.azurecr.io/plan-search-be:0.0.1-SNAPSHOT"
+      "value": "<yours>.azurecr.io/doc-research-be:0.0.1-SNAPSHOT"
     },
     "frontendContainerImage": {
-      "value": "<yours>.azurecr.io/plan-search-fe:0.0.1-SNAPSHOT"
+      "value": "<yours>.azurecr.io/doc-research-fe:0.0.1-SNAPSHOT"
     },
     "acrName": {
       "value" : "<yours>"

@@ -1,0 +1,59 @@
+_type: prompt
+input_variables:
+  - current_date
+  - original_query
+  - locale
+template: |
+  You are an expert in analyzing user queries to identify their intent and improve the question for better information retrieval.
+
+  Step 1: Analyze the user query to determine the intent.  
+  Step 2: If the intent involves retrieving external information, optimize the query for search.  
+  Step 3: If the intent is tool-related, extract the tool name.  
+  Step 4: For "research", distinguish whether the query requires deep reasoning, synthesis of multiple sources, or generation of structured research-style outputs (reports, comparisons, evaluations, strategy drafts, etc.).
+
+  Current date: {current_date}  
+  User query: {original_query}
+
+  Classify the intent into one of the following:
+
+  1. "general_query":  
+    The user is asking a **simple fact-based or instructional** question that requires **retrieving information directly from external sources**.  
+    - Output should be concise and primarily information-seeking.  
+    - Example: "What happened at the Apple event yesterday?"  
+    - Example: "How to fix a leaky faucet?"
+
+  2. "small_talk":  
+    The user is making **casual conversation** without requiring factual or procedural answers.  
+    These are **chit-chat, philosophical, opinion-based**, or **non-informational** queries.  
+    - Example: "What's up?"  
+    - Example: "나는 유튜브가 좋아"
+
+  3. "research":  
+    The user is requesting **in-depth exploration, reasoning, or synthesis** that goes **beyond single fact lookup**.  
+    This includes:  
+      - Generating a **research report or deep-dive analysis**.  
+      - Conducting **comparisons, benchmarking, evaluations, or multi-perspective synthesis**.  
+      - Handling **multi-step tasks** (e.g., analyzing datasets, combining multiple sources, scenario analysis, recommendations).  
+      - Answering questions that imply the need for **multi-agent reasoning**, **long-form structured outputs**, or **evidence-based argumentation**.  
+    - Example: "Write a detailed report on the economic impact of AI adoption in South Korea."  
+    - Example: "Evaluate strengths and weaknesses of Azure AI Speech vs GPT-4 Audio API for enterprise use."  
+    - Example: "Summarize 10 uploaded documents into a consolidated research report with insights and recommendations."
+
+  4. "tool_calling":  
+    The user is explicitly or implicitly **requesting a specific tool or function to be executed** (summarization, translation, captioning, etc.).  
+    - Example: "Translate this to Korean"  
+    - Example: "Run the image captioning tool"  
+
+  **IMPORTANT**: You must respond with ONLY a valid JSON object. Do not include any other text, explanations, or markdown formatting.
+
+  Write `enriched_query`, `search_query`, `keywords`, and `target_info` in {locale} language. Leave `tool_name` empty unless `user_intent` is `"tool_calling"`.
+
+  {{
+      "user_intent": "<classified intent>",
+      "enriched_query": "<rewritten and optimized query>",
+      "search_query": "<rewritten query specifically for search>",
+      "confidence": "<confidence score between 0.0 and 1.0>",
+      "keywords": ["keyword1", "keyword2"],
+      "target_info": "<type of information the user is looking for>",
+      "tool_name": "<name of the tool if applicable, otherwise empty string>"
+  }}

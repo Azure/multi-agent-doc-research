@@ -1,0 +1,169 @@
+
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Evaluation Results</title>
+        <style>
+            .image-container { display: flex; flex-wrap: wrap; justify-content: space-around; }
+            .image-container div { margin: 10px; text-align: center; }
+            img { max-width: 100%; height: auto; }
+        </style>
+        <script>
+        function downloadCSV() {
+                var csv = 'Query,Response,Relevance
+';
+                var rows = document.querySelectorAll('table tr');
+                for (var i = 1; i < rows.length; i++) {
+                    var cols = rows[i].querySelectorAll('td');
+                    var row = [];
+                    for (var j = 0; j < cols.length; j++) {
+                        var cell = cols[j].innerText.replace(/"/g, '""');
+                        row.push('"' + cell + '"');
+                    }
+                    csv += row.join(',') + '
+';
+                }
+                // BOM 추가
+                var BOM = '﻿';
+                var hiddenElement = document.createElement('a');
+                hiddenElement.href = 'data:text/csv;charset=utf-8,' + encodeURIComponent(BOM + csv);
+                hiddenElement.target = '_blank';
+                hiddenElement.download = 'evaluation_results.csv';
+                hiddenElement.click();
+        }
+        </script>
+    </head>
+    <body>
+        <h1>Evaluation Results</h1>
+        <div class="image-container">
+            <div><h2>Response Score Distribution</h2><img src="data:image/png;base64,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n5+ke/8B+fv7m1wNAADIi7S0NAUHBzu/x62IAPgb3L/s6+/vTwAEAKCIsfLtW9a88A0AAGBhBEAAAACLIQACAABYDPcAFjDDMHT37l1lZWWZXQrymaenp4oVK2bpe0gAAEUTAbAA3b59W0lJSbp586bZpaCAlChRQhUqVFDx4sXNLgUAgDwjABYQh8OhM2fOyNPTUxUrVlTx4sWZKXIjhmHo9u3bunz5ss6cOaPQ0FDLvkwUAFD0EAALyO3bt+VwOBQcHKwSJUqYXQ4KgK+vr7y8vHTu3Dndvn1bPj4+ZpcEAECeMGVRwJgVcm/8/QIAiiK+vQAAACyGAIh8t2XLFtlsNl2/ft3sUgAAQA7c4h7AefPmad68eTp79qwkqU6dOpo4caK6deuW65gVK1ZowoQJOnv2rEJDQzVjxgx17969UOqtNm5doexHks5O7/GLxwwYMEBLliyRJBUrVkyVK1fWM888oylTpnCfGwAAbsAtZgArV66s6dOna//+/dq3b586dOignj176ujRozn237lzp/r166dBgwbp4MGDioyMVGRkpI4cOVLIlT+8unbtqqSkJH3//fd6++23tWDBAk2aNMnssgAAQD5wiwD45JNPqnv37goNDVXNmjX1t7/9TaVKldLu3btz7D979mx17dpVY8eO1eOPP66pU6eqcePGmjNnTiFX/vDy9vZWUFCQgoODFRkZqU6dOikuLk7SvVfcxMTEKCQkRL6+vmrQoIFWrlz5wO1t375dbdu2la+vr4KDgzVixAhlZGRIkl599VW1aNEi25gGDRpoypQpkqS9e/eqc+fOKleunOx2u8LDw3XgwAGX/jabTe+++66eeuoplShRQqGhoVqzZo1Ln6NHj+p3v/ud/P395efnp7Zt2+r06dPO9e+++64ef/xx+fj46LHHHtM777zzy08eAAAPObcIgP8uKytLy5YtU0ZGhsLCwnLss2vXLnXq1MmlLSIiQrt27XrgtjMzM5WWluayWMGRI0e0c+dO58uOY2Ji9P7772v+/Pk6evSoXnrpJT3//PPaunVrjuNPnz6trl27qnfv3jp8+LCWL1+u7du3a/jw4ZKk/v37a8+ePS5B7OjRozp8+LCee+45SdKNGzcUHR2t7du3a/fu3QoNDVX37t1148YNl31NnjxZffr00eHDh9W9e3f1799fP/74oyTphx9+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"/></div>
+        </div>
+        <div style="display: flex; align-items: center;">
+            <h2 style="margin-right: 16px;">Results Table</h2>
+            <button onclick="downloadCSV()">Download CSV</button>
+        </div>
+        <table border="1" style="border-collapse: collapse;"><tr><th>Query</th><th>Response</th><th>Relevance</th></tr><tr><td>What are the key features of Surface Pro?</td><td>The key features of the Microsoft Surface Pro 12-inch (2025 model) include:
+
+- **Display**: 12-inch PixelSense™ LCD display with 2196 x 1464 resolution, 220 PPI, 3.21 million pixels, 90Hz adaptive refresh rate (60Hz default), 400 nits brightness, sRGB color profile, Gorilla Glass 5 protection, and 10-point multi-touch support. The display also has adaptive color, contrast, and reflect technologies with individual color calibration for true color accuracy.
+
+- **Processor & Performance**: Powered by Qualcomm Snapdragon X Plus (X1P-42-100) ARM processor with 8 cores, 8 threads, 3.20 GHz clock, and Adreno GPU offering 1.7 TFLOPS. This chip delivers significant battery efficiency and solid performance for everyday productivity and creativity tasks, but it is not meant for high-end gaming or resource-intensive workloads.
+
+- **Memory & Storage**: Comes with 16GB RAM and options for 256GB or 512GB UFS storage, enabling smooth multitasking and adequate storage for documents and media.
+
+- **Design & Build**: Lightweight at just 1.5 lbs (686 grams), thickness of 0.3 inch (7.8 mm), with a durable aluminum body and premium finish available in three colors: Platinum, Violet, and Ocean (blue-gray). The kickstand supports multiple viewing angles.
+
+- **Connectivity & Ports**: Includes 2 x USB-C ports supporting USB 3.2 Gen 2, DisplayPort 1.4a (up to dual 4K@60Hz monitors), fast charging (65W+), and compatibility with Surface Thunderbolt 4 Dock. It does not have a Surface Connect port or headphone jack.
+
+- **Operating System & Features**: Runs Windows 11 Home with Microsoft Copilot+ AI features integrated for enhanced productivity and creativity. AI technology also influences camera features like automatic framing and eye contact correction.
+
+- **Battery Life**: Offers all-day battery life with efficient power management, suitable for extended mobile use.
+
+- **Other Notes**: The keyboard, mouse, and power adapter are sold separately, which can add to the total cost. The device targets consumers valuing lightweight design, portability, and good battery life over raw power.
+
+- **Price**: Starting at $799.99 for 16GB RAM with 256GB SSD; $899.99 for the 512GB SSD version.
+
+This product delivers a refined ultra-portable 2-in-1 experience with a focus on portability, a high-quality display, and AI-assisted capabilities, optimized for everyday tab and light laptop use rather than heavy gaming or intense professional workloads.
+
+Sources for this detailed feature overview include SurfaceTip, ZDNET, PCMag, and Geeky Gadgets for the latest 2025 Surface Pro specs and impressions【3:0†source】【3:3†source】【3:2†source】【3:4†source】. 
+
+For official purchase and more details, visit the Microsoft Store or authorized retailers.</td><td>5</td></tr><tr><td>How does Surface Pro compare to Surface Laptop?</td><td>The Microsoft Surface Pro and Surface Laptop are designed for different user needs and lifestyles, and their key distinctions lie in form factor, weight, functionality, and price.
+
+### Form Factor & Design
+- **Surface Pro (2025, 12-inch)**: A 2-in-1 hybrid device acting as both a tablet and a laptop with a detachable keyboard and a built-in kickstand. It is highly versatile for drawing, sketching, and portable use, especially with the Surface Slim Pen support that magnetically charges on the tablet.
+- **Surface Laptop (2025, 13-inch)**: A traditional clamshell laptop with a built-in keyboard and touch display. It's ultra-thin and sleek, designed for those who prefer a laptop form factor with a more stable typing surface.
+
+### Size & Weight
+- **Surface Pro**: 12-inch display, weighs only 686g (about 1.5 pounds), and is extremely thin at 0.3 inches.
+- **Surface Laptop**: 13-inch display, heavier at 1.22kg (approx 2.7 pounds), and 0.61 inches thick.
+
+### Display
+- Surface Pro has a sharper resolution (2196 x 1464) and 90Hz refresh rate.
+- Surface Laptop features a 1920 x 1280 resolution with 60Hz.
+
+### Performance
+Both equipped with Qualcomm Snapdragon X Plus CPU and Adreno GPU, 16GB RAM, and up to 512GB UFS storage. The Pro includes enhanced AI processing with a Hexagon NPU rated at 45 TOPS.
+
+### Battery Life
+- Surface Laptop delivers up to 23 hours of local video playback.
+- Surface Pro supports up to 16 hours, focusing on portability.
+
+### Ports & Connectivity
+- Surface Laptop: USB-C x 2, USB-A 3.1, 3.5mm headphone jack.
+- Surface Pro: USB-C x 2, keyboard connector, no USB-A or headphone jack by default.
+
+### Price
+- Surface Laptop 13-inch starts at $899.
+- Surface Pro 12-inch starts at $799, making it $100 cheaper.
+
+### Use Case Summary
+- Choose **Surface Pro** if you need a lighter, more portable 2-in-1 device that doubles as a tablet and supports pen input.
+- Choose **Surface Laptop** if you want a traditional laptop experience with integrated keyboard and longer battery life, better port selection, and slightly bigger display for productivity.
+
+The Surface Pro is ideal for users who prioritize mobility and versatility, while the Surface Laptop targets users who want a powerful, all-day laptop with familiar form factor and connectivity.
+
+Sources:  
+- [Trusted Reviews Surface Laptop vs Surface Pro comparison](https://www.trustedreviews.com/versus/microsoft-surface-laptop-13-inch-2025-vs-surface-pro-12-inch-2025)  
+- [Microsoft official Surface Laptop vs Surface Pro](https://www.microsoft.com/en-us/surface/do-more-with-surface/difference-between-surface-laptop-vs-surface-pro)  
+- [PCMag 2025 Surface Laptop and Pro Snapdragon comparison](https://www.pcmag.com/opinions/2025-12-inch-surface-pro-13-inch-surface-laptop-snapdragon-x)  
+- [Tom's Hardware Surface Pro vs Surface Laptop](https://www.tomshardware.com/laptops/ultrabooks-ultraportables/microsoft-surface-pro-vs-surface-laptop-snapdragon-x-elite-showdown)  
+
+📊💻</td><td>5</td></tr><tr><td>Tell me about Microsoft 365 business plans</td><td>Microsoft 365 Business plans in 2025 are designed to accommodate small to medium-sized businesses with up to 300 users, offering a range of features from basic productivity tools to advanced security and management capabilities. Here are the main plans available:
+
+### 1. Microsoft 365 Business Basic
+- **Price:** $6.00 user/month (annual subscription, paid yearly)
+- **Features:** 
+  - Web and mobile versions of Office apps (Word, Excel, PowerPoint, Outlook)
+  - Microsoft Teams for chat, calls, and video meetings
+  - Custom business email with Exchange
+  - 1 TB of OneDrive cloud storage per user
+  - Apps like Microsoft Bookings, Planner, Forms
+  - Basic security with anti-malware/spam filters
+- **Ideal for:** Businesses just starting with cloud services and needing essential communication and collaboration tools.
+
+### 2. Microsoft 365 Business Standard
+- **Price:** $12.50 user/month (annual subscription, paid yearly)
+- **Features:**  
+  - Everything in Business Basic
+  - Desktop versions of Office apps (Word, Excel, PowerPoint, Outlook, Access for PC)
+  - Webinars with registration and reporting
+  - Collaborative workspaces with Microsoft Loop
+  - Video editing and design tools with Clipchamp
+- **Ideal for:** Businesses needing full desktop apps and more advanced collaboration features.
+
+### 3. Microsoft 365 Business Premium
+- **Price:** $22.00 user/month (annual subscription, paid yearly)
+- **Features:**
+  - Everything in Business Standard
+  - Advanced identity and access management (via Microsoft Entra ID)
+  - Enhanced cyberthreat protection (Microsoft Defender)
+  - Endpoint and device management (Intune)
+  - Information protection and compliance tools (Microsoft Purview)
+- **Ideal for:** Businesses requiring advanced security and device management.
+
+### 4. Microsoft 365 Apps for Business
+- **Price:** $8.25 user/month (annual subscription, paid yearly)
+- **Features:**
+  - Desktop versions of Office apps only (Word, Excel, PowerPoint, Outlook, etc.)
+  - 1 TB OneDrive storage per user
+  - No included email or Teams services.
+- **Ideal for:** Businesses that want full Office apps but use other services for email and communication.
+
+---
+
+### Additional Notes:
+- All plans support up to 5 devices per user (PC/Mac, tablets, mobile).
+- Microsoft 365 Copilot AI assistant is available as an add-on for $30.00 user/month on these business plans to enhance productivity with AI capabilities.
+- A 5% price increase applies to monthly billed annual subscriptions starting April 1, 2025; annual upfront billing locks in the lower rate.
+- The plans include high reliability and security in cloud services such as Teams, OneDrive, SharePoint, and Exchange.
+
+You can start with free trials for the business plans directly through Microsoft's website.
+
+### Reference Links:
+- Full Microsoft 365 business plans & pricing overview: [Microsoft 365 Business Plans and Pricing](https://www.microsoft.com/en-US/microsoft-365/business/microsoft-365-plans-and-pricing)  
+- Insights on Microsoft 365 2025 pricing changes: [Microsoft 365 Pricing Changes 2025](https://www.forbin.com/blog/post/a-comprehensive-guide-to-microsoft-365-pricing-changes-for-2025)  
+- Detailed update on pricing and billing for 2025: [Microsoft 365 Pricing & Billing Changes April 1, 2025](https://www.massiveit.com/microsoft-365-subscription-updates)  
+
+💼✨ Microsoft 365 business plans offer scalable productivity, collaboration, and security solutions tailored to evolving business needs, helping organizations stay agile and protected while empowering their workforce.</td><td>5</td></tr></table>
+    </body>
+    </html>
+    

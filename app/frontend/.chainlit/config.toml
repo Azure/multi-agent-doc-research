@@ -1,0 +1,157 @@
+[project]
+# Whether to enable telemetry (default: true). No personal data is collected.
+enable_telemetry = false
+
+# List of environment variables to be provided by each user to use the app.
+user_env = []
+
+# Duration (in seconds) during which the session is saved when the connection is lost
+# 짧게 설정하여 세션 의존성 줄이기
+session_timeout = 600
+
+# Enable third parties caching (e.g LangChain cache)
+cache = false
+
+# Authorized origins
+allow_origins = [
+    "*",
+    "https://plan-search-frontend.purplesmoke-42e1888a.eastus.azurecontainerapps.io",
+    "https://*.azurecontainerapps.io"
+]
+
+# Session management settings
+# 세션 수 제한을 줄여서 메모리 사용량 최적화
+max_sessions = 50
+
+# WebSocket settings - 더 보수적으로 설정
+websocket_timeout = 1800  # 30분으로 증가 (장시간 작업 대응)
+websocket_ping_interval = 20  # ping 간격 증가 (keepalive와 충돌 방지)
+websocket_ping_timeout = 300   # ping 응답 대기 5분
+
+# Socket.IO 설정 - keepalive와 조화
+socket_io_timeout = 1800  # 30분
+socket_io_ping_timeout = 300  # 5분
+socket_io_ping_interval = 20  # 20초마다 ping (keepalive와 동기화)
+require_authentication = false
+max_http_buffer_size = 100000000
+max_message_size = 100000000
+ping_timeout = 1800000  # 30분 (밀리초)
+ping_interval = 20000  # 20초 (밀리초)
+
+# 새로운 설정 추가
+session_cookie_httponly = true
+session_cookie_secure = true
+session_cookie_samesite = "strict"
+
+[features]
+# Process and display mathematical expressions
+latex = false
+
+# Automatically tag threads - 비활성화로 상태 의존성 줄이기
+auto_tag_thread = false
+
+max_turns_in_context = -1
+
+# Show starters even after messages
+show_readme_as_default = false
+prompt_playground = false
+persistent_starters = true
+
+# 새로운 설정 추가 - 세션 복구 기능 강화
+auto_save_conversation = true
+enable_session_recovery = true
+
+[UI]
+# Name of the app and chatbot.
+name = "Multi-Agent Doc Research"
+
+# Show the readme while the thread is empty.
+show_readme_as_default = true
+
+# Description of the app and chatbot. This is used for HTML tags.
+description = "Plan and Search Chatbot with AI-powered search capabilities"
+
+# Large size content are by default collapsed for a cleaner ui
+default_collapse_content = true
+
+# The default value for the expand messages settings.
+default_expand_messages = false
+
+# Hide the chain of thought details from the user in the UI.
+hide_cot = false
+
+# Show starters persistently
+show_starters = true
+
+# Link to your github repo. This will add a github button in the UI's header.
+# github = ""
+
+# Specify a CSS file that can be used to customize the user interface.
+# The CSS file can be served from the public directory or via an external link.
+# custom_css = "/public/custom.css"
+
+custom_logo = "/public/images/azure-ai-search.png"
+
+login_page_image = "/public/images/ai_foundry_background.png"
+
+# Specify a Javascript file that can be used to customize the user interface.
+# The Javascript file can be served from the public directory.
+# custom_js = "/public/script.js"
+
+# Specify a custom font url.
+# custom_font = "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+
+# Specify a custom build directory for the UI. This can be used to customize the UI using react.
+# custom_build = "./public/build"
+
+# Override default MUI light theme. (Check theme.ts)
+
+default_avatar_file_url = "/public/avatars/my_assistant.png"
+[UI.theme]
+#layout = "wide"
+#font_family = "Inter, sans-serif"
+#default_theme = "light"
+
+[UI.theme.light]
+#background = "#FAFAFA"
+#paper = "#FFFFFF"
+
+#[UI.theme.light.primary]
+#main = "#235af1ff"
+#dark = "#160d5dff"
+#light = "#FFE7EB"
+
+[UI.theme.dark]
+#background = "#FAFAFA"
+#paper = "#FFFFFF"
+
+#[UI.theme.dark.primary]
+#main = "#235af1ff"
+#dark = "#160d5dff"
+#light = "#FFE7EB"
+
+
+
+# Authorize users to spontaneously upload files with messages
+[features.spontaneous_file_upload]
+    enabled = true
+    # Define accepted file types using MIME types
+    # Examples:
+    # 1. For specific file types:
+    accept = [
+    "application/pdf",
+    "application/docx",
+    "application/txt"
+]
+    # 2. For all files of certain type:
+    #    accept = ["image/*", "audio/*", "video/*"]
+    # 3. For specific file extensions:
+    #    accept = { "application/octet-stream" = [".xyz", ".pdb"] }
+    # Note: Using "*/*" is not recommended as it may cause browser warnings
+    # accept = ["*/*"]
+    max_files = 2
+    max_size_mb = 10
+
+
+[meta]
+generated_by = "1.0.0"

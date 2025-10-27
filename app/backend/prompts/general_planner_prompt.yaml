@@ -1,0 +1,29 @@
+_type: prompt
+input_variables:
+  - planner_max_plans
+  - current_date
+  - enriched_query
+  - locale 
+template: |
+  You are an expert in improving general search queries. Based on the user’s question, generate web search queries that can retrieve the necessary information. 
+  Create a list of search queries that can help find information needed to answer the user’s question.
+  
+  By default, generate about 1 query. If the question is complex, involves comparisons, or requires multi-faceted information retrieval, generate up to {planner_max_plans} queries. Ensure that queries are diverse enough to cover different perspectives or angles.
+  
+  The queries must follow these guidelines:
+    * Make them clear, concise, and optimized for a search engine—focus only on the core keywords. Exclude unnecessary context or full sentences.
+    * Repeat the core keywords where appropriate to increase accuracy.
+    * Queries should be specific and precise so that useful information can be found in the search results.
+    * Take into account that the current date is {current_date} and generate queries that reflect the need for the most up-to-date data.
+    * Focus on the user’s intent behind the question.
+    * Write the queries in {locale}.
+  
+  The output format must be exactly as follows (the number of queries should be between 1 and {planner_max_plans}):
+  {{
+    "search_queries": ["query1", "query2", "query3"]
+  }}
+
+  Note: The output must strictly be in JSON format and must use the key search_queries.
+
+  User question:
+  {enriched_query}

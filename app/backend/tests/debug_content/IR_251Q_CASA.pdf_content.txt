@@ -1,0 +1,11674 @@
+=== DOCUMENT INTELLIGENCE CONTENT DEBUG ===
+File: IR_251Q_CASA.pdf
+Content Format: DocumentContentFormat.MARKDOWN
+Content Length: 156356
+==================================================
+
+)01(
+
+
+<figure>
+</figure>
+
+
+<figure>
+</figure>
+
+
+RESULTS
+1ST QUARTER 2025
+
+WORKING EVERY DAY IN THE INTEREST
+OF OUR CUSTOMERS AND SOCIETY
+
+
+<figure>
+</figure>
+
+
+<!-- PageBreak -->
+
+<!-- PageHeader="Disclaimer" -->
+
+The financial information on Credit Agricole S.A. and Credit Agricole Group for first quarter 2025 comprises this presentation and the attached
+appendices and press release which are available on the website: https://www.credit-agricole.com/finance/publications-financieres.
+
+This presentation may include prospective information on the Group, supplied as information on trends. This data does not represent forecasts
+within the meaning of EU Delegated Act 2019/980 of 14 March 2019 (Chapter 1, article 1, d).
+
+This information was developed from scenarios based on a number of economic assumptions for a given competitive and regulatory environment.
+Therefore, these assumptions are by nature subject to random factors that could cause actual results to differ from projections. Likewise, the
+financial statements are based on estimates, particularly in calculating market value and asset impairment.
+
+Readers must take all these risk factors and uncertainties into consideration before making their own judgement.
+
+The figures presented for the three-month period ending 31 March 2025 have been prepared in accordance with IFRS as adopted in the European
+Union and applicable at that date, and with regulations currently in force. This financial information does not constitute a set of financial statements
+for an interim period as defined by IAS 34 "Interim Financial Reporting" and has not been audited.
+
+Note: The scopes of consolidation of the Crédit Agricole S.A. and Crédit Agricole groups have not changed materially since the Crédit Agricole S.A.
+2024 Universal Registration Document and its A.01 update (including all regulatory information about the Crédit Agricole Group) were filed with the
+AMF (the French Financial Markets Authority).
+
+The sum of values contained in the tables and analyses may differ slightly from the total reported due to rounding.
+
+NB : all financial data are now presented stated for Crédit Agricole Group, Crédit Agricole S.A. and the business lines results, both for the income statement
+and for the profitability ratios.
+
+
+# NOTE
+
+The
+Crédit Agricole Group
+scope of consolidation
+comprises:
+the Regional Banks, the Local
+Banks, Crédit Agricole S.A. and
+their subsidiaries. This is the
+scope of consolidation that has
+been selected by the competent
+authorities to assess the
+Group's position in the recent
+stress test exercises.
+
+Crédit Agricole S.A.
+is the listed entity,
+which notably owns
+the subsidiaries of its business
+lines (Asset gathering, Large
+customers, Specialised financial
+services, French retail banking
+and International retail banking)
+
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageNumber="☒" -->
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="2" -->
+<!-- PageBreak -->
+
+
+# Key messages and figures
+
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="☒" -->
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="3" -->
+<!-- PageBreak -->
+
+
+# INCREASED REVENUES, STRONG PROFITABILITY DESPITE EXCEPTIONAL HIGH TAX IMPACT
+
+
+<figure>
+
+)01(
+
+</figure>
+
+
+· Record quarterly revenues and high ROTE
+
+· Cost/income ratio managed and stable cost of risk
+
+· Increase in pre-tax income; result affected by the additional corporate tax charge
+
+· Solvency ratios benefiting, as expected, from a positive CRR3 effect
+
+· Strategic operations: creation of the GAC Sofinco Leasing joint venture, conclusion of
+the partnership between Amundi and Victory Capital, investment in the share capital of
+Banco BPM increased to 19.8%
+
+
+<figure>
+
+Crédit Agricole S.A.
+€7.3bn
+Revenues Q1-2025
+
+Crédit Agricole S.A.
+
+Crédit Agricole S.A.
+
+Crédit Agricole S.A.
+
+Crédit Agricole S.A.
+
+55.0%
+Cost/income ratio
+
+€2.9bn
+Pre-tax income Q1-
+2025
+
+15.9%
+ROTE(1)
+
+12.1%
+Phased-in CET1
+
++6.6% Q1/Q1
+
+Q1-2025
+
++4.6% Q1/Q1
+
+Stable Q1/Q1
+
+March 2025
+
+</figure>
+
+
+1\. ROTE calculated on the basis of an annualised net income Group share and IFRIC costs and additional corporate tax charge linearised over the year
+
+<!-- PageNumber="☒ CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="4" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+
+# KEY FIGURES
+
+
+## CRÉDIT AGRICOLE GROUP
+
+1st QUARTER 2025
+
+
+<table>
+<tr>
+<td>Revenues</td>
+<td>€10,048m +5.5% Q1/Q1</td>
+</tr>
+<tr>
+<td>Gross operating income</td>
+<td>€4,056m +3.0% Q1/Q1</td>
+</tr>
+<tr>
+<td rowspan="2">Pre-tax income</td>
+<td>€3,399m</td>
+</tr>
+<tr>
+<td>+1.6% Q1/Q1</td>
+</tr>
+<tr>
+<td rowspan="2">Net Income Group Share (1)</td>
+<td>€2,165m</td>
+</tr>
+<tr>
+<td>-9.2% Q1/Q1</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+<td>Cost/income ratio</td>
+<td colspan="2">59.6% 27 bp +1.0 pp 3M/3M stable Q1/Q4</td>
+<td>CoR/outstandings 4 rolling quarters</td>
+</tr>
+<tr>
+<td>CET 1 Phased-in</td>
+<td>17.6% +0.4 pp March/Dec</td>
+<td>€487bn +3% March/Dec</td>
+<td rowspan="2">Liquidity reserves</td>
+</tr>
+<tr>
+<td></td>
+<td colspan="2"></td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+<td>CRÉDIT AGRICOLE S.A.</td>
+<td>1st QUARTER 2025</td>
+</tr>
+<tr>
+<td>Revenues</td>
+<td>€7,256m +6.6% Q1/Q1</td>
+</tr>
+<tr>
+<td>Gross operating income</td>
+<td>€3,266m +4.1% Q1/Q1</td>
+</tr>
+<tr>
+<td>Pre-tax inome</td>
+<td>€2,900m +4.6% Q1/Q1</td>
+</tr>
+<tr>
+<td>Net Income Group share (1)</td>
+<td>€1,824m -4.2% Q1/Q1</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+<td>Cost/income ratio</td>
+<td>55.0% 34 bp +1.1 pp 3M/3M stable Q1/Q4</td>
+<td>CoR/outstandings 4 rolling quarters</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>CET 1 Phased-in</td>
+<td>12.1% 15.9% +0.4 pp March/Dec -0.1 pp Q1/Q1</td>
+<td>ROTE(2)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+(1) Additional Corporate tax charge in Q1-25 of -€207m for Crédit Agricole Group and of -€123m for Crédit Agricole S.A, corresponding to an estimation of -€330m for Crédit Agricole Group and of -€200m for Crédit Agricole S.A. in 2025
+
+
+(assuming 2025 fiscal result being equal to 2024 fiscal result) (2) ROTE calculated on the basis of an annualised net income Group share and IFRIC costs and additional corporate tax charge linearised over the year.
+
+☒
+CRÉDIT AGRICOLE S.A.
+
+<!-- PageNumber="5" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+
+# Crédit Agricole S.A. Q1-25 summary
+
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageNumber="☒" -->
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="6" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## ACTIVITY EXCELLENT PERFORMANCE IN CIB AND ASSET GATHERING DIVISION
+
+Change March 25/March 24
+
+. A new record achieved in CIB
+
+· Record net inflows (MLT) and assets under management
+
+· Historical premiums in insurance driven by all activities.
+
+· Loan production in France recovered compared with the low point
+in early 2024 without confirming the end-of-year momentum
+
+· Consumer finance decreased, affected by a decline in car
+financing activity
+
+. International loan activity at good level
+
+1\. Car, home, health, legal, all mobile phones or personal accident insurance.
+
+2\. CA Auto Bank, automotive JVs and automotive activities of other entities.
+
+New customers
+
++550 000
+
+On-balance
+sheet deposits in
+retail banking
+(€bn)
+
+France (CR + LCL): 771 (+1.6%)
+
+Italy: 64 (-2.1%)
+
+Total: 835 (+1.3%)
+
+Loans
+outstanding
+retail banking
+(€bn)
+
+France (CR + LCL): 820 (+1.0%)
+
+Italy: 61 (+1.6%)
+
+Total: 881 (+1.0%)
+
+Property and
+casualty
+insurance
+equipment rate(1)
+
+44.2% (+0.8 pp) Regional Banks
+
+28.0% (+0.2 pp) LCL
+
+20.3% (+1.0 pp) CA Italy
+
+Assets
+under
+management
+(€bn)
+
+Wealth management: 278 (+41.3%)
+
+Life insurance: 352 (+5.2%)
+
+Asset management: 2,247 (+6.2%)
+
+Total: 2,878 (+8.7%)
+
+Consumer
+finance
+outstandings
+(€bn)
+
+Total: 120 (+5.3%)
+Of which Automotive(2): 54% (+1,0 pp)
+
+
+<figure>
+</figure>
+
+
+#1 Syndicated loans in France
+
+#2 Syndicated loans in EMEA
+
+#2 All bonds in EUR worldwide
+Source: Refinitiv
+
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+
+☒
+
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="7" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## REVENUES RECORD REVENUES REGISTERING STRONG GROWTH
+
+
+<figure>
+<figcaption>Q1/Q1 change in revenues, by business line (€m)</figcaption>
+
++6.6%
++€451m
+
++142
+
++22
+
++40
+
+7,256
+
++269
+
+(22)
+
+6,806
+
+CIB: A record
+quarter
+
+CAPFM:
+Positive price
+effect
+
+Adverse base
+effect (exceptional
+foreign exchange
+activity in Egypt)
+
+Impact of
+BBPM shares
+valuation
+
+Strong momentum
+over all business
+lines
+
+Integration of
+Degroof Petercam
+(+€164m)
+
+Q1-24
+
+Asset gathering
+
+Large customers
+
+SFS
+
+Retail banking
+
+Corporate centre
+
+Q1-25
+
+</figure>
+
+AG: Asset gathering; LC: Large customers; SFS: Specialised financial services; RB: Retail banking; CC: Corporate Centre
+
+
+<figure>
+<figcaption>Q1 revenues (billions of euros)</figcaption>
+
++5.6%
+CAGR
+
+7.3
+
+6.8
+
+5.9
+
+6.1
+
+5.5
+
+5.2
+
+4.9
+
+4.9
+
+4.7
+
+Q1-17
+
+Q1-18
+
+Q1-19
+
+Q1-20
+
+Q1-21
+
+Q1-22
+
+Q1-23
+
+Q1-24
+
+Q1-25
+
+</figure>
+
+
+Implementation of IFRS 17 since 2023
+
+<!-- PageNumber="☒ CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="8" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## EXPENSES SUPPORT FOR BUSINESS LINES' DEVELOPMENT, LOW COST/INCOME RATIO AT 55.0%
+
+
+<figure>
+
+Q1/Q1 change in expenses, by business line (€m)
+
++8.8%
++€322m
+
++32
+
++25
+
+3,991
+
+3,669
+
++182
+
++63
+
++20
+
+Increase in expenses in relation
+to strong revenue performance
+
+Acceleration of
+investments in
+France
+
+Tax base
+effect
+
+Integration of Degroof Petercam
+(+€115m)
+
+Q1-24
+
+Asset gathering
+
+Large customers
+
+SFS
+
+Retail banking
+
+Corporate centre
+
+Q1-25
+
+</figure>
+
+AG: Asset gathering; LC: Large customers; SFS: Specialised financial services; RB: Retail banking; CC: Corporate Centre
+
+
+<figure>
+<figcaption>Breakdown by nature of costs (€m)</figcaption>
+
++138
+
++3,2%
+€113m
+
++322
+
++72
+
++105
+
++39
+
+-31
+
+Q1/Q1 expenses
+Scope effect
+and integration
+costs
+
+IFRIC Impact
+
+Staff costs
+IT investments
+
+Others
+
+</figure>
+
+
+<figure>
+
+Provision for variable
+compensation (+€26m)
+
+</figure>
+
+
+<!-- PageFooter="☒ CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="9" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## RISKS STABLE COST OF RISK
+
+
+<figure>
+<figcaption>Crédit Agricole S.A. cost of risk (€m)</figcaption>
+
+\+ 3.4%
+
+594
+
+424
+
+400
+
+433
+
+18
+
+413
+
+5
+
+7
+
+278
+
+2
+
+12
+
+38
+
+0
+
+384
+
+491
+
+388
+
+297
+
+411
+
+-31
+
+-37
+
+Q1-24
+
+Q2-24
+
+Q3-24
+
+Q4-24
+
+Q1-25
+
+S3 CoR*
+
+S1&S2 CoR
+
+Others
+
+Total CoR
+
+</figure>
+
+
+<figure>
+<figcaption>Cost of risk by business line</figcaption>
+
+400
+
+413
+
+CIC
+
+3%
+
+CC
+
+IRB
+20%
+
+5%
+
+IRB
+16%
+
+LCL
+30%
+
+LCL
+22%
+
+SFS
+55%
+
+SFS
+60%
+
+LC
+
+LC
+
+-8%
+
+-6%
+
+Q1-24
+
+Q1-25
+
+</figure>
+
+
+<figure>
+<figcaption>Cost of risk/outstandings(1) (bp)</figcaption>
+</figure>
+
+
+<table>
+<tr>
+<th colspan="5">Crédit Agricole Group</th>
+</tr>
+<tr>
+<th>25</th>
+<th>25</th>
+<th colspan="3"></th>
+</tr>
+<tr>
+<th></th>
+<th></th>
+<th>26</th>
+<th>27</th>
+<th>27</th>
+</tr>
+<tr>
+<td colspan="2">Crédit Agricole S.A.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>33</td>
+<td>32</td>
+<td>32</td>
+<td>34</td>
+<td>34</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Q1-24</td>
+<td>Q2-24</td>
+<td>Q3-24</td>
+<td>Q4-24</td>
+<td>Q1-25</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+<th>CRÉDIT AGRICOLE S.A.</th>
+<th></th>
+<th></th>
+<th rowspan="2">Loans loss reserves</th>
+<th rowspan="2"></th>
+<th>CRÉDIT AGRICOLE GROUP</th>
+<th></th>
+<th></th>
+<th rowspan="2">Loans loss reserves</th>
+</tr>
+<tr>
+<th>Cost of risk/outstandings</th>
+<th>34 bp(1) 30 bp(2)</th>
+<th>€9.4bn</th>
+<th>Cost of risk/outstandings</th>
+<th>27 bp(1) 24 bp(2)</th>
+<th>€21.4bn</th>
+</tr>
+<tr>
+<td>NPL Ratio</td>
+<td>2.3% Stable vs Q4-24</td>
+<td>74.9% +0.8 pp vs Q4-24</td>
+<td>Coverage ratio</td>
+<td></td>
+<td>NPL Ratio</td>
+<td>2.1% Stable vs Q4-24</td>
+<td>84.9% Stable vs Q4-24</td>
+<td>Coverage ratio</td>
+</tr>
+</table>
+
+AG: Asset gathering; LC: Large customers; SFS: Specialised financial services; IRB: International Retail banking; CC: Corporate Centre
+
+1\. Cost of risk for the last four quarters divided by the average of the outstandings at the start of all four quarters of the year.
+
+2\.
+Annualised CoR/outstandings: cost of risk for the quarter multiplied by four divided by the outstandings at the start of the current quarter.
+
+
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="10" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## RISKS COST OF RISK BY BUSINESS LINE
+
+
+### Cost of risk/outstandings(1) (bp)
+
+
+<table>
+<tr>
+<th>CAPFM</th>
+<th>130 117 114 112 127</th>
+<th>➔ CAPFM: slightly deteriorated, mainly on the international subsidiaries</th>
+</tr>
+<tr>
+<th>CA Italia</th>
+<th>55 50 44 40 39</th>
+<th>➔ CA Italia: continuous improvement in asset quality and coverage ratio</th>
+</tr>
+<tr>
+<td>LCL</td>
+<td>21 22 23 22 20</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>19 20 21 20 21</td>
+<td>➔ Retail banking in France: stable risk, remaining high for professionals</td>
+</tr>
+<tr>
+<td>Regional Banks</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td rowspan="2">5 2 1 7 8</td>
+<td rowspan="2">➔ Financing activities: remain at a low level; net reversal this quarter, mainly due to synthetic securitisations</td>
+</tr>
+<tr>
+<td>Financing activities</td>
+</tr>
+<tr>
+<td></td>
+<td>Q1-24 Q2-24 Q3-24 Q4-24 Q1-25</td>
+<td></td>
+</tr>
+</table>
+
+1\. Cost of risk for the last four quarters divided by the average of the outstandings at the start of all four quarters of the year.
+
+
+<!-- PageFooter="☒ CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="11" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## RESULTS INCREASED PRE-TAX INCOME
+
+
+<figure>
+<figcaption>Q1/Q1 change in pre-tax income by business line (€m)</figcaption>
+
++4.6%
+
++€127m
+
++86
+
++72
+
++3
+
+2,900
+
+2,773
+
+(21)
+
+(13)
+
+Q1-24
+
+Asset gathering
+
+Large customers
+
+SFS
+
+Retail banking
+
+Corporate centre
+
+Q1-25
+
+</figure>
+
+AG: Asset gathering; LC: Large customers; SFS: Specialised financial services; RB: Retail banking; CC: Corporate Centre
+
+
+<figure>
+<figcaption>Change in net income Group share by P&amp;L line (€m)</figcaption>
+
+Increase
+in GOI
+
++4.1%
++€129m
+
+-4.2%
+€-80m
+
++451
+
+1,903
+
+(322)
+
+(13)
+
++22
+
+1,824
+
+(217)
+
+Impact of corporate
+tax additional
+charge: - €123m
+
+Q1-24
+
+Revenues
+
+Operating
+expenses
+
+Cost of risk
+
+Tax
+
+Other
+
+Q1-25
+
+</figure>
+
+
+☒
+CRÉDIT AGRICOLE S.A.
+
+<!-- PageNumber="12" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## STRONG FINANCIAL POSITION - CRÉDIT AGRICOLE S.A. GOOD LEVEL OF SOLVENCY RATIO (TARGET AT 11%)
+
+
+<figure>
+<figcaption>Change in phased-in CET1 ratio (bp)</figcaption>
+
++21 bp
+
++44 bp
+
+-9 bp
+
+-10 bp
+
+12.1%
+
+IFRS 9 phasing
+-5 bp
+
+-30 bp
+
+11.8%
+
+11.7%
+
+Victory Capital
+partnership
+Banco BPM
+investment
+increased to 19.8%
+
+Exceeding of
+regulatory
+threshold
+
+December 24
+
+CRR3
+
+Retained result
+
+Business lines
+organic growth
+
+Regulatory
+effects,
+M&A and others
+
+March 25
+
+Finalized M&A
+operations
+post Q1-25
+
+Proforma
+
+</figure>
+
+
+CET1
+
+12.1%
++0.4 pp vs Q4-24
+
++3.5 pp vs SREP requirement
+
+DIVIDEND
+
+€0.28/share
+
+LEVERAGE RATIO
+
+4.0%
++0,1 pp vs Q4-24
+
++1.0 vs requirement
+
+
+<figure>
+<figcaption>Change in RWA by business line (€bn)</figcaption>
+
+-2.5%
+-€10 Bn
+
+415
+
+12
+
+\+ 1.4
+
+\+ 1.9
+
+\+ 0.1
+
+405
+
+-12.9
+
+-0.2
+
+-0.8
+
+13
+
+42
+
+Insurance :
+Increase in the
+equity value
+(+€1.1bn)
+
+CAPFM :
+GAC
+Leasing
+integration
+(+€0.7bn)
+
+CIB: growth in
+business lines,
+neutralized by
+synthetic
+securitization
+
+56
+
+362
+
+336
+
+Dec. 24
+
+CRR3
+
+RB
+
+AG
+
+SFS
+
+LC
+
+CC
+
+Mar. 25
+
+Credit risk
+
+Operational risk
+
+Market risk
+
+</figure>
+
+AG: Asset gathering; LC: Large customers; SFS: Specialised financial services; RB: Retail banking; CC:
+Corporate Centre
+
+
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="13" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE GROUP" -->
+
+
+## STRONG FINANCIAL POSITION - CRÉDIT AGRICOLE GROUP VERY HIGH CAPITAL
+
+
+<figure>
+<figcaption>Change in phased-in CET1 ratio (bp)</figcaption>
+
++25 bp
+
++56 bp
+
+-17bp
+
+-17bp
+
+17.6%
+
+17.2%
+
+IFRS 9 phasing -
+9 bp
+
+Purchase of CASA
+shares -8 bp
+
+December 24
+
+CRR3
+
+Retained result
+
+Business lines
+organic growth
+
+Regulatory effects,
+M&A and others
+
+March 25
+
+</figure>
+
+
+CET1
+
+17.6%
++0.4 pp vs Q4-24
+
++7.8 pp vs SREP requirement
+
+LEVERAGE RATIO
+
+5.6%
++0.1 pp vs Q4-24
+
++2.1 pp vs requirement
+
+
+<figure>
+<figcaption>Change in RWA by business line (€bn)</figcaption>
+
+-2.0%
+-€12 Bn
+
+653
+
+12
+
++1.3
+
++1.4
+
++2.2
+
++1.4
+
+641
+
+-0.8
+
+13
+
+-18.2
+
+66
+
+84
+
+575
+
+544
+
+Dec. 24
+
+CRR3
+
+Retail
+Banking
+
+AG
+
+SFS
+
+LC
+
+CC
+
+Mar. 25
+
+Credit risk
+
+Operational risk
+
+Market risk
+
+</figure>
+
+
+TLAC/RWA
+
+28.5%
++1.6 pp vs Q4-24
+
++6.1 pp vs requirement
+
+MREL/RWA
+
+34.0%
++1.7 pp vs Q4-24
+
++7.7 pp vs requirement
+
+AG: Asset gathering; LC: Large customers; SFS: Specialised financial services; RB: Retail banking; CC:
+Corporate Centre
+
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="14" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## STRONG FINANCIAL POSITION - CRÉDIT AGRICOLE GROUP STRONG LIQUIDITY POSITION
+
+Liquidity reserves (€bn)
+
+473
+
+138
+
+35
+
+36
+
+Other non-HQLA securities (2) (3)
+
+155
+
+HQLA (High Quality Liquid Assets) securities portfolio
+(2)
+
+150
+
+150
+
+153
+
+Central bank deposits (4)
+
+31/12/2024
+
+31/03/2025
+
+
+<table>
+<tr>
+<th>As of</th>
+<th>CASA</th>
+<th>CAG</th>
+</tr>
+<tr>
+<td>31/03/2025</td>
+<td rowspan="2">144%</td>
+<td rowspan="2">139%</td>
+</tr>
+<tr>
+<td>LCR (avg. 12M)</td>
+</tr>
+<tr>
+<td>NSFR</td>
+<td>&gt;100%</td>
+<td>&gt;100%</td>
+</tr>
+</table>
+
+
+<figure>
+<figcaption>Customer deposits (€bn) by nature</figcaption>
+
+CAG
+
+€197bn
+
+Stable
+Resources
+Position
+
+</figure>
+
+
+<figure>
+<figcaption>by type of customers</figcaption>
+
+17%
+
+€1,148bn
+
+51%
+
+32%
+
+</figure>
+
+
+·Sight deposits
+
+Time deposits (incl. PEL)
+
+· Regulated passbooks (Livret A, LEP, LDD)
+
+
+<figure>
+
+3%
+
+10%
+
+22%
+
+€1,148bn
+
+Stable vs. Dec 24
+
+65%
+
+</figure>
+
+
+· Individuals/SMEs - including 100% of regulated passbooks
+
+Corporates
+
+Financial institutions
+
+Sovereign, Public sector
+
+
+### Stable, diversified and granular customer deposits
+
+· 37m retail banking customers, o/w 28m individual customers in France
+
+· ~ 60% (5) of guaranteed deposits in retail banking in France
+
+1\.
+Receivables eligible for central bank refinancing providing access to LCR compliant resources
+
+2\.
+Available securities, at market value after haircut
+
+3\.
+Of which €1bn eligible in Central Bank
+
+4\.
+Excluding cash (€3bn) & mandatory reserves (€11bn)
+
+5\.
+Customers (individuals, professionals, corporates) LCL and Regional Banks
+
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="15" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+
+487
+
+143
+
+Eligible collateral already pledged to Central
+Banks and unencumbered (1)
+
+<!-- PageBreak -->
+
+
+## CONTINUED SUPPORT OF TRANSITION
+
+
+### A transition plan based on three complementary and well-structured priorities:
+
+
+<figure>
+
+1
+Accelerating the development of
+renewable and low-carbon energy
+by focusing our financings on
+renewable and low-carbon energy
+projects
+
+2
+
+As a universal bank,
+supporting energy transition
+for all: the equipment of all
+corporates and households
+
+3
+
+Driving our exit path from the
+financing of carbon-based energy
+
+Low-carbon
+energy(1) financing
+
+Investments in low-
+carbon energy(2)
+
+Financing
+the environmental transition(3)
+
+Exposure
+to oil extraction
+
+Project finance
+exposure to
+hydrocarbon
+extraction(4)
+
+€26.3bn
+As of 31/12/2024
+
+€6bn
+As of 31/12/2024
+
+€111.7bn
+As of 31/12/2024
+
+-56%
+2024/2020
+
+US$0.96bn
+As of 31/12/2024
+
++141%
+2024/2020
+
++166%
+2024/2020
+
+o/w
+
+Energy-efficient buildings €86.7bn
+"Clean" transport €5.3bn
+
+Target -25%
+2025 vs 2020
+
+-30%
+2024/2020
+
+</figure>
+
+
+1\. Low-carbon energy outstandings made up of renewable energy produced by the clients of all Crédit Agricole Group entities, including nuclear energy outstandings for Crédit Agricole CIB.
+
+2\.
+. Portfolios of CAA (listed securities, listed securities under mandate, and unlisted securities) and of Amundi Transition Energétique.
+
+3\.
+Outstanding financing of Credit Agricole Group, directly or through the EIB, according to the Group's internal sustainable assets framework. Change of method compared with the outstandings reported at 30/09/2024: with the same method, the
+outstandings at 31/12/2024 would be €115.5 billion.
+
+4\. Direct exposure to project financing of hydrocarbon extraction (gross exposure excl. export credit cover).
+
+☒
+CRÉDIT AGRICOLE S.A.
+
+<!-- PageNumber="16" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## INCOME STATEMENT
+
+
+<table>
+<tr>
+<th>M€</th>
+<th>Q1-25</th>
+<th>Q1/Q1</th>
+</tr>
+<tr>
+<td>Revenues</td>
+<td>7,256</td>
+<td>+6.6%</td>
+</tr>
+<tr>
+<td>Operating expenses</td>
+<td>(3,991)</td>
+<td>+8.8%</td>
+</tr>
+<tr>
+<td>Gross operating income</td>
+<td>3,266</td>
+<td>+4.1%</td>
+</tr>
+<tr>
+<td>Cost of risk</td>
+<td>(413)</td>
+<td>+3.4%</td>
+</tr>
+<tr>
+<td>Equity-accounted entities</td>
+<td>47</td>
+<td>+9.2%</td>
+</tr>
+<tr>
+<td>Net income on other assets</td>
+<td>1</td>
+<td>n.m.</td>
+</tr>
+<tr>
+<td>Change in value of goodwill</td>
+<td>-</td>
+<td>n.m.</td>
+</tr>
+<tr>
+<td>Income before tax</td>
+<td>2,900</td>
+<td>4.6%</td>
+</tr>
+<tr>
+<td>Tax</td>
+<td>(827)</td>
+<td>+35.5%</td>
+</tr>
+<tr>
+<td>Net income from discont'd or held-for-sale ope.</td>
+<td>0</td>
+<td>n.m.</td>
+</tr>
+<tr>
+<td>Non controling interests</td>
+<td>(249)</td>
+<td>-3.9%</td>
+</tr>
+<tr>
+<td>Net income Group Share stated</td>
+<td>1,824</td>
+<td>-4.2%</td>
+</tr>
+</table>
+
+
+<!-- PageNumber="☒ CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="17" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+
+# Crédit Agricole S.A. Business lines
+
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageNumber="☒" -->
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="18" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## AG - INSURANCE
+
+
+<figure>
+<figcaption>Savings/Retirement Net inflows (€bn)</figcaption>
+
++4.0
+
++2.4
+
++2.0
+
++1.0
+
++1.4
+
++1.5
+
++1.9
+
++1.1
+
+(0.5)
+
+Q1-24
+
+Q4-24
+
+Q1-25
+
+· In Eutros
+
+. Unit-linked
+
+</figure>
+
+
+<figure>
+<figcaption>Property and personal insurance (1) Premium income (€bn)</figcaption>
+
+V
+
+6.7%
+
+3.7
+
+4.0
+
+Q1/Q1
+
+2.6
+
+2.4
+
+2.6
+
++8.0%
+
+1.2
+
+1.3
+
+1.3
+
+1.4
+
++4.3%
+
+Q1-24
+
+Q4-24
+
+Q1-25
+
+.Death & disability / Creditor / Group
+
+.Property & Casualty
+
+</figure>
+
+
+### Historical premium income in Q1-25 at €14.8bn (+21% Q1/Q1)
+
+Savings/retirement: continuing success of bonus campaigns and digitisation of
+customer journeys
+
+· Gross inflows: €10.8bn (+27% Q1/Q1) driven by strong growth in France (full effect of
+commercial events over the quarter); UL rate 34.3%
+
+· Outstandings (2): €352.4bn (+1% March/Dec.), driven by record quarterly net inflows and
+market effects; UL rate 30.0%
+
+Property & casualty: performance driven by the increase in average premium (pricing revisions
+and evolution of the product mix), and portfolio growth of +5% year on year (>16.8 m contracts)
+
+Personal insurance: excellent quarter in group insurance (+24%), due to the entry into
+effect of the collective health contract with the Ministry of Agriculture and Food Sovereignty3;
+creditor activities (+2%) and individual death & disability insurance (+3%) are resilient
+
+1\. Death and disability, creditor, group insurance
+
+2\. Savings, retirement and funeral insurance.
+
+3\. The Agrica - Crédit Agricole Assurances - Groupama consortium chosen to ensure the new health care scheme for employees as of 01/01/25
+
+
+<table>
+<tr>
+<th>Contribution to earnings (in €m)</th>
+<th>Q1-25</th>
+<th>A Q1/Q1</th>
+</tr>
+<tr>
+<td>Revenues</td>
+<td>727</td>
+<td>+0.7%</td>
+</tr>
+<tr>
+<td>Gross operating income</td>
+<td>632</td>
+<td>+0.1%</td>
+</tr>
+<tr>
+<td>Income before tax</td>
+<td>631</td>
+<td>+0.1%</td>
+</tr>
+<tr>
+<td>Net income Group Share</td>
+<td>439</td>
+<td>(11.0%)</td>
+</tr>
+</table>
+
+
+Revenues(4) rose slightly Q1/Q1, boosted by Savings/Retirement (related
+to the increase in outstandings) and Property & casualty, offsetting a
+narrowing of the technical margins in creditor combined with
+methodological effects
+
+CSM: €25.8bn (+2% March/Dec.); new business contribution higher than
+CSM allocation
+
+Combined ratio(5) 93.2% (-0.6 pp year on year)
+
+Pre-tax income up +2% excluding the effect of replacing Tier 1 debt with
+Tier 2 debt in September 2024(6)
+
+4\. Cf. slide 58 for the split of activities in the revenues and slide 59 for proforma series for the split in 2024
+
+5\. Combined property & casualty ratio in France (Pacifica) including discounting and excluding undiscounting, net of
+reinsurance: (claims + operating expenses + fee and commission income)/gross premiums earned. Undiscounted
+ratio: 95.9% (-0.4 pp year-on-year)
+
+6\. The cost of Tier 1 debt is recorded as minority interest, while the cost of Tier 2 debt is deducted from revenues.
+
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="19" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## AG - ASSET MANAGEMENT (AMUNDI)
+
+
+<figure>
+<figcaption>Assets under management (in €bn)</figcaption>
+
+6.2%
+
+0.3%
+
+2,116
+
+2,240
+
+\+ 5.8
+
+\+ 22.4
+
+\+ 2.9
+
+2,247
+
+332
+
+372
+
+\- 24.0
+
+362
+
+JVs
+
++€31.1bn
+
+1,137
+
+1,162
+
+1,186
+
+· Institutionals
+
+647
+
+706
+
+700
+
+Retail
+
+Mar. 24
+
+Dec. 24
+
+Retail
+
+Institutionals
+
+JVs
+
+Market/Forex
+effect
+
+Mar. 25
+
+</figure>
+
+
+### Record quarterly inflows of MLT assets at +€37bn
+
+· Continued dynamic in strategic areas: ETFs +€10bn, third-party distributors +€8bn,
+Asia +€8bn
+
+· Institutional investors: winning of a major ESG equity index mandate with People's
+Pension in the UK (+€21bn), seasonal outflows on treasury products for corporates
+
+· JV: good inflows in Korea, stabilisation in China, outflows in India related to the end of
+the tax year and correction of local markets since Q4 2024
+
+New record for assets under management: €2,247bn thanks to +€70bn of net inflows
+year on year, a strong negative foreign exchange impact (-€26bn) in Q1-25
+
+Finalisation of partnership with Victory Capital announced on 1 April 2025
+
+
+<table>
+<tr>
+<th>Contribution to earnings (in €m)</th>
+<th>Q1-25</th>
+<th>A Q1/Q1</th>
+</tr>
+<tr>
+<td>Revenues</td>
+<td>892</td>
+<td>+11.0%</td>
+</tr>
+<tr>
+<td>Operating expenses</td>
+<td>(496)</td>
+<td>+10.6%</td>
+</tr>
+<tr>
+<td>Gross operating income</td>
+<td>396</td>
+<td>+11.6%</td>
+</tr>
+<tr>
+<td>Equity-accounted entities</td>
+<td>28</td>
+<td>(3.9%)</td>
+</tr>
+<tr>
+<td>Income before tax</td>
+<td>419</td>
+<td>+9.3%</td>
+</tr>
+<tr>
+<td>Net income</td>
+<td>275</td>
+<td>(6.9%)</td>
+</tr>
+<tr>
+<td>Net income Group Share</td>
+<td>183</td>
+<td>(7.3%)</td>
+</tr>
+<tr>
+<td>Cost/Income ratio (%)</td>
+<td>55.6%</td>
+<td>-0.2 pp</td>
+</tr>
+</table>
+
+
+Revenues: management fees +7.7% Q1/Q1 in a context of market
+appreciation; performance fees +30.7% (Q1-24 base low); technology
+revenues +46.2% with integration of aixigo and strong organic growth
+of activity (+21%)
+
+Expenses: improvement in cost/income ratio, despite integration
+costs related to Victory(1) (54.8% excluding Victory integration costs);
+scope effect related to Alpha Associates and aixigo; excluding these
+elements, expenses rose by +6.3%
+
+1\. Integration costs of -€7m in Q1-25 vs. - €13m in Q4-24, related to Victory and aixigo
+
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="20" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## AG - WEALTH MANAGEMENT (INDOSUEZ WEALTH MANAGEMENT)
+
+
+<figure>
+<figcaption>Assets under management (in €bn)</figcaption>
+
+60.2%
+
+-0.7%
+
+215
+
+\+ 0.8
+
+213
+
+\- 2.0
+
+133
+
+Mar. 24
+
+Dec. 24
+
+Net Inflows
+
+Market/Forex
+effect
+
+Mar. 25
+
+</figure>
+
+
+### Activity remains buoyant
+
+· Positive inflows, driven by France and Luxembourg
+
+· Unfavourable market effect this quarter
+
+
+### Plan to acquire Thaler Bank in Switzerland announced on 4 April 2025
+
+<!-- PageFooter="Breakdown of Indosuez Wealth Management and LCL Banque Privée AuM available in appendix." -->
+
+
+<table>
+<tr>
+<th>Contribution to earnings (in €m)</th>
+<th>Q1-25</th>
+<th>A Q1/Q1</th>
+</tr>
+<tr>
+<td>Revenues</td>
+<td>439</td>
+<td>+66.4%</td>
+</tr>
+<tr>
+<td>Operating expenses</td>
+<td>(344)</td>
+<td>+60.7%</td>
+</tr>
+<tr>
+<td>Gross operating income</td>
+<td>95</td>
+<td>+91.3%</td>
+</tr>
+<tr>
+<td>Income before tax</td>
+<td>89</td>
+<td>x 2.3</td>
+</tr>
+<tr>
+<td>Net income Group Share</td>
+<td>58</td>
+<td>x 2.3</td>
+</tr>
+<tr>
+<td>Cost/Income ratio (%)</td>
+<td>78.4%</td>
+<td>-2.8 pp</td>
+</tr>
+</table>
+
+
+Revenues benefiting from the integration of Degroof Petercam(1) and
+the very positive trend in transactional fee and commission income;
+good resilience of NIM
+
+Expenses stable excluding scope effect (1) and integration costs(2);
+cost/income ratio of 75.5% excluding integration costs (2)
+
+1\. Degroof Petercam data for the quarter included in Wealth Management results: Revenues of €164m and
+expenses of -€115m (excluding integration costs partly borne by Degroof Petercam)
+
+2\. Q1-25 integration costs: - €13m (impacting the operating expenses line)
+
+<!-- PageNumber="☒ CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="21" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## LARGE CUSTOMERS - CORPORATE AND INVESTMENT BANKING
+
+Revenues (€m)
+
+
+<figure>
+
++7.3%
+
+Var
+Q1/Q1
+
+1,887
+
+1,758
+
+193
+
++31.6%
+
+Investment
+banking
+
+147
+
+#1 - EUR Green, Social &
+Sustainable bonds (1)
+#2 - All Bonds in EUR Worldwide (2)
+
+Mkts
+
+823
+
+·Capital markets
+
+778
+
++5.9%
+
+5€
+#1 - Syndicated loans in France (2)
+
+#2 - Syndicated loans in EMEA (2)
+
+Structured finance
+
+288
+
+315
+
++9.4%
+
+Fin
+
+Commercial
+banking & other
+
+545
+
+555
+
++1.7%
+
+Q1-24
+
+Q1-25
+
+</figure>
+
+
+Capital markets and investment banking: 10.0% Q1/Q1. Compared with a high baseline
+in Q1-24, further growth in revenues across all capital markets activities, buoyed by high
+volatility. A dynamic performance in structured equity activities in investment banking.
+
+Financing activities: +4.4% Q1/Q1, driven by a very positive performance of asset and
+project financing (Green energy and Aeronautics) and by transaction banking activities
+(Trade finance and Export finance).
+
+1\. Bloomberg en EUR
+
+2\. Refinitiv LSEG
+
+
+<table>
+<tr>
+<th>Contribution to earnings (in €m)</th>
+<th>Q1-25</th>
+<th>A Q1/Q1</th>
+</tr>
+<tr>
+<td>Revenues</td>
+<td>1,887</td>
+<td>+7.3%</td>
+</tr>
+<tr>
+<td>Operating expenses</td>
+<td>(992)</td>
+<td>+7.5%</td>
+</tr>
+<tr>
+<td>Gross operating income</td>
+<td>895</td>
+<td>+7.1%</td>
+</tr>
+<tr>
+<td>Cost of risk</td>
+<td>24</td>
+<td>(35.0%)</td>
+</tr>
+<tr>
+<td>Income before tax</td>
+<td>919</td>
+<td>+5.3%</td>
+</tr>
+<tr>
+<td>Net income Group Share</td>
+<td>648</td>
+<td>(0.5%)</td>
+</tr>
+<tr>
+<td>Cost/Income ratio (%)</td>
+<td>52.6%</td>
+<td>+0.1 pp</td>
+</tr>
+</table>
+
+
+Revenues: the best quarter ever
+
+Expenses: increase due to IT investments and growth in business
+lines
+
+Cost of risk recorded net reversal this the quarter, notably in relation
+to synthetic securitisations
+
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="22" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## LARGE CUSTOMERS - ASSET SERVICING (CACEIS)
+
+
+<figure>
+<figcaption>Assets under custody - AUC (€bn)</figcaption>
+
+9,0%
+
+3,3%
+
+5 467
+
+5 015
+
+5 291
+
+Mars 24
+
+Déc. 24
+
+Mars 25
+
+</figure>
+
+
+<figure>
+
+Assets under administration - AUA
+(€bn)
+
+4,7%
+
+5,3%
+
+3 575
+
+3 415
+
+3 397
+
+Mars 24
+
+Déc. 24
+
+Mars 25
+
+</figure>
+
+
+Assets under custody and administration increased over the quarter and over the
+year, benefiting from favourable markets and new customer acquisitions.
+
+Settlement and delivery volumes: the upwards trend continued (+10% Q1/Q1), mainly
+driven by France and Luxembourg
+
+1\. ISB integration costs: - €9m on Q1-25 (-€20m in Q1-24)
+
+
+<table>
+<tr>
+<th>Contribution to earnings (in €m)</th>
+<th>Q1-25</th>
+<th>A Q1/Q1</th>
+</tr>
+<tr>
+<td>Revenues</td>
+<td>522</td>
+<td>+2.7%</td>
+</tr>
+<tr>
+<td>Operating expenses</td>
+<td>(368)</td>
+<td>(1.6%)</td>
+</tr>
+<tr>
+<td>Gross operating income</td>
+<td>153</td>
+<td>+14.6%</td>
+</tr>
+<tr>
+<td>Cost of risk</td>
+<td>1</td>
+<td>n.m.</td>
+</tr>
+<tr>
+<td>Equity-accounted entities</td>
+<td>6</td>
+<td>+39.0%</td>
+</tr>
+<tr>
+<td>Income before tax</td>
+<td>160</td>
+<td>+19.1%</td>
+</tr>
+<tr>
+<td>Net income Group Share</td>
+<td>75</td>
+<td>+6.0%</td>
+</tr>
+<tr>
+<td>Cost/Income ratio (%)</td>
+<td>70.6%</td>
+<td>-3.1 pp</td>
+</tr>
+</table>
+
+
+Revenues up, driven by the favourable evolution of the NIM and fee and
+commission income on flow and transaction activities.
+
+Expenses decreased Q1/Q1 due to lower ISB integration costs(1);
+excluding this effect, expenses increased slightly pending the
+acceleration of synergies.
+
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="23" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## SFS - PERSONAL FINANCE AND MOBILITY
+
+
+<figure>
+<figcaption>Gross managed loans (€bn) Consolidated loans outstanding (€bn)</figcaption>
+
++5.6%
+
+114.4
+
+119.3
+
+120.7
+
+A Mar./Mar.
+
+.CA Group
+(LCL & RBs)
+
+23.8
+
+Other
+entities
+
+CAPFM
+France
+
+22.7
+
+23.7
+
++4.4%
+
+12.0
+
+12.5
+
+Automobile
+(CA Auto Bank +
+partnerships
+auto)
+
+45.6
+
+48.4
+
+49.6
+
++8.6%
+
+Consolidated
+loans
+Q1-25:
+€68.7bn
+
+17.7
+
+.Other entities
+
+46.0
+
+47.3
+
+47.4
+
++3.0%
+
+26.5
+
+Agos
+
+CA Auto
+Bank
+
+Mar. 24
+
+Dec. 24
+
+Mar. 25
+
+</figure>
+
+
+Production -6.4% Q1/TQ1 to €11.0bn, decrease related to the economic context
+adversely affecting the automotive market in Europe and China; car financing(1) represents
+48.5% of total production in the quarter
+
+
+### Average customer production rate up slightly by +3 bp Q1/Q4
+
+Assets under management increased across three sectors; the automotive sector
+benefited from the consolidation of GAC Leasing this quarter and the development of car
+rental activities; consolidated outstandings +0.8% March/March
+
+1\. CA Auto Bank, automotive JVs and auto activities of other entities
+
+2\. Cost of risk for the last four quarters divided by the average of the outstandings at the start of all four quarters of the year
+
+3\. Non-recurring items in Q1-25 of €12m
+
+
+<table>
+<tr>
+<th>Contribution to earnings (in €m)</th>
+<th>Q1-25</th>
+<th>A Q1/Q1</th>
+</tr>
+<tr>
+<td>Revenues</td>
+<td>683</td>
+<td>+2.0%</td>
+</tr>
+<tr>
+<td>Operating expenses</td>
+<td>(370)</td>
+<td>+4.3%</td>
+</tr>
+<tr>
+<td>Gross operating income</td>
+<td>313</td>
+<td>(0.5%)</td>
+</tr>
+<tr>
+<td>Cost of risk</td>
+<td>(225)</td>
+<td>+13.0%</td>
+</tr>
+<tr>
+<td>Equity-accounted entities</td>
+<td>38</td>
+<td>+18.1%</td>
+</tr>
+<tr>
+<td>Income before tax</td>
+<td>126</td>
+<td>(14.3%)</td>
+</tr>
+<tr>
+<td>Net income Group Share</td>
+<td>106</td>
+<td>+7.5%</td>
+</tr>
+<tr>
+<td>Cost/Income ratio (%)</td>
+<td>54.2%</td>
+<td>+1.2 pp</td>
+</tr>
+</table>
+
+
+Revenues: positive price and volume effects Q1/Q1; increase in the
+production margin rate of +32 bp Q1/Q1 (and +9 bp Q1/Q4)
+
+Expenses: increase related to employee expenses and IT expenses,
+compared with a low Q1-24
+
+Cost of risk/outstandings(2) at 130 bp, a slight deterioration of +13 bp
+Q1/Q1, mainly on the international subsidiaries
+
+Equity-accounted entities: down -19.3% excluding non-recurring
+items(3) related to the Chinese market
+
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="24" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## SFS - LEASING & FACTORING
+
+
+<figure>
+<figcaption>Leasing outstandings (in €bn)</figcaption>
+
++5,7%
+
+A Mar./Mar.
+
+19,4
+
+20,3
+
+20,5
+
+. International
+
+4,0
+
+4,3
+
+4,4
+
++10,6%
+
+. France
+
+15,4
+
+16,0
+
+16,1
+
++4,5%
+
+Mar. 24
+
+Dec. 24
+
+Mar. 25
+
+</figure>
+
+Leasing: production +3.0% Q1/Q1 driven by real estate leasing and renewable energy
+financing in France
+
+
+Factoring: production down -5.1% Q1/Q1, mainly abroad -31.6% Q1/Q1 with a base
+effect in Germany; increased production in France +16.0% Q1/Q1 benefiting from
+significant deals; financed outstandings +14.4% March/March and factored revenues
+increased (+5.4% Q1/Q1)
+
+
+<table>
+<tr>
+<th>Contribution to earnings (in €m)</th>
+<th>Q1-25</th>
+<th>A Q1/Q1</th>
+</tr>
+<tr>
+<td>Revenues</td>
+<td>185</td>
+<td>+4.8%</td>
+</tr>
+<tr>
+<td>Operating expenses</td>
+<td>(104)</td>
+<td>+4.6%</td>
+</tr>
+<tr>
+<td>Gross operating income</td>
+<td>82</td>
+<td>+5.0%</td>
+</tr>
+<tr>
+<td>Cost of risk</td>
+<td>(24)</td>
+<td>+21.5%</td>
+</tr>
+<tr>
+<td>Income before tax</td>
+<td>56</td>
+<td>(0.7%)</td>
+</tr>
+<tr>
+<td>Net income Group Share</td>
+<td>42</td>
+<td>(3.7%)</td>
+</tr>
+<tr>
+<td>Cost/Income ratio (%)</td>
+<td>56.0%</td>
+<td>-0.1 pp</td>
+</tr>
+</table>
+
+
+Revenues increased, driven by equipment leasing and factoring
+Expenses increase in mechanism
+
+Cost of risk up due to professional markets and SMEs; cost of
+risk/outstandings(1) at 25 bp, +3 bp vs Q1-24
+
+1\. Cost of risk for the last four quarters divided by the average of the outstandings at the start of all four
+quarters of the year
+
+<!-- PageNumber="☒" -->
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="25" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="GROUPE CRÉDIT AGRICOLE" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## RB - LCL
+
+
+<figure>
+<figcaption>Loans outstanding (€bn) Customer assets (€bn)</figcaption>
+
++1.6%
+
++2.2%
+
+A Mar./Mar.
+
+168.1
+
+170.7
+
+170.7
+
+A Mar./Mar.
+
+250.8
+
+255.0
+
+256.5
+
+24.4
+
+24.6
+
+24.7
+
++1.1%
+
+31.3
+
+31.9
+
+31.9
+
++2.0%
+
+87.9
+
+89.7
+
+89.0
+
++1.2%
+
+8.6
+
+8.9
+
+8.5
+
+(1.0%)
+
+103.8
+
+105.3
+
+105.6
+
++1.7%
+
+162.9
+
+165.3
+
+167.5
+
++2.8%
+
+Mar. 24
+
+Dec. 24
+
+Mar. 25
+
+Mar. 24
+
+Dec. 24
+
+Mar. 25
+
+Home loan
+
+Consumer credit
+
+Corporate
+
+Professionals
+
+On-B/S
+
+Off-B/S
+
+</figure>
+
+
+### Customer capture: +67k customers in Q1-25
+
+
+#### Loans outstanding increased year on year, stable over the quarter
+
+Loan production(1) increased by +32% Q4/Q4, driven by home loans (+46% Q1/Q1; - 34%
+Q1/Q4); production rate at 3.18% in Q1 on average, and continued improvement in the
+stock rate (+5 bp Q1/Q4 and +19 bp Q1/Q1); dynamic production continues in corporate
+loans (+49% Q1/Q1)
+
+Customer assets increased year on year and in this quarter; off-balance sheet resources
+benefited from positive net inflows in life insurance and were affected by an unfavourable
+market effect over the quarter
+
+
+##### Equipment rate in Home-Car-Health insurance(2): +0.2 pp March/March at 28.0%
+
+1\. See Appendix slide on page 64
+
+2\. Equipment rate - Home-Car-Health policies, Legal, All Mobile/Portable or personal accident insurance
+
+
+<table>
+<tr>
+<th>Contribution to earnings (in €m)</th>
+<th>Q1-25</th>
+<th>A Q1/Q1</th>
+</tr>
+<tr>
+<td>Revenues</td>
+<td>963</td>
+<td>+1.0%</td>
+</tr>
+<tr>
+<td>Operating expenses</td>
+<td>(625)</td>
+<td>+3.8%</td>
+</tr>
+<tr>
+<td>Gross operating income</td>
+<td>338</td>
+<td>(3.9%)</td>
+</tr>
+<tr>
+<td>Cost of risk</td>
+<td>(92)</td>
+<td>(22.9%)</td>
+</tr>
+<tr>
+<td>Income before tax</td>
+<td>247</td>
+<td>+5.3%</td>
+</tr>
+<tr>
+<td>Net income Group Share</td>
+<td>129</td>
+<td>(25.6%)</td>
+</tr>
+<tr>
+<td>Cost/Income ratio (%)</td>
+<td>64.9%</td>
+<td>+1.8 pp</td>
+</tr>
+</table>
+
+
+Revenues growth: increase in fee and commission income (+3.6%
+Q1/Q1), mainly driven by insurance (life and non-life), offsetting the
+decrease in the NIM (-1.7% Q1/Q1); the NIM benefited from the
+progressive repricing of loans and the limited decrease in the cost of
+resources and refinancing, mitigating a less favourable contribution of
+macro-hedging
+
+Expenses: increase due to the acceleration of investment (IT and
+employee expenses)
+
+Cost of risk/outstandings (3): 20 bp, remaining at a high level on
+professionals
+
+3\. Cost of risk for the last four quarters divided by the average of the outstandings at the start of all four
+quarters of the year
+
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="26" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## RB - CA ITALY
+
+
+<figure>
+<figcaption>Loans outstanding* (€bn)</figcaption>
+
+1.6%
+
+60.1
+
+62.1
+
+61.1
+
+Mar. 24
+
+Dec. 24
+
+Mar. 25
+
+</figure>
+
+\* Net of POCI outstandings
+
+
+<figure>
+<figcaption>Customer assets (€bn)</figcaption>
+
+1.7%
+
+Δ Mars / Mars
+
+116.3
+
+120.0
+
+118.2
+
+50.8
+
+54.0
+
+54.1
+
+6.5%
+
+65.5
+
+66.0
+
+64.1
+
+-2.1%
+
+Mar. 24
+
+Dec. 24
+
+Mar. 25
+
+.On-balance sheet
+
+· Off-balance sheet **
+
+** Excluding assets under custody
+
+</figure>
+
+
+Activity/Customer Capture: positive, with +53k new customers over the quarter and a
+property and casualty insurance equipment rate of over 20%(1); loan production
+increased (+19.2% Q1/Q1) in all markets
+
+Loans outstanding increased March/March in a stable market(2), driven by individuals
+(+3.0% March/March) and stable on corporates; the loan stock rate decreased (-34 bp
+Q1/Q4) due to the change in interest rates on the market
+
+Customer assets: on-balance sheet deposits down March/March (continuing decrease
+in the cost of on-balance sheet deposits); off-balance sheet deposits increased
+March/March with positive net flows and market effect
+
+1\. Property and casualty insurance equipment rate of 20.3% in Q1-2025 (+1.0 pp Q1/Q1)
+
+2\. Source Abi Monthly Outlook April 2025: stable +0.0% March/March for all loans
+
+
+<table>
+<tr>
+<th>Contribution to earnings (in €m)</th>
+<th>Q1-25</th>
+<th>A Q1/Q1</th>
+</tr>
+<tr>
+<td>Revenues</td>
+<td>777</td>
+<td>+0.3%</td>
+</tr>
+<tr>
+<td>Operating expenses</td>
+<td>(384)</td>
+<td>+0.5%</td>
+</tr>
+<tr>
+<td>Gross operating income</td>
+<td>394</td>
+<td>+0.2%</td>
+</tr>
+<tr>
+<td>Cost of risk</td>
+<td>(56)</td>
+<td>(7.9%)</td>
+</tr>
+<tr>
+<td>Income before tax</td>
+<td>337</td>
+<td>+1.7%</td>
+</tr>
+<tr>
+<td>Net income Group Share</td>
+<td>178</td>
+<td>(0.8%)</td>
+</tr>
+<tr>
+<td>Cost/Income ratio (%)</td>
+<td>49.4%</td>
+<td>+0.1 pp</td>
+</tr>
+</table>
+
+
+Revenues: the decrease in the NIM (-5.8% Q1/Q1) is offset by the
+increase in fee and commission income (+7.4% Q1/Q1), driven by
+fee and commission income on assets under management (+11.6%
+Q1/Q1)
+
+
+### Expenses under control
+
+Cost of risk: continuous improvement in asset quality and
+coverage ratio
+
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="27" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## RB - OTHER IRB
+
+Loans outstanding Poland, Egypt,
+Ukraine (€bn)
+
+
+<figure>
+
++4.7%
+
+(1)
+
++5.8%
+
+7.0
+
+7.3
+
+7.4
+
+Mar. 24
+
+Dec. 24
+
+Mar. 25
+
+Loans outstanding
+
+</figure>
+
+
+Customer assets Poland, Egypt,
+Ukraine (€bn)
+
+
+<figure>
+
++11.5%(1)
+
++11.1%
+
+12.1
+
+12.0
+
+10.8
+
+0.9
+
+1.0
+
+0.8
+
+10.0
+
+11.2
+
+11.0
+
+Mar. 24
+
+Dec. 24
+
+Mar. 25
+
+On-balance sheet
+
+Off-balance sheet
+
+</figure>
+
+
+CA Poland: +64k new customers during the quarter; loan production stable(1)
+Q1/Q1; loans outstanding +0.7%(1) Q1/Q1 driven by the retail segment; on-
+balance sheet deposits +13.8%(1) Q1/Q1
+
+CA Egypt: dynamic commercial activity over all markets; loans outstanding
++27.8% (1) Q1/Q1; on-balance sheet deposits +12.5% (1)
+
+Liquidity: still strong; net deposits/loans surplus +€3.9bn at 31 March 2025
+
+
+<table>
+<tr>
+<th>Contribution to earnings (in €m)</th>
+<th>Q1-25</th>
+<th>A Q1/Q1</th>
+</tr>
+<tr>
+<td>Revenues</td>
+<td>248</td>
+<td>(12.2%)</td>
+</tr>
+<tr>
+<td>Operating expenses</td>
+<td>(131)</td>
+<td>+5.8%</td>
+</tr>
+<tr>
+<td>Gross operating income</td>
+<td>117</td>
+<td>(26.3%)</td>
+</tr>
+<tr>
+<td>Cost of risk</td>
+<td>(10)</td>
+<td>(51.8%)</td>
+</tr>
+<tr>
+<td>Income before tax</td>
+<td>107</td>
+<td>(22.4%)</td>
+</tr>
+<tr>
+<td>Net income Group Share</td>
+<td>67</td>
+<td>(12.4%)</td>
+</tr>
+<tr>
+<td>Cost/Income ratio (%)</td>
+<td>52.8%</td>
+<td>+9.0 pp</td>
+</tr>
+</table>
+
+
+CA Poland: revenues +5.3% Q1/Q1(1), with a rise in NIM; expenses
++7.7%(1) impacted by employee expenses and taxes; cost of risk
+improving; net income Group share increased
+
+CA Egypt: revenues -13.2% Q1/Q1(1) (exceptional foreign exchange
+activity base effect of Q1-24), increase in NIM; expenses +17.9%
+Q1/Q1(1) affected by employee expenses and inflation; cost of risk at
+a low level and a steep drop in net income Group share
+
+CA Ukraine: Positive net income Group share
+
+<!-- PageFooter="1. Change excluding FX impact" -->
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="28" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## CORPORATE CENTRE
+
+
+<figure>
+
+Q1-24
+
+Q2-24
+
+Q3-24
+
+Q4-24
+
+Q1-25
+
+18
+
+44
+
+26\)
+
+( 78)
+
+( 54)
+
+( 29)
+
+( 161)
+
+( 48)
+
+( 245)
+
+-107
+
+-102
+
+-161
+
+-238
+
+Other elements
+
+IFRIC21
+
+Structural net income excl. IFRIC21
+
+Stated net income
+
+</figure>
+
+
+### Structural net income Group share:
+
+· Favorable impact of the revaluation of Banco BPM shares, partly offset by the
+IFRIC tax accounting (in one go this quarter compared to two quarters in 2024)
+
+· Other elements of the division: negative effects related to a foreign exchange
+gain recorded in Q1 2024 (associated with an AT1 redemption) and ESTER/BOR
+volatility
+
+
+### Post-Q1 2025, Banco BPM's equity stake increased to 19.8%
+
+
+<table>
+<tr>
+<td>Contribution to earnings (in €m)</td>
+<td>Q1-25</td>
+<td>A Q1/Q1</td>
+</tr>
+<tr>
+<td>Revenues</td>
+<td>(67)</td>
+<td>+40</td>
+</tr>
+<tr>
+<td>Operating expenses</td>
+<td>(81)</td>
+<td>(25)</td>
+</tr>
+<tr>
+<td>Gross operating income</td>
+<td>(148)</td>
+<td>+15</td>
+</tr>
+<tr>
+<td>Cost of risk</td>
+<td>(21)</td>
+<td>(10)</td>
+</tr>
+<tr>
+<td>Equity-accounted entities</td>
+<td>(22)</td>
+<td>(2)</td>
+</tr>
+<tr>
+<td>Net income Group share</td>
+<td>(102)</td>
+<td>+5</td>
+</tr>
+<tr>
+<td>Of which structural net income :</td>
+<td>(54)</td>
+<td>+52</td>
+</tr>
+<tr>
+<td>- Balance sheet &amp; holding Crédit Agricole S.A.</td>
+<td>(314)</td>
+<td>(19)</td>
+</tr>
+<tr>
+<td>- Other activities (CACIF, CA Immobilier, BforBank, CATE, etc.)</td>
+<td>252</td>
+<td>+67</td>
+</tr>
+<tr>
+<td>- Support functions (CAPS, CAGIP, SCI)</td>
+<td>9</td>
+<td>+4</td>
+</tr>
+<tr>
+<td>Of which other elements of the division</td>
+<td>(48)</td>
+<td>(47)</td>
+</tr>
+</table>
+
+
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="29" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+
+# Crédit Agricole Group Regional Banks
+
+<!-- PageFooter="☒ CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="30" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE GROUP" -->
+
+
+## REGIONAL BANKS
+
+
+<figure>
+<figcaption>Loans outstanding (€bn)</figcaption>
+
++0.8%
+
+A Mar./ Mar.
+
+644
+
+648
+
+649
+
+229
+
+231
+
+232
+
++1.2%
+
++3.2%
+
+391
+
+392
+
+392
+
++0.4%
+
+Mar. 24
+
+Dec. 24
+
+Mar. 25
+
+</figure>
+
+
+<figure>
+<figcaption>Customer assets (€bn)</figcaption>
+
++2.5%
+
+A Mar./ Mar.
+
+893
+
+911
+
+916
+
+298
+
+305
+
+313
+
++5.0%
+
+595
+
+606
+
+603
+
++1.3%
+
+Mar. 24
+
+Dec. 24
+
+Mar. 25
+
+On-balance sheet assets
+
+Off-balance sheet
+
+</figure>
+
+
+SMEs-Small business .- Farm .- Local auth. . Consumer credit . Home loans
+
+Customers: +319k new customers over the quarter, stable share of customers' principal
+sight deposits and increase in the rate of digital customers
+
+Loans: March/March outstandings and market share(1) slightly up; loan production
++19.4% Q1/Q1, driven by home loans (+37% Q1/Q1; - 4.8% Q1/Q4 seasonal effect);
+home loans production rate 3.18%(2); stock rate of all loans +11 bp year on year
+
+Deposits: up year-on-year, mainly driven by off-balance sheet deposits, benefiting from
+strong inflows in life insurance; increase in on-balance sheet deposits market share year
+on year(3)
+
+Equipment rate(4): property and casualty insurance 44.2% (+0.8 pp vs March 2024)
+
+Payment instruments: number of cards +1.8% year on year; 17% premium cards in the
+stock (+1.8 pp year on year)
+
+1\. Source BdF, total loans market share 22.7% at end-December 2024 (+0.1% vs December 2023)
+
+
+<table>
+<tr>
+<th>Regional Banks' consolidated results (in €m)</th>
+<th>Q1-25 stated</th>
+<th>A Q1/Q1 stated</th>
+</tr>
+<tr>
+<td>Revenues</td>
+<td>3,339</td>
+<td>+1.3%</td>
+</tr>
+<tr>
+<td>Operating expenses</td>
+<td>(2,509)</td>
+<td>+1.8%</td>
+</tr>
+<tr>
+<td>Gross operating income</td>
+<td>830</td>
+<td>(0.0%)</td>
+</tr>
+<tr>
+<td>Cost of risk</td>
+<td>(318)</td>
+<td>+28.7%</td>
+</tr>
+<tr>
+<td>Income before tax</td>
+<td>522</td>
+<td>(11.6%)</td>
+</tr>
+<tr>
+<td>Net income Group Share</td>
+<td>346</td>
+<td>(21.2%)</td>
+</tr>
+<tr>
+<td>Cost/Income ratio (%)</td>
+<td>75.2%</td>
+<td>+0.3 pp</td>
+</tr>
+</table>
+
+
+Revenues +2.6% excluding home purchase savings plans(5) due to
+the increase in the intermediation margin and stable fee and
+commission income, driven by management of accounts and
+payment instruments
+
+Expenses increased and were controlled
+
+Cost of risk affected by model revisions this quarter; cost of
+risk/outstandings(6) at 21 bp, +1bp vs.Q4-24
+
+2\. Average production rate for January and February 2025
+
+3\. Source BdF, on-balance sheet deposits market share 20.1% at end-December 2024 (+0.2 pp vs December
+2023\)
+
+4\. Equipment rate - Home-Car-Health policies, Legal, All Mobile/Portable or personal accident insurance
+
+5\. Reversal of the provision for home purchase savings plans: in Q1-24 +€41m in revenues and +€30m in net
+income Group share
+
+6.Cost of risk/outstandings in rolling four-quarter period
+
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="31" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+
+## Appendices Economic scenario
+
+<!-- PageNumber="☒ CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="32" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+
+## APPENDICES STILL MODEST ACTIVITY AND VERY GRADUAL DECLINE IN INFLATION
+
+
+<figure>
+<figcaption>France, Italy, Eurozone - GDP Growth</figcaption>
+
+%
+
+8.8
+
+6.8
+
+6.3
+
+4.8
+
+3.6
+
+2.6
+
+1.1
+
+0.8
+
+0.5
+
+1.1
+
+0.5
+
+0.7
+
+0.8
+
+0.6
+
+1.0
+
+-6.1
+
+-7.6
+
+-9.0
+
+France
+
+Italy
+
+Euro zone
+
+</figure>
+
+Sources: Eurostat, Crédit Agricole S.A./ECO. Forecasts at 31 March 2025
+
+
+<figure>
+<figcaption>France, Italy, Eurozone - Unemployment rate</figcaption>
+
+14
+
+% of labour force
+
+13
+
+12
+
+11
+
+10
+
+9
+
+8
+
+7
+
+6
+
+5
+
+France
+
+Italy
+
+Euro zone
+
+4
+
+</figure>
+
+Sources: Eurostat, Crédit Agricole S.A./ECO. Forecasts at 31 March 2025
+
+
+2010
+
+2011
+
+2012
+
+2013
+
+2014
+
+2015
+
+2016
+1
+2017
+
+2018 2019
+2020
+
+2021
+
+2022
+
+2023
+
+2024
+
+2025
+
+
+<figure>
+<figcaption>France, Italy, Eurozone - Average annual Inflation (%)</figcaption>
+
+France
+
+Italy
+
+EuroZone
+
+8.7
+
+8.4
+
+5.9
+
+5.7
+
+6.0
+
+5.5
+
+2.6
+
+2.1
+
+1.9
+
+2.3
+
+2.4
+
+2.1
+
+2.2
+
+1.1
+
+1.1
+
+1.4
+
+1.8
+
+1.3
+
+2021
+
+2022
+
+2023
+
+2024
+
+2025
+
+2026
+
+</figure>
+
+
+Sources: Eurostat, Crédit Agricole S.A. Forecasts at 02 April 2024
+
+
+## France - institutional forecasts (GDP France)
+
+\+ IMF (January 2025): +0.8% in 2025 and +1.1% in 2026
+
+\- European Commission (Nov. 2024): +0.8% in 2025 and +1.4% in 2026
+
+\+ OECD (March 2025): +0.8% in 2025 and +1.0% in 2026
+
+\+ Banque de France (March 2025): +0.7% in 2025 and +1.2% in 2026
+
+Provisioning of performing loans: use of alternative scenarios in
+addition to the central scenario (Oct. 2024)
+
+\- A favourable scenario: French GDP +1.3% in 2025 and +1.6% in 2026
+
+\+ Unfavourable scenario: French GDP -0.1% in 2025 and +0.7% in 2026
+
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="33" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+
+## APPENDICES VERY CAUTIOUS MONETARY EASING
+
+
+### Interest rates, in euros (%)
+
+
+<figure>
+
+4
+
+%
+
+EURIBOR 3M
+
+3
+
+OAT 10Y
+
+2
+
+BUND 10Y
+
+1
+
+0
+
+¥7
+
+12.19
+
+03.20
+
+06.20
+
+09.20
+
+12.20
+
+03.21
+
+06.21
+
+09.21
+
+12.21
+
+03.22
+
+06.22
+
+09.22
+
+12.22
+
+03.23
+
+06.23
+
+09.23
+
+12.23
+
+03.24
+
+06.24
+
+09.24
+
+12.24
+
+03.25
+
+</figure>
+
+Sources: LSEG Datastream, Crédit Agricole SA/ECO. Data at 16 April 2025
+
+
+<figure>
+
+Equity indexes (base 100 = 31/12/2018)
+
+195
+
+CAC40
+
+175
+
+CAC40 (quarterly avg.)
+
+EURO STOXX 50
+
+155
+
+135
+
+115
+
+95
+
+75
+
+12.19
+
+03.20
+
+06.20
+
+09.20
+
+12.20
+
+03.21
+
+06.21
+
+09.21
+
+12.21
+
+03.22
+
+06.22
+
+09.22
+
+12.22
+
+03.23
+
+06.23
+
+09.23
+
+12.23
+
+03.24
+
+06.24
+
+09.24
+
+12.24
+
+03.25
+
+</figure>
+
+Sources: LSEG Datastream, Crédit Agricole SA/ECO. Data at 16 April 2025
+
+
+#### Equities (quarterly averages)
+
+\+ EuroStoxx 50: spot 7.2% Q1/Q4; average 8.4% Q1/Q4 (+11.7% Q1/Q1)
+Interest rates (month-end)
+
+\> 10-year OAT: 26 bp over the quarter and 65 bp vs March-24
+
+\- Spread at end-March 24:
+
+· OAT/Bund 68 bp (-15 bp vs. Dec-24 and +17 bp vs March-24)
+
+· BTP/Bund: 109 bps (-7 bp vs. Dec-24 and -29 bp vs March-24)
+
+Foreign exchange (month-end)
+
+\- EUR/USD: 4.5% vs Dec-24 and 0.2% vs. March-24
+
+
+<figure>
+<figcaption>France - Household and corporate leaders' confidence</figcaption>
+
+120
+
+110
+
+LT Average
+
+100
+
+90
+
+80
+
+70
+
+-Household confidence
+
+60
+
+Business sentiment
+
+50
+
+2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025
+
+</figure>
+
+Sources: Insee, Crédit Agricole SA/ECO. Data at end-March 2025
+
+
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="34" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+Appendices
+Earnings/Profitability
+
+<!-- PageNumber="☒ CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="35" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## APPENDICES Q1-25 RESULTS (AMOUNTS IN €M AND Q1/Q1 CHANGE)
+
+
+### Q1-25
+
+
+<table>
+<tr>
+<th>€m</th>
+<th>AG</th>
+<th>Ins.</th>
+<th>Asset Mgt.</th>
+<th>Wealth Mgt.</th>
+<th>LC</th>
+<th>CIB</th>
+<th>Asset servicing</th>
+<th>SFS</th>
+<th>CAPFM</th>
+<th>CAL&amp;F</th>
+<th>FRB</th>
+<th>IRB</th>
+<th>IRB others</th>
+<th>CA Italia</th>
+<th>Corp. center</th>
+<th>Total</th>
+</tr>
+<tr>
+<td>Revenues</td>
+<td>2,058</td>
+<td>727</td>
+<td>892</td>
+<td>439</td>
+<td>2,408</td>
+<td>1,887</td>
+<td>522</td>
+<td>868</td>
+<td>683</td>
+<td>185</td>
+<td>963</td>
+<td>1,025</td>
+<td>248</td>
+<td>777</td>
+<td>(67)</td>
+<td>7,256</td>
+</tr>
+<tr>
+<td>Operating expenses</td>
+<td>(936)</td>
+<td>(96)</td>
+<td>(496)</td>
+<td>(344)</td>
+<td>(1,360)</td>
+<td>(992)</td>
+<td>(368)</td>
+<td>(474)</td>
+<td>(370)</td>
+<td>(104)</td>
+<td>(625)</td>
+<td>(515)</td>
+<td>(131)</td>
+<td>(384)</td>
+<td>(81)</td>
+<td>(3,991)</td>
+</tr>
+<tr>
+<td>Gross operationg result</td>
+<td>1,123</td>
+<td>632</td>
+<td>396</td>
+<td>95</td>
+<td>1,048</td>
+<td>895</td>
+<td>153</td>
+<td>395</td>
+<td>313</td>
+<td>82</td>
+<td>338</td>
+<td>511</td>
+<td>117</td>
+<td>394</td>
+<td>(148)</td>
+<td>3,266</td>
+</tr>
+<tr>
+<td>Cost of risk</td>
+<td>(11)</td>
+<td>(0)</td>
+<td>(4)</td>
+<td>(6)</td>
+<td>25</td>
+<td>24</td>
+<td>1</td>
+<td>(249)</td>
+<td>(225)</td>
+<td>(24)</td>
+<td>(92)</td>
+<td>(66)</td>
+<td>(10)</td>
+<td>(56)</td>
+<td>(21)</td>
+<td>(413)</td>
+</tr>
+<tr>
+<td>Net income on other assets</td>
+<td>28</td>
+<td>-</td>
+<td>28</td>
+<td>-</td>
+<td>6</td>
+<td>-</td>
+<td>6</td>
+<td>36</td>
+<td>38</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>(22)</td>
+<td>47</td>
+</tr>
+<tr>
+<td>Tax</td>
+<td>(352)</td>
+<td>(189)</td>
+<td>(145)</td>
+<td>(18)</td>
+<td>(305)</td>
+<td>(256)</td>
+<td>(49)</td>
+<td>(12)</td>
+<td>2</td>
+<td>(14)</td>
+<td>(112)</td>
+<td>(137)</td>
+<td>(30)</td>
+<td>(107)</td>
+<td>92</td>
+<td>(827)</td>
+</tr>
+<tr>
+<td>Net income</td>
+<td>787</td>
+<td>442</td>
+<td>275</td>
+<td>70</td>
+<td>774</td>
+<td>663</td>
+<td>111</td>
+<td>170</td>
+<td>128</td>
+<td>42</td>
+<td>135</td>
+<td>308</td>
+<td>77</td>
+<td>230</td>
+<td>(99)</td>
+<td>2,073</td>
+</tr>
+<tr>
+<td>Non controling interests</td>
+<td>(107)</td>
+<td>(3)</td>
+<td>(92)</td>
+<td>(12)</td>
+<td>(50)</td>
+<td>(15)</td>
+<td>(35)</td>
+<td>(21)</td>
+<td>(21)</td>
+<td>0</td>
+<td>(6)</td>
+<td>(62)</td>
+<td>(10)</td>
+<td>(52)</td>
+<td>(3)</td>
+<td>(249)</td>
+</tr>
+<tr>
+<td>Net income Group Share</td>
+<td>680</td>
+<td>439</td>
+<td>183</td>
+<td>58</td>
+<td>723</td>
+<td>648</td>
+<td>75</td>
+<td>148</td>
+<td>106</td>
+<td>42</td>
+<td>129</td>
+<td>246</td>
+<td>67</td>
+<td>178</td>
+<td>(102)</td>
+<td>1,824</td>
+</tr>
+</table>
+
+
+### A Q1-25/Q1-24
+
+
+<table>
+<tr>
+<th>%</th>
+<th>AG</th>
+<th>Ins.</th>
+<th>Asset Mgt.</th>
+<th>Wealth Mgt.</th>
+<th>LC</th>
+<th>CIB</th>
+<th>Asset servicing</th>
+<th>SFS</th>
+<th>CAPFM</th>
+<th>CAL&amp;F</th>
+<th>FRB</th>
+<th>IRB</th>
+<th>IRB others</th>
+<th>CA Italia</th>
+<th>Corp. center</th>
+<th>Total</th>
+</tr>
+<tr>
+<td>Revenues</td>
+<td>+15%</td>
+<td>+1%</td>
+<td>+11%</td>
+<td>+66%</td>
+<td>+6%</td>
+<td>+7%</td>
+<td>+3%</td>
+<td>+3%</td>
+<td>+2%</td>
+<td>+5%</td>
+<td>+1%</td>
+<td>(3%)</td>
+<td>(12%)</td>
+<td>+0%</td>
+<td>(37%)</td>
+<td>+7%</td>
+</tr>
+<tr>
+<td>Operating expenses</td>
+<td>+24%</td>
+<td>+5%</td>
+<td>+11%</td>
+<td>+61%</td>
+<td>+5%</td>
+<td>+7%</td>
+<td>(2%)</td>
+<td>+4%</td>
+<td>+4%</td>
+<td>+5%</td>
+<td>+4%</td>
+<td>+2%</td>
+<td>+6%</td>
+<td>+1%</td>
+<td>+46%</td>
+<td>+9%</td>
+</tr>
+<tr>
+<td>Gross operationg result</td>
+<td>+8%</td>
+<td>+0%</td>
+<td>+12%</td>
+<td>+91%</td>
+<td>+8%</td>
+<td>+7%</td>
+<td>+15%</td>
+<td>+1%</td>
+<td>(1%)</td>
+<td>+5%</td>
+<td>(4%)</td>
+<td>(7%)</td>
+<td>(26%)</td>
+<td>+0%</td>
+<td>(9%)</td>
+<td>+4%</td>
+</tr>
+<tr>
+<td>Cost of risk</td>
+<td>× 3.9</td>
+<td>x 2.2</td>
+<td>x 16.1</td>
+<td>x 2.6</td>
+<td>(26%)</td>
+<td>(35%)</td>
+<td>n.m.</td>
+<td>+14%</td>
+<td>+13%</td>
+<td>+22%</td>
+<td>(23%)</td>
+<td>(19%)</td>
+<td>(52%)</td>
+<td>(8%)</td>
+<td>+86%</td>
+<td>+3%</td>
+</tr>
+<tr>
+<td>Net income on other assets</td>
+<td>(4%)</td>
+<td>n.m.</td>
+<td>(4%)</td>
+<td>n.m.</td>
+<td>+39%</td>
+<td>(100%)</td>
+<td>+39%</td>
+<td>+19%</td>
+<td>+18%</td>
+<td>n.m.</td>
+<td>n.m.</td>
+<td>n.m.</td>
+<td>n.m.</td>
+<td>n.m.</td>
+<td>+11%</td>
+<td>+9%</td>
+</tr>
+<tr>
+<td>Tax</td>
+<td>+60%</td>
+<td>+54%</td>
+<td>+64%</td>
+<td>x 2.3</td>
+<td>+30%</td>
+<td>+25%</td>
+<td>+66%</td>
+<td>(70%)</td>
+<td>n.m.</td>
+<td>+9%</td>
+<td>x 2.1</td>
+<td>(4%)</td>
+<td>(30%)</td>
+<td>+7%</td>
+<td>+12%</td>
+<td>+35%</td>
+</tr>
+<tr>
+<td>Net income</td>
+<td>(6%)</td>
+<td>(13%)</td>
+<td>(7%)</td>
+<td>x 2.3</td>
+<td>+0%</td>
+<td>(1%)</td>
+<td>+6%</td>
+<td>+5%</td>
+<td>+8%</td>
+<td>(4%)</td>
+<td>(26%)</td>
+<td>(6%)</td>
+<td>(19%)</td>
+<td>(1%)</td>
+<td>(12%)</td>
+<td>(4%)</td>
+</tr>
+<tr>
+<td>Non controling interests</td>
+<td>(9%)</td>
+<td>(80%)</td>
+<td>(6%)</td>
+<td>x 2.1</td>
+<td>+1%</td>
+<td>(7%)</td>
+<td>+5%</td>
+<td>+13%</td>
+<td>+13%</td>
+<td>x 10.9</td>
+<td>(25%)</td>
+<td>(13%)</td>
+<td>(46%)</td>
+<td>(0%)</td>
+<td>n.m.</td>
+<td>(4%)</td>
+</tr>
+<tr>
+<td>Net income Group Share</td>
+<td>(5%)</td>
+<td>(11%)</td>
+<td>(7%)</td>
+<td>x 2.3</td>
+<td>+0%</td>
+<td>(0%)</td>
+<td>+6%</td>
+<td>+4%</td>
+<td>+8%</td>
+<td>(4%)</td>
+<td>(26%)</td>
+<td>(4%)</td>
+<td>(12%)</td>
+<td>(1%)</td>
+<td>(4%)</td>
+<td>(4%)</td>
+</tr>
+</table>
+
+
+<!-- PageFooter="NB: this table presents the main income statement items and is not exhaustive" -->
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="36" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## APPENDICES
+
+
+### INCOME STATEMENT - Q1-25 VS Q1-24
+
+
+<table>
+<tr>
+<th>€m</th>
+<th>Q1-25</th>
+<th>Q1-24</th>
+<th>A Q1/Q1</th>
+</tr>
+<tr>
+<td>Revenues</td>
+<td>7,256</td>
+<td>6,806</td>
+<td>+6.6%</td>
+</tr>
+<tr>
+<td>Operating expenses</td>
+<td>(3,991)</td>
+<td>(3,669)</td>
+<td>+8.8%</td>
+</tr>
+<tr>
+<td>Gross operating income</td>
+<td>3,266</td>
+<td>3,137</td>
+<td>+4.1%</td>
+</tr>
+<tr>
+<td>Cost of risk</td>
+<td>(413)</td>
+<td>(400)</td>
+<td>+3.4%</td>
+</tr>
+<tr>
+<td>Equity-accounted entities</td>
+<td>47</td>
+<td>43</td>
+<td>+9.2%</td>
+</tr>
+<tr>
+<td>Net income on other assets</td>
+<td>1</td>
+<td>(6)</td>
+<td>n.m.</td>
+</tr>
+<tr>
+<td>Change in value of goodwill</td>
+<td>-</td>
+<td>-</td>
+<td>n.m.</td>
+</tr>
+<tr>
+<td>Income before tax</td>
+<td>2,900</td>
+<td>2,773</td>
+<td>+4.6%</td>
+</tr>
+<tr>
+<td>Tax</td>
+<td>(827)</td>
+<td>(610)</td>
+<td>+35.5%</td>
+</tr>
+<tr>
+<td>Net income from discont'd or held-for-sale ope.</td>
+<td>0</td>
+<td>-</td>
+<td>n.m.</td>
+</tr>
+<tr>
+<td>Net income</td>
+<td>2,073</td>
+<td>2,163</td>
+<td>(4.1%)</td>
+</tr>
+<tr>
+<td>Non controlling interests</td>
+<td>(249)</td>
+<td>(259)</td>
+<td>(3.9%)</td>
+</tr>
+<tr>
+<td>Net income Group Share</td>
+<td>1,824</td>
+<td>1,903</td>
+<td>(4.2%)</td>
+</tr>
+<tr>
+<td>Earnings per share (€)</td>
+<td>0.56</td>
+<td>0.50</td>
+<td>+11.4%</td>
+</tr>
+<tr>
+<td>Cost/Income ratio (%)</td>
+<td>55.0%</td>
+<td>53.9%</td>
+<td>+1.1 pp</td>
+</tr>
+</table>
+
+
+CRÉDIT AGRICOLE S.A.
+
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## APPENDICES A STABLE, DIVERSIFIED AND PROFITABLE BUSINESS MODEL
+
+
+<figure>
+<figcaption>Revenues 12M-2024 by business line(1) (excluding Corporate Centre) (%)</figcaption>
+
+Large
+customers
+33%
+
+Asset
+servicing
+7%
+
+Insurance
+10%
+
+Asset gathering
+28%
+
+Asset
+Mngt
+12%
+
+CIB
+26%
+
+Revenues
+excl. CC
+Q1-25:
+€7.3bn
+
+Wealth
+Mngt
+6%
+
+Leasing &
+Factoring
+3%
+
+Spec. fin. serv.
+12%
+
+Consumer
+finance
+9%
+
+LCL
+13%
+
+IRB
+14%
+
+Retail
+banking
+27%
+
+</figure>
+
+
+<figure>
+<figcaption>Net income Group share(1) 12M-2024 by business line (excluding Corporate Centre) (%)</figcaption>
+
+Grandes
+clientèles
+38%
+
+SFI
+4%
+
+Gestion
+d'épargne &
+assur.
+35%
+
+Assurances
+23%
+
+BFI
+34%
+
+Résultat net PdG
+hors AHM
+T1-25 :
+1.9 Mds€
+
+Gestion
+d'actifs
+9%
+
+Cdt bail et
+affact.
+2%
+
+Gestion de
+fortune
+3%
+
+LCL
+7%
+
+Serv. fin.
+spécialisés
+8%
+
+Crédit conso.
+5%
+
+BPI
+13%
+
+Banque de
+proximité
+19%
+
+</figure>
+
+1\. See slide 46 for details on specific items
+
+
+<!-- PageNumber="☒ CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="38" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+CRÉDIT AGRICOLE S.A.
+
+
+## APPENDICES RWA AND ALLOCATED CAPITAL BY BUSINESS LINE
+
+
+<table>
+<tr>
+<th rowspan="2">€bn</th>
+<th colspan="3">Risk-weighted assets</th>
+<th colspan="3">Capital</th>
+</tr>
+<tr>
+<th>March 2025</th>
+<th>Dec. 2024</th>
+<th>March 2024</th>
+<th>March 2025</th>
+<th>Dec. 2024</th>
+<th>March 2024</th>
+</tr>
+<tr>
+<td>Asset gathering</td>
+<td>51,7</td>
+<td>57,5</td>
+<td>55,8</td>
+<td>13,4</td>
+<td>12,6</td>
+<td>12,7</td>
+</tr>
+<tr>
+<td>- Insurance* **</td>
+<td>24,3</td>
+<td>34,5</td>
+<td>35,3</td>
+<td>10,8</td>
+<td>10,4</td>
+<td>10,8</td>
+</tr>
+<tr>
+<td>- Asset management</td>
+<td>19,2</td>
+<td>13,7</td>
+<td>14,2</td>
+<td>1,8</td>
+<td>1,3</td>
+<td>1,3</td>
+</tr>
+<tr>
+<td>- Wealth Management</td>
+<td>8,2</td>
+<td>9,4</td>
+<td>6,3</td>
+<td>0,8</td>
+<td>0,9</td>
+<td>0,6</td>
+</tr>
+<tr>
+<td>French Retail Banking (LCL)</td>
+<td>53,9</td>
+<td>56,8</td>
+<td>53,5</td>
+<td>5,1</td>
+<td>5,4</td>
+<td>5,1</td>
+</tr>
+<tr>
+<td>International retail Banking</td>
+<td>43,4</td>
+<td>46,9</td>
+<td>45,1</td>
+<td>4,1</td>
+<td>4,5</td>
+<td>4,3</td>
+</tr>
+<tr>
+<td>Specialised financial services</td>
+<td>79,0</td>
+<td>76,2</td>
+<td>70,4</td>
+<td>7,5</td>
+<td>7,2</td>
+<td>6,7</td>
+</tr>
+<tr>
+<td>Large customers</td>
+<td>141,7</td>
+<td>147,8</td>
+<td>139,6</td>
+<td>13,5</td>
+<td>14,0</td>
+<td>13,3</td>
+</tr>
+<tr>
+<td>- Financing activities</td>
+<td>78,8</td>
+<td>90,3</td>
+<td>80,8</td>
+<td>7,5</td>
+<td>8,6</td>
+<td>7,7</td>
+</tr>
+<tr>
+<td>- Capital markets and investment banking</td>
+<td>51,3</td>
+<td>46,6</td>
+<td>45,7</td>
+<td>4,9</td>
+<td>4,4</td>
+<td>4,3</td>
+</tr>
+<tr>
+<td>- Asset servicing</td>
+<td>11,6</td>
+<td>11,0</td>
+<td>13,1</td>
+<td>1,1</td>
+<td>1,0</td>
+<td>1,2</td>
+</tr>
+<tr>
+<td>Corporate Centre</td>
+<td>35,1</td>
+<td>30,0</td>
+<td>28,2</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>TOTAL</td>
+<td>404,7</td>
+<td>415,2</td>
+<td>392,7</td>
+<td>43,6</td>
+<td>43,7</td>
+<td>42,1</td>
+</tr>
+</table>
+
+
+<figure>
+
+Asset gathering
+€51,7bn
+13%
+
+Asset
+servicing
+3%
+
+Large customers
+€141,7bn
+35%
+
+Corporate
+centre
+9%
+
+Asset
+Mngt
+5%
+
+surance
+6%
+
+Wealth
+Mngt
+2%
+
+LCL
+13%
+
+CIB
+32%
+
+RWA
+end-March 2025:
+€404,7bn
+
+IRB
+11%
+
+Consumer
+finance
+15%
+
+Retail banking
+€97,2bn
+24%
+
+Leasing & Factoring
+4%
+
+Spec. fin. serv.
+€79bn
+20%
+
+Large customers
+€13,5bn
+31%
+
+Asset
+servicing
+2%
+
+Asset gathering
+€13,4bn
+31%
+
+CIB
+28%
+
+Insurance
+25%
+
+Total allocated
+capital
+end-March 2025:
+€43,6bn
+
+Asset
+Mngt
+4%
+
+Leasing & Factoring
+4%
+
+Consumer
+finance
+14%
+
+LCL
+12%
+
+Wealth
+Mngt
+2%
+
+IRB
+9%
+
+Spec. fin. serv.
+€7,5bn
+17%
+
+Retail banking
+€9,2bn
+21%
+
+</figure>
+
+
+\* ** Methodology: 9.5% of RWAs for each business line; Insurance: 80% of Solvency 2 capital requirements
+
+<!-- PageNumber="☒ CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="39" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## APPENDICES DISTRIBUTION OF SHARE CAPITAL AND NUMBER OF SHARES
+
+
+<table>
+<tr>
+<th rowspan="2">Breakdown of share capital</th>
+<th colspan="2">31/03/2025</th>
+<th colspan="2">31/12/2024</th>
+<th rowspan="2">31/03/2024 Number of shares</th>
+<th rowspan="2">%</th>
+</tr>
+<tr>
+<th>Number of shares</th>
+<th>%</th>
+<th>Number of shares</th>
+<th>%</th>
+</tr>
+<tr>
+<td>SAS Rue La Boétie</td>
+<td>1,898,995,952</td>
+<td>62.8%</td>
+<td>1,898,995,952</td>
+<td>62.4%</td>
+<td>1,822,030,012</td>
+<td>60.2%</td>
+</tr>
+<tr>
+<td>Treasury shares (1)</td>
+<td>815,610</td>
+<td>0.0%</td>
+<td>16,247,289 (2)</td>
+<td>0.5%</td>
+<td>311,719</td>
+<td>0.0%</td>
+</tr>
+<tr>
+<td>Employees (company investment fund, ESOP)</td>
+<td>189,188,244</td>
+<td>6.3%</td>
+<td>198,691,991</td>
+<td>6.5%</td>
+<td>194,553,584</td>
+<td>6.4%</td>
+</tr>
+<tr>
+<td>Float</td>
+<td>936,902,544</td>
+<td>31.0%</td>
+<td>927,095,795</td>
+<td>30.5%</td>
+<td>1,009,007,035</td>
+<td>33.3%</td>
+</tr>
+<tr>
+<td>Total shares in issue (period end)</td>
+<td>3,025,902,350</td>
+<td></td>
+<td>3,041,031,027</td>
+<td></td>
+<td>3,025,902,350</td>
+<td></td>
+</tr>
+<tr>
+<td>Total shares in issue, excluding treasury shares (period end)</td>
+<td>3,025,086,740</td>
+<td></td>
+<td>3,024,783,738</td>
+<td></td>
+<td>3,025,590,631</td>
+<td></td>
+</tr>
+<tr>
+<td>Total shares in issue, excluding treasury shares (average number)</td>
+<td>3,025,274,032</td>
+<td></td>
+<td>3,015,082,065</td>
+<td></td>
+<td>3,017,573,499</td>
+<td></td>
+</tr>
+</table>
+
+1\. Excluded in the calculation of earnings per share
+
+2\. Taking into account the share buyback programme covering a maximum of 15,128,677 ordinary shares of Credit Agricole S.A., announced on 30 September 2024, launched on 1 October 2024 and which ended on 6 November 2024. The
+15,128,677 ordinary shares were cancelled on 13 January 2025.
+
+
+<!-- PageFooter="☒ CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="40" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## APPENDICES DATA PER SHARE
+
+
+<table>
+<tr>
+<th colspan="2">(€m)</th>
+<th>Q1-25</th>
+<th>Q1-24</th>
+<th>A Q1/Q1</th>
+</tr>
+<tr>
+<td>Net income Group share</td>
+<td></td>
+<td>1,824</td>
+<td>1,903</td>
+<td>(4.2%)</td>
+</tr>
+<tr>
+<td>- Interests on AT1, including issuance costs, before tax</td>
+<td></td>
+<td>(129)</td>
+<td>(138)</td>
+<td>(6.8%)</td>
+</tr>
+<tr>
+<td>- Foreign exchange impact on reimbursed AT1</td>
+<td></td>
+<td>-</td>
+<td>(247)</td>
+<td>(100.0%)</td>
+</tr>
+<tr>
+<td>NIGS attributable to ordinary shares</td>
+<td>[A]</td>
+<td>1,695</td>
+<td>1,518</td>
+<td>+11.6%</td>
+</tr>
+<tr>
+<td colspan="2">Average number shares in issue, excluding treasury shares (m) [B]</td>
+<td>3,025</td>
+<td>3,018</td>
+<td>+0.3%</td>
+</tr>
+<tr>
+<td colspan="2">Net earnings per share [A]/[B]</td>
+<td>0.56 €</td>
+<td>0.50 €</td>
+<td>+11.4%</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+<th colspan="2">(€m)</th>
+<th>31/03/2025</th>
+<th>31/03/2024</th>
+</tr>
+<tr>
+<td>Shareholder's equity Group share</td>
+<td></td>
+<td>77,378</td>
+<td>72,429</td>
+</tr>
+<tr>
+<td>- AT1 issuances</td>
+<td></td>
+<td>(8,726)</td>
+<td>(7,184)</td>
+</tr>
+<tr>
+<td>- Unrealised gains and losses on OCI - Group share</td>
+<td></td>
+<td>1,222</td>
+<td>1,021</td>
+</tr>
+<tr>
+<td>- Payout assumption on annual results*</td>
+<td></td>
+<td>(3,327)</td>
+<td>(3,181)</td>
+</tr>
+<tr>
+<td>Net book value (NBV), not revaluated, attributable to ordin. sh.</td>
+<td>[D]</td>
+<td>66,546</td>
+<td>63,086</td>
+</tr>
+<tr>
+<td>- Goodwill &amp; intangibles ** - Group share</td>
+<td></td>
+<td>(17,764)</td>
+<td>(17,280)</td>
+</tr>
+<tr>
+<td>Tangible NBV (TNBV), not revaluated attrib. to ordinary sh.</td>
+<td>[E]</td>
+<td>48,783</td>
+<td>45,807</td>
+</tr>
+<tr>
+<td>Total shares in issue, excluding treasury shares (period end, m)</td>
+<td>[F]</td>
+<td>3,025</td>
+<td>3,026</td>
+</tr>
+<tr>
+<td>NBV per share , after deduction of dividend to pay (€)</td>
+<td>[D]/[F]</td>
+<td>22.0 €</td>
+<td>20.9 €</td>
+</tr>
+<tr>
+<td>+ Dividend to pay (€)</td>
+<td>[H]</td>
+<td>1.10 €</td>
+<td>1.05 €</td>
+</tr>
+<tr>
+<td>TNBV per share, after deduction of dividend to pay (€)</td>
+<td>[G]=[E]/[F]</td>
+<td>16.1 €</td>
+<td>15.1 €</td>
+</tr>
+<tr>
+<td>TNBV per sh., before deduct. of divid. to pay (€)</td>
+<td>[G]+[H]</td>
+<td>17.2 €</td>
+<td>16.2 €</td>
+</tr>
+</table>
+
+\* dividend proposed to the Board meeting to be paid
+
+** including goodwill in the equity-accounted entities
+
+
+<table>
+<tr>
+<th colspan="2">(€m)</th>
+<th>Q1-25</th>
+<th>Q1-24</th>
+</tr>
+<tr>
+<td>Net income Group share</td>
+<td>[K]</td>
+<td>1,824</td>
+<td>1,903</td>
+</tr>
+<tr>
+<td>Impairment of intangible assets</td>
+<td>[L]</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Additionnal corporate tax</td>
+<td>[LL]</td>
+<td>-123</td>
+<td></td>
+</tr>
+<tr>
+<td>IFRIC</td>
+<td>[M]</td>
+<td>-173</td>
+<td>-110</td>
+</tr>
+<tr>
+<td>NIGS annualised (1)</td>
+<td>[N]</td>
+<td>8,111</td>
+<td>7,944</td>
+</tr>
+<tr>
+<td>Interests on AT1, including issuance costs, before tax, foreign exchange impact, annualised</td>
+<td>[O]</td>
+<td>-515</td>
+<td>-799</td>
+</tr>
+<tr>
+<td>Result adjusted</td>
+<td>[P] = [N]+[O]</td>
+<td>7,596</td>
+<td>7,145</td>
+</tr>
+<tr>
+<td>Tangible NBV (TNBV), not revaluated attrib. to ord. sh. - avg *** (2)</td>
+<td>[J]</td>
+<td>47,752</td>
+<td>44,671</td>
+</tr>
+<tr>
+<td>Stated ROTE adjusted (%)</td>
+<td>= [P] / [J]</td>
+<td>15.9%</td>
+<td>16.0%</td>
+</tr>
+</table>
+
+*** including assumption of dividend for the current exercise
+
+(1) ROTE calculated on the basis of an annualised net income Group share
+and linearised IFRIC costs over the year
+
+(2) Average of the NTBV not revalued attributable to ordinary shares,
+calculated between 31/12/2024 and 21/03/2025 (line [E]), restated with an
+assumption of dividend for current exercises
+
+
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="41" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+
+## Appendices Risk indicators
+
+<!-- PageNumber="☒ CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="42" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## APPENDICES EXPOSURE TO FRENCH SOVEREIGN RISK - CREDIT AGRICOLE S.A.
+
+
+### Banking activity (4) (in billion euros)
+
+
+<table>
+<tr>
+<th>As of 31/12/2024</th>
+<th>Financial assets at fair value through profit or loss</th>
+<th>Financial assets at fair value through other comprehensive income (OCI)</th>
+<th>Financial assets at amortised cost</th>
+<th>Total Bank activity (3)</th>
+</tr>
+<tr>
+<td>French government bond (OAT)</td>
+<td>0.5</td>
+<td>2.6</td>
+<td>12.7</td>
+<td>15.8</td>
+</tr>
+<tr>
+<td>Assimilated to French sovereign risk (1)</td>
+<td>-</td>
+<td>5.6</td>
+<td>7.2</td>
+<td>12.8</td>
+</tr>
+<tr>
+<td>Total French sovereign risk of banking portfolio</td>
+<td>0.5</td>
+<td>8.2</td>
+<td>19.9</td>
+<td>28.6</td>
+</tr>
+</table>
+
+
+### Insurance activity(4) (in billion euros)
+
+
+<table>
+<tr>
+<th rowspan="2">As of 31/12/2024</th>
+<th colspan="4">Other models (2)</th>
+<th rowspan="2">VFA model (2) (Variable Fee Approach)</th>
+<th rowspan="2">Total insurance activity</th>
+</tr>
+<tr>
+<th>Financial assets at fair value through profit or loss</th>
+<th>Financial assets at fair value through other comprehensive income (OCI)</th>
+<th>Financial assets at amortised cost</th>
+<th>Total assets on other models</th>
+</tr>
+<tr>
+<td>French government bond (OAT)</td>
+<td>-</td>
+<td>1.4</td>
+<td>0.4</td>
+<td>1.8</td>
+<td>34.5</td>
+<td>36.3</td>
+</tr>
+<tr>
+<td>Assimilated to French sovereign risk (1)</td>
+<td>-</td>
+<td>1.6</td>
+<td>0.5</td>
+<td>2.1</td>
+<td>9.7</td>
+<td>11.8</td>
+</tr>
+<tr>
+<td>Total French sovereign risk of insurance activities</td>
+<td>-</td>
+<td>3.0</td>
+<td>0.9</td>
+<td>3.9</td>
+<td>44.2</td>
+<td>48.1</td>
+</tr>
+</table>
+
+-> The liabilities accounted with VFA model under IFRS 17 are related to Savings, Retirement and Funeral scope. The impact of valuation changes of the financial
+investments backed by these commitments is not material neither on Credit Agricole S.A net income nor on its equity because of symmetrical valuation effects of these
+liabilities.
+
+1\. Public sector debt securities equivalent to those of central, regional or local governments
+
+2\.
+VFA model (Variable Fee Approach): Savings, Retirement and Funeral; BBA model (Building Block Approach): Personal protection (death & disability/creditor/group insurance); PAA model (Premium Allocation Approach): P&C
+
+3\.
+Figures before hedging. Hedging on government bonds (OAT) of banking portfolio: €0.2bn; Hedging on assimilated of banking portfolio: - €0.9bn
+
+4\.
+Bonds only
+
+
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="43" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE GROUP" -->
+
+
+## APPENDICES EXPOSURE TO FRENCH SOVEREIGN RISK - CREDIT AGRICOLE GROUP
+
+
+### Banking activity (4) (in billion euros)
+
+
+<table>
+<tr>
+<th>As of 31/12/2024</th>
+<th>Financial assets at fair value through profit or loss</th>
+<th>Financial assets at fair value through other comprehensive income (OCI)</th>
+<th>Financial assets at amortised cost</th>
+<th>Total Bank activity (3)</th>
+</tr>
+<tr>
+<td>French government bond (OAT)</td>
+<td>0.5</td>
+<td>3.0</td>
+<td>22.1</td>
+<td>25.6</td>
+</tr>
+<tr>
+<td>Assimilated to French sovereign risk (1)</td>
+<td>-</td>
+<td>5.6</td>
+<td>16.4</td>
+<td>22.0</td>
+</tr>
+<tr>
+<td>Total French sovereign risk of banking portfolio</td>
+<td>0.5</td>
+<td>8.6</td>
+<td>38.5</td>
+<td>47.6</td>
+</tr>
+</table>
+
+
+### Insurance activity(4) (in billion euros)
+
+
+<table>
+<tr>
+<th rowspan="2">As of 31/12/2024</th>
+<th colspan="4">Other models (2)</th>
+<th rowspan="2">VFA model (2) (Variable Fee Approach)</th>
+<th rowspan="2">Total insurance activity</th>
+</tr>
+<tr>
+<th>Financial assets at fair value through profit or loss</th>
+<th>Financial assets at fair value through other comprehensive income (OCI)</th>
+<th>Financial assets at amortised cost</th>
+<th>Total assets on other models</th>
+</tr>
+<tr>
+<td>French government bond (OAT)</td>
+<td>-</td>
+<td>1.6</td>
+<td>0.4</td>
+<td>2.0</td>
+<td>34.5</td>
+<td>36.5</td>
+</tr>
+<tr>
+<td>Assimilated to French sovereign risk (1)</td>
+<td>-</td>
+<td>2.4</td>
+<td>0.5</td>
+<td>2.9</td>
+<td>9.7</td>
+<td>12.6</td>
+</tr>
+<tr>
+<td>Total French sovereign risk of insurance activities</td>
+<td>-</td>
+<td>4.0</td>
+<td>0.9</td>
+<td>4.9</td>
+<td>44.2</td>
+<td>49.1</td>
+</tr>
+</table>
+
+-> The liabilities accounted with VFA model under IFRS 17 are related to Savings, Retirement and Funeral scope. The impact of valuation changes of the financial
+investments backed by these commitments is not material neither on Credit Agricole Group net income nor on its equity because of symmetrical valuation effects of
+these liabilities.
+
+1\. Public sector debt securities equivalent to those of central, regional or local governments
+
+2\.
+VFA model (Variable Fee Approach): Savings, Retirement and Funeral; BBA model (Building Block Approach): Personal protection (death & disability/creditor/group insurance); PAA model (Premium Allocation Approach): P&C
+
+3\.
+Figures before hedging. Hedging on government bonds (OAT) of banking portfolio: €0.2bn; Hedging on assimilated of banking portfolio: - €0.9bn
+
+4\.
+Bonds only
+
+
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="44" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## APPENDICES COST OF RISK
+
+
+<figure>
+<figcaption>Crédit Agricole CIB - Financing activities</figcaption>
+
+88
+
+38
+
+6
+
+1
+
+-36
+
+19
+
+0
+
+.
+
+3
+
+3
+
+52
+
+fb
+
+17
+
+166
+
+0
+
+-56
+
+-8
+
+5
+
+-17
+
+-79
+
+-19
+
+Q1-24
+
+Q2-24
+
+Q3-24
+
+Q4-24
+
+Q1-25
+
+S3 CoR*
+
+S1&S2 CoR
+
+Others
+
+....... Total CoR
+
+CoR/outstandings: 8 bp
+
+NPL ratio: 1.4%; Coverage ratio: 86.6%
+
+</figure>
+
+
+<figure>
+
+CAPFM
+
+286
+
+225
+
+199
+
+20
+
+191
+
+201
+
+.
+
+43
+
+7
+
+2
+
+6
+
+203
+
+227
+
+193
+
+223
+
+227
+
+-1
+
+-28
+
+-9
+
+Q1-24
+
+Q2-24
+
+S3 COR*
+
+S1&S2 COR
+
+Q3-24
+
+Q4-24
+
+Q1-25
+Total CoR
+
+Others
+
+CoR: +13% Q1/Q1; CoR/outstandings: 130 bp
+NPL ratio: 4.5%; Coverage ratio: 73.5%
+
+</figure>
+
+
+<figure>
+
+LCL
+
+119
+
+95
+
+92
+
+.
+
+82
+
+78
+
+.
+
+..
+
+2
+
+5
+
+\+
+
+4
+
+127
+
+42
+
+89
+
+94
+
+95
+
+36
+
+-7
+
+0
+
+-1
+
+-18
+
+-1
+
+-3
+
+Q1-24
+
+Q2-24
+
+Q3-24
+
+Q4-24
+
+Q1-25
+
+S3 CoR*
+
+S1&S2 CoR
+
+Others
+
+...... Total CoR
+
+CoR: - 22.9% Q1/Q1; CoR/outstandings: 20 bp
+NPL ratio: 2.0%; Coverage ratio: 63.0%
+
+</figure>
+
+
+### CA Italy
+
+
+<figure>
+
+76
+
+61
+
+61
+
+56
+
+.
+
+48
+
+3
+
+1
+
+4
+
+3
+
+F
+
+3
+
+2
+
+7
+
+1
+
+2
+
+50
+
+59
+
+53
+
+70
+
+52
+
+0
+
+-7
+
+Q1-24
+
+Q2-24
+
+Q3-24
+
+Q4-24
+
+Q1-25
+
+S3 CoR*
+
+S1&S2 COR
+
+Others
+
+..... Total COR
+
+</figure>
+
+
+5
+
+0
+
+CoR: - 7.9% Q1/Q1; CoR/outstandings: 39 bp
+NPL ratio: 2.8%; Coverage ratio: 77.9%
+
+
+<figure>
+
+CAL&F
+
+19
+
+20
+
+22
+
+20
+
+24
+
+3
+
+6
+
+21
+
+27
+
+24
+
+27
+
+22
+
+0
+
+-5
+
+-7
+
+-2
+
+-5
+
+-4
+
+-1
+
+-3
+
+Q1-24
+
+Q2-24
+
+Q3-24
+S1&S2 COR
+
+Q4-24
+
+Q1-25
+
+S3 COR*
+
+Others
+
+...... Total CoR
+
+CoR: +21.5% Q1/Q1; CoR/outstandings: 25 bp
+NPL ratio: 3.0%; Coverage ratio: 52.6%
+
+</figure>
+
+
+<figure>
+
+Regional Banks
+
+444
+
+F
+
+364
+
+1
+
+319
+
+247
+
+18
+
+263
+
+\+
+
+"
+
+54
+
+171
+
+46
+
+87
+
+305
+
+256
+
+321
+
+265
+
+184
+
+-52
+
+10
+
+-8
+
+Q1-24
+
+Q2-24
+
+Q3-24
+
+Q4-24
+
+Q1-25
+
+S3 CoR*
+
+S1&S2 CoR
+
+Others
+
+Total CoR
+
+CoR: - +29.2% Q1/Q1; CoR/outstandings: 21 bp
+NPL ratio: 1.9%; Coverage ratio: 94.9%
+
+</figure>
+
+
+(*) Cost of risk/outstandings (in annualised quarterly bp) at -5 bp for Financing activities, 128 bp for CAPFM, 21 bp for LCL, 36 bp for CA Italy, 26 bp for CAL&F and 20 bp for the RBs; coverage ratios are calculated based on loans and receivables due from
+customers in default, 24
+
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="45" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## APPENDICES RISK INDICATORS
+
+
+### Change in loans outstanding
+
+
+#### Crédit Agricole Group - Evolution of credit risk outstandings
+
+
+<table>
+<tr>
+<th>€m</th>
+<th>March 24</th>
+<th>June 24</th>
+<th>Sept. 24</th>
+<th>Dec. 24</th>
+<th>March 25</th>
+</tr>
+<tr>
+<td>Gross customer loans outstanding</td>
+<td>1,179,987</td>
+<td>1,186,544</td>
+<td>1,189,387</td>
+<td>1,210,126</td>
+<td>1,208,120</td>
+</tr>
+<tr>
+<td>of which: impaired loans</td>
+<td>25,705</td>
+<td>25,723</td>
+<td>25,737</td>
+<td>25,147</td>
+<td>25,165</td>
+</tr>
+<tr>
+<td>Loans loss reserves (incl. collective reserves)</td>
+<td>20,883</td>
+<td>21,173</td>
+<td>21,314</td>
+<td>21,284</td>
+<td>21,365</td>
+</tr>
+<tr>
+<td>of which: loans loss reserves for Stage 1 &amp; 2 outstandings</td>
+<td>8,643</td>
+<td>8,759</td>
+<td>8,725</td>
+<td>8,973</td>
+<td>9,090</td>
+</tr>
+<tr>
+<td>of which: loans loss reserves for Stage 3 outstandings</td>
+<td>12,240</td>
+<td>12,414</td>
+<td>12,588</td>
+<td>12,312</td>
+<td>12,275</td>
+</tr>
+<tr>
+<td>Impaired loans ratio</td>
+<td>2.2%</td>
+<td>2.2%</td>
+<td>2.2%</td>
+<td>2.1%</td>
+<td>2.1%</td>
+</tr>
+<tr>
+<td>Coverage ratio (excl. collective reserves)</td>
+<td>47.6%</td>
+<td>48.3%</td>
+<td>48.9%</td>
+<td>49.1%</td>
+<td>48.8%</td>
+</tr>
+<tr>
+<td>Coverage ratio (incl. collective reserves)</td>
+<td>81.2%</td>
+<td>82.3%</td>
+<td>82.8%</td>
+<td>84.9%</td>
+<td>84.9%</td>
+</tr>
+</table>
+
+
+#### Crédit Agricole S.A. - Evolution of credit risk outstandings
+
+
+<table>
+<tr>
+<th>€m</th>
+<th>March 24</th>
+<th>June 24</th>
+<th>Sept. 24</th>
+<th>Dec. 24</th>
+<th>March 25</th>
+</tr>
+<tr>
+<td>Gross customer loans outstanding</td>
+<td>532,218</td>
+<td>538,317</td>
+<td>539,065</td>
+<td>557,686</td>
+<td>555,013</td>
+</tr>
+<tr>
+<td>of which: impaired loans</td>
+<td>13,826</td>
+<td>13,549</td>
+<td>13,461</td>
+<td>12,935</td>
+<td>12,602</td>
+</tr>
+<tr>
+<td>Loans loss reserves (incl. collective reserves)</td>
+<td>9,644</td>
+<td>9,662</td>
+<td>9,612</td>
+<td>9,585</td>
+<td>9,440</td>
+</tr>
+<tr>
+<td>of which: loans loss reserves for Stage 1 &amp; 2 outstandings</td>
+<td>3,363</td>
+<td>3,315</td>
+<td>3,251</td>
+<td>3,435</td>
+<td>3,451</td>
+</tr>
+<tr>
+<td>of which: loans loss reserves for Stage 3 outstandings</td>
+<td>6,280</td>
+<td>6,347</td>
+<td>6,361</td>
+<td>6,151</td>
+<td>5,989</td>
+</tr>
+<tr>
+<td>Impaired loans ratio</td>
+<td>2.6%</td>
+<td>2.5%</td>
+<td>2.5%</td>
+<td>2.3%</td>
+<td>2.3%</td>
+</tr>
+<tr>
+<td>Coverage ratio (excl. collective reserves)</td>
+<td>45.4%</td>
+<td>46.8%</td>
+<td>47.3%</td>
+<td>47.6%</td>
+<td>47.5%</td>
+</tr>
+<tr>
+<td>Coverage ratio (incl. collective reserves)</td>
+<td>69.7%</td>
+<td>71.3%</td>
+<td>71.4%</td>
+<td>74.1%</td>
+<td>74.9%</td>
+</tr>
+</table>
+
+
+<!-- PageFooter="☒ CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="46" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE GROUP" -->
+
+
+### APPENDICES
+
+
+## CAG AND CASA EXPOSURE TO CORPORATE REAL ESTATE LIMITED AND OF HIGH QUALITY
+
+
+### Limited exposure to commercial real estate (1) at end-December 2024
+
+GCA: €57.4bn (-0.8% Dec./June), representing 3.2% of commercial lending
+
+· of which ~€14.9bn for office real estate, ~€9.8bn for commercial spaces and ~€16.1bn for residential real
+estate
+
+· of which €25.9bn Regional Banks, €22.2bn Crédit Agricole CIB, €5.4bn LCL and €1.5bn CA Italia
+
+Crédit Agricole S.A .: €31.5bn (-1.9% Dec./June), representing 2.9% of commercial lending
+
+· of which ~€9.8bn for office real estate, ~€5.4bn for commercial spaces and ~€6.3bn for residential real
+estate.
+
+
+#### Good quality of commercial real estate assets and risks under control at end-December 2024
+
+LTV (loan to value): 71% of CAG exposures with an LTV < 60%, 78% for CASA(2)
+
+High quality of CRE portfolio: 68% of exposures are Investment Grade for GCA and 81% for CASA(3)
+
+Low default rate in commercial real estate: 2.0% for CAG and 2.1% for CASA (4) and S3 coverage ratio
+of 56% for CAG and 56% for CASA.
+
+1\. Balance sheet and off-balance sheet; the scope includes property developers, listed and unlisted REITs, specialised investment funds, real estate investors, and real
+estate subsidiaries of financial institutions (insurers, banks etc.); This scope is slightly different from the exposures to corporate real estate presented in the Registration
+Document, which notably includes real estate financing contributed from corporate clients.
+
+2\. LTV calculated on 67% of exposures to real estate professionals for CAG and 69% of CASA exposures,
+
+3\.
+Internal rating equivalent
+
+4\.
+Default rate calculated with on- and off-balance sheet exposures as the denominator.
+
+
+<figure>
+<figcaption>Exposures (on- and off-balance sheet)/type of customer (commercial real estate data(1) CAG end-Dec. 2024)</figcaption>
+
+Specialised
+Lending and
+Asset Investors
+34%
+
+Real Estate
+companies and
+Real Estate
+Investment funds
+37%
+
+Real Estate
+Developpers
+24%
+
+Other sectors
+5%
+
+</figure>
+
+
+<figure>
+<figcaption>Exposures (on- and off-balance sheet)/geographic area (commercial real estate data(1) CAG end-Dec. 2024)</figcaption>
+
+United
+States
+6%
+
+Rest of the world
+9%
+
+Rest of
+European
+Union
+6%
+
+Italy
+6%
+
+France
+73%
+
+</figure>
+
+
+☒
+CRÉDIT AGRICOLE S.A.
+
+<!-- PageNumber="47" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## APPENDICES WELL-BALANCED CORPORATE PORTFOLIO
+
+
+<figure>
+<figcaption>Crédit Agricole SA: €370bn of EAD(1) Corporate at 31/03/2025</figcaption>
+
+NON BANKING FINANCIAL ACTIVITIES (51 Bn)
+
+13,8%
+
+ELECRICITY (33 Bn)
+
+8,8%
+
+REAL ESTATE (29 Bn)
+
+7,7%
+
+OTHER (22 Bn)
+
+5,9%
+
+AGRICULTURE AND FOOD PROCESSING (22 Bn)
+
+5,8%
+
+AUTOMOTIVE (21 Bn)
+
+5,7%
+
+OIL & GAS inclu. commodity traders (21 Bn)
+
+5,6%
+
+HEAVY INDUSTRIES (19 Bn)
+
+5,2%
+
+RETAIL / CONSUMER GOODS INDUSTRIES (18 Bn)
+
+4,8%
+
+TELECOM (16 Bn)
+
+4,4%
+
+SHIPPING (15 Bn)
+
+4,1%
+
+AIR / SPACE (14 Bn)
+
+3,9%
+
+OTHER TRANSPORTS (13 Bn)
+
+3,6%
+
+IT / TECHNOLOGY (13 Bn)
+
+3,5%
+
+INSURANCE (12 Bn)
+
+3,3%
+
+OTHER INDUSTRIES (12 Bn)
+
+3,1%
+
+HEALTHCARE / PHARMACEUTILCALS (10 Bn)
+
+2,6%
+
+CONSTRUCTION (10 Bn)
+
+2,6%
+
+TOURISM / HOTELS / RESTAURATION (7 Bn)
+
+2,0%
+
+MEDIA / PUBLISHING (3 Bn)
+
+☒
+
+0,9%
+
+ENERGY (excl. O&G / Com traders et Electricity) (3 Bn)
+
+☒
+0,9%
+
+UTILITIES (3 Bn)
+
+☒
+0,7%
+
+WOOD / PAPER / PACKAGING (3 Bn)
+
+☒
+
+0,7%
+
+BANKS (1 Bn)
+
+0,1%
+
+NON TRADING SERVICES / LOCAL AUTHORITIES (0 Bn)
+
+0,1%
+
+</figure>
+
+-> 72.6% of Corporate exposures are Investment Grade(2)
+
+-> LBO exposures(3) of €4.0bn at the end of March 2025
+
+
+-> SME exposures of €28.2bn at 31/03/2025
+
+(1)
+Exposure at default is a regulatory definition used in Pillar 3. It corresponds to the exposure at default after integration of risk reduction factors. It includes
+exposures to balance sheet assets and part of the off-balance sheet commitments after application of the credit conversion factor
+
+2\) Internal rating equivalent
+
+(3)
+Crédit Agricole CIB scope only.
+
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="48" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## APPENDICES RISK INDICATORS
+
+
+### VaR - market risk exposures
+
+
+<table>
+<caption>Crédit Agricole S.A. - Market risk exposures - VaR (99% - 1 day)</caption>
+<tr>
+<th>In m€</th>
+<th colspan="3">Q1-25</th>
+<th rowspan="2">31/03/2025</th>
+<th rowspan="2">31/12/2024</th>
+</tr>
+<tr>
+<th></th>
+<th>Minimum</th>
+<th>Maximum</th>
+<th>Average</th>
+</tr>
+<tr>
+<td>Fixed income</td>
+<td>5</td>
+<td>7</td>
+<td>6</td>
+<td>7</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Credit</td>
+<td>3</td>
+<td>6</td>
+<td>4</td>
+<td>4</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Foreign exchange</td>
+<td>2</td>
+<td>6</td>
+<td>4</td>
+<td>3</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Equities</td>
+<td>6</td>
+<td>11</td>
+<td>9</td>
+<td>6</td>
+<td>11</td>
+</tr>
+<tr>
+<td>Commodities</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Mutualised VaR for Credit Agricole S.A</td>
+<td>8</td>
+<td>15</td>
+<td>11</td>
+<td>10</td>
+<td>13</td>
+</tr>
+<tr>
+<td>Compensation Effects*</td>
+<td></td>
+<td></td>
+<td>-11</td>
+<td>-10</td>
+<td>-13</td>
+</tr>
+</table>
+
+
+· The VaR (99%, 1 day) of Crédit Agricole S.A. is measured by taking account
+of the effects of diversification among the various Group entities.
+
+· VaR (99% - 1 day) as at 31 March 2025 : €10m for Crédit Agricole S.A.
+
+
+<figure>
+
+Crédit Agricole S.A. - Quaterly average of VaR (1 day - 99%, in m€)
+
+19
+
+18
+
+14
+
+16
+
+14
+
+compensation
+
+11
+
+effects
+
+12
+
+12
+
+14
+
+11
+
+10
+
+Commodities
+
+11
+
+10
+
+10
+
+6
+
+9
+
+7
+
+5
+
+5
+
+6
+
+Fixed income
+
+4
+
+4
+
+8
+
+7
+
+6
+
+5
+
+6
+
+7
+
+4
+
+5
+
+4
+
+Credit
+
+5
+
+4
+
+5
+
+4
+
+4
+
+4
+
+4
+
+3
+
+5
+
+9
+
+Foreign exchange
+
+3
+
+3
+
+3
+
+3
+
+4
+
+3
+
+6
+
+2
+
+4
+
+Equities
+
+-7
+
+-9
+
+-10
+
+-9
+
+-7
+
+-9
+
+-8
+
+-8
+
+-10
+
+-11
+
+Var for GCA
+
+Q4 2022
+
+Q1 2023
+
+Q2 2023
+
+Q3 2023
+
+Q4 2023
+
+Q1 2024
+
+Q2 2024
+
+Q3 2024
+
+Q4 2024
+
+Q1 2025
+
+</figure>
+
+
+\* Gains on risk factor diversification
+
+<!-- PageNumber="☒ CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="49" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+
+## Appendices Financial structure and balance sheet
+
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageNumber="☒" -->
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="50" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## APPENDICES FINANCIAL STRUCTURE AND BALANCE SHEET
+
+
+<table>
+<tr>
+<th rowspan="2">Solvency (€bn)</th>
+<th colspan="2">Phased-in</th>
+</tr>
+<tr>
+<th>31/03/25</th>
+<th>31/12/24</th>
+</tr>
+<tr>
+<td>Share capital and reserves</td>
+<td>32.4</td>
+<td>30.9</td>
+</tr>
+<tr>
+<td>Consolidated reserves</td>
+<td>45.6</td>
+<td>38.7</td>
+</tr>
+<tr>
+<td>Other comprehensive income</td>
+<td>(2.5)</td>
+<td>(2.0)</td>
+</tr>
+<tr>
+<td>Net income (loss) for the year</td>
+<td>1.8</td>
+<td>7.1</td>
+</tr>
+<tr>
+<td>EQUITY - GROUP SHARE</td>
+<td>77.4</td>
+<td>74.7</td>
+</tr>
+<tr>
+<td>(-) Expected dividend</td>
+<td>(0.8)</td>
+<td>(3.3)</td>
+</tr>
+<tr>
+<td>(-) AT1 instruments accounted as equity</td>
+<td>(8.7)</td>
+<td>(7.2)</td>
+</tr>
+<tr>
+<td>Eligible minority interests</td>
+<td>5.2</td>
+<td>5.2</td>
+</tr>
+<tr>
+<td>(-) Prudential filters</td>
+<td>(0.8)</td>
+<td>(0.9)</td>
+</tr>
+<tr>
+<td>o/w: Prudent valuation</td>
+<td>(1.4)</td>
+<td>(1.4)</td>
+</tr>
+<tr>
+<td>(-) Deduction of goodwills and intangible assets</td>
+<td>(18.4)</td>
+<td>(18.5)</td>
+</tr>
+<tr>
+<td>Deferred tax assets that rely on future profitability excluding those arising from temporary differences</td>
+<td>(0.0)</td>
+<td>(0.0)</td>
+</tr>
+<tr>
+<td>Shortfall in adjustments for credit risk relative to expected losses under the internal ratings-based approach</td>
+<td>0.0</td>
+<td>(0.3)</td>
+</tr>
+<tr>
+<td>Amount exceeding thresholds</td>
+<td>0.0</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>Insufficient coverage for non-performing exposures (Pillar 2)</td>
+<td>0.0</td>
+<td>(0.0)</td>
+</tr>
+<tr>
+<td>Other CET1 components</td>
+<td>(4.7)</td>
+<td>(1.2)</td>
+</tr>
+<tr>
+<td>COMMON EQUITY TIER 1 (CET1)</td>
+<td>49.1</td>
+<td>48.5</td>
+</tr>
+<tr>
+<td>Additionnal Tier 1 (AT1) instruments</td>
+<td>8.8</td>
+<td>7.4</td>
+</tr>
+<tr>
+<td>Other AT1 components</td>
+<td>(0.1)</td>
+<td>(0.2)</td>
+</tr>
+<tr>
+<td>TOTAL TIER 1</td>
+<td>57.8</td>
+<td>55.8</td>
+</tr>
+<tr>
+<td>Tier 2 instruments</td>
+<td>16.4</td>
+<td>16.0</td>
+</tr>
+<tr>
+<td>Other Tier 2 components</td>
+<td>0.4</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>TOTAL CAPITAL</td>
+<td>74.6</td>
+<td>72.2</td>
+</tr>
+<tr>
+<td>RWAS</td>
+<td>404.7</td>
+<td>415.2</td>
+</tr>
+<tr>
+<td>CET1 ratio</td>
+<td>12.1%</td>
+<td>11.7%</td>
+</tr>
+<tr>
+<td>Tier 1 ratio</td>
+<td>14.3%</td>
+<td>13.4%</td>
+</tr>
+<tr>
+<td>Total capital ratio</td>
+<td>18.4%</td>
+<td>17.4%</td>
+</tr>
+</table>
+
+
+☒
+CRÉDIT AGRICOLE S.A.
+
+<!-- PageNumber="51" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## APPENDICES FINANCIAL STRUCTURE AND BALANCE SHEET
+
+
+### Change in equity (€m)
+
+
+<table>
+<tr>
+<th>* €m</th>
+<th>Group share</th>
+<th>Non-controlling interests</th>
+<th>Total</th>
+<th>Subordinated debt</th>
+</tr>
+<tr>
+<td>At 31 December 2024</td>
+<td>74,710</td>
+<td>8,601</td>
+<td>83,311</td>
+<td>29,273</td>
+</tr>
+<tr>
+<td>Impacts of new standards</td>
+<td>‐</td>
+<td>‐</td>
+<td>‐</td>
+<td></td>
+</tr>
+<tr>
+<td>Capital increase</td>
+<td>(208)</td>
+<td>‐</td>
+<td>(208)</td>
+<td></td>
+</tr>
+<tr>
+<td>Dividends paid out in 2025</td>
+<td>‐</td>
+<td>(28)</td>
+<td>(28)</td>
+<td></td>
+</tr>
+<tr>
+<td>Dividends received from Regional Banks and subsidiaries</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Change in treasury shares held</td>
+<td>212</td>
+<td>‐</td>
+<td>212</td>
+<td></td>
+</tr>
+<tr>
+<td>Issuance / redemption of equity instruments</td>
+<td>1,491</td>
+<td>505</td>
+<td>1,995</td>
+<td></td>
+</tr>
+<tr>
+<td>Remuneration for equity instruments issued</td>
+<td>(112)</td>
+<td>(24)</td>
+<td>(136)</td>
+<td></td>
+</tr>
+<tr>
+<td>Impact of acquisitions/disposals on non-controlling interests</td>
+<td>‐</td>
+<td>‐</td>
+<td>‐</td>
+<td></td>
+</tr>
+<tr>
+<td>Change due to share-based payments</td>
+<td>9</td>
+<td>2</td>
+<td>11</td>
+<td></td>
+</tr>
+<tr>
+<td>Change in other comprehensive income</td>
+<td>(495)</td>
+<td>(1)</td>
+<td>(496)</td>
+<td></td>
+</tr>
+<tr>
+<td>Change in share of reserves of equity affiliates</td>
+<td>(42)</td>
+<td>(5)</td>
+<td>(47)</td>
+<td></td>
+</tr>
+<tr>
+<td>Result for the period</td>
+<td>1,824</td>
+<td>249</td>
+<td>2,073</td>
+<td></td>
+</tr>
+<tr>
+<td>Other</td>
+<td>(11)</td>
+<td>(8)</td>
+<td>(18)</td>
+<td></td>
+</tr>
+<tr>
+<td>At 31 March 2025</td>
+<td>77,378</td>
+<td>9,291</td>
+<td>86,669</td>
+<td>28,512</td>
+</tr>
+</table>
+
+
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="☒" -->
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="52" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## APPENDICES FINANCIAL STRUCTURE AND BALANCE SHEET
+
+Balance sheet (€bn)
+
+\*
+
+\*
+
+\*
+
+\*
+
+
+<table>
+<tr>
+<th>Assets</th>
+<th>31/03/2025</th>
+<th>31/12/2024</th>
+</tr>
+<tr>
+<td>Cash and Central banks</td>
+<td>164.3</td>
+<td>162.3</td>
+</tr>
+<tr>
+<td>Financial assets at fair value through profit or loss</td>
+<td>583.6</td>
+<td>600.9</td>
+</tr>
+<tr>
+<td>Hedging derivative instruments</td>
+<td>16.3</td>
+<td>19.2</td>
+</tr>
+<tr>
+<td>Financial assets at fair value through other comprehensive income</td>
+<td>223.8</td>
+<td>223.6</td>
+</tr>
+<tr>
+<td>Loans and receivables due from credit institutions</td>
+<td>563.9</td>
+<td>565.4</td>
+</tr>
+<tr>
+<td>Loans and receivables due from customers</td>
+<td>545.6</td>
+<td>548.1</td>
+</tr>
+<tr>
+<td>Debt securities</td>
+<td>87.6</td>
+<td>89.0</td>
+</tr>
+<tr>
+<td>Revaluation adjustment on interest rate hedged portfolios</td>
+<td>-1.5</td>
+<td>-0.2</td>
+</tr>
+<tr>
+<td>Current and deferred tax assets</td>
+<td>4.8</td>
+<td>5.0</td>
+</tr>
+<tr>
+<td>Accruals, prepayments and sundry assets</td>
+<td>53.4</td>
+<td>51.9</td>
+</tr>
+<tr>
+<td>Non-current assets held for sale and discontinued operations</td>
+<td>0.8</td>
+<td>0.8</td>
+</tr>
+<tr>
+<td>Insurance contrats issued- Assets</td>
+<td>0.1</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>Reinsurance contracts held - Assets</td>
+<td>1.0</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>Investments in equity affiliates</td>
+<td>3.2</td>
+<td>2.9</td>
+</tr>
+<tr>
+<td>Investment property</td>
+<td>10.4</td>
+<td>10.4</td>
+</tr>
+<tr>
+<td>Property, plant and equipment</td>
+<td>9.8</td>
+<td>9.7</td>
+</tr>
+<tr>
+<td>Intangible assets</td>
+<td>3.4</td>
+<td>3.4</td>
+</tr>
+<tr>
+<td>Goodwill</td>
+<td>16.2</td>
+<td>16.3</td>
+</tr>
+<tr>
+<td>Total assets</td>
+<td>2,286.5</td>
+<td>2,309.8</td>
+</tr>
+</table>
+
+\*
+
+
+<table>
+<tr>
+<th>Liabilities</th>
+<th>31/03/2025</th>
+<th>31/12/2024</th>
+</tr>
+<tr>
+<td>Central banks</td>
+<td>0.7</td>
+<td>1.4</td>
+</tr>
+<tr>
+<td>* Financial liabilities at fair value through profit or loss</td>
+<td>388.8</td>
+<td>413.5</td>
+</tr>
+<tr>
+<td>Hedging derivative instruments</td>
+<td>26.4</td>
+<td>27.3</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Due to banks</td>
+<td>170.0</td>
+<td>178.4</td>
+</tr>
+<tr>
+<td>Customer accounts</td>
+<td>868.7</td>
+<td>868.1</td>
+</tr>
+<tr>
+<td>Debt securities in issue</td>
+<td>289.4</td>
+<td>284.5</td>
+</tr>
+<tr>
+<td>Revaluation adjustment on interest rate hedged portfolios</td>
+<td>-7.6</td>
+<td>-7.2</td>
+</tr>
+<tr>
+<td>Current and deferred tax liabilities</td>
+<td>3.3</td>
+<td>3.2</td>
+</tr>
+<tr>
+<td>Accruals and sundry liabilities</td>
+<td>62.7</td>
+<td>61.1</td>
+</tr>
+<tr>
+<td>Liabilities associated with non-current assets held for sale</td>
+<td>0.1</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>Insurance contrats issued - Liabilities</td>
+<td>364.9</td>
+<td>362.9</td>
+</tr>
+<tr>
+<td>Reinsurance contracts held - Liabilities</td>
+<td>0.1</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td></td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Provisions</td>
+<td>3.8</td>
+<td>3.8</td>
+</tr>
+<tr>
+<td>Subordinated debt</td>
+<td>28.5</td>
+<td>29.3</td>
+</tr>
+<tr>
+<td>Shareholder's equity</td>
+<td>77.4</td>
+<td>74.7</td>
+</tr>
+<tr>
+<td>Non-controlling interests</td>
+<td>9.3</td>
+<td>8.6</td>
+</tr>
+<tr>
+<td>Total liabilities</td>
+<td>2,286.5</td>
+<td>2,309.8</td>
+</tr>
+</table>
+
+
+☒
+CRÉDIT AGRICOLE S.A.
+
+<!-- PageNumber="53" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+Appendices
+Activity indicators
+
+<!-- PageNumber="☒ CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="54" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## APPENDICES ACTIVITY INDICATORS - AG DIVISION
+
+
+### Assets under management (€bn)
+
+
+<table>
+<tr>
+<th>€bn</th>
+<th>Mar. 23</th>
+<th>Jun. 23</th>
+<th>Sept. 23</th>
+<th>Dec. 23</th>
+<th>Mar. 24</th>
+<th>Jun. 24</th>
+<th>Sept. 24</th>
+<th>Dec. 24</th>
+<th>Mar. 25</th>
+<th>∆ Mar./Mar.</th>
+</tr>
+<tr>
+<td>Asset management - Amundi</td>
+<td>1,934</td>
+<td>1,961</td>
+<td>1,973</td>
+<td>2,037</td>
+<td>2,116</td>
+<td>2,156</td>
+<td>2,192</td>
+<td>2,240</td>
+<td>2,247</td>
+<td>+6.2%</td>
+</tr>
+<tr>
+<td>Savings/retirement</td>
+<td>325</td>
+<td>326</td>
+<td>324</td>
+<td>330</td>
+<td>335</td>
+<td>338</td>
+<td>343</td>
+<td>347</td>
+<td>352</td>
+<td>+5.2%</td>
+</tr>
+<tr>
+<td>Wealth management(1)</td>
+<td>185</td>
+<td>186</td>
+<td>186</td>
+<td>190</td>
+<td>197</td>
+<td>269</td>
+<td>274</td>
+<td>279</td>
+<td>278</td>
+<td>+41.3%</td>
+</tr>
+<tr>
+<td>Assets under management - Total</td>
+<td>2,443</td>
+<td>2,473</td>
+<td>2,484</td>
+<td>2,557</td>
+<td>2,648</td>
+<td>2,763</td>
+<td>2,809</td>
+<td>2,867</td>
+<td>2,878</td>
+<td>8.7%</td>
+</tr>
+</table>
+
+(1) excluding institutional clients' assets under custody
+
+
+<table>
+<tr>
+<th>€bn</th>
+<th>Mar. 23</th>
+<th>Jun. 23</th>
+<th>Sept. 23</th>
+<th>Dec. 23</th>
+<th>Mar. 24</th>
+<th>Jun. 24</th>
+<th>Sept. 24</th>
+<th>Dec. 24</th>
+<th>Mar. 25</th>
+<th>A Mar./Mar.</th>
+</tr>
+<tr>
+<td>LCL Private Banking</td>
+<td>61.8</td>
+<td>61.9</td>
+<td>61.6</td>
+<td>62.3</td>
+<td>63.6</td>
+<td>63.8</td>
+<td>64.8</td>
+<td>64.4</td>
+<td>64.7</td>
+<td>+1.8%</td>
+</tr>
+<tr>
+<td>CAI Wealth Management</td>
+<td>123.2</td>
+<td>123.9</td>
+<td>124.9</td>
+<td>127.7</td>
+<td>133.2</td>
+<td>204.9</td>
+<td>209.2</td>
+<td>214.7</td>
+<td>213.3</td>
+<td>+60.2%</td>
+</tr>
+<tr>
+<td>Of which France</td>
+<td>39.5</td>
+<td>39.6</td>
+<td>39.3</td>
+<td>39.5</td>
+<td>40.9</td>
+<td>40.7</td>
+<td>41.6</td>
+<td>41.8</td>
+<td>43.6</td>
+<td>+6.4%</td>
+</tr>
+<tr>
+<td>Of which International(1)</td>
+<td>83.7</td>
+<td>84.3</td>
+<td>85.6</td>
+<td>88.1</td>
+<td>92.2</td>
+<td>164.3</td>
+<td>167.5</td>
+<td>173.0</td>
+<td>169.7</td>
+<td>+84.0%</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>185</td>
+<td>186</td>
+<td>186</td>
+<td>190</td>
+<td>197</td>
+<td>269</td>
+<td>274</td>
+<td>279</td>
+<td>278</td>
+<td>41.3%</td>
+</tr>
+</table>
+
+(1) excluding institutional clients' assets under custody
+
+
+<!-- PageFooter="☒ CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="55" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## APPENDICES ACTIVITY INDICATORS - AG DIVISION - INSURANCE
+
+
+### Life insurance outstandings (€bn)
+
+
+<table>
+<tr>
+<th>€bn</th>
+<th>Mar. 23</th>
+<th>Jun. 23</th>
+<th>Sept. 23</th>
+<th>Dec. 23</th>
+<th>Mar. 24</th>
+<th>Jun. 24</th>
+<th>Sept. 24</th>
+<th>Dec. 24</th>
+<th>Mar. 25</th>
+<th>A Mar./Mar.</th>
+</tr>
+<tr>
+<td>Unit-linked</td>
+<td>88.1</td>
+<td>91.1</td>
+<td>89.6</td>
+<td>95.4</td>
+<td>98.7</td>
+<td>99.8</td>
+<td>102.8</td>
+<td>104.1</td>
+<td>105.7</td>
+<td>+7.1%</td>
+</tr>
+<tr>
+<td>In Euros</td>
+<td>236.4</td>
+<td>235.2</td>
+<td>234.6</td>
+<td>234.9</td>
+<td>236.2</td>
+<td>238.2</td>
+<td>240.5</td>
+<td>243.2</td>
+<td>246.7</td>
+<td>+4.4%</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>324.6</td>
+<td>326.3</td>
+<td>324.3</td>
+<td>330.3</td>
+<td>334.9</td>
+<td>337.9</td>
+<td>343.2</td>
+<td>347.3</td>
+<td>352.4</td>
+<td>5.2%</td>
+</tr>
+<tr>
+<td>Share of unit-linked</td>
+<td>27.2%</td>
+<td>27.9%</td>
+<td>27.6%</td>
+<td>28.9%</td>
+<td>29.5%</td>
+<td>29.5%</td>
+<td>29.9%</td>
+<td>30.0%</td>
+<td>30.0%</td>
+<td>+0.5 pt</td>
+</tr>
+</table>
+
+
+<figure>
+<figcaption>Insurance - Breakdown of investments (excluding unit-linked)*</figcaption>
+
+0.8%
+
+1.7%
+
+1.9%
+
+7.2%
+
+7.1%
+
+7.3%
+
+7.8%
+
+7.8%
+
+7.8%
+
+8.7%
+
+8.5%
+
+8.5%
+
+Short term investments
+
+.Equity
+
+Private equity, infrastructures,
+alternate investments
+
+75.5%
+
+75.0%
+
+74.5%
+
+Real estate (buildings, shares,
+shares in SCIs)
+
+Interest rate products (bonds,
+etc ... )
+
+</figure>
+
+
+Market value Mar. 24
+
+Market value Dec. 24
+
+Market value Mar. 25
+
+
+### Combined Ratio - P&C
+
+
+<table>
+<tr>
+<th></th>
+<th>Q1-24</th>
+<th>Q1-25</th>
+</tr>
+<tr>
+<td>Combined Ratio</td>
+<td>93.8%</td>
+<td>93.2%</td>
+</tr>
+</table>
+
+
+Combined property & casualty ratio in France (Pacifica)
+including discounting and excluding undiscounting, net of
+reinsurance: (claims + operating expenses + fee and
+commission income)/gross earned premiums;
+
+\* Net of securities sold under repurchase agreements and amounts due to unit-holders of consolidated UCIs in particular
+
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="56" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## ACTIVITY INDICATORS - AG DIVISION - INSURANCE REVENUES
+
+
+<figure>
+</figure>
+
+
+<table>
+<tr>
+<th>Business</th>
+<th></th>
+<th>Model Average weight</th>
+<th>Components</th>
+<th>Evolution and volatility factors</th>
+<th>Relative sensitivity estimated by model</th>
+</tr>
+<tr>
+<td>Savings, Retirement,</td>
+<td></td>
+<td rowspan="2">VFA ~70%</td>
+<td></td>
+<td>· Allocation of the CSM of the VFA model essentially depends on: o the evolution of outstandings (amount, behaviour of policyholders) current market conditions (interest rates, equities, spreads) largely</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>· CSM allocation</td>
+<td>o absorbed by the CSM</td>
+<td>+</td>
+</tr>
+<tr>
+<td>Funeral</td>
+<td></td>
+<td></td>
+<td>· Loss component (*)</td>
+<td>o forward-looking market conditions (over-return scenario)</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>· RA amortisation</td>
+<td>· From time to time, VFA and BBA revenues may be affected by the observation of operating variances and/or the re-evaluation of the profitability of some contracts (loss component)</td>
+<td></td>
+</tr>
+<tr>
+<td>Death &amp; disability</td>
+<td></td>
+<td></td>
+<td>· Operating variances (*) · Reinsurance (*)</td>
+<td>· Allocation of the CSM of the BBA model depends on: o the profitability of the Death &amp; Disability and Creditor portfolio</td>
+<td>+</td>
+</tr>
+<tr>
+<td>(excl. funeral),</td>
+<td></td>
+<td>BBA</td>
+<td></td>
+<td>o the evolution of claims on these portfolios</td>
+<td>+</td>
+</tr>
+<tr>
+<td>Creditor,</td>
+<td></td>
+<td>~15%</td>
+<td></td>
+<td>o The financial markets evolution (interest rates and spreads)</td>
+<td>+</td>
+</tr>
+<tr>
+<td>Group insurance</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>· Technical result (net of</td>
+<td>· Evolution of premiums and cost of reinsurance</td>
+<td>+</td>
+</tr>
+<tr>
+<td>P&amp;C</td>
+<td></td>
+<td>PAA</td>
+<td>reinsurance)</td>
+<td>· Level of claims, with:</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>~15%</td>
+<td></td>
+<td>o the occurrence of major weather events</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>· Financial result (*)</td>
+<td>o the change in the rate curves of the current financial year</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>· Financial result depending on market conditions</td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="2">Other non- insurance activities</td>
+<td rowspan="2"></td>
+<td rowspan="2">~0%</td>
+<td rowspan="2">· Refinancing cost · Equity investments</td>
+<td rowspan="2">· Refinancing cost · Change in the valuation of equity investments classified as JVR held by the holding company</td>
+<td></td>
+</tr>
+<tr>
+<td>+</td>
+</tr>
+</table>
+
+(*) components included in "other revenues" in the previous publications
+
+
+CRÉDIT AGRICOLE S.A.
+
+<!-- PageNumber="57" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## ACTIVITY INDICATORS - AG DIVISION - INSURANCE REVENUES
+
+
+<table>
+<tr>
+<th>Revenues by activity - proforma series (€m)</th>
+<th>Q1-24</th>
+<th>Q2-24</th>
+<th>Q3-24</th>
+<th>Q4-24</th>
+<th>Q1-25</th>
+<th>Q1/Q1</th>
+</tr>
+<tr>
+<td>Savings, Retirement, Funeral (VFA)</td>
+<td>473</td>
+<td>568</td>
+<td>411</td>
+<td>512</td>
+<td>505</td>
+<td>+6.6%</td>
+</tr>
+<tr>
+<td>Death &amp; disability (excl. funeral), Creditor, Group insurance (BBA)</td>
+<td>143</td>
+<td>87</td>
+<td>117</td>
+<td>68</td>
+<td>103</td>
+<td>-27.9%</td>
+</tr>
+<tr>
+<td>P&amp;C (PAA)</td>
+<td>97</td>
+<td>99</td>
+<td>101</td>
+<td>134</td>
+<td>122</td>
+<td>+26.2%</td>
+</tr>
+<tr>
+<td>Other non-insurance activities</td>
+<td>8</td>
+<td>20</td>
+<td>6</td>
+<td>0</td>
+<td>-3</td>
+<td>ns</td>
+</tr>
+<tr>
+<td>TOTAL</td>
+<td>722</td>
+<td>774</td>
+<td>635</td>
+<td>714</td>
+<td>727</td>
+<td>0.7%</td>
+</tr>
+</table>
+
+
+<!-- PageFooter="GROUPE CRÉDIT AGRICOLE" -->
+<!-- PageFooter="RÉSULTATS DU 1ER TRIMESTRE 2025" -->
+<!-- PageFooter="☒" -->
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="58" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## APPENDICES ACTIVITY INDICATORS - AG DIVISION - AMUNDI
+
+
+<figure>
+<figcaption>Breakdown of assets under management by asset class (€bn)</figcaption>
+
+15.7%
+
+16.1%
+
+JV
+
+9.1%
+
+8.0%
+
+Treasury
+
+17.4%
+
+19.8%
+
+Passive management
+
+5.0%
+
+4.9%
+
+Real, alternative and structured
+assets
+
+9.9%
+
+9.1%
+
+Equities
+
+12.7%
+
+11.6%
+
+Multi-assets
+
+Bonds
+
+30.2%
+
+30.5%
+
+Mars 24
+
+Mars 25
+
+</figure>
+
+
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="59" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## APPENDICES ACTIVITY INDICATORS - SFS DIVISION
+
+
+### Consumer finance and leasing/factored revenues (€m)
+
+
+#### CAPFM OUTSTANDINGS
+
+
+##### Personal Finance & Mobility - Gross managed loans
+
+
+<table>
+<tr>
+<th>(€bn)</th>
+<th>Mar. 23</th>
+<th>Jun. 23</th>
+<th>Sept. 23</th>
+<th>Dec. 23</th>
+<th>Mar. 24</th>
+<th>Jun. 24</th>
+<th>Sept. 24</th>
+<th>Dec. 24</th>
+<th>Mar. 25</th>
+<th>A Mar./Mar.</th>
+</tr>
+<tr>
+<td>Crédit Agricole Group (LCL &amp; RBs)</td>
+<td>21.8</td>
+<td>22.0</td>
+<td>22.1</td>
+<td>22.5</td>
+<td>22.7</td>
+<td>23.1</td>
+<td>23.4</td>
+<td>23.7</td>
+<td>23.8</td>
+<td>4.4%</td>
+</tr>
+<tr>
+<td>Automobile (CA Auto Bank + auto partnersh</td>
+<td>40.3</td>
+<td>40.4</td>
+<td>43.6</td>
+<td>44.7</td>
+<td>45.6</td>
+<td>46.0</td>
+<td>46.6</td>
+<td>48.4</td>
+<td>49.6</td>
+<td>8.6%</td>
+</tr>
+<tr>
+<td>o/w CA Auto Bank</td>
+<td>-</td>
+<td>24.7</td>
+<td>26.8</td>
+<td>27.5</td>
+<td>28.9</td>
+<td>29.3</td>
+<td>29.6</td>
+<td>29.9</td>
+<td>29.8</td>
+<td>3.0%</td>
+</tr>
+<tr>
+<td>Other entities</td>
+<td>43.3</td>
+<td>44.6</td>
+<td>45.4</td>
+<td>45.8</td>
+<td>46.0</td>
+<td>46.6</td>
+<td>46.8</td>
+<td>47.3</td>
+<td>47.4</td>
+<td>3.0%</td>
+</tr>
+<tr>
+<td>o/w CAPFM France</td>
+<td>13.3</td>
+<td>13.6</td>
+<td>13.7</td>
+<td>13.7</td>
+<td>13.5</td>
+<td>13.4</td>
+<td>13.1</td>
+<td>12.9</td>
+<td>12.6</td>
+<td>-6.5%</td>
+</tr>
+<tr>
+<td>o/w Agos</td>
+<td>15.9</td>
+<td>16.4</td>
+<td>16.5</td>
+<td>16.8</td>
+<td>17.0</td>
+<td>17.3</td>
+<td>17.5</td>
+<td>17.7</td>
+<td>17.7</td>
+<td>4.3%</td>
+</tr>
+<tr>
+<td>o/w Other entities</td>
+<td>14.1</td>
+<td>14.7</td>
+<td>15.1</td>
+<td>15.3</td>
+<td>15.5</td>
+<td>15.9</td>
+<td>16.3</td>
+<td>16.7</td>
+<td>17.1</td>
+<td>10.3%</td>
+</tr>
+<tr>
+<td>-</td>
+<td>105.5</td>
+<td>107.0</td>
+<td>111.1</td>
+<td>113.0</td>
+<td>114.4</td>
+<td>115.8</td>
+<td>116.8</td>
+<td>119.3</td>
+<td>120.7</td>
+<td>5.6%</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>O/w total consolidated loans</td>
+<td>39.4</td>
+<td>64.5</td>
+<td>65.8</td>
+<td>66.8</td>
+<td>68.1</td>
+<td>68.6</td>
+<td>68.9</td>
+<td>69.1</td>
+<td>68.7</td>
+<td>0.8%</td>
+</tr>
+</table>
+
+
+#### CAL&F OUTSTANDINGS
+
+
+##### Leasing & Factoring (CAL&F) - Leasing book and factored receivables
+
+
+<table>
+<tr>
+<th>(€bn)</th>
+<th>Mar. 23</th>
+<th>Jun. 23</th>
+<th>Sept. 23</th>
+<th>Dec. 23</th>
+<th>Mar. 24</th>
+<th>Jun. 24</th>
+<th>Sept. 24</th>
+<th>Dec. 24</th>
+<th>Mar. 25</th>
+<th>A Mar./Mar.</th>
+</tr>
+<tr>
+<td>Leasing portfolio</td>
+<td>17.8</td>
+<td>18.3</td>
+<td>18.5</td>
+<td>18.9</td>
+<td>19.4</td>
+<td>19.8</td>
+<td>20.1</td>
+<td>20.3</td>
+<td>20.5</td>
+<td>5.7%</td>
+</tr>
+<tr>
+<td>incl. France</td>
+<td>14.4</td>
+<td>14.7</td>
+<td>14.9</td>
+<td>15.1</td>
+<td>15.4</td>
+<td>15.7</td>
+<td>15.9</td>
+<td>16.0</td>
+<td>16.1</td>
+<td>4.5%</td>
+</tr>
+<tr>
+<td>Factored turnover</td>
+<td>29.3</td>
+<td>30.6</td>
+<td>28.9</td>
+<td>32.4</td>
+<td>30.4</td>
+<td>32.2</td>
+<td>30.0</td>
+<td>34.6</td>
+<td>32.1</td>
+<td>5.4%</td>
+</tr>
+<tr>
+<td>incl. France</td>
+<td>18.0</td>
+<td>19.3</td>
+<td>17.8</td>
+<td>20.4</td>
+<td>18.7</td>
+<td>19.9</td>
+<td>18.1</td>
+<td>21.2</td>
+<td>19.3</td>
+<td>2.8%</td>
+</tr>
+</table>
+
+
+CRÉDIT AGRICOLE S.A.
+
+<!-- PageNumber="60" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## APPENDICES ACTIVITY INDICATORS - FRB DIVISION
+
+
+### Customer assets and loans outstanding (€bn)
+
+
+#### LCL - Customer savings (€bn)
+
+
+<table>
+<tr>
+<th>Customer savings (€bn)*</th>
+<th>Mar.23</th>
+<th>Jun. 23</th>
+<th>Sept. 23</th>
+<th>Dec. 23</th>
+<th>Mar.24</th>
+<th>Jun. 24</th>
+<th>Sept. 24</th>
+<th>Dec. 24</th>
+<th>Mar.25</th>
+<th>A Mar./Mar.</th>
+</tr>
+<tr>
+<td>Securities</td>
+<td>14.9</td>
+<td>13.9</td>
+<td>14.2</td>
+<td>13.8</td>
+<td>15.7</td>
+<td>14.4</td>
+<td>14.6</td>
+<td>14.8</td>
+<td>14.7</td>
+<td>(6.3%)</td>
+</tr>
+<tr>
+<td>Mutual funds and REITs</td>
+<td>8.5</td>
+<td>8.9</td>
+<td>8.9</td>
+<td>9.2</td>
+<td>9.8</td>
+<td>9.6</td>
+<td>10.4</td>
+<td>10.2</td>
+<td>9.6</td>
+<td>(2.6%)</td>
+</tr>
+<tr>
+<td>Life insurance</td>
+<td>62.6</td>
+<td>63.7</td>
+<td>62.1</td>
+<td>62.6</td>
+<td>62.4</td>
+<td>62.3</td>
+<td>63.8</td>
+<td>64.7</td>
+<td>64.7</td>
+<td>+3.7%</td>
+</tr>
+<tr>
+<td>Off-balance sheet savings</td>
+<td>86.1</td>
+<td>86.5</td>
+<td>85.2</td>
+<td>85.6</td>
+<td>87.9</td>
+<td>86.4</td>
+<td>88.8</td>
+<td>89.7</td>
+<td>89.0</td>
+<td>+1.2%</td>
+</tr>
+<tr>
+<td>Demand deposits</td>
+<td>67.2</td>
+<td>65.4</td>
+<td>63.8</td>
+<td>62.0</td>
+<td>58.5</td>
+<td>59.3</td>
+<td>59.5</td>
+<td>60.1</td>
+<td>58.3</td>
+<td>(0.3%)</td>
+</tr>
+<tr>
+<td>Home purchase savings plans</td>
+<td>9.9</td>
+<td>9.7</td>
+<td>9.6</td>
+<td>9.4</td>
+<td>9.3</td>
+<td>9.2</td>
+<td>9.0</td>
+<td>8.9</td>
+<td>8.8</td>
+<td>(5.2%)</td>
+</tr>
+<tr>
+<td>Bonds</td>
+<td>7.4</td>
+<td>8.0</td>
+<td>8.0</td>
+<td>10.0</td>
+<td>10.2</td>
+<td>11.7</td>
+<td>11.4</td>
+<td>11.2</td>
+<td>11.6</td>
+<td>+14.3%</td>
+</tr>
+<tr>
+<td>Passbooks*</td>
+<td>49.7</td>
+<td>49.1</td>
+<td>50.1</td>
+<td>51.0</td>
+<td>52.9</td>
+<td>53.0</td>
+<td>53.2</td>
+<td>53.4</td>
+<td>56.7</td>
+<td>+7.3%</td>
+</tr>
+<tr>
+<td>Time deposits</td>
+<td>20.6</td>
+<td>22.2</td>
+<td>24.3</td>
+<td>29.7</td>
+<td>32.1</td>
+<td>32.3</td>
+<td>31.3</td>
+<td>31.7</td>
+<td>32.0</td>
+<td>(0.2%)</td>
+</tr>
+<tr>
+<td>On-balance sheet savings</td>
+<td>154.9</td>
+<td>154.4</td>
+<td>155.9</td>
+<td>162.0</td>
+<td>162.9</td>
+<td>165.4</td>
+<td>164.5</td>
+<td>165.3</td>
+<td>167.5</td>
+<td>+2.8%</td>
+</tr>
+<tr>
+<td>TOTAL</td>
+<td>241.0</td>
+<td>240.9</td>
+<td>241.0</td>
+<td>247.6</td>
+<td>250.8</td>
+<td>251.8</td>
+<td>253.3</td>
+<td>255.0</td>
+<td>256.5</td>
+<td>+2.2%</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+<th>Passbooks* o/w (€bn)</th>
+<th>Mar.23 Jun. 23</th>
+<th>Sept. 23</th>
+<th>Dec. 23</th>
+<th>Mar.24</th>
+<th>Jun. 24</th>
+<th>Sept. 24</th>
+<th>Déc. 24</th>
+<th>Mar.25</th>
+<th>A Mar./Mar.</th>
+</tr>
+<tr>
+<td>Livret A</td>
+<td>14.6 15.3</td>
+<td>15.7</td>
+<td>15.8</td>
+<td>16.8</td>
+<td>17.1</td>
+<td>17.4</td>
+<td>17.5</td>
+<td>18.2</td>
+<td>+8.7%</td>
+</tr>
+<tr>
+<td>LEP</td>
+<td>1.5 1.6</td>
+<td>1.7</td>
+<td>2.0</td>
+<td>2.3</td>
+<td>2.4</td>
+<td>2.4</td>
+<td>2.5</td>
+<td>2.6</td>
+<td>+11.3%</td>
+</tr>
+<tr>
+<td>LDD</td>
+<td>9.4 9.6</td>
+<td>9.7</td>
+<td>9.6</td>
+<td>10.0</td>
+<td>10.1</td>
+<td>10.2</td>
+<td>10.1</td>
+<td>10.5</td>
+<td>+4.5%</td>
+</tr>
+<tr>
+<td>TOTAL</td>
+<td>25.6 26.5</td>
+<td>27.1</td>
+<td>27.5</td>
+<td>29.1</td>
+<td>29.6</td>
+<td>30.0</td>
+<td>30.0</td>
+<td>31.3</td>
+<td>+7.5%</td>
+</tr>
+</table>
+
+\* Including liquid company savings. Outstanding Livret A, LDD and LEP before centralisation with the CDC.
+
+
+### Retail Banking in France (LCL) - Loans outstandings
+
+
+<table>
+<tr>
+<th>Loans outstanding (€bn)</th>
+<th>Mar.23</th>
+<th>Jun. 23</th>
+<th>Sept. 23</th>
+<th>Dec. 23</th>
+<th>Mar.24</th>
+<th>Jun. 24</th>
+<th>Sept. 24</th>
+<th>Déc. 24</th>
+<th>Mar.25</th>
+<th>A Mar./Mar.</th>
+</tr>
+<tr>
+<td>Corporate</td>
+<td>31.3</td>
+<td>31.6</td>
+<td>31.6</td>
+<td>31.7</td>
+<td>31.3</td>
+<td>31.5</td>
+<td>31.6</td>
+<td>31.9</td>
+<td>31.9</td>
+<td>+2.0%</td>
+</tr>
+<tr>
+<td>Professionals</td>
+<td>23.9</td>
+<td>24.1</td>
+<td>24.2</td>
+<td>24.4</td>
+<td>24.4</td>
+<td>24.4</td>
+<td>24.4</td>
+<td>24.6</td>
+<td>24.7</td>
+<td>+1.1%</td>
+</tr>
+<tr>
+<td>Consumer credit</td>
+<td>8.6</td>
+<td>8.7</td>
+<td>8.6</td>
+<td>8.7</td>
+<td>8.6</td>
+<td>8.6</td>
+<td>8.7</td>
+<td>8.9</td>
+<td>8.5</td>
+<td>(1.0%)</td>
+</tr>
+<tr>
+<td>Home loans</td>
+<td>101.8</td>
+<td>102.9</td>
+<td>103.5</td>
+<td>103.9</td>
+<td>103.8</td>
+<td>103.7</td>
+<td>104.1</td>
+<td>105.3</td>
+<td>105.6</td>
+<td>+1.7%</td>
+</tr>
+<tr>
+<td>TOTAL</td>
+<td>165.6</td>
+<td>167.3</td>
+<td>168.0</td>
+<td>168.8</td>
+<td>168.1</td>
+<td>168.2</td>
+<td>168.8</td>
+<td>170.7</td>
+<td>170.7</td>
+<td>+1.6%</td>
+</tr>
+</table>
+
+
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="61" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## APPENDICES ACTIVITY INDICATORS - FRB DIVISION
+
+
+### Revenues (€m)
+
+
+<table>
+<tr>
+<th>Revenues (€m)</th>
+<th>Q1-23</th>
+<th>Q2-23</th>
+<th>Q3-23</th>
+<th>Q4-23</th>
+<th>Q1-24</th>
+<th>Q2-24</th>
+<th>Q3-24</th>
+<th>Q4-24</th>
+<th>Q1-25</th>
+<th>A Q1/Q1</th>
+</tr>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+<tr>
+<td>Net interest income *, **</td>
+<td>469</td>
+<td>464</td>
+<td>546</td>
+<td>507</td>
+<td>469</td>
+<td>514</td>
+<td>506</td>
+<td>469</td>
+<td>461</td>
+<td>(1.7%)</td>
+</tr>
+<tr>
+<td>Home purchase savings plans (PEL/CEL)</td>
+<td>0</td>
+<td>0</td>
+<td>52</td>
+<td>6</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>(100.0%)</td>
+</tr>
+<tr>
+<td>Net interest income excl. HPSP</td>
+<td>469</td>
+<td>464</td>
+<td>494</td>
+<td>501</td>
+<td>469</td>
+<td>513</td>
+<td>506</td>
+<td>469</td>
+<td>461</td>
+<td>(1.8%)</td>
+</tr>
+<tr>
+<td>Fee and commission Income **</td>
+<td>468</td>
+<td>495</td>
+<td>450</td>
+<td>452</td>
+<td>485</td>
+<td>465</td>
+<td>473</td>
+<td>491</td>
+<td>502</td>
+<td>+3.6%</td>
+</tr>
+<tr>
+<td>- Securities</td>
+<td>31</td>
+<td>30</td>
+<td>30</td>
+<td>33</td>
+<td>33</td>
+<td>30</td>
+<td>28</td>
+<td>31</td>
+<td>24</td>
+<td>(28.3%)</td>
+</tr>
+<tr>
+<td>- Insurance</td>
+<td>196</td>
+<td>196</td>
+<td>182</td>
+<td>183</td>
+<td>204</td>
+<td>193</td>
+<td>190</td>
+<td>188</td>
+<td>217</td>
+<td>+6.2%</td>
+</tr>
+<tr>
+<td>- Account management and payment instruments **</td>
+<td>241</td>
+<td>268</td>
+<td>238</td>
+<td>237</td>
+<td>248</td>
+<td>242</td>
+<td>255</td>
+<td>271</td>
+<td>262</td>
+<td>+5.8%</td>
+</tr>
+<tr>
+<td>TOTAL</td>
+<td>936</td>
+<td>959</td>
+<td>996</td>
+<td>959</td>
+<td>954</td>
+<td>979</td>
+<td>979</td>
+<td>960</td>
+<td>963</td>
+<td>+1.0%</td>
+</tr>
+<tr>
+<td>TOTAL excl. HPSP</td>
+<td>936</td>
+<td>959</td>
+<td>944</td>
+<td>953</td>
+<td>954</td>
+<td>978</td>
+<td>979</td>
+<td>960</td>
+<td>963</td>
+<td>+1.0%</td>
+</tr>
+</table>
+
+\* incl. other revenues
+
+** Accounting restatement between NII and commissions made since Q1-25
+
+
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="62" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageHeader="APPENDICES ACTIVITY INDICATORS - RB DIVISION" -->
+
+
+### Customer assets and loans outstanding (€bn)
+
+
+<table>
+<tr>
+<th>Customer assets (€bn)*</th>
+<th>Mar. 23</th>
+<th>Jun. 23</th>
+<th>Sept. 23</th>
+<th>Dec. 23</th>
+<th>Mar. 24</th>
+<th>Jun. 24</th>
+<th>Sept. 24</th>
+<th>Dec. 24</th>
+<th>Mar. 25</th>
+<th>A Mar./Mar.</th>
+</tr>
+<tr>
+<td>Securities</td>
+<td>46.2</td>
+<td>46.8</td>
+<td>46.7</td>
+<td>47.5</td>
+<td>49.4</td>
+<td>46.8</td>
+<td>48.4</td>
+<td>47.8</td>
+<td>49.3</td>
+<td>(0.2%)</td>
+</tr>
+<tr>
+<td>Mutual funds and REITs</td>
+<td>26.8</td>
+<td>27.8</td>
+<td>27.6</td>
+<td>28.5</td>
+<td>29.5</td>
+<td>29.6</td>
+<td>31.0</td>
+<td>30.3</td>
+<td>32.3</td>
+<td>+9.5%</td>
+</tr>
+<tr>
+<td>Life insurance</td>
+<td>211.6</td>
+<td>212.4</td>
+<td>210.6</td>
+<td>216.2</td>
+<td>218.7</td>
+<td>219.8</td>
+<td>222.2</td>
+<td>226.9</td>
+<td>231.0</td>
+<td>+5.6%</td>
+</tr>
+<tr>
+<td>Off-balance sheet assets</td>
+<td>284.6</td>
+<td>287.1</td>
+<td>284.9</td>
+<td>292.2</td>
+<td>297.6</td>
+<td>296.2</td>
+<td>301.6</td>
+<td>305.0</td>
+<td>312.6</td>
+<td>+5.0%</td>
+</tr>
+<tr>
+<td>Demand deposits</td>
+<td>218.0</td>
+<td>212.0</td>
+<td>211.2</td>
+<td>204.1</td>
+<td>197.5</td>
+<td>201.2</td>
+<td>200.1</td>
+<td>199.0</td>
+<td>196.8</td>
+<td>(0.3%)</td>
+</tr>
+<tr>
+<td>Home purchase savings schemes</td>
+<td>108.4</td>
+<td>105.8</td>
+<td>103.4</td>
+<td>101.6</td>
+<td>96.7</td>
+<td>93.5</td>
+<td>91.3</td>
+<td>90.7</td>
+<td>87.7</td>
+<td>(9.4%)</td>
+</tr>
+<tr>
+<td>Passbook accounts</td>
+<td>197.1</td>
+<td>198.1</td>
+<td>199.4</td>
+<td>203.8</td>
+<td>206.0</td>
+<td>207.6</td>
+<td>209.6</td>
+<td>215.8</td>
+<td>218.0</td>
+<td>+5.8%</td>
+</tr>
+<tr>
+<td>Time deposits</td>
+<td>52.8</td>
+<td>63.1</td>
+<td>73.0</td>
+<td>86.3</td>
+<td>95.3</td>
+<td>99.3</td>
+<td>100.3</td>
+<td>100.4</td>
+<td>100.6</td>
+<td>+5.6%</td>
+</tr>
+<tr>
+<td>On-balance sheet assets</td>
+<td>576.4</td>
+<td>579.0</td>
+<td>586.9</td>
+<td>595.8</td>
+<td>595.5</td>
+<td>601.5</td>
+<td>601.3</td>
+<td>605.9</td>
+<td>603.2</td>
+<td>+1.3%</td>
+</tr>
+<tr>
+<td>TOTAL</td>
+<td>861.0</td>
+<td>866.1</td>
+<td>871.9</td>
+<td>888.0</td>
+<td>893.1</td>
+<td>897.8</td>
+<td>903.0</td>
+<td>910.9</td>
+<td>915.7</td>
+<td>+2.5%</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+<th>Passbooks, o/w (€bn)*</th>
+<th>Mar. 23</th>
+<th>Jun. 23</th>
+<th>Sept. 23</th>
+<th>Dec. 23</th>
+<th>Mar. 24</th>
+<th>Jun. 24</th>
+<th>Sept. 24</th>
+<th>Dec. 24</th>
+<th>Mar. 25</th>
+<th>A Mar./Mar.</th>
+</tr>
+<tr>
+<td>Livret A</td>
+<td>75.6</td>
+<td>77.9</td>
+<td>79.6</td>
+<td>82.3</td>
+<td>84.3</td>
+<td>85.8</td>
+<td>86.9</td>
+<td>90.2</td>
+<td>91.3</td>
+<td>+8.2%</td>
+</tr>
+<tr>
+<td>LEP</td>
+<td>17.2</td>
+<td>17.8</td>
+<td>18.6</td>
+<td>22.9</td>
+<td>24.4</td>
+<td>24.5</td>
+<td>24.9</td>
+<td>26.4</td>
+<td>26.7</td>
+<td>+9.2%</td>
+</tr>
+<tr>
+<td>LDD</td>
+<td>39.6</td>
+<td>40.3</td>
+<td>40.8</td>
+<td>41.9</td>
+<td>42.6</td>
+<td>43.1</td>
+<td>43.4</td>
+<td>44.6</td>
+<td>45.1</td>
+<td>+6.0%</td>
+</tr>
+<tr>
+<td>Mutual shareholders passbook account</td>
+<td>13.1</td>
+<td>13.5</td>
+<td>13.9</td>
+<td>13.9</td>
+<td>14.7</td>
+<td>15.3</td>
+<td>15.9</td>
+<td>16.6</td>
+<td>17.6</td>
+<td>+19.6%</td>
+</tr>
+</table>
+
+\* including customer financial instruments. Livret A, LDD and LEP outstandings before centralisation with the CDC.
+
+
+<table>
+<tr>
+<th>Loans outstanding (€bn)</th>
+<th>Mar. 23</th>
+<th>Jun. 23</th>
+<th>Sept. 23</th>
+<th>Dec. 23</th>
+<th>Mar. 24</th>
+<th>Jun. 24</th>
+<th>Sept. 24</th>
+<th>Dec. 24</th>
+<th>Mar. 25</th>
+<th>A Mar./Mar.</th>
+</tr>
+<tr>
+<td>Home loans</td>
+<td>387.2</td>
+<td>390.5</td>
+<td>392.1</td>
+<td>392.7</td>
+<td>390.7</td>
+<td>390.4</td>
+<td>391.0</td>
+<td>392.0</td>
+<td>392.3</td>
+<td>+0.4%</td>
+</tr>
+<tr>
+<td>Consumer credit</td>
+<td>22.9</td>
+<td>23.2</td>
+<td>23.2</td>
+<td>23.6</td>
+<td>23.5</td>
+<td>23.6</td>
+<td>23.9</td>
+<td>24.3</td>
+<td>24.2</td>
+<td>+3.2%</td>
+</tr>
+<tr>
+<td>SMES</td>
+<td>116.8</td>
+<td>118.1</td>
+<td>119.5</td>
+<td>121.0</td>
+<td>121.7</td>
+<td>122.4</td>
+<td>124.1</td>
+<td>125.8</td>
+<td>126.6</td>
+<td>+4.0%</td>
+</tr>
+<tr>
+<td>Small businesses</td>
+<td>31.0</td>
+<td>31.1</td>
+<td>30.8</td>
+<td>30.5</td>
+<td>30.1</td>
+<td>29.9</td>
+<td>29.8</td>
+<td>29.6</td>
+<td>29.5</td>
+<td>(2.0%)</td>
+</tr>
+<tr>
+<td>Farming loans</td>
+<td>45.5</td>
+<td>46.3</td>
+<td>46.5</td>
+<td>46.0</td>
+<td>46.3</td>
+<td>46.8</td>
+<td>47.2</td>
+<td>46.6</td>
+<td>47.1</td>
+<td>+1.9%</td>
+</tr>
+<tr>
+<td>Local authorities</td>
+<td>33.3</td>
+<td>33.2</td>
+<td>32.7</td>
+<td>32.4</td>
+<td>31.4</td>
+<td>30.8</td>
+<td>29.7</td>
+<td>29.5</td>
+<td>29.0</td>
+<td>(7.4%)</td>
+</tr>
+<tr>
+<td>TOTAL</td>
+<td>636.7</td>
+<td>642.4</td>
+<td>644.9</td>
+<td>646.2</td>
+<td>643.6</td>
+<td>644.0</td>
+<td>645.8</td>
+<td>647.8</td>
+<td>648.8</td>
+<td>+0.8%</td>
+</tr>
+</table>
+
+
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="63" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE GROUP" -->
+
+
+## APPENDICES ACTIVITY INDICATORS - RB DIVISION
+
+
+### Fee and commission income breakdown/Evolution of credit risk outstandings (€ m)
+
+
+<table>
+<tr>
+<th>€m</th>
+<th>Q1-23</th>
+<th>Q2-23</th>
+<th>Q3-23</th>
+<th>Q4-23</th>
+<th>Q1-24</th>
+<th>Q2-24</th>
+<th>Q3-24</th>
+<th>Q4-24</th>
+<th>Q1-25</th>
+<th>A Q1/Q1</th>
+</tr>
+<tr>
+<td>Services and other banking transactions</td>
+<td>228</td>
+<td>227</td>
+<td>227</td>
+<td>209</td>
+<td>240</td>
+<td>230</td>
+<td>231</td>
+<td>238</td>
+<td>243</td>
+<td>+1.1%</td>
+</tr>
+<tr>
+<td>Securities</td>
+<td>77</td>
+<td>68</td>
+<td>65</td>
+<td>71</td>
+<td>80</td>
+<td>76</td>
+<td>77</td>
+<td>77</td>
+<td>87</td>
+<td>+8.3%</td>
+</tr>
+<tr>
+<td>Insurance</td>
+<td>976</td>
+<td>852</td>
+<td>852</td>
+<td>824</td>
+<td>1,086</td>
+<td>885</td>
+<td>890</td>
+<td>850</td>
+<td>1,043</td>
+<td>(3.9%)</td>
+</tr>
+<tr>
+<td>Account management and payment instruments</td>
+<td>519</td>
+<td>530</td>
+<td>538</td>
+<td>543</td>
+<td>543</td>
+<td>550</td>
+<td>562</td>
+<td>553</td>
+<td>561</td>
+<td>+3.3%</td>
+</tr>
+<tr>
+<td>Net fees &amp; commissions from other customer activities(1)</td>
+<td>108</td>
+<td>126</td>
+<td>116</td>
+<td>152</td>
+<td>103</td>
+<td>119</td>
+<td>125</td>
+<td>111</td>
+<td>113</td>
+<td>+9.6%</td>
+</tr>
+<tr>
+<td>TOTAL(1)</td>
+<td>1,908</td>
+<td>1,801</td>
+<td>1,798</td>
+<td>1,799</td>
+<td>2,052</td>
+<td>1,859</td>
+<td>1,886</td>
+<td>1,829</td>
+<td>2,046</td>
+<td>(0.3%)</td>
+</tr>
+</table>
+
+(1) Revenues generated by the subsidiaries of the Regional Banks, namely fees and commisions from leasing and operating leasing transactions
+
+
+### Regional Banks - Evolution of credit risk outstandings
+
+
+<table>
+<tr>
+<th>€m</th>
+<th>March 24</th>
+<th>June 24</th>
+<th>Sept. 24</th>
+<th>Dec. 24</th>
+<th>March 25</th>
+</tr>
+<tr>
+<td>Gross customer loans outstanding</td>
+<td>647,608</td>
+<td>648,040</td>
+<td>650,146</td>
+<td>652,353</td>
+<td>653,020</td>
+</tr>
+<tr>
+<td>of which: impaired loans</td>
+<td>11,875</td>
+<td>12,172</td>
+<td>12,272</td>
+<td>12,119</td>
+<td>12,560</td>
+</tr>
+<tr>
+<td>Loans loss reserves (incl. collective reserves)</td>
+<td>11,236</td>
+<td>11,507</td>
+<td>11,699</td>
+<td>11,696</td>
+<td>11,923</td>
+</tr>
+<tr>
+<td>of which: loans loss reserves for Stage 1 &amp; 2 outstandings</td>
+<td>5,280</td>
+<td>5,443</td>
+<td>5,474</td>
+<td>5,537</td>
+<td>5,639</td>
+</tr>
+<tr>
+<td>of which: loans loss reserves for Stage 3 outstandings</td>
+<td>5,956</td>
+<td>6,064</td>
+<td>6,225</td>
+<td>6,159</td>
+<td>6,283</td>
+</tr>
+<tr>
+<td>Impaired loans ratio</td>
+<td>1.8%</td>
+<td>1.9%</td>
+<td>1.9%</td>
+<td>1.9%</td>
+<td>1.9%</td>
+</tr>
+<tr>
+<td>Coverage ratio (excl. collective reserves)</td>
+<td>50.2%</td>
+<td>49.8%</td>
+<td>50.7%</td>
+<td>50.8%</td>
+<td>50.0%</td>
+</tr>
+<tr>
+<td>Coverage ratio (incl. collective reserves)</td>
+<td>94.6%</td>
+<td>94.5%</td>
+<td>95.3%</td>
+<td>96.5%</td>
+<td>94.9%</td>
+</tr>
+</table>
+
+
+<!-- PageFooter="☒ CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="64" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE GROUP" -->
+
+
+## APPENDICES CHANGE IN FRENCH RETAIL BANKING NEW LOANS PRODUCTION
+
+
+<figure>
+<figcaption>LCL new loans production (excluding SGL) since 2018 (€Bn)</figcaption>
+
+Average prod.
+
+Average prod.
+
+Average prod.
+
+Average prod.
+
+Average prod.
+
+Average prod.
+
+Average prod.
+
+8,2
+
+8,8
+
+7,3
+
+8,9
+
+10,5
+
+6,8
+
+6,8
+
+11,9
+
+10,1
+
+11,2
+
+8,2
+
+9,0
+
+9,2
+
+8,0
+
+8,7
+
+9,6
+
+8,9
+
+9,2
+
+9,7
+
+9,5
+
+9,2
+
+6,6
+
+2,1
+
+7,6
+
+7,8
+
+3,6
+
+3,0
+
+8,5
+
+2,4
+
+2,8
+
+2,1
+
+2,4
+
+1,1
+
+1,9
+
+6,9
+
+7,0
+
+6,5
+
+2,6
+
+7,2
+
+1,5
+
+7,0
+
+7,5
+
+2,6
+
+2,2
+
+2,5
+
+1,2
+
+1,8
+
+1,1
+
+2,5
+
+1,6
+
+2,4
+
+6,8
+
+6,3
+
+6,0
+
+6,7
+
+2,2
+
+1,0
+
+0,9
+
+1,1
+
+1,0
+
+1,1
+
+1,1
+
+1,6
+
+1,2
+
+1,9
+
+1,2
+
+1,5
+
+1,4
+
+5,1
+
+2,8
+
+1,3
+
+1,3
+
+1,3
+
+1,8
+
+2,5
+
+0,9
+
+1,1
+
+1,0
+
+1,2
+
+1,1
+
+1,6
+
+1,2
+
+2,1
+
+2,2
+
+2,4
+
+1,0
+
+1,4
+
+2,6
+
+3,9
+
+4,9
+
+2,8
+
+4,5
+
+1,1
+
+4,2
+
+4,3
+
+5,6
+
+4,9
+
+5,9
+
+6,1
+
+1,7
+
+3,9
+
+3,7
+
+3,9
+
+3,9
+
+3,3
+
+4,5
+
+5,2
+
+4,6
+
+5,8
+
+4,7
+
+1,1
+
+3,6
+
+3,3
+
+2,8
+
+1,1
+
+1,0
+
+2,3
+
+1,6
+
+1,9
+
+3,3
+
+3,7
+
+1,1
+
+2,4
+
+0.7
+
+0.8
+
+0.8
+
+0.8
+
+0.7
+
+0.9
+
+0.9
+
+0.8
+
+07
+
+05
+
+0.8
+
+0.7
+
+0.7
+
+0.7
+
+0.9
+
+0.8
+
+0.8
+
+0.8
+
+0.8
+
+0.7
+
+0.7
+
+0.7
+
+0.7
+
+0.7
+
+06
+
+06
+
+0.7
+
+0.6
+
+0 6
+
+Q1
+2018
+
+Q2
+2018
+
+Q3
+2018
+
+Q4
+2018
+
+Q1
+2019
+
+Q2
+2019
+
+Q3
+2019
+
+Q4
+2019
+
+Q1
+
+Q2
+2020
+
+Q3
+2020
+
+Q4
+2020
+
+Q1
+2021
+
+Q2
+2021
+
+Q3
+2021
+
+Q4
+2021
+
+Q1
+2022
+
+Q2
+2022
+
+Q3
+2022
+
+Q4
+2022
+
+Q1
+2023
+
+Q2
+2023
+
+Q3
+2023
+
+Q4
+2023
+
+Q1
+2024
+
+Q2
+2024
+
+Q3
+2024
+
+Q4
+2024
+
+Q1
+2025
+
+2020
+
+Consumer credit
+
+Homeloans
+
+Professionals
+
+Corporate
+
+</figure>
+
+
+<figure>
+<figcaption>Regional banks new loans production (excluding SGL) since 2018 (€Bn)</figcaption>
+
+Average prod.
+25,3
+
+Average prod.
+27,6
+
+Average prod.
+
+Average prod.
+29,5
+
+Average prod.
+30,5
+
+Average prod.
+24,5
+
+Average prod.
+20,9
+
+26,7
+
+28,8
+
+31,3
+
+32,3
+
+31,1
+
+30,0
+
+30,4
+
+31,8
+
+31,6
+
+28,0
+
+30,5
+
+23,1
+
+25,0
+
+25,9
+
+27,3
+
+26,7
+
+26,1
+
+26,8
+
+23,7
+
+26,3
+
+26,6
+
+25,9
+
+9,1
+
+11,6
+
+21,7
+
+11,1
+
+10,7
+
+12,5
+
+22,9
+
+22,5
+
+24,2
+
+21,5
+
+8,8
+
+8,0
+
+10,2
+
+9,7
+
+10,8
+
+8,6
+
+9,3
+
+11,9
+
+10,7
+
+10,4
+
+13,2
+
+18,0
+
+20,0
+
+21,3
+
+8,5
+
+8,6
+
+5,6
+
+9,3
+
+11,5
+
+11,0
+
+9,5
+
+10,9
+
+9,5
+
+9,1
+
+11,7
+
+9,7
+
+13,9
+
+15,7
+
+14,7
+
+14,7
+
+17,5
+
+16,9
+
+14,2
+
+15,8
+
+18,9
+
+18,0
+
+8,9
+
+12,6
+
+13,0
+
+13,9
+
+14,9
+
+18,6
+
+16,1
+
+15,2
+
+16,9
+
+17,9
+
+16,3
+
+13,0
+
+12,9
+
+11,5
+
+9,6
+
+7,2
+
+8,5
+
+10,2
+
+10,4
+
+9,9
+
+2.0
+
+2.3
+
+2.2
+
+2.4
+
+2.1
+
+2.3
+
+2.2
+
+2,7
+
+2.0
+
+14
+
+2.4
+
+2.2
+
+2.1
+
+2.4
+
+2.1
+
+2.4
+
+2.2
+
+2.3
+
+2.1
+
+2.1
+
+2.0
+
+2.0
+
+1.9
+
+2.0
+
+18
+
+2.0
+
+2.0
+
+2.1
+
+1.9
+
+Q1
+2018
+
+Q2
+2018
+
+Q3
+
+Q4
+
+Q1
+2019
+
+Q2
+2019
+
+Q3
+Q4
+2019
+2019
+
+Q1
+2020
+
+Q2
+2020
+
+Q3
+
+Q4
+
+Q1
+2021
+
+Q2
+
+Q3
+
+Q4
+
+Q1
+2022
+
+Q2
+
+Q3
+
+Q4
+
+Q1
+
+Q2
+2023
+
+Q3
+2023
+
+Q4
+2023
+
+Q1
+2024
+
+Q2
+2024
+
+Q3
+2024
+
+Q4
+2024
+
+Q1
+
+2018
+
+2018
+
+2020
+
+2020
+
+2021
+
+2021
+
+2021
+
+2022
+
+2022
+
+2022
+
+2023
+
+2025
+
+Consumer credit
+
+Home loans
+
+Corporates-Professionals-Agriculture-public entities
+
+</figure>
+
+
+CRÉDIT AGRICOLE S.A.
+
+<!-- PageNumber="65" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## APPENDICES ACTIVITY INDICATORS - BPI DIVISION
+
+
+### Loans outstandings/On-balance sheet deposits/Revenues by entity and by type of customer (%)
+
+
+<table>
+<tr>
+<th>CA Italy (€bn) *</th>
+<th>Mar. 23</th>
+<th>June 23</th>
+<th>Sept 23</th>
+<th>Dec 23</th>
+<th>Mar 24</th>
+<th>June 24</th>
+<th>Sept 24</th>
+<th>Dec. 24</th>
+<th>Mar 25</th>
+<th>A Mar / Mar</th>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Total loans outstanding</td>
+<td>59.2</td>
+<td>59.7</td>
+<td>59.5</td>
+<td>61.1</td>
+<td>60.1</td>
+<td>61.0</td>
+<td>61.3</td>
+<td>62.1</td>
+<td>61.1</td>
+<td>+1.6%</td>
+</tr>
+<tr>
+<td>o/w retail customer loans</td>
+<td>29.0</td>
+<td>29.0</td>
+<td>29.6</td>
+<td>29.9</td>
+<td>29.9</td>
+<td>30.2</td>
+<td>30.7</td>
+<td>30.9</td>
+<td>30.8</td>
+<td>+3.0%</td>
+</tr>
+<tr>
+<td>o/w professionals loans</td>
+<td>9.0</td>
+<td>8.9</td>
+<td>8.7</td>
+<td>8.6</td>
+<td>8.0</td>
+<td>7.9</td>
+<td>7.9</td>
+<td>7.9</td>
+<td>7.6</td>
+<td>(4.9%)</td>
+</tr>
+<tr>
+<td>o/w corporates loans, including SMEs</td>
+<td>18.4</td>
+<td>18.8</td>
+<td>18.2</td>
+<td>19.5</td>
+<td>19.1</td>
+<td>19.7</td>
+<td>19.6</td>
+<td>20.2</td>
+<td>19.6</td>
+<td>+2.5%</td>
+</tr>
+<tr>
+<td>On-balance sheet customer assets</td>
+<td>61.9</td>
+<td>63.7</td>
+<td>64.5</td>
+<td>65.7</td>
+<td>65.5</td>
+<td>65.3</td>
+<td>64.2</td>
+<td>66.0</td>
+<td>64.1</td>
+<td>(2.1%)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Off-balance sheet customer assets</td>
+<td>49.4</td>
+<td>49.5</td>
+<td>48.8</td>
+<td>50.1</td>
+<td>50.8</td>
+<td>51.4</td>
+<td>53.2</td>
+<td>54.0</td>
+<td>54.1</td>
+<td>+6.5%</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Total assets (€bn)</td>
+<td>111.3</td>
+<td>113.2</td>
+<td>113.2</td>
+<td>115.8</td>
+<td>116.3</td>
+<td>116.7</td>
+<td>117.4</td>
+<td>120.0</td>
+<td>118.2</td>
+<td>+1.7%</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+<th>IRB Others (€bn)</th>
+<th>Mar. 23</th>
+<th>June 23</th>
+<th>Sept 23</th>
+<th>Dec 23</th>
+<th>Mar 24</th>
+<th>June 24</th>
+<th>Sept 24</th>
+<th>Dec 24</th>
+<th>Mar 25</th>
+<th>A Mar / Mar</th>
+</tr>
+<tr>
+<td>Total loans outstanding</td>
+<td>6.7</td>
+<td>6.9</td>
+<td>7.0</td>
+<td>7.3</td>
+<td>7.0</td>
+<td>7.0</td>
+<td>7.3</td>
+<td>7.3</td>
+<td>7.4</td>
+<td>+5.8%</td>
+</tr>
+<tr>
+<td>o/w retail customer loans</td>
+<td>3.6</td>
+<td>3.8</td>
+<td>3.8</td>
+<td>4.0</td>
+<td>4.0</td>
+<td>4.1</td>
+<td>4.2</td>
+<td>4.3</td>
+<td>4.4</td>
+<td>+9.2%</td>
+</tr>
+<tr>
+<td>o/w SMEs and professionnals</td>
+<td>0.3</td>
+<td>0.3</td>
+<td>0.3</td>
+<td>0.3</td>
+<td>0.3</td>
+<td>0.4</td>
+<td>0.4</td>
+<td>0.4</td>
+<td>0.4</td>
+<td>+11.5%</td>
+</tr>
+<tr>
+<td>o/w Large corporates</td>
+<td>2.8</td>
+<td>2.8</td>
+<td>2.9</td>
+<td>3.0</td>
+<td>2.7</td>
+<td>2.6</td>
+<td>2.7</td>
+<td>2.6</td>
+<td>2.7</td>
+<td>(0.2%)</td>
+</tr>
+<tr>
+<td>On-balance sheet customer assets</td>
+<td>9.6</td>
+<td>10.2</td>
+<td>10.3</td>
+<td>11.2</td>
+<td>10.0</td>
+<td>10.2</td>
+<td>10.2</td>
+<td>11.2</td>
+<td>11.0</td>
+<td>+9.9%</td>
+</tr>
+<tr>
+<td>Off-balance sheet customer assets</td>
+<td>0.6</td>
+<td>0.6</td>
+<td>0.6</td>
+<td>0.7</td>
+<td>0.8</td>
+<td>0.8</td>
+<td>0.9</td>
+<td>0.9</td>
+<td>1.0</td>
+<td>+27.1%</td>
+</tr>
+<tr>
+<td rowspan="2">Total assets (€bn)</td>
+<td rowspan="2">10.2</td>
+<td rowspan="2">10.8</td>
+<td rowspan="2">11.0</td>
+<td rowspan="2">11.9</td>
+<td></td>
+<td rowspan="2">11.0</td>
+<td rowspan="2">11.0</td>
+<td rowspan="2">12.1</td>
+<td rowspan="2">12.0</td>
+<td rowspan="2">+11.1%</td>
+</tr>
+<tr>
+<td>10.8</td>
+</tr>
+</table>
+
+\* Net of POCI outstandings
+
+
+<figure>
+<figcaption>Outstanding loans Q1-25 by entity</figcaption>
+
+1%
+
+Italy
+
+8%
+
+1%
+
+Poland
+
+Egypt
+
+Ukraine
+
+90%
+
+</figure>
+
+
+<figure>
+<figcaption>Outstanding on-B/S deposits Q1-25 by entity</figcaption>
+
+3%
+
+Italy
+
+8%
+
+2%
+
+Poland
+
+Egypt
+
+87%
+
+Ukraine
+
+</figure>
+
+
+<figure>
+<figcaption>Revenues Q1-25 by entity</figcaption>
+
+Italy
+
+6%
+
+5%
+
+12%
+
+Poland
+
+Egypt
+
+76%
+
+Ukraine
+
+</figure>
+
+
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="66" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## APPENDICES ACTIVITY INDICATORS - BPI DIVISION
+
+
+### Revenues (€m)
+
+
+### IRB Italy - Changes in detailed revenues
+
+
+<table>
+<tr>
+<th>Revenues (€m) 0</th>
+<th>Q1-23</th>
+<th>Q2-23</th>
+<th>Q3-23</th>
+<th>Q4-23</th>
+<th>Q1-24</th>
+<th>Q2-24</th>
+<th>Q3-24</th>
+<th>Q4-24</th>
+<th>Q1-25</th>
+<th>Q1/Q1</th>
+</tr>
+<tr>
+<td>Net interest income</td>
+<td>439</td>
+<td>454</td>
+<td>459</td>
+<td>450</td>
+<td>450</td>
+<td>453</td>
+<td>447</td>
+<td>449</td>
+<td>424</td>
+<td>(5.8%)</td>
+</tr>
+<tr>
+<td>Fee and commission Income</td>
+<td>300</td>
+<td>308</td>
+<td>320</td>
+<td>292</td>
+<td>303</td>
+<td>328</td>
+<td>322</td>
+<td>292</td>
+<td>326</td>
+<td>+7.4%</td>
+</tr>
+<tr>
+<td>- Fees and commissions on managed assets</td>
+<td>132</td>
+<td>122</td>
+<td>117</td>
+<td>100</td>
+<td>145</td>
+<td>139</td>
+<td>129</td>
+<td>118</td>
+<td>162</td>
+<td>+11.6%</td>
+</tr>
+<tr>
+<td>- Banking fees and commissions</td>
+<td>168</td>
+<td>186</td>
+<td>204</td>
+<td>193</td>
+<td>158</td>
+<td>189</td>
+<td>194</td>
+<td>173</td>
+<td>164</td>
+<td>+3.6%</td>
+</tr>
+<tr>
+<td>Autres revenus</td>
+<td>21</td>
+<td>(2)</td>
+<td>4</td>
+<td>(28)</td>
+<td>21</td>
+<td>4</td>
+<td>(6)</td>
+<td>(7)</td>
+<td>27</td>
+<td>+28.3%</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>TOTAL</td>
+<td>761</td>
+<td>760</td>
+<td>783</td>
+<td>714</td>
+<td>775</td>
+<td>784</td>
+<td>764</td>
+<td>733</td>
+<td>777</td>
+<td>+0.3%</td>
+</tr>
+</table>
+
+
+<!-- PageNumber="☒ CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="67" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+
+## Appendices Crédit Agricole Group
+
+<!-- PageNumber="☒ CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="68" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageHeader="APPENDICES" -->
+
+
+### CONTRIBUTION OF THE BUSINESS LINES TO Q1-25 EARNINGS
+
+
+<table>
+<tr>
+<th></th>
+<th colspan="8">Q1-25</th>
+</tr>
+<tr>
+<th>€m</th>
+<th>RB</th>
+<th>LCL</th>
+<th>IRB</th>
+<th>AG</th>
+<th>SFS</th>
+<th>LC</th>
+<th>CC</th>
+<th>Total</th>
+</tr>
+<tr>
+<td>Revenues</td>
+<td>3,352</td>
+<td>963</td>
+<td>1,048</td>
+<td>2,049</td>
+<td>868</td>
+<td>2,408</td>
+<td>(640)</td>
+<td>10,048</td>
+</tr>
+<tr>
+<td>Operating expenses</td>
+<td>(2,530)</td>
+<td>(625)</td>
+<td>(535)</td>
+<td>(936)</td>
+<td>(474)</td>
+<td>(1,360)</td>
+<td>468</td>
+<td>(5,992)</td>
+</tr>
+<tr>
+<td>Gross operating income</td>
+<td>822</td>
+<td>338</td>
+<td>513</td>
+<td>1,113</td>
+<td>395</td>
+<td>1,047</td>
+<td>(172)</td>
+<td>4,056</td>
+</tr>
+<tr>
+<td>Cost of risk</td>
+<td>(319)</td>
+<td>(92)</td>
+<td>(67)</td>
+<td>(11)</td>
+<td>(249)</td>
+<td>25</td>
+<td>(22)</td>
+<td>(735)</td>
+</tr>
+<tr>
+<td>Equity-accounted entities</td>
+<td>6</td>
+<td>-</td>
+<td>-</td>
+<td>28</td>
+<td>36</td>
+<td>6</td>
+<td>-</td>
+<td>75</td>
+</tr>
+<tr>
+<td>Net income on other assets</td>
+<td>3</td>
+<td>1</td>
+<td>(0)</td>
+<td>(0)</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Income before tax</td>
+<td>511</td>
+<td>247</td>
+<td>445</td>
+<td>1,130</td>
+<td>182</td>
+<td>1,078</td>
+<td>(194)</td>
+<td>3,399</td>
+</tr>
+<tr>
+<td>Tax</td>
+<td>(170)</td>
+<td>(112)</td>
+<td>(137)</td>
+<td>(351)</td>
+<td>(12)</td>
+<td>(305)</td>
+<td>46</td>
+<td>(1,041)</td>
+</tr>
+<tr>
+<td>Net income from discont'd or held-for-sale ope.</td>
+<td>-</td>
+<td>-</td>
+<td>0</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>(0)</td>
+<td>(0)</td>
+</tr>
+<tr>
+<td>Net income</td>
+<td>341</td>
+<td>135</td>
+<td>308</td>
+<td>779</td>
+<td>170</td>
+<td>773</td>
+<td>(148)</td>
+<td>2,358</td>
+</tr>
+<tr>
+<td>Non controlling interests</td>
+<td>0</td>
+<td>(0)</td>
+<td>(42)</td>
+<td>(101)</td>
+<td>(21)</td>
+<td>(36)</td>
+<td>7</td>
+<td>(193)</td>
+</tr>
+<tr>
+<td>Net income Group Share</td>
+<td>341</td>
+<td>135</td>
+<td>266</td>
+<td>679</td>
+<td>148</td>
+<td>738</td>
+<td>(141)</td>
+<td>2,165</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+<th></th>
+<th colspan="8">Q1-24</th>
+</tr>
+<tr>
+<th>€m</th>
+<th>RB</th>
+<th>LCL</th>
+<th>IRB</th>
+<th>AG</th>
+<th>SFS</th>
+<th>LC</th>
+<th>CC</th>
+<th>Total</th>
+</tr>
+<tr>
+<td>Revenues</td>
+<td>3,314</td>
+<td>954</td>
+<td>1,081</td>
+<td>1,793</td>
+<td>846</td>
+<td>2,266</td>
+<td>(728)</td>
+<td>9,525</td>
+</tr>
+<tr>
+<td>Operating expenses</td>
+<td>(2,484)</td>
+<td>(602)</td>
+<td>(524)</td>
+<td>(754)</td>
+<td>(454)</td>
+<td>(1,297)</td>
+<td>527</td>
+<td>(5,589)</td>
+</tr>
+<tr>
+<td>Gross operating income</td>
+<td>830</td>
+<td>351</td>
+<td>556</td>
+<td>1,039</td>
+<td>392</td>
+<td>969</td>
+<td>(201)</td>
+<td>3,936</td>
+</tr>
+<tr>
+<td>Cost of risk</td>
+<td>(247)</td>
+<td>(119)</td>
+<td>(84)</td>
+<td>(3)</td>
+<td>(219)</td>
+<td>33</td>
+<td>(13)</td>
+<td>(651)</td>
+</tr>
+<tr>
+<td>Equity-accounted entities</td>
+<td>5</td>
+<td>-</td>
+<td>-</td>
+<td>29</td>
+<td>30</td>
+<td>4</td>
+<td>-</td>
+<td>68</td>
+</tr>
+<tr>
+<td>Net income on other assets</td>
+<td>2</td>
+<td>2</td>
+<td>(0)</td>
+<td>(8)</td>
+<td>(0)</td>
+<td>0</td>
+<td>(2)</td>
+<td>(7)</td>
+</tr>
+<tr>
+<td>Income before tax</td>
+<td>589</td>
+<td>234</td>
+<td>472</td>
+<td>1,056</td>
+<td>203</td>
+<td>1,006</td>
+<td>(216)</td>
+<td>3,347</td>
+</tr>
+<tr>
+<td>Tax</td>
+<td>(147)</td>
+<td>(53)</td>
+<td>(143)</td>
+<td>(220)</td>
+<td>(42)</td>
+<td>(235)</td>
+<td>85</td>
+<td>(755)</td>
+</tr>
+<tr>
+<td>Net income from discont'd or held-for-sale ope.</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Net income</td>
+<td>442</td>
+<td>181</td>
+<td>330</td>
+<td>837</td>
+<td>161</td>
+<td>772</td>
+<td>(131)</td>
+<td>2,592</td>
+</tr>
+<tr>
+<td>Non controlling interests</td>
+<td>(0)</td>
+<td>(0)</td>
+<td>(51)</td>
+<td>(112)</td>
+<td>(19)</td>
+<td>(34)</td>
+<td>7</td>
+<td>(208)</td>
+</tr>
+<tr>
+<td>Net income Group Share</td>
+<td>442</td>
+<td>181</td>
+<td>279</td>
+<td>725</td>
+<td>142</td>
+<td>738</td>
+<td>(123)</td>
+<td>2,384</td>
+</tr>
+</table>
+
+RB: Regional Banks; AG: Asset Gathering, including Insurance; IRB: International Retail Banking, SFS: Specialised financial services; LC: Large customers; CC: Corporate Centre
+
+
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="69" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE GROUP" -->
+
+
+## APPENDICES
+
+
+### INCOME STATEMENT - Q1-25 VS Q1-24
+
+
+<table>
+<tr>
+<th>€m</th>
+<th>Q1-25</th>
+<th>Q1-24</th>
+<th>A Q1/Q1</th>
+</tr>
+<tr>
+<td>Revenues</td>
+<td>10,048</td>
+<td>9,525</td>
+<td>+5.5%</td>
+</tr>
+<tr>
+<td>Operating expenses</td>
+<td>(5,992)</td>
+<td>(5,589)</td>
+<td>+7.2%</td>
+</tr>
+<tr>
+<td>Gross operating income</td>
+<td>4,056</td>
+<td>3,936</td>
+<td>+3.0%</td>
+</tr>
+<tr>
+<td>Cost of risk</td>
+<td>(735)</td>
+<td>(651)</td>
+<td>+12.9%</td>
+</tr>
+<tr>
+<td>Equity-accounted entities</td>
+<td>75</td>
+<td>68</td>
+<td>+9.5%</td>
+</tr>
+<tr>
+<td>Net income on other assets</td>
+<td>4</td>
+<td>(7)</td>
+<td>n.m.</td>
+</tr>
+<tr>
+<td>Change in value of goodwill</td>
+<td>-</td>
+<td>-</td>
+<td>n.m.</td>
+</tr>
+<tr>
+<td>Income before tax</td>
+<td>3,399</td>
+<td>3,347</td>
+<td>+1.6%</td>
+</tr>
+<tr>
+<td>Tax</td>
+<td>(1,041)</td>
+<td>(755)</td>
+<td>+37.9%</td>
+</tr>
+<tr>
+<td>Net income from discont'd or held-for-sale ope.</td>
+<td>(0)</td>
+<td>-</td>
+<td>n.m.</td>
+</tr>
+<tr>
+<td>Net income</td>
+<td>2,358</td>
+<td>2,592</td>
+<td>(9.0%)</td>
+</tr>
+<tr>
+<td>Non controlling interests</td>
+<td>(193)</td>
+<td>(208)</td>
+<td>(7.2%)</td>
+</tr>
+<tr>
+<td>Net income Group Share</td>
+<td>2,165</td>
+<td>2,384</td>
+<td>(9.2%)</td>
+</tr>
+<tr>
+<td>Cost/Income ratio (%)</td>
+<td>59.6%</td>
+<td>58.7%</td>
+<td>+1.0 pp</td>
+</tr>
+</table>
+
+
+CRÉDIT AGRICOLE S.A.
+
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE GROUP" -->
+
+
+## APPENDICES CRÉDIT AGRICOLE GROUP
+
+
+<figure>
+<figcaption>Revenues and net income Group share by business line excluding CC (€m)</figcaption>
+
+Large
+customers
+23%
+
+Insurance
+Asset servicing 7%
+5%
+
+Asset
+management
+8%
+
+Asset
+gathering
+19%
+
+CIB
+18%
+
+Leasing &
+Fact.
+2%
+
+Wealth
+management
+4%
+
+Spec. fin.
+serv.
+8%
+
+Consum.
+Finance
+6%
+
+Revenues
+excl. CC Q1-25:
+€10.7bn
+
+IRB
+10%
+
+Regional
+Banks
+31%
+
+LCL
+9%
+
+Retail
+banking
+50%
+
+</figure>
+
+
+<figure>
+
+Large
+customers
+32%
+
+Asset
+servicing
+3%
+
+Asset
+gathering
+29%
+
+Insurance
+19%
+
+CIB
+29%
+
+NIGS
+excl. CC Q1-25:
+€2.3bn
+
+Asset
+management
+8%
+Wealth
+management
+2%
+
+Leasing &
+Fact.
+2%
+
+Spec. fin.
+serv.
+6%
+
+Consum.
+Finance
+5%
+
+Regional
+Banks
+15%
+
+IRB
+11%
+
+LCL
+6%
+
+Retail
+banking
+32%
+
+</figure>
+
+
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="71" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE GROUP" -->
+
+
+## APPENDICES FINANCIAL STRUCTURE AND BALANCE SHEET
+
+
+<table>
+<tr>
+<th rowspan="2">Solvency (€bn)</th>
+<th colspan="2">Phased-in</th>
+</tr>
+<tr>
+<th>31/03/25</th>
+<th>31/12/24</th>
+</tr>
+<tr>
+<td>Share capital and reserves</td>
+<td>33.1</td>
+<td>32.0</td>
+</tr>
+<tr>
+<td>Consolidated reserves</td>
+<td>111.2</td>
+<td>103.0</td>
+</tr>
+<tr>
+<td>Other comprehensive income</td>
+<td>(2.3)</td>
+<td>(1.8)</td>
+</tr>
+<tr>
+<td>Net income (loss) for the year</td>
+<td>2.2</td>
+<td>8.6</td>
+</tr>
+<tr>
+<td>EQUITY - GROUP SHARE</td>
+<td>144.1</td>
+<td>141.9</td>
+</tr>
+<tr>
+<td>(-) Expected dividend</td>
+<td>(0.4)</td>
+<td>(1.6)</td>
+</tr>
+<tr>
+<td>(-) AT1 instruments accounted as equity</td>
+<td>(8.7)</td>
+<td>(7.2)</td>
+</tr>
+<tr>
+<td>Eligible minority interests</td>
+<td>4.3</td>
+<td>4.2</td>
+</tr>
+<tr>
+<td>(-) Prudential filters</td>
+<td>(2.1)</td>
+<td>(2.2)</td>
+</tr>
+<tr>
+<td>o/w: Prudent valuation</td>
+<td>(2.7)</td>
+<td>(2.7)</td>
+</tr>
+<tr>
+<td>(-) Deduction of goodwills and intangible assets</td>
+<td>(19.1)</td>
+<td>(19.1)</td>
+</tr>
+<tr>
+<td>Deferred tax assets that rely on future profitability excluding those arising from temporary differences</td>
+<td>(0.1)</td>
+<td>(0.0)</td>
+</tr>
+<tr>
+<td>Shortfall in adjustments for credit risk relative to expected losses under the internal ratings-based approach</td>
+<td>0.0</td>
+<td>(0.4)</td>
+</tr>
+<tr>
+<td>Amount exceeding thresholds</td>
+<td>0.0</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>Insufficient coverage for non-performing exposures (Pillar 2)</td>
+<td>(1.4)</td>
+<td>(1.4)</td>
+</tr>
+<tr>
+<td>Other CET1 components</td>
+<td>(3.7)</td>
+<td>(1.9)</td>
+</tr>
+<tr>
+<td>COMMON EQUITY TIER 1 (CET1)</td>
+<td>113.0</td>
+<td>112.2</td>
+</tr>
+<tr>
+<td>Additionnal Tier 1 (AT1) instruments</td>
+<td>8.8</td>
+<td>7.4</td>
+</tr>
+<tr>
+<td>Other AT1 components</td>
+<td>(0.1)</td>
+<td>(0.1)</td>
+</tr>
+<tr>
+<td>TOTAL TIER 1</td>
+<td>121.7</td>
+<td>119.5</td>
+</tr>
+<tr>
+<td>Tier 2 instruments</td>
+<td>16.4</td>
+<td>16.0</td>
+</tr>
+<tr>
+<td>Other Tier 2 components</td>
+<td>1.2</td>
+<td>1.4</td>
+</tr>
+<tr>
+<td>TOTAL CAPITAL</td>
+<td>139.4</td>
+<td>136.9</td>
+</tr>
+<tr>
+<td>RWAS</td>
+<td>640.6</td>
+<td>653.4</td>
+</tr>
+<tr>
+<td>CET1 ratio</td>
+<td>17.6%</td>
+<td>17.2%</td>
+</tr>
+<tr>
+<td>Tier 1 ratio</td>
+<td>19.0%</td>
+<td>18.3%</td>
+</tr>
+<tr>
+<td>Total capital ratio</td>
+<td>21.8%</td>
+<td>20.9%</td>
+</tr>
+</table>
+
+
+☒
+CRÉDIT AGRICOLE S.A.
+
+<!-- PageNumber="72" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageHeader="APPENDICES FINANCIAL STRUCTURE AND BALANCE SHEET" -->
+
+
+<table>
+<caption>Balance sheet (€bn)</caption>
+<tr>
+<th>Assets</th>
+<th>31/03/2025</th>
+<th>31/12/2024 *</th>
+</tr>
+<tr>
+<td>Cash and Central banks</td>
+<td>167.4</td>
+<td>165.8</td>
+</tr>
+<tr>
+<td>Financial assets at fair value through profit or loss</td>
+<td>592.6</td>
+<td>607.5</td>
+</tr>
+<tr>
+<td>Hedging derivative instruments</td>
+<td>25.2</td>
+<td>27.6</td>
+</tr>
+<tr>
+<td>Financial assets at fair value through other comprehensive income</td>
+<td>234.6</td>
+<td>234.5</td>
+</tr>
+<tr>
+<td>Loans and receivables due from credit institutions</td>
+<td>145.3</td>
+<td>145.5</td>
+</tr>
+<tr>
+<td>Loans and receivables due from customers</td>
+<td>1186.8</td>
+<td>1188.8</td>
+</tr>
+<tr>
+<td>Debt securities</td>
+<td>122.8</td>
+<td>123.6</td>
+</tr>
+<tr>
+<td>Revaluation adjustment on interest rate hedged portfolios</td>
+<td>-7.8</td>
+<td>-5.0</td>
+</tr>
+<tr>
+<td>Current and deferred tax assets</td>
+<td>7.6</td>
+<td>7.6</td>
+</tr>
+<tr>
+<td>Accruals, prepayments and sundry assets</td>
+<td>53.7</td>
+<td>54.0</td>
+</tr>
+<tr>
+<td>Non-current assets held for sale and discontinued operations</td>
+<td>0.8</td>
+<td>0.8</td>
+</tr>
+<tr>
+<td>Insurance contrats issued- Assets</td>
+<td>0.1</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>Reinsurance contracts held - Assets</td>
+<td>1.0</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>Investments in equity affiliates</td>
+<td>2.8</td>
+<td>2.5</td>
+</tr>
+<tr>
+<td>Investment property</td>
+<td>12.1</td>
+<td>12.1</td>
+</tr>
+<tr>
+<td>Property, plant and equipment</td>
+<td>14.7</td>
+<td>14.6</td>
+</tr>
+<tr>
+<td>Intangible assets</td>
+<td>3.7</td>
+<td>3.8</td>
+</tr>
+<tr>
+<td>Goodwill</td>
+<td>16.8</td>
+<td>16.9</td>
+</tr>
+<tr>
+<td>Total assets</td>
+<td>2,580.2</td>
+<td>2,601.7</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+<th>Liabilities</th>
+<th>31/03/2025</th>
+<th>31/12/2024 *</th>
+</tr>
+<tr>
+<td>Central banks</td>
+<td>0.7</td>
+<td>1.4</td>
+</tr>
+<tr>
+<td>Financial liabilities at fair value through profit or loss</td>
+<td>384.2</td>
+<td>407.8</td>
+</tr>
+<tr>
+<td>Hedging derivative instruments</td>
+<td>30.2</td>
+<td>32.1</td>
+</tr>
+<tr>
+<td>Due to banks</td>
+<td>82.4</td>
+<td>88.2</td>
+</tr>
+<tr>
+<td>Customer accounts</td>
+<td>1163.7</td>
+<td>1164.5</td>
+</tr>
+<tr>
+<td>Debt securities in issue</td>
+<td>295.2</td>
+<td>291.2</td>
+</tr>
+<tr>
+<td>Revaluation adjustment on interest rate hedged portfolios</td>
+<td>-8.1</td>
+<td>-7.7</td>
+</tr>
+<tr>
+<td>Current and deferred tax liabilities</td>
+<td>3.3</td>
+<td>2.9</td>
+</tr>
+<tr>
+<td>Accruals and sundry liabilities</td>
+<td>72.8</td>
+<td>70.9</td>
+</tr>
+<tr>
+<td>Liabilities associated with non-current assets held for sale</td>
+<td>0.1</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>Insurance contrats issued - Liabilities</td>
+<td>369.9</td>
+<td>366.5</td>
+</tr>
+<tr>
+<td>Reinsurance contracts held - Liabilities</td>
+<td>0.1</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Provisions</td>
+<td>5.7</td>
+<td>5.7</td>
+</tr>
+<tr>
+<td>Subordinated debt</td>
+<td>28.4</td>
+<td>29.1</td>
+</tr>
+<tr>
+<td>Shareholder's equity</td>
+<td>144.1</td>
+<td>141.9</td>
+</tr>
+<tr>
+<td>Non-controlling interests</td>
+<td>7.5</td>
+<td>6.9</td>
+</tr>
+<tr>
+<td>Total liabilities</td>
+<td>2,580.2</td>
+<td>2,601.7</td>
+</tr>
+</table>
+
+
+<!-- PageFooter="☒ CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="73" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+
+## Ratings
+
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageNumber="☒ CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="74" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## APPENDICES FINANCIAL RATINGS (1)
+
+
+### Crédit Agricole S.A. - Ratings
+
+
+<table>
+<tr>
+<th>Ratings</th>
+<th>LT / ST Counterparty</th>
+<th>Issuer / LT senior preferred debt</th>
+<th>Outlook / Review</th>
+<th>Issuer / ST senior preferred debt</th>
+<th>Last review date</th>
+<th>Rating action</th>
+</tr>
+<tr>
+<td>S&amp;P Global Ratings</td>
+<td>AA-/A-1+ (RCR)</td>
+<td>A+</td>
+<td>Stable outlook</td>
+<td>A-1</td>
+<td>01/10/2024</td>
+<td>LT / ST ratings affirmed; outlook unchanged</td>
+</tr>
+<tr>
+<td>Moody's</td>
+<td>Aa3/P-1 (CRR)</td>
+<td>A1</td>
+<td>Stable outlook</td>
+<td>P-1</td>
+<td>17/12/2024</td>
+<td>LT ratings and outlook changed; ST ratings affirmed</td>
+</tr>
+<tr>
+<td>Fitch Ratings</td>
+<td>AA- (DCR)</td>
+<td>A+/AA-</td>
+<td>Stable outlook</td>
+<td>F1/F1+</td>
+<td>18/12/2024</td>
+<td>LT / ST ratings affirmed; outlook unchanged</td>
+</tr>
+<tr>
+<td>DBRS</td>
+<td>AA (high) / R-1 (high) (COR)</td>
+<td>AA (low)</td>
+<td>Stable outlook</td>
+<td>R-1 (middle)</td>
+<td>06/09/2024</td>
+<td>LT / ST ratings affirmed; outlook unchanged</td>
+</tr>
+</table>
+
+1\. The ratings reflect the analysis of Crédit Agricole Group
+
+
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="☒ CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="75" -->
+<!-- PageBreak -->
+
+
+## CASA'S RATINGS (2) REFLECT A WELL-DIVERSIFIED BUSINESS MODEL AND SOUND FINANCIAL MANAGEMENT
+
+
+### S&P Global
+
+
+<figure>
+
+A+ stable (1)
+
+</figure>
+
+
+· "Sound earnings, cooperative status, and conservative capital policy support the Group's very solid capital position."
+
+· "Firm leader in the French retail banking market, generating good and predictable risk-adjusted earnings".
+
+. "Increasingly diverse business model and income sources, with leading franchises, notably in retail banking, insurance,
+and asset management."
+
+As of 11/10/2024
+
+MOODY'S
+
+
+<figure>
+
+A1 stable (1)
+
+</figure>
+
+
+· "Robust capital generation stemming from stable and diversified earnings and high profit retention at group level."
+
+· "Solid asset quality"
+
+. Moody's expects the rating of senior unsecured debt(1) "will be less sensitive to a potential future adoption of full depositor
+preference in Europe."
+
+As of 18/12/2024
+
+
+### Fitch Ratings
+
+
+<figure>
+
+A+/AA- stable(1)
+
+</figure>
+
+
+. "Sufficient rating headroom to potentially withstand a one-notch downgrade of the French sovereign to A+, or the revision
+of the operating environment (OE) score,
+
+· given the group's strong business profile, sound profitability metrics,
+
+· and ample capital and liquidity buffers."
+
+<!-- PageFooter="As of 02/01/2025" -->
+
+1\. Issuer credit rating/Long Term Senior Preferred Debt rating
+
+2\. The ratings reflect the analysis of Credit Agricole Group
+
+☒
+CRÉDIT AGRICOLE S.A.
+
+<!-- PageNumber="76" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageBreak -->
+
+<!-- PageHeader="CRÉDIT AGRICOLE S.A." -->
+
+
+## APPENDICES NON-FINANCIAL RATINGS
+
+
+<table>
+<tr>
+<th></th>
+<th colspan="2">Moody's Analytics</th>
+<th>ISS ESG</th>
+<th>MSCI</th>
+<th>Sustainalytics 1</th>
+<th>CDP Climat</th>
+</tr>
+<tr>
+<td></td>
+<td colspan="2"></td>
+<td></td>
+<td colspan="2"></td>
+<td></td>
+</tr>
+<tr>
+<td>Crédit Agricole S.A.</td>
+<td colspan="2">71</td>
+<td>C+</td>
+<td>AA</td>
+<td>19.7 &gt; 0</td>
+<td>A-</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>BNP Paribas</td>
+<td></td>
+<td>73</td>
+<td>C+</td>
+<td>AA</td>
+<td>21 &gt; 0</td>
+<td>A-</td>
+</tr>
+<tr>
+<td></td>
+<td rowspan="2"></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Société Générale</td>
+<td>72</td>
+<td>C+</td>
+<td>AA</td>
+<td>17.8 &gt; 0</td>
+<td>A-</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Banco Santander</td>
+<td></td>
+<td>65</td>
+<td>C+</td>
+<td>AA</td>
+<td>17.1 &gt; 0</td>
+<td>A</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>UniCredit</td>
+<td></td>
+<td>65</td>
+<td>C</td>
+<td>AA</td>
+<td>11 &gt; 0</td>
+<td>B</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>B.F. Crédit Mutuel</td>
+<td></td>
+<td>64</td>
+<td>C</td>
+<td>AA</td>
+<td>21.5 &gt; 0</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td colspan="2" rowspan="2">62</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Barclays plc</td>
+<td>C</td>
+<td>AA</td>
+<td>18.9 &gt; 0</td>
+<td>A-</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>BPCE S.A.</td>
+<td></td>
+<td>61</td>
+<td>C+</td>
+<td>AA</td>
+<td>20.9 &gt; 0</td>
+<td>B</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ING Group</td>
+<td></td>
+<td>54</td>
+<td>C+</td>
+<td>AA</td>
+<td>14.5 &gt; 0</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Deutsche Bank</td>
+<td></td>
+<td>54</td>
+<td>C+</td>
+<td>AA</td>
+<td>24.8 &gt; 0</td>
+<td>B</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>UBS Group</td>
+<td></td>
+<td>53</td>
+<td>C</td>
+<td>AA</td>
+<td>25.3 &gt; 0</td>
+<td>A-</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Standard Chartered</td>
+<td></td>
+<td>50</td>
+<td>C</td>
+<td>AA</td>
+<td>19.8 &gt; 0</td>
+<td>C</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>HSBC Holdings</td>
+<td></td>
+<td>48</td>
+<td>C</td>
+<td>AA</td>
+<td>22.4 &gt; 0</td>
+<td>C</td>
+</tr>
+</table>
+
+
+<figure>
+</figure>
+
+
+1\. ESG risk score on a reverse scale (100-0): the lower the score, the better the ESG risk
+
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageNumber="☒" -->
+<!-- PageFooter="CRÉDIT AGRICOLE S.A." -->
+<!-- PageNumber="77" -->
+<!-- PageBreak -->
+
+
+## LIST OF CONTACTS:
+
+CRÉDIT AGRICOLE S.A. INVESTOR RELATIONS CONTACTS: :
+
+Institutional investors
+
+\+ 33 1 43 23 04 31
+
+investor.relations@credit-agricole-sa.fr
+
+Individual shareholders
+
+\+ 33 800 000 777
+
+credit-agricole-sa@relations-actionnaires.com
+
+(toll-free call in France only)
+
+CRÉDIT AGRICOLE PRESS CONTACTS:
+
+
+<table>
+<tr>
+<td>Alexandre Barat</td>
+<td>+ 33 1 57 72 12 19</td>
+</tr>
+<tr>
+<td>Olivier Tassain</td>
+<td>+ 33 1 43 23 25 41</td>
+</tr>
+<tr>
+<td>Mathilde Durand</td>
+<td>+ 33 1 57 72 19 43</td>
+</tr>
+<tr>
+<td>Bénédicte Gouvert</td>
+<td>+ 33 1 49 53 43 64</td>
+</tr>
+</table>
+
+
+alexandre.barat@credit-agricole-sa.fr
+olivier.tassain@credit-agricole-sa.fr
+
+mathilde.durand@credit-agricole-sa.fr
+benedicte.gouvert@ca-fnca.fr
+
+
+<table>
+<tr>
+<td>Cécile Mouton</td>
+<td>+ 33 1 57 72 86 79</td>
+<td>cecile.mouton@credit-agricole-sa.fr</td>
+</tr>
+<tr>
+<td>Jean-Yann Asseraf</td>
+<td>+ 33 1 57 72 23 81</td>
+<td>jean-yann.asseraf@credit-agricole-sa.fr</td>
+</tr>
+<tr>
+<td>Fethi Azzoug</td>
+<td>+ 33 1 57 72 03 75</td>
+<td>fethi.azzoug@credit-agricole-sa.fr</td>
+</tr>
+<tr>
+<td>Oriane Cante</td>
+<td>+ 33 1 43 23 03 07</td>
+<td>oriane.cante@credit-agricole-sa.fr</td>
+</tr>
+<tr>
+<td>Nicolas Ianna</td>
+<td>+ 33 1 43 23 55 51</td>
+<td>nicolas.ianna@credit-agricole-sa.fr</td>
+</tr>
+<tr>
+<td>Leïla Mamou</td>
+<td>+ 33 1 57 72 07 93</td>
+<td>leila.mamou@credit-agricole-sa.fr</td>
+</tr>
+<tr>
+<td>Anna Pigoulevski</td>
+<td>+ 33 1 43 23 40 59</td>
+<td>anna.pigoulevski@credit-agricole-sa.fr</td>
+</tr>
+</table>
+
+
+<figure>
+
+This presentation is available at:
+www.credit-agricole.com/en/finance/finance/financial-publications
+
+See all our press releases at: www.credit-agricole.com - www.creditagricole.info
+
+X
+
+in
+
+@Crédit_Agricole
+
+Crédit Agricole Group
+
+@créditagricole_sa
+
+</figure>
+
+
+GROUPE
+CRÉDIT
+AGRICOLE
+
+CA
+BANQUE ET ASSURANCES
+
+LCL
+
+CRÉDIT
+AGRICOLE
+
+Amundi
+ASSET MANAGEMENT
+
+INDOSUEZ
+WEALTH MANAGEMENT
+
+CRÉDIT AGRICOLE
+ASSURANCES
+
+CRÉDIT AGRICOLE
+CORPORATE & INVESTMENT BANK
+
+caceis
+INVESTOR SERVICES
+
+CRÉDIT AGRICOLE
+LEASING & FACTORING
+
+PERSONAL FINANCE
+& MOBILITY
+
+
+<figure>
+
+CRÉDIT AGRICOLE
+IMMOBILIER
+
+CRÉDIT AGRICOLE
+PAYMENT SERVICES
+
+</figure>
+
+
+CRÉDIT AGRICOLE S.A.
+
+<!-- PageNumber="78" -->
+<!-- PageFooter="1ST QUARTER 2025 RESULTS" -->
+<!-- PageFooter="CRÉDIT AGRICOLE GROUP" -->

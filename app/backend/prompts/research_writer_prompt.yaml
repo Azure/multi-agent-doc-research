@@ -40,6 +40,22 @@ template: |
   - Put the data and evidence to support your analysis.
   - If a correction is needed, append a single line starting with "correction: ..."
   - Provide clickable reference links based on the retrieved sources.
+  
+  **TABLE FORMATTING RULES - CRITICAL:**
+  1. **Blank lines required**: ALWAYS add empty line BEFORE and AFTER tables
+  2. **Correct format**:
+     ```markdown
+     Text describing data.
+     
+     | Column 1 | Column 2 |
+     |----------|----------|
+     | Data 1   | Data 2   |
+     
+     Brief interpretation.
+     ```
+  3. **WRONG** (DO NOT DO): Text without blank. | Column | causes rendering issues
+  4. **No duplication**: Data appears ONLY in table OR text, never both
+  5. **After table**: Only brief summary, not row-by-row explanation
 
   ----- Contexts -----
   {contexts}

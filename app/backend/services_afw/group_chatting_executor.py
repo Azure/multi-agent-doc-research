@@ -25,7 +25,7 @@ from agent_framework.azure import AzureOpenAIChatClient
 from langchain.prompts import load_prompt
 from config.config import Settings
 from i18n.locale_msg import LOCALE_MESSAGES
-from utils.json_control import clean_and_validate_json, clean_duplicate_table_content
+from utils.json_control import clean_and_validate_json
 
 logger = logging.getLogger(__name__)
 current_dir = os.path.dirname(os.path.abspath(__file__))

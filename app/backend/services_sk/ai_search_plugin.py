@@ -307,8 +307,6 @@ class AISearchPlugin:
                 filter=filter_expression,
                 query_type=QueryType.FULL,
                 semantic_configuration_name="semantic-config",
-                query_caption=QueryCaptionType.EXTRACTIVE,
-                query_answer=QueryAnswerType.EXTRACTIVE,
                 top=top_k,
                 select=select_fields
             )

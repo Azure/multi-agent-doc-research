@@ -18,6 +18,7 @@ class Settings(BaseSettings):
     AZURE_OPENAI_DEPLOYMENT_NAME: str
     AZURE_OPENAI_QUERY_DEPLOYMENT_NAME: Optional[str] = None
     AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME: str
+    AZURE_OPENAI_REASONING_DEPLOYMENT_NAME: Optional[str] = None  
     PLANNER_MAX_PLANS: int = 3  # Maximum number of plans to generate
 
     # Redis Settings

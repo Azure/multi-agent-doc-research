@@ -27,7 +27,8 @@ from .ai_search_plugin import AISearchPlugin
 from .unified_file_upload_plugin import UnifiedFileUploadPlugin
 from .group_chatting_plugin import GroupChattingPlugin
 from .vanilla_multi_agent_plugin import MultiAgentPlugin
-from utils.json_control import clean_duplicate_table_content
+from .magentic_plugin import MagenticPlugin
+
 
 
 logger = logging.getLogger(__name__)
@@ -106,6 +107,7 @@ class PlanSearchOrchestratorSK:
         self.unified_file_upload_plugin = UnifiedFileUploadPlugin()
         self.group_chatting_plugin = GroupChattingPlugin(settings)
         self.multi_agent_plugin = MultiAgentPlugin(settings)
+        self.magentic_plugin = MagenticPlugin(settings)
 
         self.kernel.add_plugin(self.intent_plan_plugin, plugin_name="intent_plan")
         self.kernel.add_plugin(self.ai_search_plugin, plugin_name="ai_search")
@@ -115,6 +117,9 @@ class PlanSearchOrchestratorSK:
         self.kernel.add_plugin(self.group_chatting_plugin, plugin_name="sk_group_chat")
         self.kernel.add_plugin(
             self.multi_agent_plugin, plugin_name="vanilla_multi_agent"
+        )
+        self.kernel.add_plugin(
+            self.magentic_plugin, plugin_name="magentic"
         )
 
         self.deployment_name = settings.AZURE_OPENAI_DEPLOYMENT_NAME
@@ -234,9 +239,9 @@ class PlanSearchOrchestratorSK:
         """
         try:
             start_time = datetime.now(tz=self.timezone)
+            ttft_time = None  # Initialize TTFT tracking
             if elapsed_time:
                 logger.info(f"Starting risk search response generation at {start_time}")
-                ttft_time = None
 
             messages_dict = [
                 {"role": msg.role, "content": msg.content} for msg in messages
@@ -748,6 +753,10 @@ class PlanSearchOrchestratorSK:
                         sub_topic_name = sub_topic_data["sub_topic"]
                         sub_topic_queries = sub_topic_data["queries"]
 
+                        # ✅ Sub-topic progress indicator
+                        yield "\n"
+                        yield f"data: ### 📋 [{sub_topic_idx + 1}/{len(sub_topics)}] {LOCALE_MSG['organize_research']} for {sub_topic_name}\n\n"
+
                         # Extract ONLY this sub-topic's context
                         sub_topic_context = ""
                         sub_topic_group_chat_result = None
@@ -780,7 +789,6 @@ class PlanSearchOrchestratorSK:
                             )
 
                         sub_topic_group_chat_result_str = None
-                        yield f"data: ### {LOCALE_MSG['organize_research']} for {sub_topic_name} \n"
 
                         if multi_agent_type == "Semantic Kernel GroupChat":
                             # Execute group chat with ONLY this sub-topic's context
@@ -804,6 +812,38 @@ class PlanSearchOrchestratorSK:
                             sub_topic_group_chat_result_str = (
                                 sub_topic_group_chat_result.value
                             )
+                        elif multi_agent_type == "Semantic Kernel Magentic(Deep-Research-Agents)":
+                            # Magentic plugin with streaming support
+                            collected_chunks = []
+                            async for chunk in self.magentic_plugin.magentic_flow_stream(
+                                question=f"Sub-topic: {sub_topic_name}\nQueries: {', '.join(sub_topic_queries)}\n\nOriginal Question: {enriched_query}",
+                                contexts=sub_topic_context,
+                                locale=locale,
+                                max_tokens=40000,
+                                current_date=current_date,
+                            ):
+                                # Set TTFT on first content chunk
+                                if ttft_time is None and not chunk.startswith("data:"):
+                                    ttft_time = datetime.now(tz=self.timezone) - start_time
+                                
+                                if stream:
+                                    yield chunk
+                                # Only collect non-data chunks for final result
+                                if not chunk.startswith("data:"):
+                                    collected_chunks.append(chunk)
+                            
+                            # Combine all chunks as result (markdown format, not JSON)
+                            sub_topic_group_chat_result_str = "".join(collected_chunks)
+                            
+                            # Store result directly without JSON parsing
+                            sub_topic_results.append({
+                                "sub_topic": sub_topic_name,
+                                "queries": sub_topic_queries,
+                                "final_report": sub_topic_group_chat_result_str.strip(),
+                            })
+                            
+                            # Skip JSON parsing for Magentic results
+                            continue
                         else:
                             # Prepare tasks using the plugin's method
                             tasks = self.multi_agent_plugin._normalize_tasks(
@@ -1038,12 +1078,23 @@ class PlanSearchOrchestratorSK:
 
             yield "\n"  # clear previous md formatting
 
-            if elapsed_time and ttft_time is not None:
-                logger.info(
-                    f"Doc research response generated successfully in {ttft_time.total_seconds()} seconds"
-                )
-                yield "\n"
-                yield f"doc research response generated successfully in {ttft_time.total_seconds()} seconds \n"
+            if elapsed_time:
+                total_elapsed = datetime.now(tz=self.timezone) - start_time
+                elapsed_msg = LOCALE_MSG.get("elapsed_time", "Elapsed Time")
+
+                if ttft_time is not None:
+                    mode = "Research" if (research and user_intent == "research") else "Query"
+                    logger.info(
+                        f"✅ {mode} completed - TTFT: {ttft_time.total_seconds():.2f}s, Total: {total_elapsed.total_seconds():.2f}s"
+                    )
+                    yield "\n\n"
+                    yield f"data: ### ⏱️ TTFT: {ttft_time.total_seconds():.2f}s | Total: {total_elapsed.total_seconds():.2f}s\n\n"
+                else:
+                    logger.info(
+                        f"✅ Processing completed - Total: {total_elapsed.total_seconds():.2f}s"
+                    )
+                    yield "\n\n"
+                    yield f"data: ### {elapsed_msg}: {total_elapsed.total_seconds():.2f}s\n\n"
 
         except Exception as e:
             error_msg = f"Doc research error: {str(e)}"
@@ -1053,6 +1104,10 @@ class PlanSearchOrchestratorSK:
     async def cleanup(self):
         """Clean up resources"""
         try:
+            # MagenticPlugin 정리
+            if hasattr(self.magentic_plugin, "cleanup"):
+                await self.magentic_plugin.cleanup()
+
             # AzureMCPPlugin 정리
             if hasattr(self.youtube_plugin, "cleanup"):
                 await self.youtube_plugin.cleanup()

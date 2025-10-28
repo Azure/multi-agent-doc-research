@@ -25,11 +25,11 @@ max_sessions = 50
 # WebSocket settings - 더 보수적으로 설정
 websocket_timeout = 1800  # 30분으로 증가 (장시간 작업 대응)
 websocket_ping_interval = 20  # ping 간격 증가 (keepalive와 충돌 방지)
-websocket_ping_timeout = 300   # ping 응답 대기 5분
+websocket_ping_timeout = 600   # ping 응답 대기 10분
 
 # Socket.IO 설정 - keepalive와 조화
 socket_io_timeout = 1800  # 30분
-socket_io_ping_timeout = 300  # 5분
+socket_io_ping_timeout = 600  # 10분
 socket_io_ping_interval = 20  # 20초마다 ping (keepalive와 동기화)
 require_authentication = false
 max_http_buffer_size = 100000000

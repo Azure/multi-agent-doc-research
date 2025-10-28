@@ -1,10 +1,26 @@
 import json
 import logging
+import re
 
 logger = logging.getLogger(__name__)
 
+def _clean_markdown_content(markdown: str) -> str:
+    """
+    Internal helper to clean escaped characters in markdown content.
+    Handles escaped newlines (\\n) and other escape sequences.
+    """
+    if not markdown or not isinstance(markdown, str):
+        return markdown
+    
+    # Replace escaped newlines with actual newlines
+    markdown = markdown.replace('\\n', '\n')
+    markdown = markdown.replace('\\t', '\t')
+    markdown = markdown.replace('\\r', '\r')
+    
+    return markdown
+
 def clean_and_validate_json(content: str) -> str:
-        """JSON 응답을 정리하고 검증"""
+        """JSON 응답을 정리하고 검증하며, 마크다운 필드의 이스케이프 문자를 자동으로 정리"""
         try:
             # 앞뒤 공백 제거
             content = content.strip()
@@ -32,8 +48,34 @@ def clean_and_validate_json(content: str) -> str:
             if start_idx != -1 and end_idx != -1 and end_idx > start_idx:
                 content = content[start_idx:end_idx + 1]
             
+            # ✅ JSON 파싱 전에 일반적인 문제 수정
+            # 1. trailing comma 제거
+            content = re.sub(r',(\s*[}\]])', r'\1', content)
+            
+            # 2. 잘못된 줄바꿈 처리 (문자열 내부의 unescaped newline)
+            # 이것은 조심스럽게 처리해야 함 - 따옴표 내부의 실제 줄바꿈만 이스케이프
+            def fix_unescaped_newlines(match):
+                return match.group(0).replace('\n', '\\n').replace('\r', '\\r')
+            
+            # 따옴표 안의 내용에서 이스케이프되지 않은 줄바꿈 찾기
+            # 이 패턴은 복잡하므로 생략하고 더 안전한 방법 사용
+            
             # JSON 검증
             parsed = json.loads(content)
+            
+            # ✅ 파싱 성공 후 마크다운 필드들의 이스케이프 문자 정리
+            markdown_fields = [
+                'draft_answer_markdown',
+                'revised_answer_markdown', 
+                'final_answer_markdown',
+                'answer_markdown',
+                'final_answer',
+                'answer'
+            ]
+            
+            for field in markdown_fields:
+                if field in parsed and isinstance(parsed[field], str):
+                    parsed[field] = _clean_markdown_content(parsed[field])
             
             # 재직렬화하여 형식 정리
             clean_json = json.dumps(parsed, ensure_ascii=False, separators=(',', ':'))
@@ -44,6 +86,45 @@ def clean_and_validate_json(content: str) -> str:
         except json.JSONDecodeError as e:
             logger.error(f"[GroupChat] JSON validation failed: {e}")
             logger.error(f"[GroupChat] Problematic content: {content[:500]}...")
+            
+            # ✅ 더 aggressive한 복구 시도
+            try:
+                # 1. 마지막 완전한 } 찾기 (중첩된 객체 고려)
+                brace_count = 0
+                last_valid_pos = -1
+                for i, char in enumerate(content):
+                    if char == '{':
+                        brace_count += 1
+                    elif char == '}':
+                        brace_count -= 1
+                        if brace_count == 0:
+                            last_valid_pos = i + 1
+                            break
+                
+                if last_valid_pos > 0:
+                    content = content[:last_valid_pos]
+                    parsed = json.loads(content)
+                    
+                    # 마크다운 필드 정리
+                    markdown_fields = [
+                        'draft_answer_markdown',
+                        'revised_answer_markdown', 
+                        'final_answer_markdown',
+                        'answer_markdown',
+                        'final_answer',
+                        'answer'
+                    ]
+                    
+                    for field in markdown_fields:
+                        if field in parsed and isinstance(parsed[field], str):
+                            parsed[field] = _clean_markdown_content(parsed[field])
+                    
+                    clean_json = json.dumps(parsed, ensure_ascii=False, separators=(',', ':'))
+                    logger.info(f"[GroupChat] Recovered JSON after truncation")
+                    return clean_json
+                    
+            except Exception as recovery_error:
+                logger.error(f"[GroupChat] Recovery attempt failed: {recovery_error}")
             
             # 최소한의 fallback JSON 생성
             return json.dumps({
@@ -59,28 +140,3 @@ def clean_and_validate_json(content: str) -> str:
                 "final_answer": "Processing error occurred",
                 "error": str(e)
             }, ensure_ascii=False)
-
-def clean_duplicate_table_content(markdown: str) -> str:
-    """Remove text that duplicates table row content."""
-    import re
-    
-    # Find all markdown tables
-    table_pattern = r'\|[^\n]+\|[\n\r]+\|[-:\s|]+\|[\n\r]+((?:\|[^\n]+\|[\n\r]+)+)'
-    tables = re.finditer(table_pattern, markdown)
-    
-    cleaned = markdown
-    for table_match in tables:
-        table_content = table_match.group(0)
-        # Extract cell content from table
-        cell_pattern = r'\|\s*([^|]+?)\s*\|'
-        cells = re.findall(cell_pattern, table_content)
-        
-        # Remove sentences that contain exact cell content before the table
-        for cell in cells:
-            cell = cell.strip()
-            if len(cell) > 10:  # Only check substantial content
-                # Remove lines that contain this cell content before the table
-                pattern = f"[^\n]*{re.escape(cell)}[^\n]*\n"
-                cleaned = re.sub(pattern, "", cleaned, count=1)
-    
-    return cleaned

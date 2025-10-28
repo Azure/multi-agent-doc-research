@@ -238,7 +238,7 @@ class GroupChattingPlugin:
                 logger.info(f"[GroupChat] Extracted content length: {len(final_answer)}")
                 
                 # JSON 검증 및 정리
-                final_answer = clean_and_validate_json(final_answer)
+                final_answer = clean_and_validate_json(final_answer, return_dict=True)
 
                 logger.info(f"[GroupChat] Cleaned final answer=====================: {final_answer}")
                 

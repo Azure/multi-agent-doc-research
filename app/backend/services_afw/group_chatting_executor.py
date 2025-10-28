@@ -476,10 +476,7 @@ class GroupChattingExecutor(Executor):
             answer_markdown = ""
             citations = []
             try:
-                final_answer_cleaned = clean_and_validate_json(final_answer)
-
-                # Parse JSON
-                parsed_answer = json.loads(final_answer_cleaned)
+                parsed_answer = clean_and_validate_json(final_answer, return_dict=True)
 
                 # Extract answer_markdown
                 answer_markdown = parsed_answer.get(

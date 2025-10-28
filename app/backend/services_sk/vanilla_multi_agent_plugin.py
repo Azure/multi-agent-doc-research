@@ -662,8 +662,8 @@ class MultiAgentPlugin:
             
             # ✅ Use clean_and_validate_json for robust parsing
             try:
-                cleaned_content = clean_and_validate_json(content)
-                parsed = json.loads(cleaned_content)
+                parsed = clean_and_validate_json(content, return_dict=True)
+                
             except Exception as json_err:
                 logger.error(f"[MultiAgent] JSON parsing failed for writer '{task.sub_topic}'")
                 logger.error(f"[MultiAgent] Raw content: {content[:500]}...")

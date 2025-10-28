@@ -59,6 +59,10 @@ RESEARCH_REVIEWER_PROMPT = load_prompt(
     os.path.join(current_dir, "..", "prompts", "research_reviewer_prompt.yaml"),
     encoding="utf-8",
 )
+RESEARCH_MANAGER_PROMPT = load_prompt(
+    os.path.join(current_dir, "..", "prompts", "research_manager_prompt.yaml"),
+    encoding="utf-8",
+)
 
 
 class MagenticExecutor(Executor):
@@ -80,6 +84,7 @@ class MagenticExecutor(Executor):
         self,
         id: str,
         chat_client: AzureOpenAIChatClient,
+        reasoning_client: AzureOpenAIChatClient,
         settings: Settings,
         context_max_chars: int = 400000,  # SK와 동일: 40만자
         max_document_length: int = 10000,  # 문서당 1만자
@@ -87,6 +92,7 @@ class MagenticExecutor(Executor):
     ):
         super().__init__(id=id)
         self.chat_client = chat_client
+        self.reasoning_client = reasoning_client
         self.settings = settings
         self.context_max_chars = context_max_chars
         self.max_document_length = max_document_length
@@ -475,7 +481,7 @@ class MagenticExecutor(Executor):
 
                     # ✅ Always show round indicator (compact)
                     await ctx.yield_output(
-                        f"data: ### 🔄 Orchestration Planning Rounds {orchestration_rounds}\n\n"
+                        f"data: ### 🔄 Reasoning Orchestration Planning Rounds {orchestration_rounds}\n\n"
                     )
 
                     # ✅ VERBOSE: Show orchestrator planning details
@@ -547,9 +553,8 @@ class MagenticExecutor(Executor):
                                 f"[MagenticExecutor] Reviewer agent completed, parsing output..."
                             )
 
-                            cleaned_json = clean_and_validate_json(agent_text)
-                            reviewer_output = json.loads(cleaned_json)
-
+                            reviewer_output = clean_and_validate_json(agent_text, return_dict=True)
+                            
                             final_answer = reviewer_output.get(
                                 "revised_answer_markdown", ""
                             )
@@ -695,61 +700,24 @@ class MagenticExecutor(Executor):
                 .on_exception(on_exception)
                 .with_standard_manager(
                     chat_client=self.chat_client,
-                    max_round_count=6,
+                    max_round_count=5,
                     max_stall_count=2,
                     max_reset_count=1,
                 )
                 .build()
             )
 
-            # ⭐ Create detailed task description
-            task = f"""You are coordinating a research team to analyze: "{sub_topic}"
-
-# User Question
-{question}
-
-# Available Information Sources
-{trimmed_context}
-
-{"⚠️ Note: Context was truncated due to size. Focus on key information." if context_truncated else ""}
-
-# Team Workflow (3-Phase Collaboration)
-
-## Phase 1: ResearchAnalyst
-- Analyze available sources carefully
-- Extract key insights, data points, and patterns
-- Identify source attribution for each claim
-- Output: Structured JSON with key_insights, data_points, source_summary
-
-## Phase 2: ResearchWriter
-- Use analyst's findings to create comprehensive answer
-- Structure content with clear markdown formatting
-- Include proper citations with URLs/file names from sources
-- Output: JSON with draft_answer_markdown, citations, key_findings
-
-## Phase 3: ResearchReviewer
-- Validate accuracy and completeness of the draft
-- Check citation quality and source attribution
-- Assess readiness to publish (ready_to_publish: true/false)
-- Provide revised answer if needed
-- Output: JSON with revised_answer_markdown, citations, reviewer_evaluation_score (1-5), ready_to_publish (boolean)
-
-# Quality Standards
-- Answer MUST be in {locale} language
-- Target length: Under {max_tokens} tokens for final answer
-- Use markdown: headings (#), bold (**), bullet lists (-)
-- Include 1-2 emoji if natural
-- Provide clickable reference links from sources
-- Focus specifically on "{sub_topic}" within the broader question
-
-# Critical Requirements
-- Output valid JSON that can be parsed by json.loads()
-- Use double quotes for all JSON strings
-- No trailing commas in arrays or objects
-- Escape special characters properly in strings
-- Base all claims on provided contexts only
-- Final answer output must be JSON with final_answer_markdown, citations, reviewer_evaluation_score, ready_to_publish fields
-"""
+            # ⭐ Create detailed task description using prompt template
+            context_warning = "⚠️ Note: Context was truncated due to size. Focus on key information." if context_truncated else ""
+            
+            task = RESEARCH_MANAGER_PROMPT.format(
+                sub_topic=sub_topic,
+                question=question,
+                trimmed_context=trimmed_context,
+                context_truncated=context_warning,
+                locale=locale,
+                max_tokens=max_tokens,
+            )
 
             logger.info(
                 f"[MagenticExecutor] Starting Magentic orchestration for '{sub_topic}'"

@@ -31,7 +31,7 @@ from semantic_kernel.connectors.ai.open_ai import AzureChatCompletion, AzureChat
 from semantic_kernel.contents import ChatMessageContent
 from langchain.prompts import load_prompt
 from config.config import Settings
-from utils.json_control import clean_and_validate_json
+from utils.json_control import clean_and_validate_json, clean_markdown_escapes
 
 logger = logging.getLogger(__name__)
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -227,7 +227,7 @@ class MagenticPlugin:
             else:
                 yield "data: ### ♻️ Reusing existing agents (singleton pattern)\n\n"
 
-            yield "data: ### 🎯 Starting o3-mini orchestration...\n\n"
+            yield "data: ### 🎯 Starting reasoning orchestration...\n\n"
 
             # Prepare task
             task = f"Research Question: {question}\n\nContext: {contexts}"
@@ -285,6 +285,23 @@ class MagenticPlugin:
             else:
                 final_report = str(result)
 
+           
+            # Check if result is JSON-wrapped markdown
+            if final_report.strip().startswith('{'):
+                # Try parsing as JSON first
+                parsed = clean_and_validate_json(final_report, return_dict=True)
+                # Extract markdown field if it exists
+                final_report = (
+                    parsed.get('revised_answer_markdown', '') or
+                    parsed.get('draft_answer_markdown', '') or
+                    parsed.get('final_answer', '') or
+                    parsed.get('answer', '') or
+                    str(parsed)
+                )
+            else:
+                # Direct markdown - just clean escaped characters
+                final_report = clean_markdown_escapes(final_report)
+           
             logger.info(f"✅ Magentic orchestration completed: {len(final_report)} chars")
             
             # Yield final report (without execution time here - orchestrator handles it)

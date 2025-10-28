@@ -43,7 +43,7 @@ logging.basicConfig(
     force=True,
 )
 
-# Semantic Kernel의 상세한 로그 억제
+# Semantic Kernel loggers setting to WARNING to reduce verbosity
 semantic_kernel_loggers = [
     "semantic_kernel.agents.runtime.in_process_runtime",
     "semantic_kernel.agents.runtime.in_process_runtime.events",
@@ -54,7 +54,7 @@ semantic_kernel_loggers = [
 ]
 
 for logger_name in semantic_kernel_loggers:
-    logging.getLogger(logger_name).setLevel(logging.INFO)
+    logging.getLogger(logger_name).setLevel(logging.WARNING)
 
 logger = logging.getLogger(__name__)
 

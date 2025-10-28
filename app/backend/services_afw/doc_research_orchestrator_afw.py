@@ -584,6 +584,14 @@ class PlanSearchOrchestratorAFW:
             api_version=settings.AZURE_OPENAI_API_VERSION,
         )
 
+        # Initialize Azure OpenAI Chat Client for Reasoning (MagenticExecutor)
+        self.reasoning_client = AzureOpenAIChatClient(
+            deployment_name=settings.AZURE_OPENAI_REASONING_DEPLOYMENT_NAME,
+            endpoint=settings.AZURE_OPENAI_ENDPOINT,
+            api_key=settings.AZURE_OPENAI_API_KEY,
+            api_version=settings.AZURE_OPENAI_API_VERSION,
+        )
+
         logger.info(
             f"PlanSearchOrchestrator initialized with Azure OpenAI deployment: {settings.AZURE_OPENAI_DEPLOYMENT_NAME}"
         )
@@ -729,6 +737,7 @@ class PlanSearchOrchestratorAFW:
                     multi_agent_executor = MagenticExecutor(
                         id="magentic_research",
                         chat_client=self.chat_client,
+                        reasoning_client=self.reasoning_client,
                         settings=self.settings,
                         context_max_chars=400000,  # ✅ SK와 동일한 MAX_CONTEXT_LENGTH
                         max_document_length=10000,  # ✅ 문서당 최대 길이

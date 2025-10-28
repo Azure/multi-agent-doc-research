@@ -59,7 +59,7 @@ UI_TEXT = {
 
 
             ✅ **Supported file formats:** PDF, DOCX, TXT
-            📊 **Upload limits:** Up to 10 files, each under 50MB
+            📊 **Upload limits:** Up to 5 files, each under 20MB
             🔍 **Processing:** Uploaded files will be vectorized for AI search
 
             💬 **Questions:** Feel free to ask related questions after uploading files!
@@ -122,7 +122,7 @@ UI_TEXT = {
             3️⃣ 채팅 버튼을 클릭하면 파일이 자동으로 Knowledge Base에 추가됩니다
 
             ✅ **지원 파일 형식:** PDF, DOCX, TXT  
-            📊 **업로드 제한:** 최대 10개 파일, 각각 50MB 이하  
+            📊 **업로드 제한:** 최대 5개 파일, 각각 20MB 이하  
             🔍 **처리 과정:** 업로드된 파일은 AI 검색을 위해 벡터화됩니다
 
             💬 **질문하기:** 파일 업로드 후 관련 질문을 해보세요!
@@ -143,7 +143,7 @@ EXAMPLE_PROMPTS = {
             2️⃣ Select the file you want to upload (drag & drop is also supported)
             3️⃣ The file will be automatically added to the Knowledge Base
             ✅ **Supported file formats:** PDF, DOCX, TXT
-            📊 **Upload limits:** Up to 10 files, each under 50MB
+            📊 **Upload limits:** Up to 5 files, each under 20MB
             🔍 **Processing:** Uploaded files will be vectorized for AI search
             💬 **Questions:** Feel free to ask related questions after uploading files!
         """
@@ -179,7 +179,7 @@ EXAMPLE_PROMPTS = {
             2️⃣ 업로드할 파일을 선택하세요 (드래그&드롭도 가능)
             3️⃣ 채팅 버튼을 클릭하면 파일이 자동으로 Knowledge Base에 추가됩니다
             ✅ **지원 파일 형식:** PDF, DOCX, TXT  
-            📊 **업로드 제한:** 최대 10개 파일, 각각 50MB 이하  
+            📊 **업로드 제한:** 최대 5개 파일, 각각 20MB 이하  
             🔍 **처리 과정:** 업로드된 파일은 AI 검색을 위해 벡터화됩니다
             💬 **질문하기:** 파일 업로드 후 관련 질문을 해보세요!
         """

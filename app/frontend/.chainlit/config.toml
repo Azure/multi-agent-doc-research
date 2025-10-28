@@ -148,8 +148,8 @@ default_avatar_file_url = "/public/avatars/my_assistant.png"
     #    accept = { "application/octet-stream" = [".xyz", ".pdb"] }
     # Note: Using "*/*" is not recommended as it may cause browser warnings
     # accept = ["*/*"]
-    max_files = 2
-    max_size_mb = 10
+    max_files = 5
+    max_size_mb = 20
 
 
 [meta]

@@ -880,156 +880,76 @@ class PlanSearchOrchestratorSK:
                         # Parse and stream results
                         if sub_topic_group_chat_result_str:
                             try:
-                                group_chat_data = json.loads(sub_topic_group_chat_result_str)
+                                # ✅ Normalize result format - handle both dict and JSON string
+                                if isinstance(sub_topic_group_chat_result_str, dict):
+                                    group_chat_data = sub_topic_group_chat_result_str
+                                elif isinstance(sub_topic_group_chat_result_str, str):
+                                    group_chat_data = json.loads(sub_topic_group_chat_result_str)
+                                else:
+                                    logger.error(f"Unexpected result type for {sub_topic_name}: {type(sub_topic_group_chat_result_str)}")
+                                    continue
+                                
                                 logger.info(
                                     f"Multi-agent result for {sub_topic_name}: status={group_chat_data.get('status')}"
                                 )
 
-                                # ✅ Check if this is Semantic Kernel GroupChat format (simple structure)
-                                if multi_agent_type == "Semantic Kernel GroupChat":
-                                    # SK GroupChat format: {"status": "success", "sub_topic": "...", "final_answer": "JSON string"}
-                                    if group_chat_data.get("status") == "success":
-                                        final_answer_json = group_chat_data.get("final_answer", "")
-                                        
-                                        # ✅ Parse final_answer JSON to extract markdown
-                                        try:
-                                            final_answer_data = json.loads(final_answer_json)
-                                            # Extract answer_markdown (try revised first, then draft)
-                                            answer_markdown = final_answer_data.get("revised_answer_markdown", "") or final_answer_data.get("draft_answer_markdown", "")
-                                            if stream and answer_markdown:
-                                                # Set TTFT
-                                                if 'ttft_time' not in locals():
-                                                    ttft_time = datetime.now(tz=self.timezone) - start_time
-                                                
-                                                yield f"\n"
-                                                yield f"data: ### {LOCALE_MSG.get('write_research', 'Writing Answer')} for {sub_topic_name}\n\n"
-                                                yield f"## {sub_topic_name}\n\n"
-                                                
-                                                # Stream answer in chunks
-                                                chunk_size = 100
-                                                for i in range(0, len(answer_markdown), chunk_size):
-                                                    chunk = answer_markdown[i : i + chunk_size]
-                                                    yield chunk
-                                                    await asyncio.sleep(0.01)
-                                                yield "\n\n"
-                                            elif stream:
-                                                # No markdown found, log warning
-                                                logger.warning(f"No answer_markdown found in final_answer for {sub_topic_name}")
-                                                yield f"data: ⚠️ No answer content generated for {sub_topic_name}\n\n"
-                                                
-                                        except json.JSONDecodeError as je:
-                                            logger.error(f"Failed to parse final_answer JSON for {sub_topic_name}: {je}")
-                                            logger.error(f"Raw final_answer: {final_answer_json[:200]}...")
-                                            if stream:
-                                                yield f"data: ❌ Error parsing answer format\n\n"
-                                    else:
-                                        error_msg = group_chat_data.get("error", "Unknown error")
-                                        logger.error(f"SK GroupChat failed for {sub_topic_name}: {error_msg}")
-                                        if stream:
-                                            yield f"data: ❌ Error: {error_msg}\n\n"
-                                    
-                                    continue  # Skip vanilla multi-agent processing
+                                # ✅ Standardized key extraction - works for all executor types
+                                status = group_chat_data.get("status")
+                                answer_markdown = group_chat_data.get("answer_markdown", "")
                                 
-                                # ✅ Vanilla multi-agent format processing (existing code)
-                                # Get sub-topic results for detailed info
-                                sub_results = group_chat_data.get("sub_topic_results", [])
-
-                                # Stream writer progress
-                                if stream:
-                                    for idx, result in enumerate(sub_results, 1):
-                                        topic = result.get("sub_topic", "Unknown")
-                                        writer_status = result.get("writer", {}).get(
-                                            "status"
-                                        )
-                                        if writer_status == "success":
-                                            yield f"data: ### ✅ Writer [{idx}/{len(sub_results)}]: {topic}\n\n"
-                                        else:
-                                            yield f"data: ### ❌ Writer [{idx}/{len(sub_results)}]: {topic} (failed)\n\n"
-
+                                # ✅ Fallback for old formats (final_answer, revised_answer_markdown, etc.)
+                                if not answer_markdown:
+                                    # Try parsing final_answer if it exists
+                                    final_answer_field = group_chat_data.get("final_answer", "")
+                                    if isinstance(final_answer_field, str) and final_answer_field.strip().startswith('{'):
+                                        try:
+                                            final_answer_data = json.loads(final_answer_field)
+                                            
+                                            # 🔧 Handle vanilla_multi_agent format: {"question": "...", "answers": {"sub_topic": "markdown"}}
+                                            if "answers" in final_answer_data and isinstance(final_answer_data["answers"], dict):
+                                                # Extract answer for current sub_topic
+                                                answer_markdown = final_answer_data["answers"].get(sub_topic_name, "")
+                                            else:
+                                                # Handle old SK GroupChat format
+                                                answer_markdown = (
+                                                    final_answer_data.get("revised_answer_markdown", "") or
+                                                    final_answer_data.get("draft_answer_markdown", "") or
+                                                    final_answer_data.get("answer_markdown", "")
+                                                )
+                                        except json.JSONDecodeError:
+                                            # Not JSON, use as-is
+                                            answer_markdown = final_answer_field
+                                    else:
+                                        # Plain text or empty
+                                        answer_markdown = final_answer_field
+                                
+                                # ✅ Stream the answer if we have it
+                                if status == "success" and answer_markdown:
+                                    # Set TTFT on first answer
+                                    if ttft_time is None:
+                                        ttft_time = datetime.now(tz=self.timezone) - start_time
                                     
-                                    # Stream reviewer progress
-                                    for idx, result in enumerate(sub_results, 1):
-                                        topic = result.get("sub_topic", "Unknown")
-                                        review = result.get("review", {})
-                                        review_status = review.get("status")
-
-                                        if review_status == "skipped":
-                                            yield f"data: ⏭️  Reviewer [{idx}/{len(sub_results)}]: {topic} (skipped - writer failed)\n\n"
-                                        elif review_status == "success":
-                                            ready = review.get(
-                                                "ready_to_publish", False
-                                            )
-                                            score = review.get("parsed", {}).get(
-                                                "reviewer_evaluation_score", "N/A"
-                                            )
-                                            status_icon = "✅" if ready else "⚠️"
-                                            yield f"data: ### {status_icon} Reviewer [{idx}/{len(sub_results)}]: {topic} (score: {score})\n\n"
-                                        else:
-                                            yield f"data: ### ❌ Reviewer [{idx}/{len(sub_results)}]: {topic} (error)\n\n"
-
-                                # Check overall status
-                                all_ready = group_chat_data.get(
-                                    "all_ready_to_publish", False
-                                )
-                        
-                                # Stream final answers (always, regardless of ready_to_publish)
-                                final_answer_str = group_chat_data.get(
-                                    "final_answer", ""
-                                )
-                                if final_answer_str and stream:
-                                    try:
-                                        final_answer_data = json.loads(final_answer_str)
-                                        answers = final_answer_data.get("answers", {})
-                                        ttft_time = (
-                                            datetime.now(tz=self.timezone) - start_time
-                                        )
-
-                                        for topic, answer in answers.items():
-                                            # Get detailed info for this topic
-                                            topic_result = next(
-                                                (
-                                                    r
-                                                    for r in sub_results
-                                                    if r.get("sub_topic") == topic
-                                                ),
-                                                None,
-                                            )
-
-                                            ready_icon = "✅"
-                                            score = "N/A"
-                                            if topic_result:
-                                                ready_to_publish = topic_result.get(
-                                                    "review", {}
-                                                ).get("ready_to_publish", False)
-                                                ready_icon = (
-                                                    "✅" if ready_to_publish else "⚠️"
-                                                )
-                                                score = (
-                                                    topic_result.get("review", {})
-                                                    .get("parsed", {})
-                                                    .get(
-                                                        "reviewer_evaluation_score",
-                                                        "N/A",
-                                                    )
-                                                )
-
-                                            yield f"\n"
-                                            yield f"data: ### {LOCALE_MSG.get('write_research', 'Writing Answer')} for {topic} {ready_icon} (Score: {score})\n\n"
-                                            yield f"## {topic}\n\n"
-
-                                            # Stream answer in chunks
-                                            chunk_size = 100
-                                            for i in range(0, len(answer), chunk_size):
-                                                chunk = answer[i : i + chunk_size]
-                                                yield chunk
-                                                await asyncio.sleep(0.01)
-                                            yield "\n\n"
-                                    except json.JSONDecodeError as je:
-                                        logger.error(
-                                            f"Failed to parse final_answer for {sub_topic_name}: {je}"
-                                        )
-                                        if stream:
-                                            yield f"data: ❌ Error parsing final answer\n\n"
+                                    if stream:
+                                        yield "\n"
+                                        yield f"data: ### {LOCALE_MSG.get('write_research', 'Writing Answer')} for {sub_topic_name}\n\n"
+                                        yield f"## {sub_topic_name}\n\n"
+                                        
+                                        # Stream answer in chunks
+                                        chunk_size = 100
+                                        for i in range(0, len(answer_markdown), chunk_size):
+                                            chunk = answer_markdown[i : i + chunk_size]
+                                            yield chunk
+                                            await asyncio.sleep(0.01)
+                                        yield "\n\n"
+                                elif status == "success" and not answer_markdown:
+                                    logger.warning(f"No answer_markdown found for {sub_topic_name}")
+                                    if stream:
+                                        yield f"data: ⚠️ No answer content generated for {sub_topic_name}\n\n"
+                                else:
+                                    error_msg = group_chat_data.get("error", "Unknown error")
+                                    logger.error(f"Multi-agent failed for {sub_topic_name}: {error_msg}")
+                                    if stream:
+                                        yield f"data: ❌ Error: {error_msg}\n\n"
 
                             except json.JSONDecodeError as e:
                                 logger.error(

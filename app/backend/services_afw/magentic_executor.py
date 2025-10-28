@@ -292,7 +292,7 @@ class MagenticExecutor(Executor):
                         f"data: ### ✅ Completed '{sub_topic_name}' [{idx}/{len(sub_topics)}]\n\n"
                     )
 
-                    final_answer = result.get("final_answer", "")
+                    final_answer = result.get("answer_markdown", "")
                     orchestration_rounds = result.get("orchestration_rounds", "N/A")
                     reviewer_score = result.get("reviewer_score", "N/A")
                     ready_to_publish = result.get("ready_to_publish", False)
@@ -620,11 +620,8 @@ class MagenticExecutor(Executor):
 
                             # ⭐ Parse JSON from final result
                             try:
-                                final_answer_cleaned = clean_and_validate_json(
-                                    final_text
-                                )
-                                parsed_answer = json.loads(final_answer_cleaned)
-
+                                parsed_answer = clean_and_validate_json(final_text, return_dict=True)
+                                
                                 # ✅ Prefer Reviewer output over Writer output
 
                                 answer_markdown = (
@@ -750,7 +747,7 @@ class MagenticExecutor(Executor):
             "status": "success" if error_info is None else "error",
             "sub_topic": sub_topic,
             "question": question,
-            "final_answer": final_answer,
+            "answer_markdown": final_answer,  # ✅ Standardized key name (was final_answer)
             "citations": citations,
             "reviewer_score": reviewer_score,
             "ready_to_publish": ready_to_publish,

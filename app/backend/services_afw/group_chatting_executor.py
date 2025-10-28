@@ -271,7 +271,7 @@ class GroupChattingExecutor(Executor):
                 RESULT_MSG = LOCALE_MESSAGES.get(locale, LOCALE_MESSAGES["ko-KR"])
 
                 if status == "success":
-                    final_answer = result.get("final_answer", "")
+                    final_answer = result.get("answer_markdown", "")
                     reviewer_score = result.get("reviewer_score", "N/A")
                     ready_to_publish = result.get("ready_to_publish", False)
 
@@ -469,8 +469,28 @@ class GroupChattingExecutor(Executor):
                 )
 
             # Extract final answer
+            # ✅ Find the last reviewer response (not just last message)
+            final_answer = ""
             if messages and len(messages) > 1:
-                final_answer = messages[-1].text
+                # Search backwards for reviewer's response
+                for msg in reversed(messages[1:]):  # Skip the initial user message
+                    if msg.author_name == "Reviewer":
+                        final_answer = msg.text
+                        logger.info(
+                            f"[GroupChattingExecutor] Found Reviewer's final message: {final_answer[:300]}..."
+                        )
+                        break
+                
+                # If no reviewer message found, use the last message (could be writer's draft)
+                if not final_answer:
+                    final_answer = messages[-1].text
+                    logger.warning(
+                        f"[GroupChattingExecutor] No Reviewer message found, using last message from {messages[-1].author_name}: {final_answer[:300]}..."
+                    )
+            else:
+                logger.warning(
+                    f"[GroupChattingExecutor] No messages found for '{sub_topic}'"
+                )
 
             # ✅ Parse JSON and extract answer_markdown
             answer_markdown = ""
@@ -478,11 +498,25 @@ class GroupChattingExecutor(Executor):
             try:
                 parsed_answer = clean_and_validate_json(final_answer, return_dict=True)
 
-                # Extract answer_markdown
-                answer_markdown = parsed_answer.get(
-                    "revised_answer_markdown", ""
-                ) or parsed_answer.get("draft_answer_markdown", "")
-
+                # Extract answer_markdown - prioritize revised over draft
+                answer_markdown = (
+                    parsed_answer.get("revised_answer_markdown", "") or 
+                    parsed_answer.get("draft_answer_markdown", "") or
+                    parsed_answer.get("answer_markdown", "")
+                )
+                
+                # ✅ If still empty, try to get from nested structure or plain text
+                if not answer_markdown:
+                    # Check if the entire response is just markdown text (no JSON structure)
+                    if isinstance(parsed_answer, dict) and len(parsed_answer) == 0:
+                        answer_markdown = final_answer
+                    else:
+                        # Try other possible field names
+                        answer_markdown = (
+                            parsed_answer.get("answer_markdown", "") or
+                            parsed_answer.get("answer", "") or
+                            final_answer  # Last resort: use raw text
+                        )
                 
                 # ✅ Extract citations
                 citations = parsed_answer.get("citations", [])
@@ -490,10 +524,15 @@ class GroupChattingExecutor(Executor):
                 # Also extract other useful fields
                 reviewer_score = parsed_answer.get("reviewer_evaluation_score", "N/A")
                 ready_to_publish = parsed_answer.get("ready_to_publish", False)
-
-                logger.info(
-                    f"[GroupChattingExecutor] Parsed answer for '{sub_topic}': {len(answer_markdown)} chars, score={reviewer_score}, ready={ready_to_publish}"
-                )
+                
+                if answer_markdown:
+                    logger.info(
+                        f"[GroupChattingExecutor] Parsed answer for '{sub_topic}': {len(answer_markdown)} chars, score={reviewer_score}, ready={ready_to_publish}"
+                    )
+                else:
+                    logger.warning(
+                        f"[GroupChattingExecutor] No answer_markdown found for '{sub_topic}', parsed keys: {list(parsed_answer.keys())}"
+                    )
 
             except json.JSONDecodeError as e:
                 logger.warning(
@@ -516,18 +555,23 @@ class GroupChattingExecutor(Executor):
             logger.exception(e)
             await ctx.yield_output(f"data: ❌ Error: {e}\n\n")
 
+        # ✅ Final validation before return
+        if not answer_markdown:
+            logger.warning(
+                f"[GroupChattingExecutor] No answer for '{sub_topic}' - using final_answer as fallback"
+            )
+            answer_markdown = final_answer if final_answer else "No answer generated"
+
         return {
-            "status": "success" if error_info is None else "error",
+            "status": "success" if error_info is None and answer_markdown else "error",
             "sub_topic": sub_topic,
             "question": question,
-            "final_answer": answer_markdown,
-            "citations": citations,
-            "reviewer_score": reviewer_score if "reviewer_score" in locals() else "N/A",
-            "ready_to_publish": ready_to_publish
-            if "ready_to_publish" in locals()
-            else False,
-            "rounds_used": iteration,
-            "writer_rounds": writer_count,
+            "answer_markdown": answer_markdown,  # ✅ Standardized key name
+            "citations": citations if citations else [],
+            "reviewer_score": reviewer_score if reviewer_score else "N/A",
+            "ready_to_publish": ready_to_publish if isinstance(ready_to_publish, bool) else False,
+            "rounds_used": iteration if 'iteration' in locals() else 0,
+            "writer_rounds": writer_count if 'writer_count' in locals() else 0,
             "reviewer_rounds": reviewer_count,
             "error": error_info,
         }

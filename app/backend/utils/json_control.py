@@ -76,7 +76,12 @@ def clean_and_validate_json(content: str, return_dict: bool = False) -> str | di
             
             for field in markdown_fields:
                 if field in parsed and isinstance(parsed[field], str):
+                    # 1. 이스케이프 문자 정리
                     parsed[field] = _clean_markdown_content(parsed[field])
+                    # 2. 테이블 간격 보정
+                    parsed[field] = ensure_table_spacing(parsed[field])
+                    # 3. 테이블 중복 본문 제거
+                    parsed[field] = clean_duplicate_table_content(parsed[field])
             
             logger.info(f"[GroupChat] Successfully cleaned and validated JSON")
             
@@ -113,7 +118,12 @@ def clean_and_validate_json(content: str, return_dict: bool = False) -> str | di
                     # 마크다운 필드 정리
                     for field in markdown_fields:
                         if field in parsed and isinstance(parsed[field], str):
+                            # 1. 이스케이프 문자 정리
                             parsed[field] = _clean_markdown_content(parsed[field])
+                            # 2. 테이블 간격 보정
+                            parsed[field] = ensure_table_spacing(parsed[field])
+                            # 3. 테이블 중복 본문 제거
+                            parsed[field] = clean_duplicate_table_content(parsed[field])
                     
                     logger.info(f"[GroupChat] Recovered JSON after truncation")
                     
@@ -189,3 +199,49 @@ def clean_markdown_escapes(markdown: str) -> str:
         Cleaned markdown with proper formatting
     """
     return _clean_markdown_content(markdown)
+
+def ensure_table_spacing(markdown: str) -> str:
+    """
+    Ensure markdown tables have blank lines before and after them.
+    This fixes common LLM mistakes where tables are placed directly after text.
+    
+    Args:
+        markdown: Markdown text that may contain improperly spaced tables
+        
+    Returns:
+        Markdown with properly spaced tables
+    """
+    if not markdown:
+        return markdown
+    
+    import re
+    
+    # Pattern to match markdown tables
+    # Matches: | header | ... | followed by separator row and data rows
+    table_pattern = r'(\|[^\n]+\|(?:\n\|[-:\s|]+\|)?(?:\n\|[^\n]+\|)*)'
+    
+    def add_spacing(match):
+        table = match.group(0)
+        # Check if there's content before the table (not just whitespace/newline)
+        start_pos = match.start()
+        # Look back to see if there's text immediately before
+        if start_pos > 0:
+            before_table = markdown[max(0, start_pos - 2):start_pos]
+            # If not already separated by blank line, add one
+            if before_table and not before_table.endswith('\n\n'):
+                table = '\n' + table
+        
+        # Check if there's content after the table
+        end_pos = match.end()
+        if end_pos < len(markdown):
+            after_table = markdown[end_pos:min(len(markdown), end_pos + 2)]
+            # If not already separated by blank line, add one
+            if after_table and not after_table.startswith('\n\n'):
+                table = table + '\n'
+        
+        return table
+    
+    # Apply spacing fix to all tables
+    result = re.sub(table_pattern, add_spacing, markdown, flags=re.MULTILINE)
+    
+    return result

@@ -195,50 +195,19 @@ class MagenticPlugin:
             #     yield f"\n## 🎯 {sub_topic_title}\n\n"
             
             yield "data: ### 👥 Initializing research agents...\n\n"
-            
+
             orchestration, runtime = self._create_agents(question, contexts, locale, current_date)
-            
+
             yield "data: ### ✅ Agents ready: LeadResearcher, CredibilityCritic, CitationAgent, ReportWriter\n\n"
             yield "data: ### 🎯 Starting reasoning orchestration...\n\n"
 
+            # ✅ TTFT 마커 전송 (첫 의미있는 출력)
+            yield "data: __TTFT_MARKER__\n\n"
+
             task = f"Research Question: {question}\n\nContext: {contexts}"
-            
-            orchestration_task = asyncio.create_task(
-                orchestration.invoke(task=task, runtime=runtime)
-            )
 
-            last_agent = None
-            while not orchestration_task.done():
-                try:
-                    progress = await asyncio.wait_for(
-                        self.progress_queue.get(), 
-                        timeout=10.0
-                    )
-                    
-                    if progress.get("type") == "agent_activity":
-                        msg = progress.get("message", "")
-                        if "agent_name" in msg.lower():
-                            try:
-                                agent_info = json.loads(msg)
-                                agent_name = agent_info.get("agent_name", "Unknown")
-                                if agent_name != last_agent:
-                                    yield f"data: ### 🤖 Agent Active: {agent_name}\n\n"
-                                    last_agent = agent_name
-                            except Exception:
-                                pass
-                    elif progress.get("agent"):
-                        agent_name = progress.get("agent")
-                        content_len = progress.get("content_length", 0)
-                        if agent_name != last_agent:
-                            yield f"data: ### 📝 {agent_name} is working... ({content_len} chars)\n\n"
-                            last_agent = agent_name
-                        
-                except asyncio.TimeoutError:
-                    continue
-                except Exception as e:
-                    logger.error(f"Error processing progress: {str(e)}")
-
-            result_proxy = await orchestration_task
+            # ✅ 진행 상황 모니터링 제거하고 직접 대기
+            result_proxy = await orchestration.invoke(task=task, runtime=runtime)
             result = await result_proxy.get()
 
             if hasattr(result, 'content'):

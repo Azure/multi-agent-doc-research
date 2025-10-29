@@ -12,7 +12,7 @@ Built with FastAPI, Azure OpenAI, and Chainlit, the system showcases advanced te
 At its core, the multi-agent deep research engine combines Semantic Kernel and the Microsoft Agent Framework to generate high-quality analytical reports. By employing group chat coordination and a magnetic multi-agent pattern, it achieves deeper reasoning and consistent, well-structured outputs.
 
 ## Key features
-E2E sample, Multi-Agent orchestration, Group Chat Pattern, Magentic Pattern, Modular architecture, Semantic chunking, Document upload, MS Agent Framework, Semantic Kernel
+E2E sample, Multi-Agent orchestration, Group Chat Pattern, Magentic Pattern, MS Agent Framework, Semantic Kernel, AI Search, Semantic chunking, Document Intelligence, Modular architecture
 
 ## Multi-Agent Implementation
 - MS Agent Framework GroupChat: Group chat coordination using MS Agent Framework. (members: WriterAgent, ReviwerAgent)
@@ -23,5 +23,4 @@ E2E sample, Multi-Agent orchestration, Group Chat Pattern, Magentic Pattern, Mod
 
 ## Azure AI Services
 AOAI, Azure AI Foundry, Azure AI Search
-
 

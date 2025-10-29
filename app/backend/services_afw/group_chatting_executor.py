@@ -318,9 +318,8 @@ class GroupChattingExecutor(Executor):
                     )
 
             # Yield overall completion
-            success_count = sum(1 for r in all_results if r.get("status") == "success")
             await ctx.yield_output(
-                f"data: ### ✅ Group chat completed: {success_count}/{len(all_results)} successful\n\n"
+                f"data: ### ✅ Group chat completed successfully\n\n"
             )
 
         except Exception as e:

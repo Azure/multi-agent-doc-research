@@ -1,23 +1,14 @@
-"""Magentic Plugin using Semantic Kernel 1.37.0 orchestration pattern.
+"""Magentic Plugin using Semantic Kernel orchestration pattern.
 
-Implements a research workflow using Magentic Orchestration with:
-- MagenticOrchestration with StandardMagenticManager
-- InProcessRuntime
-- Sequential agent collaboration (lead_researcher -> credibility_critic -> citation_agent -> report_writer)
-- o3-mini model for manager reasoning
-- Real-time progress streaming via callbacks
-
-Compatible with existing caller signature:
-  question, contexts, locale, max_tokens, current_date
-
-Returns a JSON string with final report or yields progress updates.
+Creates fresh agents for each invocation to ensure clean state isolation.
+Uses MagenticOrchestration with StandardMagenticManager and o3-mini reasoning model.
 """
 
 import json
 import logging
 import os
 from datetime import datetime
-from typing import Optional, AsyncGenerator, Callable, Any
+from typing import Optional, AsyncGenerator
 import asyncio
 
 from semantic_kernel.functions import kernel_function
@@ -28,7 +19,6 @@ from semantic_kernel.agents import (
 )
 from semantic_kernel.agents.runtime import InProcessRuntime
 from semantic_kernel.connectors.ai.open_ai import AzureChatCompletion, AzureChatPromptExecutionSettings
-from semantic_kernel.contents import ChatMessageContent
 from langchain.prompts import load_prompt
 from config.config import Settings
 from utils.json_control import clean_and_validate_json, clean_markdown_escapes
@@ -82,73 +72,54 @@ class MagenticPlugin:
             api_version=settings.AZURE_OPENAI_API_VERSION,
         )
         
-        # Progress tracking
         self.progress_queue: Optional[asyncio.Queue] = None
-        
-        # Singleton agents - created once and reused
-        self._agents_created = False
-        self._lead_researcher: Optional[ChatCompletionAgent] = None
-        self._credibility_critic: Optional[ChatCompletionAgent] = None
-        self._citation_agent: Optional[ChatCompletionAgent] = None
-        self._report_writer: Optional[ChatCompletionAgent] = None
-        self._orchestration: Optional[MagenticOrchestration] = None
-        self._runtime: Optional[InProcessRuntime] = None
 
-    def _create_agents_once(
+    def _create_agents(
         self,
         question: str,
         contexts: str,
         locale: str,
         current_date: str,
-    ) -> None:
-        """
-        Create agents only once (singleton pattern).
-        Reuses agents across multiple sub-topic invocations.
-        """
-        if self._agents_created:
-            logger.info("♻️ Reusing existing agents (singleton pattern)")
-            return
+    ) -> tuple[MagenticOrchestration, InProcessRuntime]:
+        """Create fresh agents and orchestration for each invocation."""
         
-        logger.info("� Creating research agents (first time only)...")
-        
-        # Create agents with generic instructions (context will be passed per invocation)
-        self._lead_researcher = ChatCompletionAgent(
+        lead_researcher = ChatCompletionAgent(
             service=self.chat_service,
             name="LeadResearcher",
             description="Advanced lead researcher that coordinates multiple internal research agents for comprehensive research tasks using ONLY internal document repositories.",
             instructions=LEAD_RESEARCHER_PROMPT.format(
-                question="{question}",  # Placeholder, will be set per invocation
-                context="{context}",
+                question=question,
+                context=contexts,
                 locale=locale,
                 current_date=current_date,
             ),
         )
 
-        self._credibility_critic = ChatCompletionAgent(
+        credibility_critic = ChatCompletionAgent(
             service=self.chat_service,
             name="CredibilityCritic",
             description="Analyzes credibility and coverage of internal search results.",
             instructions=CREDIBILITY_CRITIC_PROMPT.format(
                 research_analysis="{research_analysis}",
-                context="{context}",
+                context=contexts,
                 locale=locale,
                 current_date=current_date,
             ),
         )
 
-        self._citation_agent = ChatCompletionAgent(
+        citation_agent = ChatCompletionAgent(
             service=self.chat_service,
             name="CitationAgent",
             description="Processes research documents to identify citation locations.",
             instructions=CITATION_AGENT_PROMPT.format(
                 research_content="{research_content}",
-                context="{context}",
+                context=contexts,
                 locale=locale,
                 current_date=current_date,
             ),
         )
 
-        self._report_writer = ChatCompletionAgent(
+        report_writer = ChatCompletionAgent(
             service=self.chat_service,
             name="ReportWriter",
             description="Creates structured markdown reports with citations.",
@@ -160,18 +131,16 @@ class MagenticPlugin:
             ),
         )
 
-        # Create reasoning settings for o3-mini model
         reasoning_high_settings = AzureChatPromptExecutionSettings(
             reasoning_effort="high"
         )
 
-        # Create orchestration with StandardMagenticManager
-        self._orchestration = MagenticOrchestration(
+        orchestration = MagenticOrchestration(
             members=[
-                self._lead_researcher,
-                self._credibility_critic,
-                self._citation_agent,
-                self._report_writer
+                lead_researcher,
+                credibility_critic,
+                citation_agent,
+                report_writer
             ],
             manager=StandardMagenticManager(
                 chat_completion_service=self.manager_service,
@@ -184,12 +153,10 @@ class MagenticPlugin:
             ) if self.progress_queue else None
         )
 
-        # Create runtime
-        self._runtime = InProcessRuntime()
-        self._runtime.start()
+        runtime = InProcessRuntime()
+        runtime.start()
 
-        self._agents_created = True
-        logger.info("✅ Agents and orchestration created successfully (singleton)")
+        return orchestration, runtime
 
     @kernel_function(
         description="Execute Magentic multi-agent research workflow with streaming.",
@@ -214,43 +181,32 @@ class MagenticPlugin:
         # Initialize progress queue
         self.progress_queue = asyncio.Queue()
 
-        logger.info(
-            f"🔬 Starting Magentic research flow (streaming) for question: {question[:100]}..."
-        )
+        logger.info(f"Starting Magentic research flow for question: {question[:100]}...")
 
         try:
-            # Create agents once (singleton pattern)
-            if not self._agents_created:
-                yield "data: ### 👥 Initializing research agents...\n\n"
-                self._create_agents_once(question, contexts, locale, current_date)
-                yield "data: ### ✅ Agents ready: LeadResearcher, CredibilityCritic, CitationAgent, ReportWriter\n\n"
-            else:
-                yield "data: ### ♻️ Reusing existing agents (singleton pattern)\n\n"
-
+            yield "data: ### 👥 Initializing research agents...\n\n"
+            
+            orchestration, runtime = self._create_agents(question, contexts, locale, current_date)
+            
+            yield "data: ### ✅ Agents ready: LeadResearcher, CredibilityCritic, CitationAgent, ReportWriter\n\n"
             yield "data: ### 🎯 Starting reasoning orchestration...\n\n"
 
-            # Prepare task
             task = f"Research Question: {question}\n\nContext: {contexts}"
             
-            # Start orchestration in background
             orchestration_task = asyncio.create_task(
-                self._orchestration.invoke(task=task, runtime=self._runtime)
+                orchestration.invoke(task=task, runtime=runtime)
             )
 
-            # Monitor progress while orchestration runs
             last_agent = None
             while not orchestration_task.done():
                 try:
-                    # Check for progress updates with timeout
                     progress = await asyncio.wait_for(
                         self.progress_queue.get(), 
                         timeout=10.0
                     )
                     
-                    # Yield progress to caller
                     if progress.get("type") == "agent_activity":
                         msg = progress.get("message", "")
-                        # Extract agent name from message if possible
                         if "agent_name" in msg.lower():
                             try:
                                 agent_info = json.loads(msg)
@@ -268,16 +224,13 @@ class MagenticPlugin:
                             last_agent = agent_name
                         
                 except asyncio.TimeoutError:
-                    # No progress update, continue waiting
                     continue
                 except Exception as e:
                     logger.error(f"Error processing progress: {str(e)}")
 
-            # Get final result
             result_proxy = await orchestration_task
             result = await result_proxy.get()
 
-            # Extract final report
             if hasattr(result, 'content'):
                 final_report = str(result.content)
             elif hasattr(result, 'value'):
@@ -285,11 +238,9 @@ class MagenticPlugin:
             else:
                 final_report = str(result)
 
-           
-            # Check if result is JSON-wrapped markdown
             if final_report.strip().startswith('{'):
-                # Try parsing as JSON first
                 parsed = clean_and_validate_json(final_report, return_dict=True)
+
                 # Extract markdown field if it exists
                 final_report = (
                     parsed.get('revised_answer_markdown', '') or
@@ -299,25 +250,17 @@ class MagenticPlugin:
                     str(parsed)
                 )
             else:
-                # Direct markdown - just clean escaped characters
                 final_report = clean_markdown_escapes(final_report)
            
-            logger.info(f"✅ Magentic orchestration completed: {len(final_report)} chars")
+            logger.info(f"Magentic orchestration completed: {len(final_report)} chars")
             
-            # Yield final report (without execution time here - orchestrator handles it)
             yield final_report
 
         except Exception as e:
-            logger.error(f"❌ Error in magentic_flow_stream: {str(e)}", exc_info=True)
+            logger.error(f"Error in magentic_flow_stream: {str(e)}", exc_info=True)
             yield f"data: ### ❌ Error: {str(e)}\n\n"
         finally:
-            # Clean up progress queue
             self.progress_queue = None
-    
-    async def cleanup(self):
-        """Clean up resources when orchestrator is done."""
-        if self._runtime:
-            await self._runtime.stop_when_idle()
-            self._runtime = None
-        self._agents_created = False
-        logger.info("🧹 Magentic plugin cleanup completed")
+            if runtime:
+                await runtime.stop_when_idle()
+

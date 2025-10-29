@@ -131,8 +131,10 @@ class MagenticPlugin:
             ),
         )
 
-        reasoning_high_settings = AzureChatPromptExecutionSettings(
-            reasoning_effort="high"
+        reasoning_level_settings = AzureChatPromptExecutionSettings(
+            #TODO adjust settings as needed
+            #TODO move as configurable settings
+            reasoning_effort="medium"
         )
 
         orchestration = MagenticOrchestration(
@@ -146,7 +148,7 @@ class MagenticPlugin:
                 chat_completion_service=self.manager_service,
                 system_prompt=MANAGER_PROMPT.format(locale=locale),
                 final_answer_prompt=FINAL_ANSWER_PROMPT.format(locale=locale),
-                prompt_execution_settings=reasoning_high_settings,
+                prompt_execution_settings=reasoning_level_settings,
             ),
             agent_response_callback=lambda msg: asyncio.create_task(
                 self.progress_queue.put({"type": "agent_activity", "message": str(msg)})
@@ -170,20 +172,28 @@ class MagenticPlugin:
         max_tokens: int = 8000,
         current_date: Optional[str] = None,
     ) -> AsyncGenerator[str, None]:
-        """
-        Orchestrate a sequential research workflow using Magentic pattern with streaming.
-        Yields progress updates as agents complete their work.
-        Uses singleton pattern - agents are created once and reused.
-        """
         if current_date is None:
             current_date = datetime.now().strftime("%Y-%m-%d")
 
-        # Initialize progress queue
         self.progress_queue = asyncio.Queue()
+        runtime = None  # ✅ Initialize outside try block
 
         logger.info(f"Starting Magentic research flow for question: {question[:100]}...")
 
         try:
+            # # Extract sub-topic from question if present
+            # sub_topic_title = None
+            # if question.startswith("Sub-topic:"):
+            #     lines = question.split("\n")
+            #     if len(lines) > 0:
+            #         sub_topic_line = lines[0].replace("Sub-topic:", "").strip()
+            #         if sub_topic_line:
+            #             sub_topic_title = sub_topic_line
+    
+            # # Yield sub-topic header if found
+            # if sub_topic_title:
+            #     yield f"\n## 🎯 {sub_topic_title}\n\n"
+            
             yield "data: ### 👥 Initializing research agents...\n\n"
             
             orchestration, runtime = self._create_agents(question, contexts, locale, current_date)
@@ -240,8 +250,6 @@ class MagenticPlugin:
 
             if final_report.strip().startswith('{'):
                 parsed = clean_and_validate_json(final_report, return_dict=True)
-
-                # Extract markdown field if it exists
                 final_report = (
                     parsed.get('revised_answer_markdown', '') or
                     parsed.get('draft_answer_markdown', '') or
@@ -249,8 +257,9 @@ class MagenticPlugin:
                     parsed.get('answer', '') or
                     str(parsed)
                 )
-            else:
-                final_report = clean_markdown_escapes(final_report)
+
+            # ✅ 항상 마지막에 clean (JSON이든 아니든)
+            final_report = clean_markdown_escapes(final_report)
            
             logger.info(f"Magentic orchestration completed: {len(final_report)} chars")
             
@@ -261,6 +270,10 @@ class MagenticPlugin:
             yield f"data: ### ❌ Error: {str(e)}\n\n"
         finally:
             self.progress_queue = None
-            if runtime:
-                await runtime.stop_when_idle()
+            if runtime:  # ✅ Now safely defined
+                try:
+                    await runtime.stop_when_idle()
+                    logger.info("Runtime cleanup completed")
+                except Exception as cleanup_error:
+                    logger.error(f"Error during runtime cleanup: {cleanup_error}")
 

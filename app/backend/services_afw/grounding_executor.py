@@ -201,7 +201,7 @@ class GroundingExecutor(Executor):
             max_tokens = search_data.get("max_tokens", 1024)
             temperature = search_data.get("temperature", 0.7)
 
-            # ✅ Yield starting message
+            #  Yield starting message
             await ctx.yield_output(f"data: ### {LOCALE_MSG['searching']}\n\n")
 
             logger.info(f"[GroundingExecutor] Starting grounding search")
@@ -244,7 +244,7 @@ class GroundingExecutor(Executor):
 
             logger.info(f"[GroundingExecutor] Search completed successfully")
 
-            # ✅ Yield completion message (SK compatible format with results)
+            #  Yield completion message (SK compatible format with results)
             if verbose and result:
                 results_str = json.dumps(result_data, ensure_ascii=False, indent=2)
                 truncated = (

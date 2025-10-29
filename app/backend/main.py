@@ -405,7 +405,7 @@ async def doc_research_endpoint(
             doc_research_executor = get_orchestrator_sk()
 
         if request.stream:
-            # ✅ SSE 스트리밍 응답 최적화
+            #  SSE 스트리밍 응답 최적화
             return StreamingResponse(
                 doc_research_executor.generate_response(
                     request.messages,

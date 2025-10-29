@@ -748,119 +748,110 @@ class PlanSearchOrchestratorSK:
                 try:
                     yield f"data: ### {LOCALE_MSG['start_research']}\n"
 
-                    # Process each sub-topic SEPARATELY with its own context
-                    for sub_topic_idx, sub_topic_data in enumerate(sub_topics):
-                        sub_topic_name = sub_topic_data["sub_topic"]
-                        sub_topic_queries = sub_topic_data["queries"]
-
-                        # ✅ Sub-topic progress indicator
-                        yield "\n"
-                        yield f"data: ### 📋 [{sub_topic_idx + 1}/{len(sub_topics)}] {LOCALE_MSG['organize_research']} for {sub_topic_name}\n\n"
-
-                        # Extract ONLY this sub-topic's context
-                        sub_topic_context = ""
-                        sub_topic_group_chat_result = None
-
-                        # Web search context for this sub-topic only
-                        if (
-                            "sub_topic_web_contexts" in locals()
-                            and sub_topic_name in sub_topic_web_contexts
-                        ):
-                            sub_topic_context += f"=== Web Search Results ===\n{sub_topic_web_contexts[sub_topic_name]}\n\n"
-
-                        # YouTube search context for this sub-topic only
-                        if (
-                            "sub_topic_youtube_contexts" in locals()
-                            and sub_topic_name in sub_topic_youtube_contexts
-                        ):
-                            sub_topic_context += f"=== YouTube Search Results ===\n{sub_topic_youtube_contexts[sub_topic_name]}\n\n"
-
-                        # AI search context for this sub-topic only
-                        if (
-                            "sub_topic_ai_search_contexts" in locals()
-                            and sub_topic_name in sub_topic_ai_search_contexts
-                        ):
-                            sub_topic_context += f"=== Document Context ===\n{sub_topic_ai_search_contexts[sub_topic_name]}\n\n"
-
-                        # If no specific context, use fallback
-                        if not sub_topic_context.strip():
-                            sub_topic_context = (
-                                "No specific context available for this sub-topic."
-                            )
-
-                        sub_topic_group_chat_result_str = None
-
-                        if multi_agent_type == "Semantic Kernel GroupChat":
-                            # Execute group chat with ONLY this sub-topic's context
-                            group_chat_function = self.kernel.get_function(
-                                "sk_group_chat", "group_chat"
-                            )
-                            sub_topic_group_chat_result = await group_chat_function.invoke(
-                                self.kernel,
-                                KernelArguments(
-                                    sub_topic=sub_topic_name,
-                                    question=", ".join(
-                                        sub_topic_queries
-                                    ),  # Convert list to string
-                                    sub_topic_contexts=sub_topic_context,  # Only this sub-topic's context
-                                    locale=locale,
-                                    max_rounds="1",
-                                    max_tokens=str(40000),
-                                    current_date=current_date,
-                                ),
-                            )
-                            sub_topic_group_chat_result_str = (
-                                sub_topic_group_chat_result.value
-                            )
-                        elif multi_agent_type == "Semantic Kernel Magentic(Deep-Research-Agents)":
-                            # Magentic plugin with streaming support
-                            collected_chunks = []
-                            async for chunk in self.magentic_plugin.magentic_flow_stream(
-                                question=f"Sub-topic: {sub_topic_name}\nQueries: {', '.join(sub_topic_queries)}\n\nOriginal Question: {enriched_query}",
-                                contexts=sub_topic_context,
-                                locale=locale,
-                                max_tokens=40000,
-                                current_date=current_date,
-                            ):
-                                # Set TTFT on first content chunk
-                                if ttft_time is None and not chunk.startswith("data:"):
-                                    ttft_time = datetime.now(tz=self.timezone) - start_time
-                                
-                                if stream:
-                                    yield chunk
-                                # Only collect non-data chunks for final result
-                                if not chunk.startswith("data:"):
-                                    collected_chunks.append(chunk)
+                    # Magentic Process
+                    if multi_agent_type == "Semantic Kernel Magentic(Deep-Research-Agents)":
+                        # Combine ALL sub-topics context
+                        all_sub_topics_context = ""
+                        for st_data in sub_topics:
+                            st_name = st_data["sub_topic"]
                             
-                            # Combine all chunks as result (markdown format, not JSON)
-                            sub_topic_group_chat_result_str = "".join(collected_chunks)
+                            st_context = ""
+                            if "sub_topic_web_contexts" in locals() and st_name in sub_topic_web_contexts:
+                                st_context += f"=== Web Search Results for {st_name} ===\n{sub_topic_web_contexts[st_name]}\n\n"
+                            if "sub_topic_youtube_contexts" in locals() and st_name in sub_topic_youtube_contexts:
+                                st_context += f"=== YouTube Results for {st_name} ===\n{sub_topic_youtube_contexts[st_name]}\n\n"
+                            if "sub_topic_ai_search_contexts" in locals() and st_name in sub_topic_ai_search_contexts:
+                                st_context += f"=== Document Context for {st_name} ===\n{sub_topic_ai_search_contexts[st_name]}\n\n"
                             
-                            # Store result directly without JSON parsing
+                            all_sub_topics_context += f"\n### Sub-topic: {st_name}\n{st_context}\n"
+                        
+                        comprehensive_question = f"Research Question: {enriched_query}\n\n"
+                        comprehensive_question += "Sub-topics to cover:\n"
+                        for st_data in sub_topics:
+                            comprehensive_question += f"- {st_data['sub_topic']}: {', '.join(st_data['queries'])}\n"
+                        
+                        collected_chunks = []
+                        async for chunk in self.magentic_plugin.magentic_flow_stream(
+                            question=comprehensive_question,
+                            contexts=all_sub_topics_context,
+                            locale=locale,
+                            max_tokens=40000,
+                            current_date=current_date,
+                        ):
+                            if ttft_time is None and not chunk.startswith("data:"):
+                                ttft_time = datetime.now(tz=self.timezone) - start_time
+                            
+                            if stream:
+                                yield chunk
+                            if not chunk.startswith("data:"):
+                                collected_chunks.append(chunk)
+                        
+                        sub_topic_group_chat_result_str = "".join(collected_chunks)
+                        
+                        # Store for ALL sub-topics
+                        sub_topic_results = []  # 변수 선언 추가
+                        for st_data in sub_topics:
                             sub_topic_results.append({
-                                "sub_topic": sub_topic_name,
-                                "queries": sub_topic_queries,
+                                "sub_topic": st_data["sub_topic"],
+                                "queries": st_data["queries"],
                                 "final_report": sub_topic_group_chat_result_str.strip(),
                             })
-                            
-                            # Skip JSON parsing for Magentic results
-                            continue
-                        else:
-                            # Prepare tasks using the plugin's method
-                            tasks = self.multi_agent_plugin._normalize_tasks(
-                                question=", ".join(sub_topic_queries),
-                                sub_topic=sub_topic_name,
-                                sub_topics=None,
-                                sub_topic_contexts=sub_topic_context,
-                                contexts=None,
-                                max_tokens=40000,
-                            )
+                    
+                    # GroupChat과 Vanilla는 sub-topic별로 처리
+                    else:
+                        sub_topic_results = []  # 변수 선언 추가
+                        for sub_topic_idx, sub_topic_data in enumerate(sub_topics):
+                            sub_topic_name = sub_topic_data["sub_topic"]
+                            sub_topic_queries = sub_topic_data["queries"]
 
-                            # Call multi-agent plugin
-                            multi_agent_function = self.kernel.get_function(
-                                "vanilla_multi_agent", "run_multi_agent"
-                            )
-                            sub_topic_group_chat_result = (
-                                await multi_agent_function.invoke(
+                            # Progress indicator (Magentic 제외)
+                            yield "\n"
+                            yield f"data: ### 📋 [{sub_topic_idx + 1}/{len(sub_topics)}] {LOCALE_MSG['organize_research']} for {sub_topic_name}\n\n"
+
+                            # Extract ONLY this sub-topic's context
+                            sub_topic_context = ""
+                            
+                            if "sub_topic_web_contexts" in locals() and sub_topic_name in sub_topic_web_contexts:
+                                sub_topic_context += f"=== Web Search Results ===\n{sub_topic_web_contexts[sub_topic_name]}\n\n"
+
+                            if "sub_topic_youtube_contexts" in locals() and sub_topic_name in sub_topic_youtube_contexts:
+                                sub_topic_context += f"=== YouTube Search Results ===\n{sub_topic_youtube_contexts[sub_topic_name]}\n\n"
+
+                            if "sub_topic_ai_search_contexts" in locals() and sub_topic_name in sub_topic_ai_search_contexts:
+                                sub_topic_context += f"=== Document Context ===\n{sub_topic_ai_search_contexts[sub_topic_name]}\n\n"
+
+                            if not sub_topic_context.strip():
+                                sub_topic_context = "No specific context available for this sub-topic."
+
+                            sub_topic_group_chat_result_str = None
+
+                            if multi_agent_type == "Semantic Kernel GroupChat":
+                                group_chat_function = self.kernel.get_function("sk_group_chat", "group_chat")
+                                sub_topic_group_chat_result = await group_chat_function.invoke(
+                                    self.kernel,
+                                    KernelArguments(
+                                        sub_topic=sub_topic_name,
+                                        question=", ".join(sub_topic_queries),
+                                        sub_topic_contexts=sub_topic_context,
+                                        locale=locale,
+                                        max_rounds="1",
+                                        max_tokens=str(40000),
+                                        current_date=current_date,
+                                    ),
+                                )
+                                sub_topic_group_chat_result_str = sub_topic_group_chat_result.value
+                            else:  # vanilla multi-agent
+                                tasks = self.multi_agent_plugin._normalize_tasks(
+                                    question=", ".join(sub_topic_queries),
+                                    sub_topic=sub_topic_name,
+                                    sub_topics=None,
+                                    sub_topic_contexts=sub_topic_context,
+                                    contexts=None,
+                                    max_tokens=40000,
+                                )
+
+                                multi_agent_function = self.kernel.get_function("vanilla_multi_agent", "run_multi_agent")
+                                sub_topic_group_chat_result = await multi_agent_function.invoke(
                                     self.kernel,
                                     KernelArguments(
                                         sub_topic=sub_topic_name,
@@ -872,91 +863,88 @@ class PlanSearchOrchestratorSK:
                                         current_date=current_date,
                                     ),
                                 )
-                            )
-                            sub_topic_group_chat_result_str = (
-                                sub_topic_group_chat_result.value
-                            )
+                                sub_topic_group_chat_result_str = sub_topic_group_chat_result.value
 
-                        # Parse and stream results
-                        if sub_topic_group_chat_result_str:
-                            try:
-                                # ✅ Normalize result format - handle both dict and JSON string
-                                if isinstance(sub_topic_group_chat_result_str, dict):
-                                    group_chat_data = sub_topic_group_chat_result_str
-                                elif isinstance(sub_topic_group_chat_result_str, str):
-                                    group_chat_data = json.loads(sub_topic_group_chat_result_str)
-                                else:
-                                    logger.error(f"Unexpected result type for {sub_topic_name}: {type(sub_topic_group_chat_result_str)}")
-                                    continue
-                                
-                                logger.info(
-                                    f"Multi-agent result for {sub_topic_name}: status={group_chat_data.get('status')}"
-                                )
-
-                                # ✅ Standardized key extraction - works for all executor types
-                                status = group_chat_data.get("status")
-                                answer_markdown = group_chat_data.get("answer_markdown", "")
-                                
-                                # ✅ Fallback for old formats (final_answer, revised_answer_markdown, etc.)
-                                if not answer_markdown:
-                                    # Try parsing final_answer if it exists
-                                    final_answer_field = group_chat_data.get("final_answer", "")
-                                    if isinstance(final_answer_field, str) and final_answer_field.strip().startswith('{'):
-                                        try:
-                                            final_answer_data = json.loads(final_answer_field)
-                                            
-                                            # 🔧 Handle vanilla_multi_agent format: {"question": "...", "answers": {"sub_topic": "markdown"}}
-                                            if "answers" in final_answer_data and isinstance(final_answer_data["answers"], dict):
-                                                # Extract answer for current sub_topic
-                                                answer_markdown = final_answer_data["answers"].get(sub_topic_name, "")
-                                            else:
-                                                # Handle old SK GroupChat format
-                                                answer_markdown = (
-                                                    final_answer_data.get("revised_answer_markdown", "") or
-                                                    final_answer_data.get("draft_answer_markdown", "") or
-                                                    final_answer_data.get("answer_markdown", "")
-                                                )
-                                        except json.JSONDecodeError:
-                                            # Not JSON, use as-is
-                                            answer_markdown = final_answer_field
+                            # Parse and stream results 
+                            if sub_topic_group_chat_result_str:
+                                try:
+                                    # Normalize result format - handle both dict and JSON string
+                                    if isinstance(sub_topic_group_chat_result_str, dict):
+                                        group_chat_data = sub_topic_group_chat_result_str
+                                    elif isinstance(sub_topic_group_chat_result_str, str):
+                                        group_chat_data = json.loads(sub_topic_group_chat_result_str)
                                     else:
-                                        # Plain text or empty
-                                        answer_markdown = final_answer_field
-                                
-                                # ✅ Stream the answer if we have it
-                                if status == "success" and answer_markdown:
-                                    # Set TTFT on first answer
-                                    if ttft_time is None:
-                                        ttft_time = datetime.now(tz=self.timezone) - start_time
+                                        logger.error(f"Unexpected result type for {sub_topic_name}: {type(sub_topic_group_chat_result_str)}")
+                                        continue
                                     
-                                    if stream:
-                                        yield "\n"
-                                        yield f"data: ### {LOCALE_MSG.get('write_research', 'Writing Answer')} for {sub_topic_name}\n\n"
-                                        yield f"## {sub_topic_name}\n\n"
-                                        
-                                        # Stream answer in chunks
-                                        chunk_size = 100
-                                        for i in range(0, len(answer_markdown), chunk_size):
-                                            chunk = answer_markdown[i : i + chunk_size]
-                                            yield chunk
-                                            await asyncio.sleep(0.01)
-                                        yield "\n\n"
-                                elif status == "success" and not answer_markdown:
-                                    logger.warning(f"No answer_markdown found for {sub_topic_name}")
-                                    if stream:
-                                        yield f"data: ⚠️ No answer content generated for {sub_topic_name}\n\n"
-                                else:
-                                    error_msg = group_chat_data.get("error", "Unknown error")
-                                    logger.error(f"Multi-agent failed for {sub_topic_name}: {error_msg}")
-                                    if stream:
-                                        yield f"data: ❌ Error: {error_msg}\n\n"
+                                    logger.info(
+                                        f"Multi-agent result for {sub_topic_name}: status={group_chat_data.get('status')}"
+                                    )
 
-                            except json.JSONDecodeError as e:
-                                logger.error(
-                                    f"Failed to parse multi-agent JSON for {sub_topic_name}: {e}"
-                                )
-                                if stream:
-                                    yield f"data: ❌ Error parsing results for {sub_topic_name}\n\n"
+                                    # Standardized key extraction - works for all executor types
+                                    status = group_chat_data.get("status")
+                                    answer_markdown = group_chat_data.get("answer_markdown", "")
+                                    
+                                    # Fallback for old formats (final_answer, revised_answer_markdown, etc.)
+                                    if not answer_markdown:
+                                        # Try parsing final_answer if it exists
+                                        final_answer_field = group_chat_data.get("final_answer", "")
+                                        if isinstance(final_answer_field, str) and final_answer_field.strip().startswith('{'):
+                                            try:
+                                                final_answer_data = json.loads(final_answer_field)
+                                                
+                                                # 🔧 Handle vanilla_multi_agent format: {"question": "...", "answers": {"sub_topic": "markdown"}}
+                                                if "answers" in final_answer_data and isinstance(final_answer_data["answers"], dict):
+                                                    # Extract answer for current sub_topic
+                                                    answer_markdown = final_answer_data["answers"].get(sub_topic_name, "")
+                                                else:
+                                                    # Handle old SK GroupChat format
+                                                    answer_markdown = (
+                                                        final_answer_data.get("revised_answer_markdown", "") or
+                                                        final_answer_data.get("draft_answer_markdown", "") or
+                                                        final_answer_data.get("answer_markdown", "")
+                                                    )
+                                            except json.JSONDecodeError:
+                                                # Not JSON, use as-is
+                                                answer_markdown = final_answer_field
+                                        else:
+                                            # Plain text or empty
+                                            answer_markdown = final_answer_field
+                                    
+                                    # Stream the answer if we have it
+                                    if status == "success" and answer_markdown:
+                                        # Set TTFT on first answer
+                                        if ttft_time is None:
+                                            ttft_time = datetime.now(tz=self.timezone) - start_time
+                                        
+                                        if stream:
+                                            yield "\n"
+                                            yield f"data: ### {LOCALE_MSG.get('write_research', 'Writing Answer')} for {sub_topic_name}\n\n"
+                                            yield f"## {sub_topic_name}\n\n"
+                                            
+                                            # Stream answer in chunks
+                                            chunk_size = 100
+                                            for i in range(0, len(answer_markdown), chunk_size):
+                                                chunk = answer_markdown[i : i + chunk_size]
+                                                yield chunk
+                                                await asyncio.sleep(0.01)
+                                            yield "\n\n"
+                                    elif status == "success" and not answer_markdown:
+                                        logger.warning(f"No answer_markdown found for {sub_topic_name}")
+                                        if stream:
+                                            yield f"data: ⚠️ No answer content generated for {sub_topic_name}\n\n"
+                                    else:
+                                        error_msg = group_chat_data.get("error", "Unknown error")
+                                        logger.error(f"Multi-agent failed for {sub_topic_name}: {error_msg}")
+                                        if stream:
+                                            yield f"data: ❌ Error: {error_msg}\n\n"
+
+                                except json.JSONDecodeError as e:
+                                    logger.error(
+                                        f"Failed to parse multi-agent JSON for {sub_topic_name}: {e}"
+                                    )
+                                    if stream:
+                                        yield f"data: ❌ Error parsing results for {sub_topic_name}\n\n"
                         else:
                             logger.warning(
                                 f"No multi-agent result for {sub_topic_name}"

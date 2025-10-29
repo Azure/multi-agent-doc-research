@@ -286,7 +286,7 @@ async def check_upload_status_once(upload_id: str) -> dict | None:
     """단발성 업로드 상태 조회 (aiohttp 사용)"""
     aiohttp_session = None
     try:
-        # ✅ aiohttp ClientSession (짧은 타임아웃, 간단한 요청)
+        #  aiohttp ClientSession (짧은 타임아웃, 간단한 요청)
         timeout = aiohttp.ClientTimeout(total=None, connect=10.0, sock_read=30.0)
         aiohttp_session = aiohttp.ClientSession(timeout=timeout)
 
@@ -306,7 +306,7 @@ async def check_upload_status_once(upload_id: str) -> dict | None:
         logger.warning(f"[upload:{upload_id}] 상태 조회 실패: {e}")
         return None
     finally:
-        # ✅ aiohttp client 정리
+        #  aiohttp client 정리
         if aiohttp_session and not aiohttp_session.closed:
             try:
                 await aiohttp_session.close()
@@ -432,7 +432,7 @@ async def handle_file_upload(
         MAX_FILE_SIZE = 50 * 1024 * 1024  # 50MB
         allowed_extensions = {".pdf", ".docx", ".txt"}
 
-        # ✅ aiohttp ClientSession 생성 (파일 다운로드 + 업로드용)
+        #  aiohttp ClientSession 생성 (파일 다운로드 + 업로드용)
         timeout = aiohttp.ClientTimeout(total=None, connect=30.0, sock_read=60.0)
         aiohttp_session = aiohttp.ClientSession(
             timeout=timeout, connector=aiohttp.TCPConnector(limit=10)
@@ -487,7 +487,7 @@ async def handle_file_upload(
                     file_bytes = b""
                 content_type = att.get("content_type", content_type)
             elif hasattr(att, "url"):
-                # ✅ aiohttp로 URL 다운로드
+                #  aiohttp로 URL 다운로드
                 url = getattr(att, "url")
                 try:
                     async with aiohttp_session.get(url) as r:
@@ -558,7 +558,7 @@ async def handle_file_upload(
                 "files", file_data, filename=filename, content_type=content_type
             )
 
-        # ✅ aiohttp로 multipart 업로드 (긴 타임아웃)
+        #  aiohttp로 multipart 업로드 (긴 타임아웃)
         try:
             upload_timeout = aiohttp.ClientTimeout(
                 total=None,
@@ -618,7 +618,7 @@ async def handle_file_upload(
         return False
 
     finally:
-        # ✅ aiohttp client 정리
+        #  aiohttp client 정리
         if aiohttp_session and not aiohttp_session.closed:
             try:
                 await aiohttp_session.close()
@@ -780,15 +780,15 @@ async def stream_chat_with_api(message: str, settings: ChatSettings) -> None:
     msg = cl.Message(content="")
     await msg.send()
 
-    # ✅ aiohttp 설정: 장시간 연결 유지에 최적화 (10분으로 증가)
+    #  aiohttp 설정: 장시간 연결 유지에 최적화 (10분으로 증가)
     timeout = aiohttp.ClientTimeout(
         total=None,  # 무제한 (multi-agent는 예측 불가)
         connect=10,  # 연결 시작 10초
         sock_connect=10,  # 소켓 연결 10초
-        sock_read=600,  # ✅ 소켓 읽기 600초 (10분) - Magentic 처리 시간 고려
+        sock_read=600,  #  소켓 읽기 600초 (10분) - Magentic 처리 시간 고려
     )
 
-    # ✅ 백오프 재시도 설정
+    #  백오프 재시도 설정
     max_retries = 3
     retry_delays = [1, 2, 4]
 
@@ -801,13 +801,13 @@ async def stream_chat_with_api(message: str, settings: ChatSettings) -> None:
     last_error = None
 
     while retry_count <= max_retries:
-        # ✅ 재시도마다 새로운 stop_event 생성 (핵심 수정!)
+        #  재시도마다 새로운 stop_event 생성 (핵심 수정!)
         aiohttp_session = None
         keepalive_task = None
         stop_event = asyncio.Event()  # 매 재시도마다 새로 생성
         last_activity = None  # 초기화
 
-        # ✅ 개선된 Keepalive sender
+        #  개선된 Keepalive sender
         async def keepalive_sender():
             """Monitor SSE activity instead of probing WebSocket"""
             nonlocal last_activity
@@ -818,7 +818,7 @@ async def stream_chat_with_api(message: str, settings: ChatSettings) -> None:
                         current_time = asyncio.get_event_loop().time()
                         idle_time = current_time - last_activity
 
-                        # ✅ SSE 데이터가 120초(2분) 이상 안 오면 warning (10분 대기)
+                        #  SSE 데이터가 120초(2분) 이상 안 오면 warning (10분 대기)
                         if idle_time > 120:
                             logger.warning(
                                 f"⚠️ No SSE data for {idle_time:.0f} seconds (Magentic may be processing)"
@@ -831,25 +831,25 @@ async def stream_chat_with_api(message: str, settings: ChatSettings) -> None:
                 logger.debug("Keepalive sender cancelled")
 
         try:
-            # ✅ aiohttp ClientSession 생성
+            #  aiohttp ClientSession 생성
             aiohttp_session = aiohttp.ClientSession(
                 timeout=timeout,
                 connector=aiohttp.TCPConnector(
                     limit=100,
                     limit_per_host=30,
                     ttl_dns_cache=300,
-                    keepalive_timeout=600,  # ✅ 10분으로 증가
+                    keepalive_timeout=600,  #  10분으로 증가
                 ),
             )
 
-            # ✅ Start keepalive task
+            #  Start keepalive task
             keepalive_task = asyncio.create_task(keepalive_sender())
 
             logger.info(
                 f"🌐 Connecting to API (attempt {retry_count + 1}/{max_retries + 1})"
             )
 
-            # ✅ POST request with streaming
+            #  POST request with streaming
             async with aiohttp_session.post(
                 API_URL,
                 json=payload,
@@ -872,7 +872,7 @@ async def stream_chat_with_api(message: str, settings: ChatSettings) -> None:
                 content_type = response.headers.get("content-type", "")
 
                 if "text/event-stream" in content_type:
-                    # ✅ Process SSE with tool calling steps
+                    #  Process SSE with tool calling steps
                     accumulated_content = ""
                     current_tool_step = None
                     tool_steps = {}
@@ -880,14 +880,14 @@ async def stream_chat_with_api(message: str, settings: ChatSettings) -> None:
                     last_keepalive_log = asyncio.get_event_loop().time()
                     chunk_count = 0
 
-                    # ✅ Buffer for incomplete lines
+                    #  Buffer for incomplete lines
                     buffer = ""
 
                     logger.info("Starting SSE processing loop with aiohttp...")
 
-                    # ✅ Process SSE stream chunk by chunk and parse lines
+                    #  Process SSE stream chunk by chunk and parse lines
                     async for chunk in response.content.iter_any():
-                        # ✅ 연결 끊김 체크
+                        #  연결 끊김 체크
                         if stop_event.is_set():
                             logger.warning(
                                 "⚠️ Stop event triggered - stopping stream processing"
@@ -924,7 +924,7 @@ async def stream_chat_with_api(message: str, settings: ChatSettings) -> None:
 
                             logger.debug(f"SSE line received: {line[:100]}...")
 
-                            # ✅ Handle SSE comments (keepalive from backend)
+                            #  Handle SSE comments (keepalive from backend)
                             if line.startswith(":"):
                                 logger.debug(f"SSE comment (backend keepalive): {line}")
                                 continue
@@ -938,7 +938,7 @@ async def stream_chat_with_api(message: str, settings: ChatSettings) -> None:
                                     logger.info("✅ Stream completed successfully")
                                     break
 
-                                # ✅ Status message handling - create tool steps
+                                #  Status message handling - create tool steps
                                 if line.startswith("### "):
                                     step_content = line[4:]
 
@@ -954,7 +954,7 @@ async def stream_chat_with_api(message: str, settings: ChatSettings) -> None:
                                         )
                                     )
 
-                                    # ✅ Determine step type and icon
+                                    #  Determine step type and icon
                                     step_type = "tool"
                                     step_icon = "🔧"
 
@@ -1049,7 +1049,7 @@ async def stream_chat_with_api(message: str, settings: ChatSettings) -> None:
                                     except KeyError as e:
                                         logger.warning(f"Missing UI text key: {e}")
 
-                                    # ✅ Create new step with icon
+                                    #  Create new step with icon
                                     current_tool_step = cl.Step(
                                         name=f"{step_icon} {step_name}", type=step_type
                                     )
@@ -1075,7 +1075,7 @@ async def stream_chat_with_api(message: str, settings: ChatSettings) -> None:
                                     tool_steps[step_name] = current_tool_step
 
                                 else:
-                                    # ✅ Regular content
+                                    #  Regular content
                                     cleaned_line = clean_response_text(line)
 
                                     if accumulated_content:
@@ -1098,7 +1098,7 @@ async def stream_chat_with_api(message: str, settings: ChatSettings) -> None:
                                         break
 
                             else:
-                                # ✅ Regular content without 'data:' prefix
+                                #  Regular content without 'data:' prefix
                                 cleaned_line = clean_response_text(line)
 
                                 if accumulated_content:
@@ -1119,7 +1119,7 @@ async def stream_chat_with_api(message: str, settings: ChatSettings) -> None:
                                     logger.warning("Stream connection lost")
                                     break
 
-                    # ✅ Close remaining step
+                    #  Close remaining step
                     if current_tool_step:
                         current_tool_step.output = "✅ Completed"
                         await safe_send_step(current_tool_step)
@@ -1129,7 +1129,7 @@ async def stream_chat_with_api(message: str, settings: ChatSettings) -> None:
                     )
 
                 else:
-                    # ✅ Handle non-streaming response
+                    #  Handle non-streaming response
                     logger.info("Not a streaming response, reading full content")
                     try:
                         response_text = await response.text()
@@ -1155,7 +1155,7 @@ async def stream_chat_with_api(message: str, settings: ChatSettings) -> None:
                         await safe_stream_token(msg, error_msg)
                         logger.error(error_msg)
 
-                # ✅ 성공 - 루프 탈출
+                #  성공 - 루프 탈출
                 break  # 성공 시 재시도 루프 종료
 
         except aiohttp.ClientError as e:
@@ -1206,7 +1206,7 @@ async def stream_chat_with_api(message: str, settings: ChatSettings) -> None:
                 break
 
         finally:
-            # ✅ Cleanup for this attempt
+            #  Cleanup for this attempt
             if keepalive_task and not keepalive_task.done():
                 stop_event.set()
                 try:
@@ -1217,10 +1217,10 @@ async def stream_chat_with_api(message: str, settings: ChatSettings) -> None:
 
             if aiohttp_session and not aiohttp_session.closed:
                 await aiohttp_session.close()
-                # ✅ Give time for proper cleanup
+                #  Give time for proper cleanup
                 await asyncio.sleep(0.25)
 
-    # ✅ Final message update
+    #  Final message update
     await safe_update_message(msg)
     logger.info("Streaming completed")
 

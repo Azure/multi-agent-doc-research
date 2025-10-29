@@ -57,14 +57,14 @@ def clean_and_validate_json(content: str, return_dict: bool = False) -> str | di
             if start_idx != -1 and end_idx != -1 and end_idx > start_idx:
                 content = content[start_idx:end_idx + 1]
             
-            # ✅ JSON 파싱 전에 일반적인 문제 수정
+            #  JSON 파싱 전에 일반적인 문제 수정
             # 1. trailing comma 제거
             content = re.sub(r',(\s*[}\]])', r'\1', content)
             
             # JSON 검증
             parsed = json.loads(content)
             
-            # ✅ 파싱 성공 후 마크다운 필드들의 이스케이프 문자 정리
+            #  파싱 성공 후 마크다운 필드들의 이스케이프 문자 정리
             markdown_fields = [
                 'draft_answer_markdown',
                 'revised_answer_markdown', 
@@ -85,7 +85,7 @@ def clean_and_validate_json(content: str, return_dict: bool = False) -> str | di
             
             logger.info(f"[GroupChat] Successfully cleaned and validated JSON")
             
-            # ✅ return_dict가 True면 dict 반환, 아니면 JSON 문자열 반환
+            #  return_dict가 True면 dict 반환, 아니면 JSON 문자열 반환
             if return_dict:
                 return parsed
             else:
@@ -97,7 +97,7 @@ def clean_and_validate_json(content: str, return_dict: bool = False) -> str | di
             logger.error(f"[GroupChat] JSON validation failed: {e}")
             logger.error(f"[GroupChat] Problematic content: {content[:500]}...")
             
-            # ✅ 더 aggressive한 복구 시도
+            #  더 aggressive한 복구 시도
             try:
                 # 1. 마지막 완전한 } 찾기 (중첩된 객체 고려)
                 brace_count = 0

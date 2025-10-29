@@ -146,12 +146,12 @@ class MagenticExecutor(Executor):
                 )
                 sub_topics = [{"sub_topic": "research report", "queries": [question]}]
 
-            # ✅ Context 검증: AI Search가 필수인데 없으면 에러
+            #  Context 검증: AI Search가 필수인데 없으면 에러
             has_ai_search_context = bool(research_data.get("sub_topic_ai_search_contexts"))
             has_web_context = bool(research_data.get("sub_topic_web_contexts"))
             has_youtube_context = bool(research_data.get("sub_topic_youtube_contexts"))
             
-            # ✅ 최소 1개의 context source가 있어야 함
+            #  최소 1개의 context source가 있어야 함
             if not (has_ai_search_context or has_web_context or has_youtube_context):
                 error_msg = "No context available for research (AI Search, Web Search, and YouTube all failed or returned empty)"
                 logger.error(f"[MagenticExecutor] {error_msg}")
@@ -297,7 +297,7 @@ class MagenticExecutor(Executor):
                     reviewer_score = result.get("reviewer_score", "N/A")
                     ready_to_publish = result.get("ready_to_publish", False)
 
-                    # ✅ Safety check
+                    #  Safety check
                     if not final_answer:
                         final_answer = "No answer generated"
                         logger.warning(
@@ -315,7 +315,7 @@ class MagenticExecutor(Executor):
                     )
                     await ctx.yield_output(f"## {sub_topic_name}\n\n")
 
-                    # ✅ Stream answer in chunks
+                    #  Stream answer in chunks
                     chunk_size = 100
                     for i in range(0, len(final_answer), chunk_size):
                         chunk = final_answer[i : i + chunk_size]
@@ -468,7 +468,7 @@ class MagenticExecutor(Executor):
 
             try:
                 if isinstance(event, MagenticOrchestratorMessageEvent):
-                    # ✅ Use getattr to safely get text property (like in reference code)
+                    #  Use getattr to safely get text property (like in reference code)
                     message_text = (
                         getattr(event.message, "text", "") if event.message else ""
                     )
@@ -479,12 +479,12 @@ class MagenticExecutor(Executor):
                     )
                     orchestration_rounds += 1
 
-                    # ✅ Always show round indicator (compact)
+                    #  Always show round indicator (compact)
                     await ctx.yield_output(
                         f"data: ### 🔄 Reasoning Orchestration Planning Rounds {orchestration_rounds}\n\n"
                     )
 
-                    # ✅ VERBOSE: Show orchestrator planning details
+                    #  VERBOSE: Show orchestrator planning details
                     if VERBOSE_MODE and message_text:
                         planning_text = json.dumps(
                             message_text, ensure_ascii=False, indent=2
@@ -502,7 +502,7 @@ class MagenticExecutor(Executor):
                     # Track which agent is currently speaking
                     if current_agent != event.agent_id:
                         current_agent = event.agent_id
-                        # ✅ Always show agent start (compact with emoji)
+                        #  Always show agent start (compact with emoji)
                         agent_emoji = (
                             "🔬"
                             if "analyst" in event.agent_id
@@ -534,7 +534,7 @@ class MagenticExecutor(Executor):
                 elif isinstance(event, MagenticAgentMessageEvent):
                     # Agent completed a full response
                     if event.message is not None:
-                        # ✅ Use getattr to safely get text property (like in reference code)
+                        #  Use getattr to safely get text property (like in reference code)
                         agent_text = getattr(event.message, "text", "")
 
                         agent_responses.append(
@@ -571,7 +571,7 @@ class MagenticExecutor(Executor):
                                 f"answer_len={len(final_answer)}, score={reviewer_score}, ready={ready_to_publish}"
                             )
 
-                        # # ✅ Always show completion checkmark
+                        # #  Always show completion checkmark
                         if VERBOSE_MODE:
                             agent_emoji = (
                                 "🔬"
@@ -582,7 +582,7 @@ class MagenticExecutor(Executor):
                                 f"data: ### {agent_emoji} Complete ✓ \n\n"
                             )
 
-                        # ✅ VERBOSE: Show agent output preview
+                        #  VERBOSE: Show agent output preview
                         if VERBOSE_MODE and agent_text:
                             preview = json.dumps(
                                 agent_text, ensure_ascii=False, indent=2
@@ -606,11 +606,11 @@ class MagenticExecutor(Executor):
                             )
 
                 elif isinstance(event, MagenticFinalResultEvent):
-                    # ✅ MagenticFinalResultEvent에서 최종 결과 처리
+                    #  MagenticFinalResultEvent에서 최종 결과 처리
                     await ctx.yield_output(f"data: ### ✨ Finalizing...\n\n")
 
                     if event.message is not None:
-                        # ✅ Extract text from ChatMessage
+                        #  Extract text from ChatMessage
                         final_text = getattr(event.message, "text", "")
 
                         if final_text:
@@ -622,7 +622,7 @@ class MagenticExecutor(Executor):
                             try:
                                 parsed_answer = clean_and_validate_json(final_text, return_dict=True)
                                 
-                                # ✅ Prefer Reviewer output over Writer output
+                                #  Prefer Reviewer output over Writer output
 
                                 answer_markdown = (
                                     parsed_answer.get("revised_answer_markdown", "")
@@ -650,7 +650,7 @@ class MagenticExecutor(Executor):
                                     "ready_to_publish", False
                                 )
 
-                                # ✅ Use parsed markdown as final answer
+                                #  Use parsed markdown as final answer
                                 if answer_markdown:
                                     final_answer = answer_markdown
                                     logger.info(
@@ -728,7 +728,7 @@ class MagenticExecutor(Executor):
                         f"[MagenticExecutor] WorkflowOutputEvent received (processed in callback)"
                     )
 
-            # ✅ After workflow completes, check if we got results
+            #  After workflow completes, check if we got results
             if not final_answer:
                 if not error_info:
                     error_info = "No output received from Magentic workflow"
@@ -747,7 +747,7 @@ class MagenticExecutor(Executor):
             "status": "success" if error_info is None else "error",
             "sub_topic": sub_topic,
             "question": question,
-            "answer_markdown": final_answer,  # ✅ Standardized key name (was final_answer)
+            "answer_markdown": final_answer,  #  Standardized key name (was final_answer)
             "citations": citations,
             "reviewer_score": reviewer_score,
             "ready_to_publish": ready_to_publish,

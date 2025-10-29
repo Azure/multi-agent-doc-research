@@ -126,7 +126,7 @@ class YouTubeMCPExecutor(Executor):
             sub_topics = search_data.get("sub_topics", [])
             max_results = search_data.get("max_results", self.max_results)
 
-            # ✅ Yield starting message
+            #  Yield starting message
             await ctx.yield_output(f"data: ### {LOCALE_MSG['searching_YouTube']}\n\n")
 
             if not sub_topics:
@@ -196,7 +196,7 @@ class YouTubeMCPExecutor(Executor):
                 f"[YouTubeMCPExecutor] Completed YouTube search for {len(sub_topic_results)} sub-topics"
             )
 
-            # ✅ Yield completion message (SK compatible format with results)
+            #  Yield completion message (SK compatible format with results)
             if verbose and sub_topic_results:
                 results_str = json.dumps(
                     sub_topic_results, ensure_ascii=False, indent=2

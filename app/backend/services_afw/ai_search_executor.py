@@ -133,7 +133,7 @@ class AISearchExecutor(Executor):
             await ctx.yield_output(f"data: ### {LOCALE_MSG['searching_ai_search']}\n\n")
 
             sub_topics = search_data.get("sub_topics", [])
-            # ✅ Use self.search_type as default (from env or init param)
+            #  Use self.search_type as default (from env or init param)
             search_type = search_data.get("search_type", self.search_type)
             logger.info(f"[AISearchExecutor] Using search_type: {search_type}")
             filters = search_data.get("filters")
@@ -199,7 +199,7 @@ class AISearchExecutor(Executor):
                         error_str = str(search_error)
                         logger.error(f"[AISearchExecutor] AI Search failed: {error_str}")
 
-                        # ✅ 에러를 orchestrator로 전달
+                        #  에러를 orchestrator로 전달
                         await ctx.send_message(
                             {
                                 **search_data,
@@ -212,7 +212,7 @@ class AISearchExecutor(Executor):
                                 },
                             }
                         )
-                        return  # ✅ 즉시 종료
+                        return  #  즉시 종료
 
                 if sub_topic_documents:
                     # Store results keyed by sub_topic name
@@ -226,7 +226,7 @@ class AISearchExecutor(Executor):
                 f"[AISearchExecutor] Completed AI Search for {len(sub_topic_results)} sub-topics"
             )
 
-            # ✅ Yield completion message (SK compatible format with results)
+            #  Yield completion message (SK compatible format with results)
             if verbose and sub_topic_results:
                 results_str = json.dumps(
                     sub_topic_results, ensure_ascii=False, indent=2
@@ -253,7 +253,7 @@ class AISearchExecutor(Executor):
             error_msg = f"AI Search fatal error: {str(e)}"
             logger.error(f"[AISearchExecutor] {error_msg}")
 
-            # ✅ 최상위 예외도 동일한 형식으로 전달
+            #  최상위 예외도 동일한 형식으로 전달
             await ctx.send_message(
                 {
                     **search_data,

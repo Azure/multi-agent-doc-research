@@ -396,7 +396,7 @@ class WebSearchExecutor(Executor):
             verbose = metadata.get("verbose", False)
             LOCALE_MSG = LOCALE_MESSAGES.get(locale, LOCALE_MESSAGES["ko-KR"])
 
-            # ✅ Yield starting message
+            #  Yield starting message
             await ctx.yield_output(f"data: ### {LOCALE_MSG['searching']}\n\n")
 
             sub_topics = search_data.get("sub_topics", [])
@@ -494,7 +494,7 @@ class WebSearchExecutor(Executor):
             verbose = metadata.get("verbose", False)
             LOCALE_MSG = LOCALE_MESSAGES.get(locale, LOCALE_MESSAGES["ko-KR"])
 
-            # ✅ Yield starting message
+            #  Yield starting message
             await ctx.yield_output(f"data: ### {LOCALE_MSG['searching']}\n\n")
 
             sub_topics = search_data.get("sub_topics", [])
@@ -570,7 +570,7 @@ class WebSearchExecutor(Executor):
             error_str = str(e)
             logger.error(f"[WebSearchExecutor] Search failed: {error_str}")
 
-            # ✅ 동일한 형식으로 에러 전달
+            #  동일한 형식으로 에러 전달
             await ctx.send_message(
                 {
                     **search_data,

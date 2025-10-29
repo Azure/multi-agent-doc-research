@@ -256,7 +256,7 @@ class MultiAgentPlugin:
         for item in reviewer_results:
             sub_topic = item["sub_topic"]
             
-            # ✅ Extract citations safely from writer or reviewer parsed data
+            #  Extract citations safely from writer or reviewer parsed data
             citations = []
             if item["review"]["status"] == "success" and item["review"]["parsed"]:
                 # Prefer citations from reviewer if available
@@ -408,7 +408,7 @@ class MultiAgentPlugin:
         for item in reviewer_results:
             sub_topic = item["sub_topic"]
             
-            # ✅ Extract citations safely
+            #  Extract citations safely
             citations = []
             if item["review"]["status"] == "success" and item["review"]["parsed"]:
                 citations = item["review"]["parsed"].get("citations", [])
@@ -660,7 +660,7 @@ class MultiAgentPlugin:
             )
             content = response.choices[0].message.content.strip()
             
-            # ✅ Use clean_and_validate_json for robust parsing
+            #  Use clean_and_validate_json for robust parsing
             try:
                 parsed = clean_and_validate_json(content, return_dict=True)
                 
@@ -728,10 +728,10 @@ class MultiAgentPlugin:
             )
             content = response.choices[0].message.content.strip()
             
-            # ✅ Use clean_and_validate_json for robust parsing
+            #  Use clean_and_validate_json for robust parsing
             try:
-                cleaned_content = clean_and_validate_json(content)
-                parsed = json.loads(cleaned_content)
+                parsed = clean_and_validate_json(content, return_dict=True)
+                
             except Exception as json_err:
                 logger.error(f"[MultiAgent] JSON parsing failed for reviewer '{task.sub_topic}'")
                 logger.error(f"[MultiAgent] Raw content: {content[:500]}...")

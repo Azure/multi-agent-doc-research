@@ -220,7 +220,7 @@ class IntentAnalyzerExecutor(Executor):
                 # Add metadata to intent_data for next executors
                 intent_data["metadata"] = metadata
 
-                # ✅ Yield progress message (SK compatible format)
+                #  Yield progress message (SK compatible format)
                 if verbose:
                     intent_data_str = json.dumps(
                         intent_data, ensure_ascii=False, indent=2
@@ -411,7 +411,7 @@ class TaskPlannerExecutor(Executor):
                     f"SearchPlannerExecutor: Generated {len(sub_topics)} sub-topics with {len(flat_queries)} total queries"
                 )
 
-                # ✅ Yield progress message (SK compatible format)
+                #  Yield progress message (SK compatible format)
                 plan_result = {
                     "sub_topics": sub_topics,
                     "search_queries": flat_queries,
@@ -506,7 +506,7 @@ class ResponseGeneratorExecutor(Executor):
             locale = metadata.get("locale", "ko-KR")
             LOCALE_MSG = LOCALE_MESSAGES.get(locale, LOCALE_MESSAGES["ko-KR"])
 
-            # ✅ Yield starting message for final answer generation
+            #  Yield starting message for final answer generation
             await ctx.yield_output(f"data: ### {LOCALE_MSG['answering']}\n\n")
 
             original_query = context_data.get("original_query", "")
@@ -699,7 +699,7 @@ class PlanSearchOrchestratorAFW:
                         "AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME"
                     ),
                     openai_api_version=self.settings.AZURE_OPENAI_API_VERSION,
-                    search_type=os.getenv("AZURE_AI_SEARCH_SEARCH_TYPE", "hybrid"),  # ✅ 환경변수에서 search_type 전달
+                    search_type=os.getenv("AZURE_AI_SEARCH_SEARCH_TYPE", "hybrid"),  #  환경변수에서 search_type 전달
                 )
                 workflow_builder.add_edge(last_executor, ai_search_executor)
                 last_executor = ai_search_executor
@@ -739,8 +739,8 @@ class PlanSearchOrchestratorAFW:
                         chat_client=self.chat_client,
                         reasoning_client=self.reasoning_client,
                         settings=self.settings,
-                        context_max_chars=400000,  # ✅ SK와 동일한 MAX_CONTEXT_LENGTH
-                        max_document_length=10000,  # ✅ 문서당 최대 길이
+                        context_max_chars=400000,  #  SK와 동일한 MAX_CONTEXT_LENGTH
+                        max_document_length=10000,  #  문서당 최대 길이
                         writer_parallel_limit=4,
                     )
                     logger.info("🎯 Using Magentic orchestration pattern for research")
@@ -770,7 +770,7 @@ class PlanSearchOrchestratorAFW:
                     workflow_builder.add_edge(last_executor, multi_agent_executor)
                     last_executor = multi_agent_executor
 
-                    # ✅ For research intent, multi-agent executor is the FINAL executor
+                    #  For research intent, multi-agent executor is the FINAL executor
                     # Don't add ResponseGeneratorExecutor - output directly from research executor
                     if multi_agent_type == "MS Agent Framework Magentic":
                         logger.info(
@@ -781,7 +781,7 @@ class PlanSearchOrchestratorAFW:
                             "🔬 Research mode: GroupChattingExecutor will be the final node"
                         )
             else:
-                # ✅ For general queries, add ResponseGeneratorExecutor as final node
+                #  For general queries, add ResponseGeneratorExecutor as final node
                 response_generator = ResponseGeneratorExecutor(
                     id="response_generator",
                     chat_client=self.chat_client,
@@ -823,7 +823,7 @@ class PlanSearchOrchestratorAFW:
                     event_data = None
                     if hasattr(event, "data"): 
                         event_data = event.data
-                    # ✅ 이제 event_data가 정의된 후에 체크
+                    #  이제 event_data가 정의된 후에 체크
                     if event_data and isinstance(event_data, dict):
                         executor_error = event_data.get("executor_error")
                         if executor_error and executor_error.get("is_fatal"):
@@ -836,7 +836,7 @@ class PlanSearchOrchestratorAFW:
                             )
                             logger.error(f"   Error details: {error_message}")
 
-                            # ✅ 기존 progress message처럼 ### 포맷으로 전송 (frontend가 이미 처리 가능)
+                            #  기존 progress message처럼 ### 포맷으로 전송 (frontend가 이미 처리 가능)
                             yield f"data: ### ❌ {executor_name.upper()} 오류 발생\n\n"
                             yield f"data: ### error type: {error_type}\n\n"
                             yield f"data: ### {error_message[:300]}\n\n"
@@ -844,7 +844,7 @@ class PlanSearchOrchestratorAFW:
                             yield "data: [DONE]\n\n"
 
                             logger.info(f"🛑 Workflow terminated due to fatal error from {executor_name}")
-                            return  # ✅ 워크플로우 즉시 종료
+                            return  #  워크플로우 즉시 종료
 
                     # Handle progress messages
                     if event_data and isinstance(event_data, dict):
@@ -862,7 +862,7 @@ class PlanSearchOrchestratorAFW:
                         )
 
                         if output_text:
-                            # ✅ Check for TTFT marker
+                            #  Check for TTFT marker
                             if (
                                 isinstance(output_text, str)
                                 and "__TTFT_MARKER__" in output_text
@@ -887,7 +887,7 @@ class PlanSearchOrchestratorAFW:
                                 yield f"{output_text}"
                                 logger.info(f"📢 Progress: {output_text[:80]}...")
                             else:
-                                # ✅ Final answer (from ResponseGenerator OR GroupChattingExecutor)
+                                #  Final answer (from ResponseGenerator OR GroupChattingExecutor)
                                 if not first_answer_token_yielded:
                                     ttft_time = (
                                         datetime.now(tz=self.timezone) - start_time

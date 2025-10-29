@@ -112,13 +112,13 @@ class GroupChattingExecutor(Executor):
     ) -> None:
         """Run group chat for each sub-topic with streaming progress."""
         try:
-            # ✅ 먼저 executor_error 체크 (MagenticExecutor와 동일)
+            #  먼저 executor_error 체크 (MagenticExecutor와 동일)
             executor_error = research_data.get("executor_error")
             if executor_error and executor_error.get("is_fatal"):
                 logger.error(
                     f"[GroupChattingExecutor] Fatal error detected from upstream executor: {executor_error}"
                 )
-                # ✅ Yield error dict to orchestrator
+                #  Yield error dict to orchestrator
                 await ctx.yield_output(research_data)
                 return
             
@@ -275,7 +275,7 @@ class GroupChattingExecutor(Executor):
                     reviewer_score = result.get("reviewer_score", "N/A")
                     ready_to_publish = result.get("ready_to_publish", False)
 
-                    # ✅ Safety check
+                    #  Safety check
                     if not final_answer:
                         final_answer = "No answer generated"
                         logger.warning(
@@ -291,7 +291,7 @@ class GroupChattingExecutor(Executor):
                     )
                     await ctx.yield_output(f"## {sub_topic_name}\n\n")
 
-                    # ✅ Stream answer in chunks (SK style)
+                    #  Stream answer in chunks (SK style)
                     chunk_size = 100
                     for i in range(0, len(final_answer), chunk_size):
                         chunk = final_answer[i : i + chunk_size]
@@ -405,7 +405,7 @@ class GroupChattingExecutor(Executor):
         answer_markdown = ""
         reviewer_score = "N/A"
         ready_to_publish = False
-        first_token_sent = False  # ✅ Track TTFT
+        first_token_sent = False  #  Track TTFT
 
         try:
             iteration = 0
@@ -432,13 +432,13 @@ class GroupChattingExecutor(Executor):
                 last_message_text = messages[-1].text if messages else task
 
                 try:
-                    # ✅ 직접 호출 (keepalive 없이)
+                    #  직접 호출 (keepalive 없이)
                     response = await current_agent.run(last_message_text)
                 except Exception as e:
                     logger.error(f"Agent {current_agent.name} failed: {e}")
                     raise
 
-                # ✅ Send TTFT event on first response
+                #  Send TTFT event on first response
                 if not first_token_sent:
                     first_token_sent = True
                     await ctx.yield_output(f"data: __TTFT_MARKER__\n\n")
@@ -468,7 +468,7 @@ class GroupChattingExecutor(Executor):
                 )
 
             # Extract final answer
-            # ✅ Find the last reviewer response (not just last message)
+            #  Find the last reviewer response (not just last message)
             final_answer = ""
             if messages and len(messages) > 1:
                 # Search backwards for reviewer's response
@@ -491,7 +491,7 @@ class GroupChattingExecutor(Executor):
                     f"[GroupChattingExecutor] No messages found for '{sub_topic}'"
                 )
 
-            # ✅ Parse JSON and extract answer_markdown
+            #  Parse JSON and extract answer_markdown
             answer_markdown = ""
             citations = []
             try:
@@ -504,7 +504,7 @@ class GroupChattingExecutor(Executor):
                     parsed_answer.get("answer_markdown", "")
                 )
                 
-                # ✅ If still empty, try to get from nested structure or plain text
+                #  If still empty, try to get from nested structure or plain text
                 if not answer_markdown:
                     # Check if the entire response is just markdown text (no JSON structure)
                     if isinstance(parsed_answer, dict) and len(parsed_answer) == 0:
@@ -517,7 +517,7 @@ class GroupChattingExecutor(Executor):
                             final_answer  # Last resort: use raw text
                         )
                 
-                # ✅ Extract citations
+                #  Extract citations
                 citations = parsed_answer.get("citations", [])
 
                 # Also extract other useful fields
@@ -554,7 +554,7 @@ class GroupChattingExecutor(Executor):
             logger.exception(e)
             await ctx.yield_output(f"data: ❌ Error: {e}\n\n")
 
-        # ✅ Final validation before return
+        #  Final validation before return
         if not answer_markdown:
             logger.warning(
                 f"[GroupChattingExecutor] No answer for '{sub_topic}' - using final_answer as fallback"
@@ -565,7 +565,7 @@ class GroupChattingExecutor(Executor):
             "status": "success" if error_info is None and answer_markdown else "error",
             "sub_topic": sub_topic,
             "question": question,
-            "answer_markdown": answer_markdown,  # ✅ Standardized key name
+            "answer_markdown": answer_markdown,  #  Standardized key name
             "citations": citations if citations else [],
             "reviewer_score": reviewer_score if reviewer_score else "N/A",
             "ready_to_publish": ready_to_publish if isinstance(ready_to_publish, bool) else False,

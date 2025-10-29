@@ -1481,7 +1481,7 @@ def _create_settings_components(language: str) -> list:
         cl.input_widget.Switch(
             id="planning",
             label=ui_text.get("planning_title", "Planning"),
-            initial=False,
+            initial=True,
             tooltip=ui_text.get("planning_desc", ""),
         ),
         cl.input_widget.Switch(

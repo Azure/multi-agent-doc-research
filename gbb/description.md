@@ -1,7 +1,7 @@
 # Multi-Agent Document Research Chatbot
 
 ## Overview
-For a walkthrough, check out the video overview here: xxx.mp4
+For a walkthrough, check out the video overview here: https://microsoftapc.sharepoint.com/:v:/t/AIGBB-Korea/Eb8WMBC1HPdDoG9BR0xuFe4BGCX1d70pMgF_QaujrZnY2A?e=95bsDt
 
 ![Architecture Diagram](images/multi-agent-doc-research-architecture-Page-2.png)
 

@@ -14,8 +14,14 @@ At its core, the multi-agent deep research engine combines Semantic Kernel and t
 ## Key features
 E2E sample, Multi-Agent orchestration, Group Chat Pattern, Magentic Pattern, Modular architecture, Semantic chunking, Document upload, MS Agent Framework, Semantic Kernel
 
+## Multi-Agent Implementation
+- MS Agent Framework GroupChat: Group chat coordination using MS Agent Framework. (members: WriterAgent, ReviwerAgent)
+- MS Agent Framework Magentic: Basic Magnetic pattern for deep reasoning and iterative refinement. (members: MagenticManagerAgent, ResearchAnalystAgent, ResearchWriterAgent, ResearchReviewerAgent)
+- Semantic Kernel GroupChat: Group chat coordination using Semantic Kernel. (members: WriterAgent, ReviwerAgent)
+- Semantic Kernel Magentic(Deep-Research-Agents): Deep research agents using Semantic Kernel. (members: MagenticManagerAgent, LeadResearchAgent, CredibilityCriticAgent, CitationAgent, ReportWriterAgent)
+- Vanilla AOAI SDK: Standard SDK based custom workflow implementation using parallel calls.(members: WrtiterAgent, ReviewerAgent)
+
 ## Azure AI Services
 AOAI, Azure AI Foundry, Azure AI Search
-
 
 

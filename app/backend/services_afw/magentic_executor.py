@@ -691,12 +691,12 @@ class MagenticExecutor(Executor):
             workflow = (
                 MagenticBuilder()
                 .participants(
-                    analyst=analyst_agent, writer=writer_agent, reviewer=reviewer_agent
+                    analyst=analyst_agent, writer=writer_agent, reviewer=reviewer_agent, 
                 )
                 .on_event(on_magentic_event, mode=MagenticCallbackMode.STREAMING)
                 .on_exception(on_exception)
                 .with_standard_manager(
-                    chat_client=self.chat_client,
+                    chat_client=self.reasoning_client,
                     max_round_count=5,
                     max_stall_count=2,
                     max_reset_count=1,

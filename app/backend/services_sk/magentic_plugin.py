@@ -201,9 +201,6 @@ class MagenticPlugin:
             yield "data: ### ✅ Agents ready: LeadResearcher, CredibilityCritic, CitationAgent, ReportWriter\n\n"
             yield "data: ### 🎯 Starting reasoning orchestration...\n\n"
 
-            # ✅ TTFT 마커 전송 (첫 의미있는 출력)
-            yield "data: __TTFT_MARKER__\n\n"
-
             task = f"Research Question: {question}\n\nContext: {contexts}"
 
             # ✅ 진행 상황 모니터링 제거하고 직접 대기

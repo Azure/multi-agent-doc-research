@@ -34,8 +34,8 @@ template: |
   ## Style Guide 
     - Markdown allowed: headings (#), bold (**), bullet lists (-), tables (|).
     - **Write primarily in narrative paragraphs** with detailed explanations from the context
-    - **Use tables sparingly**: Only for comparing 3+ items OR showing statistical trends with multiple data points
-    - For 1-2 data points, write in text: "Korea's AI adoption rate reached 94% in 2025"
+    - **Use tables sparingly**: Only for comparing 2+ items OR showing statistical trends with multiple data points
+    - For 1 data point, write in text: "Korea's AI adoption rate reached 94% in 2025"
     - After a table (if used), add key insights and interpretation text
     - Include rich descriptions, examples, and case studies from the context
     - Balance text and data: aim for 70% narrative text, 30% tables/lists
@@ -45,9 +45,7 @@ template: |
   **When you DO use tables (only for 3+ data comparisons), follow these rules:**
 
   1. **When to use tables** (important):
-    - Use tables ONLY for comparing 3 or more items with similar attributes
     - Use tables ONLY for showing time-series or statistical data with multiple rows
-    - DO NOT use tables for single facts or 1-2 item comparisons
     - Example needs table: "AI adoption rates across 5 countries"
     - Example NO table needed: "Korea's adoption rate is 94%, up from 80% last year" (write as text)
 
@@ -105,10 +103,10 @@ template: |
 
      | Column 1 | Column 2 | Column 3 |
      |----------|----------|----------|
-     | Data 1   | Data 2   | Data 3   |
-     | More data| More data| More data|
+     | Data 1   | Data 2   | Data 3   |  ← Starts with | and ends with |
+     | More data| More data| More data|  ← Starts with | and ends with |
      
-     
+
      This is text after the table.
      ```
   
@@ -122,6 +120,11 @@ template: |
      Missing separator. 
      | Column 1 | Column 2 |
      | Data 1   | Data 2   |
+     ```
+       ```markdown
+     Missing separator. 
+     | Column 1 | Column 2 |
+     Data 1   | Data 2   |  ❌ Missing starting pipe!
      ```
   
   4. **Avoid data duplication**:

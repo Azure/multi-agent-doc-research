@@ -569,21 +569,28 @@ class MagenticExecutor(Executor):
                             try:
                                 reviewer_output = clean_and_validate_json(agent_text, return_dict=True)
                                 
-                                final_answer = reviewer_output.get(
-                                    "revised_answer_markdown", ""
-                                )
-                                citations = reviewer_output.get("citations", [])
-                                reviewer_score = reviewer_output.get(
-                                    "reviewer_evaluation_score", "N/A"
-                                )
-                                ready_to_publish = reviewer_output.get(
-                                    "ready_to_publish", False
-                                )
-
-                                logger.info(
-                                    f"[MagenticExecutor] Parsed Reviewer output: "
-                                    f"answer_len={len(final_answer)}, score={reviewer_score}, ready={ready_to_publish}"
-                                )
+                                final_answer = reviewer_output.get("revised_answer_markdown", "")
+                                
+                                # DEBUG: Log table spacing issues
+                                if "|" in final_answer:
+                                    lines = final_answer.split('\n')
+                                    for i, line in enumerate(lines):
+                                        if line.strip().startswith('|'):
+                                            # Check previous line
+                                            if i > 0:
+                                                prev_line = lines[i-1]
+                                                if prev_line.strip() and not prev_line.strip().startswith('|'):
+                                                    # Previous line doesn't start with | but has content
+                                                    if '|' in prev_line:
+                                                        logger.error(
+                                                            f"[MagenticExecutor] 🔴 BROKEN TABLE ROW at line {i-1}: "
+                                                            f"'{prev_line}' (missing starting pipe!)"
+                                                        )
+                                                    else:
+                                                        logger.warning(
+                                                            f"[MagenticExecutor] ⚠️ Table spacing issue at line {i}: "
+                                                            f"'{prev_line[:50]}...' → '{line[:50]}...'"
+                                                        )
                             except Exception as e:
                                 logger.error(f"[MagenticExecutor] Failed to parse Reviewer output: {e}")
                                 # Fallback to Writer will happen in FinalResultEvent

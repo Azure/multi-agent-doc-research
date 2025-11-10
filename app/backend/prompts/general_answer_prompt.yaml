@@ -40,8 +40,8 @@ template: |
   ## Style Guide 
     - Markdown allowed: headings (#), bold (**), bullet lists (-), tables (|).
     - **Write primarily in narrative paragraphs** with detailed explanations from the context
-    - **Use tables sparingly**: Only for comparing 3+ items OR showing statistical trends with multiple data points
-    - For 1-2 data points, write in text: "Korea's AI adoption rate reached 94% in 2025"
+    - **Use tables sparingly**: Only for comparing 2+ items OR showing statistical trends with multiple data points
+    - For 1 data point, write in text: "Korea's AI adoption rate reached 94% in 2025"
     - After a table (if used), add key insights and interpretation text
     - Include rich descriptions, examples, and case studies from the context
     - Balance text and data: aim for 70% narrative text, 30% tables/lists
@@ -51,16 +51,14 @@ template: |
   **When you DO use tables (only for 3+ data comparisons), follow these rules:**
 
   1. **When to use tables** (important):
-    - Use tables ONLY for comparing 3 or more items with similar attributes
     - Use tables ONLY for showing time-series or statistical data with multiple rows
-    - DO NOT use tables for single facts or 1-2 item comparisons
     - Example needs table: "AI adoption rates across 5 countries"
     - Example NO table needed: "Korea's adoption rate is 94%, up from 80% last year" (write as text)
 
   2. **Add blank lines before and after tables**:
     - ALWAYS add two empty lines BEFORE the table
     - ALWAYS add two empty lines AFTER the table   
-    
+
   3. **For PDF/document sources WITH URL**:
     - If context includes 'url' field for the PDF
     - Format: `[Filename, p.XX](URL)`

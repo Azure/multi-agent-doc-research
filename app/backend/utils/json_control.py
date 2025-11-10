@@ -78,6 +78,8 @@ def clean_and_validate_json(content: str, return_dict: bool = False) -> str | di
                 if field in parsed and isinstance(parsed[field], str):
                     # 1. 이스케이프 문자 정리
                     parsed[field] = _clean_markdown_content(parsed[field])
+                    # 1.5. 깨진 테이블 행 복구 (NEW)
+                    parsed[field] = fix_broken_table_rows(parsed[field])
                     # 2. 테이블 간격 보정
                     parsed[field] = ensure_table_spacing(parsed[field])
             
@@ -218,3 +220,51 @@ def ensure_table_spacing(markdown: str) -> str:
     result = re.sub(table_pattern, add_spacing, markdown, flags=re.MULTILINE)
     
     return result
+
+def fix_broken_table_rows(markdown: str) -> str:
+    """
+    Fix table rows that are missing starting pipe (|).
+    
+    Detects patterns like:
+    | Header 1 | Header 2 |
+    |----------|----------|
+     Data 1   | Data 2   |  <- Missing starting pipe
+    
+    Args:
+        markdown: Markdown with potentially broken tables
+        
+    Returns:
+        Markdown with fixed table rows
+    """
+    if not markdown:
+        return markdown
+    
+    import re
+    
+    lines = markdown.split('\n')
+    result = []
+    in_table = False
+    
+    for i, line in enumerate(lines):
+        # Check if line starts with pipe
+        starts_with_pipe = bool(re.match(r'^\s*\|', line))
+        
+        # Check if line contains pipe separator (potential table row without starting pipe)
+        has_pipe_separator = '|' in line
+        
+        if starts_with_pipe:
+            in_table = True
+            result.append(line)
+        elif in_table and has_pipe_separator:
+            # This line has pipes but doesn't start with one
+            # Likely a broken table row - add starting pipe
+            fixed_line = '|' + line.lstrip()
+            logger.info(f"[TableFix] Fixed broken row: '{line[:40]}...' → '{fixed_line[:40]}...'")
+            result.append(fixed_line)
+        else:
+            # Not a table line
+            if not line.strip() or not has_pipe_separator:
+                in_table = False
+            result.append(line)
+    
+    return '\n'.join(result)

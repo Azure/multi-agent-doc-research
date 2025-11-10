@@ -31,7 +31,7 @@ template: |
   - Don't include any conclusory remarks outside the scope of '{sub_topic}'.
   
 
-  ----- Style Guide (for draft_answer_markdown) -----
+  ## Style Guide 
   - Markdown allowed: headings (#), bold (**), bullet lists (-), tables (|).
   - **Present data using tables**: When showing statistics, comparisons, or structured data, use markdown tables.
   - Do NOT repeat table data as text outside the table
@@ -40,24 +40,96 @@ template: |
   - Utilize tables, statistics, and case studies included in the context to enhance the credibility of your arguments.
   - Put the data and evidence to support your analysis.
   - If a correction is needed, append a single line starting with "correction: ..."
-  - Provide clickable reference links based on the retrieved sources.
+
+  ## REFERENCE LINK FORMATTING RULES - CRITICAL
+  **MANDATORY: All sources MUST be formatted correctly**
+
+  1. **For web sources with URLs**:
+    - Extract URL from context (look for 'url': 'https://...')
+    - Format: `[Source Title](https://example.com)`
+    - Example: `[AWS AI Report 2025](https://aws.amazon.com/ai-report)`
+    
+  2. **For PDF/document sources (NO direct URL)**:
+    - Extract filename from context (look for 'file': '...')
+    - Include page number if available (look for 'page': N)
+    - **Format: Use brackets WITHOUT parentheses** (not clickable, but clearly marked as reference)
+    - Example: `[SPRi AI Brief_6.pdf, p.25]`
+    - Example in sentence: `According to the research [SPRi AI Brief_6.pdf, p.25], the adoption rate is 94%.`
+    
+  3. **For PDF/document sources WITH URL**:
+    - If context includes 'url' field for the PDF
+    - Format: `[Filename, p.XX](URL)`
+    - Example: `[Report 2025, p.10](https://storage.example.com/report.pdf)`
+
+  4. **Citation placement**:
+    - Place citations immediately after the claim: `Korean AI adoption reached 94% [SPRi AI Brief_6.pdf, p.25].`
+    - Multiple sources: `This trend is confirmed [Source 1, p.10], [Source 2, p.15].`
+
+  5. **WRONG formats** (DO NOT USE):
+    - Plain text without brackets: `(출처: SPRi AI Brief_6.pdf, p.25)` ❌
+    - Fake link (filename as URL): `[SPRi AI Brief_6.pdf, p.25](SPRi AI Brief_6.pdf)` ❌
+    - Missing page numbers: `[document.pdf]` (when page is available) ❌
+
+  **Example of correct citation:**
+
+  ```markdown
+  ## AI Adoption in Korea
+
+  Korean enterprises show remarkable AI adoption rates in 2025 [SPRi AI Brief_6.pdf, p.25].
+
+  | Metric | Korea (2025) |
+  |--------|--------------|
+  | Generative AI Tools | 94% |
+  | Active Experiments | 89% |
+
+  Amazon's global study confirms this trend [AWS Global AI Index 2025](https://aws.amazon.com/ai-index).
+
+  **References:**
+  - [SPRi AI Brief_6.pdf, p.25]
+  - [AWS Global AI Index 2025](https://aws.amazon.com/ai-index)
+  ```
+
+  ## TABLE FORMATTING RULES - CRITICAL
+  **MANDATORY table formatting to prevent rendering issues:**
   
-  **TABLE FORMATTING RULES - CRITICAL:**
-  1. **Blank lines required**: ALWAYS add empty line BEFORE and AFTER tables
-  2. **Correct format**:
+  1. **Add blank lines before and after tables**:
+     - ALWAYS add an empty line BEFORE the table
+     - ALWAYS add an empty line AFTER the table
+  
+  2. **Separate tables from surrounding text**:
      ```markdown
-     Text describing data.
+     This is text describing the data.
      
-     | Column 1 | Column 2 |
+     | Column 1 | Column 2 | Column 3 |
+     |----------|----------|----------|
+     | Data 1   | Data 2   | Data 3   |
+     | More data| More data| More data|
+     
+     This is text after the table.
+     ```
+  
+  3. **WRONG - Table breaks rendering** (DO NOT DO THIS):
+     ```markdown
+     Text without blank line. | Column 1 | Column 2 |
      |----------|----------|
      | Data 1   | Data 2   |
-     
-     Brief interpretation.
      ```
-  3. **WRONG** (DO NOT DO): Text without blank. | Column | causes rendering issues
-  4. **No duplication**: Data appears ONLY in table OR text, never both
-  5. **After table**: Only brief summary, not row-by-row explanation
-
+     ```markdown
+     Missing separator. 
+     | Column 1 | Column 2 |
+     | Data 1   | Data 2   |
+     ```
+  
+  4. **Avoid data duplication**:
+     - Do NOT write table data in surrounding text
+     - After table, only provide brief interpretation
+  
+  5. **Table placement**:
+     - Use descriptive text BEFORE table (with blank line)
+     - Use summary/interpretation AFTER table (with blank line)
+  
+  6. Tables MUST use pipe (|) separators, NOT tabs or spaces
+  
   ----- Contexts -----
   {contexts}
 

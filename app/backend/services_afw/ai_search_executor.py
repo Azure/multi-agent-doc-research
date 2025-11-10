@@ -302,6 +302,57 @@ class AISearchExecutor(Executor):
 
         return " and ".join(filter_parts) if filter_parts else None
 
+    def _sanitize_query(self, query: str) -> str:
+        """
+        Sanitize and shorten search query for Azure AI Search.
+
+        Long sentences with punctuation can cause parsing errors.
+        Extract key terms and remove special characters.
+
+        Args:
+            query: Raw search query (possibly long sentence)
+
+        Returns:
+            Sanitized short query safe for Azure AI Search
+        """
+        if not query:
+            return query
+
+        import re
+
+        # Step 1: Truncate very long queries (Azure AI Search works better with shorter queries)
+        if len(query) > 200:
+            # Take first 200 chars and find last space
+            query = query[:200]
+            last_space = query.rfind(" ")
+            if last_space > 100:
+                query = query[:last_space]
+            logger.warning(f"[AISearchExecutor] Truncated long query to {len(query)} chars")
+
+        # Step 2: Remove field search syntax (word followed by colon)
+        query = re.sub(r"([가-힣a-zA-Z0-9_]+)\s*:\s*", r"\1 ", query)
+
+        # Step 3: Remove problematic punctuation that breaks Azure Search parser
+        # Keep: spaces, hyphens, Korean/English/numbers
+        # Remove: colons, parentheses, brackets, quotes, slashes
+        special_chars = [":", "(", ")", "[", "]", "{", "}", '"', "'", "/", "\\", "~", "*", "?", "!"]
+        for char in special_chars:
+            query = query.replace(char, " ")
+
+        # Step 4: Replace periods and commas with spaces (they can cause parsing issues)
+        query = query.replace(".", " ")
+        query = query.replace(",", " ")
+
+        # Step 5: Remove multiple spaces
+        query = re.sub(r"\s+", " ", query).strip()
+
+        # Step 6: Validate minimum length
+        if len(query.strip()) < 2:
+            logger.error(f"[AISearchExecutor] Query too short after sanitization: '{query}'")
+            return ""
+
+        return query
+
     def _execute_search(
         self,
         query: str,
@@ -312,6 +363,18 @@ class AISearchExecutor(Executor):
         include_content: bool,
     ):
         """Execute search based on search type."""
+        # Sanitize query to prevent syntax errors
+        sanitized_query = self._sanitize_query(query)
+
+        if not sanitized_query:
+            logger.error(f"[AISearchExecutor] Empty query after sanitization, skipping search")
+            return []
+
+        if sanitized_query != query:
+            logger.info(f"[AISearchExecutor] Sanitized query:")
+            logger.info(f"  Original: '{query[:100]}...'")
+            logger.info(f"  Sanitized: '{sanitized_query[:100]}...'")
+
         select_fields = self._get_select_fields(include_content)
 
         vector_queries = [
@@ -326,7 +389,7 @@ class AISearchExecutor(Executor):
         if search_type == "hybrid":
             # Hybrid search: text + vector
             return self.search_client.search(
-                search_text=query,
+                search_text=sanitized_query,  # 변경
                 vector_queries=vector_queries,
                 filter=filter_expression,
                 select=select_fields,
@@ -338,7 +401,7 @@ class AISearchExecutor(Executor):
         elif search_type == "semantic":
             # Semantic search with captions
             return self.search_client.search(
-                search_text=query,
+                search_text=sanitized_query,  # 변경
                 vector_queries=vector_queries,
                 filter=filter_expression,
                 select=select_fields,
@@ -349,20 +412,10 @@ class AISearchExecutor(Executor):
                 query_answer=QueryAnswerType.EXTRACTIVE,
             )
 
-        elif search_type == "vector":
-            # Pure vector search
-            return self.search_client.search(
-                search_text=None,
-                vector_queries=vector_queries,
-                filter=filter_expression,
-                select=select_fields,
-                top=top_k,
-            )
-
         elif search_type == "text":
             # Traditional text search
             return self.search_client.search(
-                search_text=query,
+                search_text=sanitized_query,  # 변경
                 filter=filter_expression,
                 select=select_fields,
                 top=top_k,
@@ -406,7 +459,7 @@ class AISearchExecutor(Executor):
                 doc["content"] = result.get("content")
 
             # Add semantic captions if available
-            if self.search_type=="semantic" and hasattr(result, "@search.captions"):
+            if self.search_type == "semantic" and hasattr(result, "@search.captions"):
                 doc["captions"] = [
                     {"text": caption.text, "highlights": caption.highlights}
                     for caption in result["@search.captions"]

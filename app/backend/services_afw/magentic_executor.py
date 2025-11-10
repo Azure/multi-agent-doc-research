@@ -436,6 +436,7 @@ class MagenticExecutor(Executor):
         key_findings = []
         reviewer_score = "N/A"
         ready_to_publish = False
+        writer_output = None
 
         # ⭐ Use verbose flag from parameter
         VERBOSE_MODE = verbose
@@ -547,29 +548,45 @@ class MagenticExecutor(Executor):
                             }
                         )
 
-                        # Use Reviewer output if available
+                        # Save Writer output (Priority 2 fallback)
+                        if "writer" in event.agent_id.lower() and agent_text:
+                            try:
+                                writer_output = clean_and_validate_json(agent_text, return_dict=True)
+                                logger.info(
+                                    f"[MagenticExecutor] Writer output saved: "
+                                    f"{len(writer_output.get('draft_answer_markdown', ''))} chars"
+                                )
+                            except Exception as e:
+                                logger.error(f"[MagenticExecutor] Failed to parse Writer output: {e}")
+                                writer_output = None
+
+                        # Use Reviewer output if available (Priority 1)
                         if "reviewer" in event.agent_id.lower() and agent_text:
                             logger.info(
-                                f"[MagenticExecutor] Reviewer agent completed, parsing output..."
+                                "[MagenticExecutor] Reviewer agent completed, parsing output..."
                             )
 
-                            reviewer_output = clean_and_validate_json(agent_text, return_dict=True)
-                            
-                            final_answer = reviewer_output.get(
-                                "revised_answer_markdown", ""
-                            )
-                            citations = reviewer_output.get("citations", [])
-                            reviewer_score = reviewer_output.get(
-                                "reviewer_evaluation_score", "N/A"
-                            )
-                            ready_to_publish = reviewer_output.get(
-                                "ready_to_publish", False
-                            )
+                            try:
+                                reviewer_output = clean_and_validate_json(agent_text, return_dict=True)
+                                
+                                final_answer = reviewer_output.get(
+                                    "revised_answer_markdown", ""
+                                )
+                                citations = reviewer_output.get("citations", [])
+                                reviewer_score = reviewer_output.get(
+                                    "reviewer_evaluation_score", "N/A"
+                                )
+                                ready_to_publish = reviewer_output.get(
+                                    "ready_to_publish", False
+                                )
 
-                            logger.info(
-                                f"[MagenticExecutor] Parsed Reviewer output: "
-                                f"answer_len={len(final_answer)}, score={reviewer_score}, ready={ready_to_publish}"
-                            )
+                                logger.info(
+                                    f"[MagenticExecutor] Parsed Reviewer output: "
+                                    f"answer_len={len(final_answer)}, score={reviewer_score}, ready={ready_to_publish}"
+                                )
+                            except Exception as e:
+                                logger.error(f"[MagenticExecutor] Failed to parse Reviewer output: {e}")
+                                # Fallback to Writer will happen in FinalResultEvent
 
                         # #  Always show completion checkmark
                         if VERBOSE_MODE:
@@ -610,7 +627,6 @@ class MagenticExecutor(Executor):
                     await ctx.yield_output(f"data: ### ✨ Finalizing...\n\n")
 
                     if event.message is not None:
-                        #  Extract text from ChatMessage
                         final_text = getattr(event.message, "text", "")
 
                         if final_text:
@@ -618,12 +634,10 @@ class MagenticExecutor(Executor):
                                 f"[MagenticExecutor] MagenticFinalResultEvent received: {len(final_text)} chars"
                             )
 
-                            # ⭐ Parse JSON from final result
                             try:
                                 parsed_answer = clean_and_validate_json(final_text, return_dict=True)
                                 
-                                #  Prefer Reviewer output over Writer output
-
+                                # Priority 1: Reviewer output
                                 answer_markdown = (
                                     parsed_answer.get("revised_answer_markdown", "")
                                     or parsed_answer.get("draft_answer_markdown", "")
@@ -632,52 +646,38 @@ class MagenticExecutor(Executor):
                                     or parsed_answer.get("final_answer", "")
                                     or parsed_answer.get("answer", "")
                                 )
-                                if answer_markdown:
-                                    final_answer = answer_markdown
 
-                                if reviewer_score == "N/A":
-                                    reviewer_score = parsed_answer.get(
-                                        "reviewer_evaluation_score", "N/A"
-                                    )
-
-                                if not citations:
-                                    citations = parsed_answer.get("citations", [])
-                                key_findings = parsed_answer.get("key_findings", [])
-                                reviewer_score = parsed_answer.get(
-                                    "reviewer_evaluation_score", "N/A"
-                                )
-                                ready_to_publish = parsed_answer.get(
-                                    "ready_to_publish", False
-                                )
-
-                                #  Use parsed markdown as final answer
                                 if answer_markdown:
                                     final_answer = answer_markdown
                                     logger.info(
-                                        f"[MagenticExecutor] Parsed final answer: "
-                                        f"{len(final_answer)} chars, score={reviewer_score}, ready={ready_to_publish}"
-                                    )
-                                else:
-                                    # Fallback to raw text if no markdown found
-                                    final_answer = final_text
-                                    logger.warning(
-                                        f"[MagenticExecutor] No markdown found, using raw text"
+                                        f"[MagenticExecutor] Using final answer from event: {len(final_answer)} chars"
                                     )
 
-                            except json.JSONDecodeError as e:
+                                if reviewer_score == "N/A":
+                                    reviewer_score = parsed_answer.get("reviewer_evaluation_score", "N/A")
+
+                                if not citations:
+                                    citations = parsed_answer.get("citations", [])
+                                    
+                                key_findings = parsed_answer.get("key_findings", [])
+                                ready_to_publish = parsed_answer.get("ready_to_publish", False)
+
+                            except Exception as e:
                                 logger.warning(
                                     f"[MagenticExecutor] Failed to parse JSON from final result: {e}"
                                 )
                                 logger.warning(
                                     f"[MagenticExecutor] Raw final text: {final_text[:200]}..."
                                 )
-                                # Fallback: use raw text as-is
-                                final_answer = final_text
-                            except Exception as e:
-                                logger.error(
-                                    f"[MagenticExecutor] Error parsing final result: {e}"
-                                )
-                                final_answer = final_text
+
+                        # Priority 2: Fallback to Writer output if no valid answer
+                        if not final_answer and writer_output:
+                            final_answer = writer_output.get("draft_answer_markdown", "")
+                            if not citations:
+                                citations = writer_output.get("citations", [])
+                            logger.info(
+                                f"[MagenticExecutor] Using Writer fallback: {len(final_answer)} chars"
+                            )
 
             except Exception as e:
                 logger.error(f"Error in Magentic callback: {e}")

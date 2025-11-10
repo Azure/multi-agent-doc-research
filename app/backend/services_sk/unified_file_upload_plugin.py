@@ -893,64 +893,93 @@ class UnifiedFileUploadPlugin:
         result,
         is_debug: bool = False
     ) -> List[Dict]:
-        """Process PDF using semantic-aware chunking."""
+        """
+        Process PDF using Hybrid Approach: Paragraph Offset + Page-aware Chunking.
+        
+        Features:
+        1. Forward mapping: Paragraph → Page (before chunking)
+        2. Page-aware chunking: Split by page boundaries and headers
+        3. Cross-page merging: Merge H1 sections across pages
+        4. 100% accurate page numbers for all chunks
+        """
         try:
-            # Extract content and metadata
-            content = result.content if result.content else ""
-            
             page_count = len(result.pages) if result.pages else 0
+            logger.info(f"Processing with hybrid semantic chunking: {page_count} pages")
             
-            logger.info(f"Processing with semantic chunking: {page_count} pages, {len(content)} characters")
-            
-            # Generate file hash for duplicate detection
             file_hash = self._generate_doc_hash(file_path)
             file_name = original_filename
             
+            # Step 1: Forward mapping - Create paragraph → page map
+            paragraph_map = self._create_paragraph_page_map(result)
+            logger.info(f"Created paragraph map with {len(paragraph_map)} entries")
+            
+            # Step 2: Page-aware grouping - Group paragraphs by page
+            pages_paragraphs = self._group_paragraphs_by_page(result)
+            logger.info(f"Grouped content into {len(pages_paragraphs)} pages")
+            
+            # Step 3: Page-aware chunking - Split each page by headers
+            all_chunks = []
+            for page_num in sorted(pages_paragraphs.keys()):
+                page_text = '\n\n'.join(pages_paragraphs[page_num])
+                
+                # Split by markdown headers within the page
+                page_chunks = self._split_by_markdown_headers(page_text)
+                
+                for chunk_text in page_chunks:
+                    chunk_tokens = get_token_numbers(chunk_text, "gpt-4")
+                    
+                    all_chunks.append({
+                        'content': chunk_text,
+                        'page_number': page_num,
+                        'tokens': chunk_tokens,
+                        'length': len(chunk_text)
+                    })
+            
+            logger.info(f"Created {len(all_chunks)} page-aware chunks before merging")
+            
+            # Step 4: Cross-page merging - Merge H1 sections across pages
+            merged_chunks = self._merge_cross_page_sections(all_chunks)
+            logger.info(f"After cross-page merging: {len(merged_chunks)} final chunks")
+            
+            # Step 5: Create vector DB documents with 100% accurate page numbers
             documents = []
             
-            # Use markdown header-based chunking (simple and effective)
-            logger.info("Starting markdown header-based chunking...")
-            semantic_chunks = self.semantic_splitter.split_text_with_document_intelligence(result)
-            
-            logger.info(f"Created {len(semantic_chunks)} header-based chunks")
-            
-            # Process each chunk
-            for chunk_num, chunk_text in enumerate(semantic_chunks, 1):
-                chunk_text = chunk_text.strip()
-
+            for chunk_num, chunk_info in enumerate(merged_chunks, 1):
+                chunk_text = chunk_info['content'].strip()
+                page_number = chunk_info['page_number']
+                page_range = chunk_info.get('page_range', str(page_number))
+                h1_title = chunk_info.get('h1_title', '')
+                
                 if is_debug:
-                    # Debug: Save chunk text to file for analysis
                     debug_dir = Path("debug_chunks")
                     debug_dir.mkdir(exist_ok=True)
-                    debug_file = debug_dir / f"{file_hash}_header_chunk_{chunk_num}.txt"
+                    debug_file = debug_dir / f"{file_hash}_hybrid_chunk_{chunk_num}.txt"
                     with open(debug_file, "w", encoding="utf-8") as f:
-                        f.write(f"=== CHUNK {chunk_num} DEBUG INFO ===\n")
+                        f.write(f"=== HYBRID CHUNK {chunk_num} DEBUG INFO ===\n")
                         f.write(f"File: {original_filename}\n")
                         f.write(f"Chunk Number: {chunk_num}\n")
+                        f.write(f"Page Number: {page_number}\n")
+                        f.write(f"Page Range: {page_range}\n")
+                        f.write(f"H1 Title: {h1_title or 'N/A'}\n")
                         f.write(f"Text Length: {len(chunk_text)}\n")
-                        f.write(f"Processing Method: markdown_header_based\n")
+                        f.write("Processing Method: hybrid_page_aware\n")
                         f.write("=" * 50 + "\n\n")
                         f.write(chunk_text)
                     logger.info(f"Debug: Saved chunk {chunk_num} to {debug_file}")
 
                 try:
-                    # Count tokens for this chunk
                     chunk_tokens = get_token_numbers(chunk_text, "gpt-4")
-                    
-                    # Generate embedding
                     embedding = await self._get_embedding(chunk_text)
                     
-                    # Create document object for vector storage
                     doc_id = f"{file_hash}_semantic_{chunk_num}"
                     
-                    # Determine page number using Document Intelligence paragraph information
-                    page_number = self._get_chunk_page_number(chunk_text, result)
+                    title_suffix = f" - {h1_title}" if h1_title else f" - Section {chunk_num}"
                     
                     document = {
                         "docId": doc_id,
                         "content": chunk_text,
                         "content_vector": embedding,
-                        "title": f"{file_name} - Section {chunk_num}",
+                        "title": f"{file_name}{title_suffix}",
                         "file_name": file_name,
                         "file_hash": file_hash,
                         "page_number": page_number,
@@ -963,27 +992,29 @@ class UnifiedFileUploadPlugin:
                         "source": file_path,
                         "metadata": json.dumps({
                             "total_pages": page_count,
-                            "total_chunks": len(semantic_chunks),
+                            "total_chunks": len(merged_chunks),
                             "chunk_tokens": chunk_tokens,
                             "chunk_length": len(chunk_text),
+                            "page_range": page_range,
+                            "h1_section": h1_title or None,
                             "file_size": Path(file_path).stat().st_size,
-                            "processing_method": "markdown_header_based_chunking",
-                            "min_chunk_size": 100,
-                            "header_based_splitting": True
+                            "processing_method": "hybrid_page_aware_semantic",
+                            "chunking_features": "forward_mapping,page_aware,cross_page_merge"
                         })
                     }
                     
                     documents.append(document)
-                    logger.info(f"Processed header-based chunk {chunk_num}: {chunk_tokens} tokens, {len(chunk_text)} characters")
+                    logger.info(f"Processed hybrid chunk {chunk_num} (page {page_range}): {chunk_tokens} tokens")
                 
                 except Exception as e:
-                    logger.error(f"Error processing semantic chunk {chunk_num}: {e}")
+                    logger.error(f"Error processing hybrid chunk {chunk_num}: {e}")
                     continue
             
+            logger.info(f"Hybrid processing complete: {len(documents)} documents with accurate page numbers")
             return documents
             
         except Exception as e:
-            logger.error(f"Error in semantic chunking: {e}")
+            logger.error(f"Error in hybrid semantic chunking: {e}")
             return []
     
     async def _process_pdf_with_page_chunking(
@@ -1028,7 +1059,7 @@ class UnifiedFileUploadPlugin:
                         f.write(f"File: {original_filename}\n")
                         f.write(f"Chunk Number: {chunk_num}\n")
                         f.write(f"Text Length: {len(chunk_text)}\n")
-                        f.write(f"Processing Method: markdown_header_based\n")
+                        f.write("Processing Method: markdown_header_based\n")
                         f.write("=" * 50 + "\n\n")
                         f.write(chunk_text)
                     logger.info(f"Debug: Saved chunk {chunk_num} to {debug_file}")
@@ -1111,7 +1142,7 @@ class UnifiedFileUploadPlugin:
                 debug_dir.mkdir(exist_ok=True)
                 content_file = debug_dir / f"{original_filename}_content.txt"
                 with open(content_file, "w", encoding="utf-8") as f:
-                    f.write(f"=== DOCUMENT INTELLIGENCE CONTENT DEBUG ===\n")
+                    f.write("=== DOCUMENT INTELLIGENCE CONTENT DEBUG ===\n")
                     f.write(f"File: {original_filename}\n")
                     f.write(f"Content Format: {result.content_format}\n")
                     f.write(f"Content Length: {len(result.content) if result.content else 0}\n")
@@ -1519,52 +1550,142 @@ Would you like to try again?"""
                 "message": "Error processing upload notification."
             })
     
-    def _get_chunk_page_number(self, chunk_text: str, result) -> int:
+    def _create_paragraph_page_map(self, result) -> Dict[int, Dict]:
         """
-        Document Intelligence의 paragraph 정보를 활용해서 청크의 페이지 번호를 찾음
+        Forward mapping: Paragraph → Page (before chunking).
+        Creates a mapping of paragraph content to page numbers.
         """
-        if not result.paragraphs or not chunk_text.strip():
-            return 1
-    
-        # 청크에서 검색할 텍스트 추출 (첫 번째 의미있는 라인)
-        chunk_lines = [line.strip() for line in chunk_text.split('\n') if line.strip()]
-        if not chunk_lines:
-            return 1
+        paragraph_map = {}
         
-        # 검색 텍스트 준비 (헤더 마크다운 제거)
-        search_text = chunk_lines[0]
-        clean_search = re.sub(r'^#+\s*', '', search_text).strip()
+        if not result.paragraphs:
+            return paragraph_map
         
-        # 1단계: 정확한 텍스트 매칭
-        for paragraph in result.paragraphs:
-            if not paragraph.content or not paragraph.bounding_regions:
+        for para_idx, para in enumerate(result.paragraphs):
+            if not para.bounding_regions or not para.content:
                 continue
-                
-            # 원본 텍스트 매칭
-            if search_text.lower() in paragraph.content.lower():
-                return paragraph.bounding_regions[0].page_number
             
-            # 헤더 제거 버전 매칭
-            if clean_search and clean_search.lower() in paragraph.content.lower():
-                return paragraph.bounding_regions[0].page_number
+            page_num = para.bounding_regions[0].page_number
+            
+            paragraph_map[para_idx] = {
+                'page_number': page_num,
+                'content': para.content.strip(),
+                'length': len(para.content)
+            }
         
-        # 2단계: 짧은 버전으로 재시도
-        short_text = clean_search[:30] if clean_search else search_text[:30]
-        for paragraph in result.paragraphs:
-            if paragraph.content and paragraph.bounding_regions:
-                if short_text.lower() in paragraph.content.lower():
-                    return paragraph.bounding_regions[0].page_number
+        return paragraph_map
+    
+    def _group_paragraphs_by_page(self, result) -> Dict[int, List]:
+        """
+        Page-aware grouping: Group all paragraphs by their page numbers.
+        """
+        pages_paragraphs = {}
         
-        # 3단계: 첫 번째 단어로 매칭
-        words = clean_search.split() if clean_search else search_text.split()
-        if words and len(words[0]) > 3:
-            first_word = words[0].lower()
-            for paragraph in result.paragraphs:
-                if paragraph.content and paragraph.bounding_regions:
-                    if first_word in paragraph.content.lower():
-                        return paragraph.bounding_regions[0].page_number
+        if not result.paragraphs:
+            return pages_paragraphs
         
-        logger.warning(f"Could not find page number for chunk: {search_text[:50]}...")
-        return 1
+        for para in result.paragraphs:
+            if not para.bounding_regions or not para.content:
+                continue
+            
+            page_num = para.bounding_regions[0].page_number
+            
+            if page_num not in pages_paragraphs:
+                pages_paragraphs[page_num] = []
+            
+            pages_paragraphs[page_num].append(para.content.strip())
+        
+        return pages_paragraphs
+    
+    def _split_by_markdown_headers(self, text: str) -> List[str]:
+        """
+        Split text by markdown headers (H1, H2, H3).
+        Returns list of text chunks split at header boundaries.
+        """
+        if not text.strip():
+            return []
+        
+        chunks = []
+        current_chunk = []
+        
+        for line in text.split('\n'):
+            # Check if line is a header
+            if re.match(r'^#{1,3}\s+', line):
+                # Save previous chunk if exists
+                if current_chunk:
+                    chunk_text = '\n'.join(current_chunk).strip()
+                    if chunk_text and len(chunk_text) > 100:  # Min chunk size
+                        chunks.append(chunk_text)
+                
+                # Start new chunk with header
+                current_chunk = [line]
+            else:
+                current_chunk.append(line)
+        
+        # Add last chunk
+        if current_chunk:
+            chunk_text = '\n'.join(current_chunk).strip()
+            if chunk_text and len(chunk_text) > 100:
+                chunks.append(chunk_text)
+        
+        return chunks if chunks else [text]
+    
+    def _merge_cross_page_sections(self, chunks_with_pages: List[Dict]) -> List[Dict]:
+        """
+        Cross-page merging: Merge H1 sections that span multiple pages.
+        Maintains semantic coherence while tracking page ranges.
+        """
+        if not chunks_with_pages:
+            return []
+        
+        merged = []
+        current_section = None
+        current_pages = []
+        current_h1_title = None
+        
+        for chunk_info in chunks_with_pages:
+            content = chunk_info['content']
+            page_num = chunk_info['page_number']
+            
+            # Check if this is an H1 header
+            h1_match = re.match(r'^#\s+(.+)', content)
+            
+            if h1_match:
+                # Save previous section
+                if current_section:
+                    merged.append({
+                        'content': current_section,
+                        'page_number': current_pages[0],
+                        'page_range': f"{min(current_pages)}-{max(current_pages)}" if len(set(current_pages)) > 1 else str(current_pages[0]),
+                        'h1_title': current_h1_title
+                    })
+                
+                # Start new H1 section
+                current_section = content
+                current_pages = [page_num]
+                current_h1_title = h1_match.group(1).strip()
+            else:
+                # Add to current section or create standalone chunk
+                if current_section:
+                    current_section += '\n\n' + content
+                    current_pages.append(page_num)
+                else:
+                    # Standalone chunk (no H1 parent)
+                    merged.append({
+                        'content': content,
+                        'page_number': page_num,
+                        'page_range': str(page_num),
+                        'h1_title': None
+                    })
+        
+        # Add last section
+        if current_section:
+            merged.append({
+                'content': current_section,
+                'page_number': current_pages[0],
+                'page_range': f"{min(current_pages)}-{max(current_pages)}" if len(set(current_pages)) > 1 else str(current_pages[0]),
+                'h1_title': current_h1_title
+            })
+        
+        return merged
 
 

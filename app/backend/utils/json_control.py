@@ -80,8 +80,6 @@ def clean_and_validate_json(content: str, return_dict: bool = False) -> str | di
                     parsed[field] = _clean_markdown_content(parsed[field])
                     # 2. 테이블 간격 보정
                     parsed[field] = ensure_table_spacing(parsed[field])
-                    # 3. 테이블 중복 본문 제거
-                    parsed[field] = clean_duplicate_table_content(parsed[field])
             
             logger.info(f"[GroupChat] Successfully cleaned and validated JSON")
             
@@ -122,9 +120,7 @@ def clean_and_validate_json(content: str, return_dict: bool = False) -> str | di
                             parsed[field] = _clean_markdown_content(parsed[field])
                             # 2. 테이블 간격 보정
                             parsed[field] = ensure_table_spacing(parsed[field])
-                            # 3. 테이블 중복 본문 제거
-                            parsed[field] = clean_duplicate_table_content(parsed[field])
-                    
+                            
                     logger.info(f"[GroupChat] Recovered JSON after truncation")
                     
                     if return_dict:
@@ -161,29 +157,6 @@ def clean_and_validate_json(content: str, return_dict: bool = False) -> str | di
             else:
                 return json.dumps(fallback, ensure_ascii=False)
 
-def clean_duplicate_table_content(markdown: str) -> str:
-    """Remove text that duplicates table row content."""
-    
-    # Find all markdown tables
-    table_pattern = r'\|[^\n]+\|[\n\r]+\|[-:\s|]+\|[\n\r]+((?:\|[^\n]+\|[\n\r]+)+)'
-    tables = re.finditer(table_pattern, markdown)
-    
-    cleaned = markdown
-    for table_match in tables:
-        table_content = table_match.group(0)
-        # Extract cell content from table
-        cell_pattern = r'\|\s*([^|]+?)\s*\|'
-        cells = re.findall(cell_pattern, table_content)
-        
-        # Remove sentences that contain exact cell content before the table
-        for cell in cells:
-            cell = cell.strip()
-            if len(cell) > 10:  # Only check substantial content
-                # Remove lines that contain this cell content before the table
-                pattern = f"[^\n]*{re.escape(cell)}[^\n]*\n"
-                cleaned = re.sub(pattern, "", cleaned, count=1)
-    
-    return cleaned
 
 def clean_markdown_escapes(markdown: str) -> str:
     """

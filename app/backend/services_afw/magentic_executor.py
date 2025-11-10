@@ -697,8 +697,8 @@ class MagenticExecutor(Executor):
                 .on_exception(on_exception)
                 .with_standard_manager(
                     chat_client=self.reasoning_client,
-                    max_round_count=5,
-                    max_stall_count=2,
+                    max_round_count=3,
+                    max_stall_count=1,
                     max_reset_count=1,
                 )
                 .build()

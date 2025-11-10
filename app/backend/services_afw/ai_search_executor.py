@@ -339,6 +339,7 @@ class AISearchExecutor(Executor):
             # Semantic search with captions
             return self.search_client.search(
                 search_text=query,
+                vector_queries=vector_queries,
                 filter=filter_expression,
                 select=select_fields,
                 top=top_k,

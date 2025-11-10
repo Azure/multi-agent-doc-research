@@ -21,30 +21,45 @@ template: |
   User question:  
   {question}
 
+  ----- Scope & Constraints -----
+    - Answer the user's overall question THROUGH THE LENS of the given sub_topic: "{sub_topic}".
+    - Use ONLY the provided contexts; do NOT invent facts or use prior knowledge.
+    - Cite sources explicitly based on the contexts. Extract URLs/file names from context entries like:
+    - 'url': 'https://example.com' → use this as source for claim reference
+    - 'file': 'SPRi AI Brief_8_F.pdf' → use this as source for claim reference
+    - 'title': 'Document Title' → use this for claim reference
+    - Be concise but substantive: clear structure, tight reasoning, evidence-backed claims.
+    - Prefer recent data (as of {current_date}) if present in contexts.
+    - Respect token budget: aim under {max_tokens} tokens for 'revised_answer_markdown'.
+    - Write in narrative style with detailed explanations from the context
+    - Use tables ONLY when comparing multiple data points or showing statistics (3+ rows of data)
+    - Prefer text descriptions for single facts or small comparisons (1-2 items)
+    - Utilize text, explanations, and case studies from the context to enhance credibility
+    - Don't include any conclusory remarks outside the scope of '{sub_topic}'.
+
   ## Style Guide 
-  - Markdown allowed: headings (#), bold (**), bullet lists (-), tables (|).
-  - **Present data using tables**: When showing statistics, comparisons, or structured data, use markdown tables.
-  - Do NOT repeat table data as text outside the table
-  - Each data point should appear ONLY in the table OR in text, not both
-  - After presenting a table, add only a brief summary or interpretation, not row-by-row explanation
-  - Utilize tables, statistics, and case studies included in the context to enhance the credibility of your arguments.
-  - Put the data and evidence to support your analysis.
-  - If a correction is needed, append a single line starting with "correction: ..."
+    - Markdown allowed: headings (#), bold (**), bullet lists (-), tables (|).
+    - **Write primarily in narrative paragraphs** with detailed explanations from the context
+    - **Use tables sparingly**: Only for comparing 3+ items OR showing statistical trends with multiple data points
+    - For 1-2 data points, write in text: "Korea's AI adoption rate reached 94% in 2025"
+    - After a table (if used), add key insights and interpretation text
+    - Include rich descriptions, examples, and case studies from the context
+    - Balance text and data: aim for 70% narrative text, 30% tables/lists
+    - If a correction is needed, append a single line starting with "correction: ..."
 
-  ## REFERENCE LINK FORMATTING RULES - CRITICAL
-  **MANDATORY: All sources MUST be formatted correctly**
+  ## TABLE FORMATTING RULES - Use Tables Sparingly
+  **When you DO use tables (only for 3+ data comparisons), follow these rules:**
 
-  1. **For web sources with URLs**:
-    - Extract URL from context (look for 'url': 'https://...')
-    - Format: `[Source Title](https://example.com)`
-    - Example: `[AWS AI Report 2025](https://aws.amazon.com/ai-report)`
-    
-  2. **For PDF/document sources (NO direct URL)**:
-    - Extract filename from context (look for 'file': '...')
-    - Include page number if available (look for 'page': N)
-    - **Format: Use brackets WITHOUT parentheses** (not clickable, but clearly marked as reference)
-    - Example: `[SPRi AI Brief_6.pdf, p.25]`
-    - Example in sentence: `According to the research [SPRi AI Brief_6.pdf, p.25], the adoption rate is 94%.`
+  1. **When to use tables** (important):
+    - Use tables ONLY for comparing 3 or more items with similar attributes
+    - Use tables ONLY for showing time-series or statistical data with multiple rows
+    - DO NOT use tables for single facts or 1-2 item comparisons
+    - Example needs table: "AI adoption rates across 5 countries"
+    - Example NO table needed: "Korea's adoption rate is 94%, up from 80% last year" (write as text)
+
+  2. **Add blank lines before and after tables**:
+    - ALWAYS add two empty lines BEFORE the table
+    - ALWAYS add two empty lines AFTER the table   
     
   3. **For PDF/document sources WITH URL**:
     - If context includes 'url' field for the PDF
@@ -54,6 +69,8 @@ template: |
   4. **Citation placement**:
     - Place citations immediately after the claim: `Korean AI adoption reached 94% [SPRi AI Brief_6.pdf, p.25].`
     - Multiple sources: `This trend is confirmed [Source 1, p.10], [Source 2, p.15].`
+    - List all references at the end under "### References:" section.
+    - Add a blank line before "### References:" section.
 
   5. **WRONG formats** (DO NOT USE):
     - Plain text without brackets: `(출처: SPRi AI Brief_6.pdf, p.25)` ❌
@@ -74,7 +91,7 @@ template: |
 
   Amazon's global study confirms this trend [AWS Global AI Index 2025](https://aws.amazon.com/ai-index).
 
-  **References:**
+  ### References:
   - [SPRi AI Brief_6.pdf, p.25]
   - [AWS Global AI Index 2025](https://aws.amazon.com/ai-index)
   ```
@@ -83,18 +100,20 @@ template: |
   **MANDATORY table formatting to prevent rendering issues:**
   
   1. **Add blank lines before and after tables**:
-     - ALWAYS add an empty line BEFORE the table
-     - ALWAYS add an empty line AFTER the table
+     - ALWAYS add two empty lines BEFORE the table
+     - ALWAYS add two empty lines AFTER the table
   
   2. **Separate tables from surrounding text**:
      ```markdown
      This is text describing the data.
      
+
      | Column 1 | Column 2 | Column 3 |
      |----------|----------|----------|
      | Data 1   | Data 2   | Data 3   |
      | More data| More data| More data|
      
+
      This is text after the table.
      ```
   

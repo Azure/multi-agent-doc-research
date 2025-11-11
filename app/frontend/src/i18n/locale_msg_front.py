@@ -157,6 +157,7 @@ EXAMPLE_PROMPTS = {
             and must adhere to these guidelines:
             [Writing Guidelines]
             Use only the information provided in the given Context. Do not include any external knowledge or prior assumptions.
+            Include rich descriptions, examples, comparison tables and case studies from the context.
             The total length should be at least 10,000 characters, with content that is dense, refined, and free of redundancy or unnecessary elaboration.
             Ensure the writing is well-structured, analytical, and professional in tone.
             """

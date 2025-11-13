@@ -39,7 +39,7 @@ dependencies = [
     "chainlit==2.8.0",
     "azure-search-documents==11.5.3",
     "azure-ai-documentintelligence==1.0.2",
-    "agent-framework==1.0.0b251016",
+    "agent-framework==1.0.0b251112",
     "tiktoken==0.12.0", 
 ]
 

@@ -26,12 +26,10 @@ from agent_framework import (
     WorkflowContext,
     handler,
     MagenticBuilder,
-    MagenticCallbackEvent,
     MagenticOrchestratorMessageEvent,
     MagenticAgentDeltaEvent,
     MagenticAgentMessageEvent,
     MagenticFinalResultEvent,
-    MagenticCallbackMode,
     WorkflowOutputEvent,
     HostedCodeInterpreterTool,
 )
@@ -441,33 +439,45 @@ class MagenticExecutor(Executor):
         # ⭐ Use verbose flag from parameter
         VERBOSE_MODE = verbose
 
-        # ⭐ Error callback for better error handling
-        def on_exception(exception: Exception) -> None:
-            nonlocal error_info
-            error_info = str(exception)
-            logger.exception(
-                f"[MagenticExecutor] Magentic workflow exception for '{sub_topic}'",
-                exc_info=exception,
+        # Build the Magentic workflow with 3 agents
+        try:
+            logger.info(
+                f"[MagenticExecutor] Building Magentic workflow (3-agent pattern) for '{sub_topic}'"
+            )
+            workflow = (
+                MagenticBuilder()
+                .participants(
+                    analyst=analyst_agent, writer=writer_agent, reviewer=reviewer_agent, 
+                )
+                .with_standard_manager(
+                    chat_client=self.reasoning_client,
+                    max_round_count=3,
+                    max_stall_count=1,
+                    max_reset_count=1,
+                )
+                .build()
             )
 
-        # Callback to process Magentic events
-        async def on_magentic_event(event: MagenticCallbackEvent) -> None:
-            nonlocal \
-                orchestrator_messages, \
-                agent_responses, \
-                streaming_buffer, \
-                orchestration_rounds, \
-                first_token_sent, \
-                current_agent, \
-                workflow_status
-            nonlocal \
-                final_answer, \
-                citations, \
-                key_findings, \
-                reviewer_score, \
-                ready_to_publish
+            # ⭐ Create detailed task description using prompt template
+            context_warning = "⚠️ Note: Context was truncated due to size. Focus on key information." if context_truncated else ""
+            
+            task = RESEARCH_MANAGER_PROMPT.format(
+                sub_topic=sub_topic,
+                question=question,
+                trimmed_context=trimmed_context,
+                context_truncated=context_warning,
+                locale=locale,
+                max_tokens=max_tokens,
+            )
 
-            try:
+            logger.info(
+                f"[MagenticExecutor] Starting Magentic orchestration for '{sub_topic}'"
+            )
+
+            # ⭐ Execute workflow - all processing happens in on_magentic_event callback
+            async for event in workflow.run_stream(task):
+                # Callback to process Magentic events
+        
                 if isinstance(event, MagenticOrchestratorMessageEvent):
                     #  Use getattr to safely get text property (like in reference code)
                     message_text = (
@@ -685,56 +695,7 @@ class MagenticExecutor(Executor):
                             logger.info(
                                 f"[MagenticExecutor] Using Writer fallback: {len(final_answer)} chars"
                             )
-
-            except Exception as e:
-                logger.error(f"Error in Magentic callback: {e}")
-                logger.exception(e)
-
-        # Build the Magentic workflow with 3 agents
-        try:
-            logger.info(
-                f"[MagenticExecutor] Building Magentic workflow (3-agent pattern) for '{sub_topic}'"
-            )
-            workflow = (
-                MagenticBuilder()
-                .participants(
-                    analyst=analyst_agent, writer=writer_agent, reviewer=reviewer_agent, 
-                )
-                .on_event(on_magentic_event, mode=MagenticCallbackMode.STREAMING)
-                .on_exception(on_exception)
-                .with_standard_manager(
-                    chat_client=self.reasoning_client,
-                    max_round_count=3,
-                    max_stall_count=1,
-                    max_reset_count=1,
-                )
-                .build()
-            )
-
-            # ⭐ Create detailed task description using prompt template
-            context_warning = "⚠️ Note: Context was truncated due to size. Focus on key information." if context_truncated else ""
             
-            task = RESEARCH_MANAGER_PROMPT.format(
-                sub_topic=sub_topic,
-                question=question,
-                trimmed_context=trimmed_context,
-                context_truncated=context_warning,
-                locale=locale,
-                max_tokens=max_tokens,
-            )
-
-            logger.info(
-                f"[MagenticExecutor] Starting Magentic orchestration for '{sub_topic}'"
-            )
-
-            # ⭐ Execute workflow - all processing happens in on_magentic_event callback
-            async for event in workflow.run_stream(task):
-                # WorkflowOutputEvent is also emitted but we process everything in callback
-                if isinstance(event, WorkflowOutputEvent):
-                    logger.debug(
-                        f"[MagenticExecutor] WorkflowOutputEvent received (processed in callback)"
-                    )
-
             #  After workflow completes, check if we got results
             if not final_answer:
                 if not error_info:

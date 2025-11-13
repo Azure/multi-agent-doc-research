@@ -14,6 +14,10 @@ COPY app/backend/ .
 
 RUN pip install --no-cache-dir uv
 
+# ⭐ agent-framework 관련 패키지 완전 제거 후 재설치
+RUN uv pip uninstall --system agent-framework agent-framework-core agent-framework-azure-ai agent-framework-a2a agent-framework-copilotstudio agent-framework-devui agent-framework-mem0 agent-framework-redis || true
+
+
 RUN uv pip install --system -e .
 
 

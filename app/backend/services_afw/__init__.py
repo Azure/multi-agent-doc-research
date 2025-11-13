@@ -31,6 +31,7 @@ from services_afw.ai_search_executor import AISearchExecutor
 from services_afw.grounding_executor import GroundingExecutor
 from services_afw.youtube_executor import YouTubeMCPExecutor
 from services_afw.web_search_executor import WebSearchExecutor
+from services_afw.magentic_executor import MagenticExecutor
 
 __all__ = [
     "PlanSearchOrchestratorAFW",
@@ -39,6 +40,7 @@ __all__ = [
     "GroundingExecutor",
     "YouTubeMCPExecutor",
     "WebSearchExecutor",
+    "MagenticExecutor",
 ]
 
 __all__ = [
@@ -48,4 +50,5 @@ __all__ = [
     "GroundingExecutor",
     "YouTubeMCPExecutor",
     "WebSearchExecutor",
+    "MagenticExecutor",
 ]

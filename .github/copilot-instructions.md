@@ -17,6 +17,9 @@
 - For libraries or external dependencies, mention their usage and purpose in comments.
 - Use consistent naming conventions and follow language-specific best practices.
 - Write concise, efficient, and idiomatic code that is also easily understandable.
+- Write comments in English
+- Write README.md files in English
+- Generate all documentation in English
 
 ## Code Style and Formatting
 

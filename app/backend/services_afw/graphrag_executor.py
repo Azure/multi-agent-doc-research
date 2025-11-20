@@ -237,22 +237,40 @@ class GraphRAGExecutor(Executor):
             if result.get("status") == "success":
                 context_data = result.get("context_data", {})
                 response_text = result.get("response") or ""
-                entities_count = len(context_data.get("entities", []))
+                # Log context data structure (GraphRAG 2.7 uses context_chunks and context_records)
+                chunks_len = len(context_data.get("context_chunks", "")) if isinstance(context_data.get("context_chunks"), str) else 0
+                
+                # Extract structured records for detailed logging
+                # TODO send_message with context_records
+                context_records = context_data.get("context_records", {})
+                entities = context_records.get("entities", [])
+                relationships = context_records.get("relationships", [])
+                reports = context_records.get("reports", [])
+                sources = context_records.get("sources", [])
                 
                 logger.info("[GraphRAGExecutor] ✅ Local search completed:")
-                logger.info(f"  - Entities: {entities_count}")
+                logger.info(f"  - Context chunks: {chunks_len} chars")
                 
-                # Show context data summary
-                if context_data:
-                    context_str = str(context_data)
-                    context_preview = context_str[:300] + "..." if len(context_str) > 300 else context_str
-                    logger.info(f"  - Context data: {context_preview}")
+                # Log structured records details
+                if context_records:
+                    for record_type, records in context_records.items():
+                        if isinstance(records, list):
+                            logger.info(f"  - {record_type}: {len(records)} items")
+                        else:
+                            logger.info(f"  - {record_type}: {type(records)}")
+                
+                # Show token usage
+                logger.info(f"  - Prompt tokens: {context_data.get('prompt_tokens', 0)}")
+                logger.info(f"  - Output tokens: {context_data.get('output_tokens', 0)}")
+                logger.info(f"  - LLM calls: {context_data.get('llm_calls', 0)}")
                 
                 if response_text:
                     logger.info(f"  - Response length: {len(response_text)} chars")
                     logger.info(f"  - Response preview: {response_text[:200]}...")
                 else:
                     logger.info("  - Response: None (context only mode)")
+                    if chunks_len > 0:
+                        logger.info(f"  - Context available for LLM generation: {chunks_len} chars")
             else:
                 error_msg = f"⚠️ Search failed: {result.get('message', 'Unknown error')}"
                 logger.error(f"[GraphRAGExecutor] {error_msg}")
@@ -327,7 +345,6 @@ class GraphRAGExecutor(Executor):
             result_json = await self.graphrag_plugin.global_search(query=query)
             
             result = json.loads(result_json)
-            
             # Log completion message with detailed results
             if result.get("status") == "success":
                 context_data = result.get("context_data", {})
@@ -339,8 +356,10 @@ class GraphRAGExecutor(Executor):
                 
                 # Show context data summary
                 if context_data:
-                    context_str = str(context_data)
-                    context_preview = context_str[:300] + "..." if len(context_str) > 300 else context_str
+                    # TODO send_message with reports
+                    reports = context_data["reports"]
+                    reports_str = str(reports)
+                    context_preview = reports_str[:300] + "..." if len(reports_str) > 300 else reports_str
                     logger.info(f"  - Context data: {context_preview}")
                 
                 if response_text:

@@ -473,7 +473,7 @@ class GraphRAGMCPServer:
         Serialize context data for JSON response.
         
         Args:
-            context_data: Context data from search (could be DataFrame or dict)
+            context_data: Context data from search (could be DataFrame, dict, or objects)
             
         Returns:
             Serializable dict
@@ -485,11 +485,34 @@ class GraphRAGMCPServer:
             serialized = {}
             for key, value in context_data.items():
                 if isinstance(value, pd.DataFrame):
+                    # DataFrame -> list of dicts
                     serialized[key] = value.to_dict(orient="records")
-                elif isinstance(value, list) and len(value) > 0 and isinstance(value[0], pd.DataFrame):
-                    serialized[key] = [df.to_dict(orient="records") for df in value]
+                elif isinstance(value, list):
+                    # Handle list of various types
+                    if len(value) > 0:
+                        if isinstance(value[0], pd.DataFrame):
+                            serialized[key] = [df.to_dict(orient="records") for df in value]
+                        elif hasattr(value[0], '__dict__'):
+                            # Objects (like Community) -> convert to dict
+                            serialized[key] = [
+                                {k: str(v) for k, v in obj.__dict__.items()} 
+                                for obj in value
+                            ]
+                        else:
+                            serialized[key] = [str(item) for item in value]
+                    else:
+                        serialized[key] = []
+                elif hasattr(value, '__dict__'):
+                    # Single object -> dict
+                    serialized[key] = {k: str(v) for k, v in value.__dict__.items()}
                 else:
-                    serialized[key] = value
+                    # Primitive types or already serializable
+                    try:
+                        import json
+                        json.dumps(value)  # Test if serializable
+                        serialized[key] = value
+                    except (TypeError, ValueError):
+                        serialized[key] = str(value)
             return serialized
         elif isinstance(context_data, pd.DataFrame):
             return {"data": context_data.to_dict(orient="records")}

@@ -105,12 +105,33 @@ async def local_search(
         **search_engine.context_builder_params,
     )
     
-    # Extract context data
+    # Debug: Log context_result structure
+    chunks_len = len(context_result.context_chunks) if hasattr(context_result, 'context_chunks') else 0
+    records_count = len(context_result.context_records) if hasattr(context_result, 'context_records') else 0
+    logger.info(f"Context result: chunks={chunks_len}, records={records_count}")
+    
+    # Extract and structure context_records for LLM usage
+    # context_records is a dict with keys like 'entities', 'relationships', 'reports', 'sources'
+    structured_records = {}
+    if hasattr(context_result, "context_records") and isinstance(context_result.context_records, dict):
+        for key, value in context_result.context_records.items():
+            if isinstance(value, pd.DataFrame) and not value.empty:
+                # Convert DataFrame to list of dicts for JSON serialization
+                structured_records[key] = value.to_dict(orient="records")
+                logger.info(f"  - {key}: {len(value)} records")
+            elif isinstance(value, list):
+                structured_records[key] = value
+                logger.info(f"  - {key}: {len(value)} items")
+            else:
+                structured_records[key] = str(value) if value is not None else None
+    
+    # Prepare context data with both raw chunks (for LLM) and structured records (for analysis)
     context_data = {
-        "entities": context_result.entities if hasattr(context_result, "entities") else pd.DataFrame(),
-        "relationships": context_result.relationships if hasattr(context_result, "relationships") else pd.DataFrame(),
-        "reports": context_result.reports if hasattr(context_result, "reports") else pd.DataFrame(),
-        "sources": context_result.sources if hasattr(context_result, "sources") else pd.DataFrame(),
+        "context_chunks": context_result.context_chunks if hasattr(context_result, "context_chunks") else "",
+        "context_records": structured_records,  # Structured data for programmatic access
+        "llm_calls": context_result.llm_calls if hasattr(context_result, "llm_calls") else 0,
+        "prompt_tokens": context_result.prompt_tokens if hasattr(context_result, "prompt_tokens") else 0,
+        "output_tokens": context_result.output_tokens if hasattr(context_result, "output_tokens") else 0,
     }
     
     # Optionally generate LLM answer

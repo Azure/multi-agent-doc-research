@@ -172,7 +172,7 @@ async def test_02_local_search_via_workflow(graphrag_executor):
     print("Test 2: GraphRAG Local Search via Agent Framework Workflow")
     print("="*60)
     
-    test_query = "ai 시장변화와 트랜드"
+    test_query = "ai market and recent trends"
     
     
     print(f"\n🔍 Query: {test_query}")
@@ -210,10 +210,10 @@ async def test_02_local_search_via_workflow(graphrag_executor):
     
     print("\n📊 Workflow Result:")
     print(f"Status: {graphrag_result.get('status')}")
-    
     if graphrag_result.get("status") == "success":
         response = graphrag_result.get("response") or ""
         context_data = graphrag_result.get("context_data", {})
+        context_records = context_data.get("context_records", {})
         
         print(f"\n📝 Response: {len(response) if response else 0} chars")
         if response:
@@ -227,8 +227,9 @@ async def test_02_local_search_via_workflow(graphrag_executor):
         if context_data:
             print("\n📦 Context Data Preview:")
             print(f"  Keys: {list(context_data.keys())}")
-            context_str = str(context_data)[:300]
-            print(f"  Content: {context_str}...")
+            context_records_str = str(context_records)[:300]
+            print(f"  context records: {context_records_str}...")
+
         
         print("\n✅ Test 2 PASSED - Workflow local search completed")
     else:
@@ -292,6 +293,7 @@ async def test_03_global_search_via_workflow(graphrag_executor):
     if graphrag_result.get("status") == "success":
         response = graphrag_result.get("response") or ""
         context_data = graphrag_result.get("context_data", {})
+        reports = context_data.get("reports", {})
         
         print(f"\n📝 Response: {len(response) if response else 0} chars")
         if response:
@@ -305,8 +307,8 @@ async def test_03_global_search_via_workflow(graphrag_executor):
         if context_data:
             print("\n📦 Context Data Preview:")
             print(f"  Keys: {list(context_data.keys())}")
-            context_str = str(context_data)[:300]
-            print(f"  Content: {context_str}...")
+            reports_str = str(reports)[:300]
+            print(f"  Reports: {reports_str}...")
         
         print("\n✅ Test 3 PASSED - Workflow global search completed")
     else:

@@ -279,7 +279,7 @@ class GraphRAGMCPPlugin:
                 "global_search",
                 arguments={"query": query}
             )
-            
+
             response_text = result.content[0].text if result.content else "{}"
             logger.info(f"GraphRAG global search completed: {len(response_text)} chars")
             

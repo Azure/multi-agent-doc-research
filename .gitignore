@@ -180,7 +180,6 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
-notebook/
 app/frontend/.gradio/certificate.pem
 
 

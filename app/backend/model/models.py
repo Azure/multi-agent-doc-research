@@ -90,6 +90,18 @@ class PlanSearchRequest(BaseModel):
         True,
         description="Include AI search results from uploaded documents"
     )
+    include_graphrag: bool = Field(
+        False,
+        description="Include GraphRAG knowledge graph search"
+    )
+    graphrag_search_type: str = Field(
+        "local",
+        description="GraphRAG search type: 'local' (entity-focused) or 'global' (community-focused)"
+    )
+    graphrag_top_k: Optional[int] = Field(
+        10,
+        description="Number of top results for GraphRAG local search"
+    )
     multi_agent_type: str = Field(
         "vanilla",
         description="The type of multi-agent system to use (e.g., 'sk', 'vanilla')"

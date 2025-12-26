@@ -116,8 +116,28 @@ async def lifespan(app: FastAPI):
     yield
 
     logger.info("Shutting down Microsoft Chatbot API...")
-    # Clean up orchestrators if needed
+    
+    # Clean up orchestrators and MCP connections
     global _orchestrator_sk, _orchestrator_afw
+    
+    try:
+        if _orchestrator_afw is not None:
+            # Cleanup GraphRAG executor in AFW orchestrator
+            graphrag_executor = getattr(_orchestrator_afw, 'graphrag_executor', None)
+            if graphrag_executor:
+                logger.info("🧹 Cleaning up GraphRAG executor...")
+                await graphrag_executor.cleanup()
+        
+        if _orchestrator_sk is not None:
+            # Cleanup GraphRAG plugin in SK orchestrator if exists
+            graphrag_plugin = getattr(_orchestrator_sk, 'graphrag_plugin', None)
+            if graphrag_plugin:
+                logger.info("🧹 Cleaning up GraphRAG MCP plugin...")
+                await graphrag_plugin.cleanup()
+        
+        logger.info("✅ Orchestrator cleanup completed")
+    except Exception as e:
+        logger.error(f"❌ Error during orchestrator cleanup: {e}", exc_info=True)
     _orchestrator_sk = None
     _orchestrator_afw = None
 

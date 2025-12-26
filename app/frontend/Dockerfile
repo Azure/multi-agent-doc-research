@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # 프로젝트 루트의 필수 파일들 복사
 COPY pyproject.toml README.md ./
 # frontend 코드 복사
-COPY app/frontend/ .
+COPY . .
 
 RUN pip install --no-cache-dir uv
 

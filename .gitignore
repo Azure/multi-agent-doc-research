@@ -180,7 +180,6 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
-notebook/
 app/frontend/.gradio/certificate.pem
 
 
@@ -189,3 +188,8 @@ infra/main.parameters.json
 
 app/backend/tests/debug_chunks/*
 app/frontend/.files/*
+
+graphrag/cache/*
+graphrag/logs/*
+graphrag/input/*
+graphrag/output/*

@@ -15,7 +15,7 @@ import logging
 import hashlib
 import os
 import re
-from typing import Dict, List
+from typing import Dict, List, Optional
 from pathlib import Path
 
 from semantic_kernel.functions import kernel_function
@@ -798,6 +798,13 @@ class UnifiedFileUploadPlugin:
         self.processing_method = os.getenv("PROCESSING_METHOD", "semantic").lower()
         logger.info(f"Using processing method: {self.processing_method}")
         
+        # GraphRAG 설정 (absolute path resolution)
+        self.graphrag_enabled = self.settings.GRAPHRAG_ENABLED
+        self.graphrag_md_dir = self.settings.get_graphrag_input_dir()
+        self.graphrag_md_dir.mkdir(parents=True, exist_ok=True)
+        logger.info(f"GraphRAG enabled: {self.graphrag_enabled}")
+        logger.info(f"GraphRAG input dir: {self.graphrag_md_dir}")
+        
         # Azure AI Search
         self.search_client = SearchClient(
             endpoint=self.settings.AZURE_AI_SEARCH_ENDPOINT,
@@ -881,6 +888,46 @@ class UnifiedFileUploadPlugin:
         except Exception as e:
             logger.error(f"Error checking file existence: {e}")
             return False
+    
+    async def _save_markdown_for_graphrag(
+        self,
+        result,
+        original_filename: str
+    ) -> Optional[str]:
+        """
+        Save Document Intelligence markdown for GraphRAG indexing.
+        
+        Args:
+            result: Document Intelligence result with markdown content
+            original_filename: Original file name
+            
+        Returns:
+            Path to saved markdown file or None
+        """
+        try:
+            if not self.graphrag_enabled:
+                return None
+            
+            if not result.content:
+                logger.warning(f"No markdown content from Document Intelligence: {original_filename}")
+                return None
+            
+            # Generate markdown filename
+            from datetime import datetime
+            base_name = Path(original_filename).stem
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            md_filename = f"{base_name}_{timestamp}.md"
+            md_path = self.graphrag_md_dir / md_filename
+            
+            # Save markdown content
+            md_path.write_text(result.content, encoding="utf-8")
+            
+            logger.info(f"✅ Saved GraphRAG markdown: {md_path} ({len(result.content)} chars)")
+            return str(md_path)
+        
+        except Exception as e:
+            logger.error(f"Error saving GraphRAG markdown: {e}")
+            return None
     
     async def _process_pdf_with_semantic_chunking(
         self, 
@@ -1119,8 +1166,8 @@ class UnifiedFileUploadPlugin:
         industry: str,
         report_year: str,
         is_debug: bool = False
-    ) -> List[Dict]:
-        """Process PDF file using the configured chunking method."""
+    ) -> tuple[List[Dict], Optional[str]]:
+        """Process PDF file and optionally save markdown for GraphRAG"""
         try:
             # Process PDF with Document Intelligence
             with open(file_path, "rb") as file:
@@ -1135,6 +1182,10 @@ class UnifiedFileUploadPlugin:
             
             result: AnalyzeResult = poller.result()
 
+            # GraphRAG: Save markdown for indexing
+            md_path = None
+            if self.graphrag_enabled and result.content:
+                md_path = await self._save_markdown_for_graphrag(result, original_filename)
             
             if is_debug:
                 # Save result.content to file for debugging
@@ -1180,11 +1231,11 @@ class UnifiedFileUploadPlugin:
                 max_tokens = max(token_counts)
                 logger.info(f"Token distribution - Avg: {avg_tokens:.1f}, Min: {min_tokens}, Max: {max_tokens}")
             
-            return documents
+            return documents, md_path
             
         except Exception as e:
             logger.error(f"Error processing PDF file {file_path}: {e}")
-            return []
+            return [], None
 
     async def _upload_documents_to_vector_db(self, documents: List[Dict]) -> bool:
         """Upload processed documents to Azure AI Search."""
@@ -1308,6 +1359,7 @@ Ready to upload files?""",
         
             results = []
             total_documents = 0
+            graphrag_md_files = []  # GraphRAG markdown files 수집
         
             for file_path, original_filename in zip(file_paths_list, file_names_list):
                 try:
@@ -1336,9 +1388,13 @@ Ready to upload files?""",
                     file_extension = Path(original_filename).suffix.lower()
                 
                     if file_extension == '.pdf':
-                        documents = await self._process_pdf_file(
+                        documents, md_path = await self._process_pdf_file(
                             file_path, original_filename, document_type, company, industry, report_year, is_debug
                         )
+                        
+                        # GraphRAG: Collect markdown paths
+                        if md_path and self.graphrag_enabled:
+                            graphrag_md_files.append(md_path)
                     else:
                         results.append({
                             "file": original_filename,
@@ -1387,10 +1443,13 @@ Ready to upload files?""",
                 "total_files": len(file_paths_list),
                 "successful_uploads": len(successful_uploads),
                 "total_documents_uploaded": total_documents,
-                "results": results
+                "results": results,
+                "graphrag_files": graphrag_md_files  # GraphRAG markdown files 반환
             }
         
             logger.info(f"Upload completed: {len(successful_uploads)}/{len(file_paths_list)} files successful")
+            if graphrag_md_files:
+                logger.info(f"GraphRAG: {len(graphrag_md_files)} markdown files ready for indexing")
             return json.dumps(response)
             
         except Exception as e:

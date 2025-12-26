@@ -29,6 +29,12 @@ LOCALE_MESSAGES = {
         "context_length": "context log는 2000자까지 지원합니다. 추가적인 정보는 검색 결과를 통해 확인해주세요.",
         "intent_small_talk": "User Intent - 캐쥬얼 대화입니다.",
         "elapsed_time": "소요 시간",
+        "graphrag_indexing": "GraphRAG 지식 그래프 인덱싱 중...",
+        "graphrag_indexing_done": "GraphRAG 인덱싱 완료",
+        "graphrag_local_search": "GraphRAG Local Search 실행 중 (엔티티 중심)...",
+        "graphrag_global_search": "GraphRAG Global Search 실행 중 (커뮤니티 중심)...",
+        "graphrag_searching": "GraphRAG 지식 그래프 검색 중...",
+        "graphrag_search_done": "GraphRAG 검색 완료",
         
     },
     "en-US": {
@@ -59,6 +65,33 @@ LOCALE_MESSAGES = {
         "context_length": "context log supports up to 2000 characters. For additional information, please refer to the search results.",
         "intent_small_talk": "User Intent - small talk.",
         "elapsed_time": "Elapsed Time",
+        "graphrag_indexing": "GraphRAG knowledge graph indexing...",
+        "graphrag_indexing_done": "GraphRAG indexing complete",
+        "graphrag_local_search": "GraphRAG Local Search (entity-focused)...",
+        "graphrag_global_search": "GraphRAG Global Search (community-focused)...",
+        "graphrag_searching": "Searching GraphRAG knowledge graph...",
+        "graphrag_search_done": "GraphRAG search complete",
         
     }
 }
+
+
+def get_locale_message(key: str, locale: str = "ko-KR") -> str:
+    """
+    Get localized message by key.
+    
+    Args:
+        key: Message key
+        locale: Locale code (default: "ko-KR")
+        
+    Returns:
+        Localized message string. Returns key if not found.
+    """
+    # Normalize locale
+    if locale.lower() == "ko" or locale.lower() == "kr":
+        locale = "ko-KR"
+    elif locale.lower() == "en":
+        locale = "en-US"
+    
+    # Get message from locale, fallback to key if not found
+    return LOCALE_MESSAGES.get(locale, {}).get(key, key)

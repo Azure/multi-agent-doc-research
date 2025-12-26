@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "GraphRAG MCP Server for knowledge graph operations"
 requires-python = ">=3.10"
 dependencies = [
-    "mcp==1.13.1",
+    "mcp==1.23.0",
     "graphrag==2.7.0",
     "pandas>=2.0.0",
     "numpy>=1.26.4,<2.0.0",

@@ -10,12 +10,12 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 # 프로젝트 루트의 필수 파일들 복사
 COPY pyproject.toml README.md ./
 # backend 코드 복사
-COPY app/backend/ .
+COPY . .
 
 RUN pip install --no-cache-dir uv
 
 # ⭐ agent-framework 관련 패키지 완전 제거 후 재설치
-RUN uv pip uninstall --system agent-framework agent-framework-core agent-framework-azure-ai agent-framework-a2a agent-framework-copilotstudio agent-framework-devui agent-framework-mem0 agent-framework-redis || true
+# RUN uv pip uninstall --system agent-framework agent-framework-core agent-framework-azure-ai agent-framework-a2a agent-framework-copilotstudio agent-framework-devui agent-framework-mem0 agent-framework-redis || true
 
 
 RUN uv pip install --system -e .

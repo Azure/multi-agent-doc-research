@@ -8,7 +8,7 @@ dependencies = [
     "aiohttp>=3.9.0",
     "fastapi>=0.103.0",
     "python-dotenv==1.1.0",
-    "chainlit==2.8.0",
+    "chainlit==2.8.5",
     "gradio==5.33.1",
 ]
 

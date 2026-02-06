@@ -30,7 +30,7 @@ dependencies = [
     "pytz==2025.2",
     "azure-ai-evaluation==1.11.0",
     "matplotlib==3.10.3", 
-    "semantic-kernel==1.37.0",
+    "semantic-kernel==1.39.3",
     "aiohttp>=3.9.0",
     "jinja2>=3.0.0",
     "beautifulsoup4==4.12.2",
